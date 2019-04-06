@@ -3,14 +3,17 @@ import LeftCol from './LeftCol';
 import RightCol from './RightCol';
 import NavSticky from './NavSticky';
 import CurrPage from './CurrPage';
+import Scroll from './Scroll';
 
 const Main = (props) => {
     return (
-        <div className='f3 fl w-100 b--dark-green bw1 ba vh-75'>
+        <div className='f3 flex items-stretch w-100 b--dark-green bw1 ba h-100'>
             <LeftCol/>
-            <div id='center' className='fl w-80'>
+            <div id='center' className='w-80 flex flex-column'>
                 <NavSticky/>
-                <CurrPage/>
+                <Scroll>
+                    <CurrPage/>
+                </Scroll>
             </div>
             <RightCol/>
         </div>
