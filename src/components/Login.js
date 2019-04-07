@@ -2,14 +2,15 @@ import React from 'react';
 
 const Login = (props) => {
     return(
-        <div className='outline w-25'>
+        <div className='flex items-center justify-center outline w-25'>
             <div className = 'f4'>
-                {'INN _____________'}
+                <label htmlFor="INN">{"INN: "}</label>
+                <input
+                    className="f6 f5-l tc"
+                    placeholder="INN" type="text" name="INN" value="">
+                </input>
             </div>
-            <div className = 'f4'>
-                {'PWD _____________'}
-            </div>
-
+            <button className="ma2">{"Proceed"}</button>
         </div>
     )
 };

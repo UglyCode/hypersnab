@@ -2,7 +2,7 @@ import React from 'react';
 
 const BasketCard = (props) => {
     return(
-        <div className='outline w-25'>
+        <div className='flex flex-column justify-around outline w-25'>
             <div className = 'f4'>
                 {'Basket'}
             </div>
