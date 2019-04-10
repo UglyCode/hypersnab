@@ -2,12 +2,10 @@ import React from 'react';
 
 const BasketCard = (props) => {
     return(
-        <div className='flex flex-column justify-around outline w-25'>
-            <div className = 'f4'>
-                {'Basket'}
-            </div>
-            <div className = 'f6'>
-                {'Total sum: 3600'}
+        <div className='w-25 flex items-center tc pl3 f5 br3 bg-lightest-blue'>
+            <div>{'CART: '}</div>
+            <div className = ''>
+                {'(11) 3600RUR'}
             </div>
 
         </div>

@@ -1,14 +1,17 @@
 import React from 'react';
-import BasketCard from './BasketCard';
 import Logo from './Logo';
+import NavSticky from './NavSticky';
+
 import Login from './Login';
+import BasketCard from './BasketCard';
 
 const Header = (props) => {
     return(
-        <div className = 'flex justify-between br3 pa3 ma2 bw-2 shadow-5-l tc bg-white'>
-            <BasketCard/>
+        <div className = 'flex flex-column content-stretch'>
+            {/*<BasketCard/>*/}
             <Logo/>
-            <Login/>
+            <NavSticky/>
+            {/*<Login/>*/}
         </div>
     )
 };
