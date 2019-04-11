@@ -1,6 +1,6 @@
 import React from 'react';
-import BasketCard from './BasketCard';
-import Login from './Login';
+import BasketCard from '../components/BasketCard';
+import Login from '../components/Login';
 
 class NavSticky extends React.Component{
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
-import NavSticky from './NavSticky';
+import NavSticky from '../containers/NavSticky';
 
 import Login from './Login';
 import BasketCard from './BasketCard';
