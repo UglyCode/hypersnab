@@ -6,7 +6,7 @@ const SpecOffer = (props) => {
         <article className='bb b--black-60 ma2'>
             <a className="link w-100" href="#0">
                 <div className="w3 center">
-                    <img src="http://mrmrs.github.io/images/0010.jpg" className="db w-100"/>
+                    <img src="http://mrmrs.github.io/images/0010.jpg" className="db w-100" alt='spec img'/>
                 </div>
                 <div className="v-top pl2 tc">
                     <h1 className="f6 f5-ns fw6 lh-title black mv0">Grid Systems</h1>
