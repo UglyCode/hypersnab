@@ -6,7 +6,7 @@ class Profile extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            name: 'this.props.user.name',
+            name: 'your name',
             age: 'this.props.user.age',
             pet: 'this.props.user.pet',
         }
@@ -53,7 +53,7 @@ class Profile extends React.Component {
                 <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center bg-white">
                     <main className="pa4 black-80">
                         <img
-                            src="http://tachyons.io/img/logo.jpg"
+                            src="https://www.logolynx.com/images/logolynx/b0/b09b64189a867aa07cc02c2ad40288ca.png"
                             className="h3 w3 dib" alt="avatar" />
 
                         <h1>{this.state.name}</h1>
@@ -70,25 +70,25 @@ class Profile extends React.Component {
                             ></input>
                         </div>
                         <div className="mv3">
-                            <label htmlFor="user-age">Age:</label>
+                            <label htmlFor="user-age">Phone:</label>
                             <input
                                 onChange={this.onFormChange}
                                 className="b pa2 b--black-10 w-100"
                                 type="number"
                                 name="user-age"
                                 id="user-age"
-                                placeholder="29"
+                                placeholder="+79995555555"
                             ></input>
                         </div>
                         <div className="mt3">
-                            <label htmlFor="user-pet">Pet:</label>
+                            <label htmlFor="user-pet">INN:</label>
                             <input
                                 onChange={this.onFormChange}
                                 className="pa2 b--black-10 w-100"
                                 type="text"
                                 name="user-pet"
                                 id="user-pet"
-                                placeholder="cute kitty"
+                                placeholder="770789123"
                             ></input>
                         </div>
                         <div className='mt4' style={{display: 'flex', justifyContent: 'space-evenly'}}>
