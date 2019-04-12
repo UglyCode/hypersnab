@@ -29,7 +29,7 @@ class Login extends React.Component{
         const el = document.querySelector('#innSign');
 
         return(
-            <div className='w-25 pr3 flex items-center justify-end bg-lightest-blue br3'>
+            <div className='w-10 pr3 flex items-center justify-end bg-lightest-blue br3'>
                 { this.state.userINN ?
                     <p id='innSign' className='pointer f5 underline-hover dark-blue'
                        onClick={this.toggleMenu}>

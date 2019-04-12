@@ -1,6 +1,6 @@
 import React from 'react';
 import BasketCard from '../components/BasketCard';
-import Login from '../components/Login';
+import Login from './Login';
 
 class NavSticky extends React.Component{
 
@@ -34,7 +34,7 @@ class NavSticky extends React.Component{
             <nav id='navSticky' className={navClass}>
                 {/*+ }>*/}
                 <BasketCard/>
-                <div className='w-50 flex justify-between items-center'>
+                <div className='w-80 flex justify-between items-center'>
                     <div>
                         <a className="f6 f5-l link black-90 grow underline-hover pointer hover-dark-blue dib pa3 ph4-l" href="/">Catalog</a>
                         <a className="f6 f5-l link black-90 grow underline-hover pointer hover-dark-blue dib pa3 ph4-l" href="/">About</a>
