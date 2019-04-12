@@ -6,9 +6,9 @@ class Profile extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            name: this.props.user.name,
-            age: this.props.user.age,
-            pet: this.props.user.pet,
+            name: 'this.props.user.name',
+            age: 'this.props.user.age',
+            pet: 'this.props.user.pet',
         }
     }
 
@@ -57,8 +57,6 @@ class Profile extends React.Component {
                             className="h3 w3 dib" alt="avatar" />
 
                         <h1>{this.state.name}</h1>
-                        <h4>{`Images recon: ${user.entries}`}</h4>
-                        <p>{`Mambered: ${user.joined}`}</p>
                         <hr />
                         <div className="mt3">
                             <label htmlFor="user-name">Name:</label>
@@ -68,7 +66,7 @@ class Profile extends React.Component {
                                 type="text"
                                 name="user-name"
                                 id="user-name"
-                                placeholder={user.name}
+                                placeholder={'just your cool name'}
                             ></input>
                         </div>
                         <div className="mv3">
@@ -96,7 +94,7 @@ class Profile extends React.Component {
                         <div className='mt4' style={{display: 'flex', justifyContent: 'space-evenly'}}>
                             <button
                                 className={'b pa2 pointer grow hover-white w-40 bg-light-green b--black-30'}
-                                onClick={() => this.onProfileSubmit({name, age, pet})}
+                                // onClick={() => this.onProfileSubmit({name, age, pet})}
                             >
                                 Save
                             </button>

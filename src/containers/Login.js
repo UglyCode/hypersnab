@@ -49,7 +49,10 @@ class Login extends React.Component{
                         className="absolute pa0"
                         style={{top: el.offsetTop, listStyleType: "none", backgroundColor:'rgba(255,255,255,0.8)'}}>
                         <li className='ma3 pointer underline-hover'> Log out </li>
-                        <li className='ma3 pointer underline-hover'> Profile </li>
+                        <li className='ma3 pointer underline-hover'
+                        onClick={this.props.toggleProfile}>
+                            Profile
+                        </li>
                         <li className='ma3 pointer underline-hover'> Orders </li>
                     </ul>
                 }

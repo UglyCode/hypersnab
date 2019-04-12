@@ -28,7 +28,7 @@ class NavSticky extends React.Component{
     render() {
 
         let navClass = "flex items-stretch br3 bw-2 shadow-5-l tc bg-white"
-            + (this.state.scroll > this.state.top ? " fixed w-100 left-0 top-0" : " ma2");
+            + (this.state.scroll > this.state.top ? " fixed w-100 left-0 top-0 pr3 pl3" : " ma2");
 
         return(
             <nav id='navSticky' className={navClass}>
@@ -51,7 +51,7 @@ class NavSticky extends React.Component{
                         </input>
                     </div>
                 </div>
-                <Login/>
+                <Login toggleProfile = {this.props.toggleProfile}/>
             </nav>
         )
 

@@ -9,15 +9,31 @@ import Footer from '../../components/Footer';
 
 
 class App extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            isProfileOpen: false
+        }
+    }
+
+
+    toggleProfile = () =>{
+        this.setState(prevState => ({
+            ...prevState,
+            isProfileOpen: !prevState.isProfileOpen
+        }))
+    };
+
   render() {
     return (
       <div className="App vh-100 pa2 flex flex-column">
-        <Header/>
-        <Main/>
+        <Header toggleProfile={this.toggleProfile}/>
+        <Main />
         <Footer/>
-          {false &&
+          {this.state.isProfileOpen &&
             <Modal>
-                <Profile/>
+                <Profile toggleProfile={this.toggleProfile}/>
             </Modal>
           }
       </div>

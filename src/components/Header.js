@@ -5,12 +5,12 @@ import NavSticky from '../containers/NavSticky';
 import Login from '../containers/Login';
 import BasketCard from './BasketCard';
 
-const Header = (props) => {
+const Header = ({toggleProfile}) => {
     return(
         <div className = 'flex flex-column content-stretch'>
             {/*<BasketCard/>*/}
             <Logo/>
-            <NavSticky/>
+            <NavSticky toggleProfile ={toggleProfile}/>
             {/*<Login/>*/}
         </div>
     )
