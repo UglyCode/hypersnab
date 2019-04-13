@@ -6,7 +6,8 @@ class Login extends React.Component{
         super(props);
         this.state = {
             isDroppedDown: false,
-            userINN: 770011202
+            userINN: null,
+            advice: 'enter your INN'
         };
     }
 
@@ -20,8 +21,71 @@ class Login extends React.Component{
 
     closeMenu = (event) => {
         event.preventDefault();
-        this.setState({isDroppedDown: false})
+        this.setState({isDroppedDown: false});
         document.removeEventListener('click', this.closeMenu);
+    };
+
+    handleInnInput = (event) => {
+        const INN = event.target.value;
+        if (this.checkINN(INN)){
+            fetch('https://suggestions.dadata.ru/suggestions/api/4_1/rs/findById/party',
+                {
+                    method: 'POST',
+                    headers:{
+                        "Content-Type": "application/json",
+                        "Accept": "application/json",
+                        "Authorization": "Token "
+                    },
+                    body: JSON.stringify({
+                        "query": INN,
+                        "branch_type": "MAIN"
+                    })
+                })
+                .then(resp=>resp.json())
+                .then(console.log)
+                .catch(console.log);
+            this.setState(prevState => ({
+                ...prevState,
+                advice: 'trying to fetch result'
+            }))
+        } else {
+            this.setState(prevState => ({
+                ...prevState,
+                advice: 'wrong INN format'
+            }));
+        }
+    };
+
+    checkINN = (INN) => {
+            // проверка на число
+            if (INN.match(/\D/)) {
+                return false;
+            }
+            // проверка на 10 и 12 цифр
+            if (INN.length !== 12 && INN.length !== 10) {
+                return false;
+            }
+            // проверка по контрольным цифрам
+            if (INN.length === 10) {
+                const dgt10 = String(((
+                    2 * INN[0] + 4 * INN[1] + 10 * INN[2] +
+                    3 * INN[3] + 5 * INN[4] + 9 * INN[5] +
+                    4 * INN[6] + 6 * INN[7] + 8 * INN[8]) % 11) % 10);
+                return INN[9] === dgt10;
+            }
+            if (INN.length === 12) {
+                const dgt11 = String(((
+                    7 * INN[0] + 2 * INN[1] + 4 * INN[2] +
+                    10 * INN[3] + 3 * INN[4] + 5 * INN[5] +
+                    9 * INN[6] + 4 * INN[7] + 6 * INN[8] +
+                    8 * INN[9]) % 11) % 10);
+                const dgt12 = String(((
+                    3 * INN[0] + 7 * INN[1] + 2 * INN[2] +
+                    4 * INN[3] + 10 * INN[4] + 3 * INN[5] +
+                    5 * INN[6] + 9 * INN[7] + 4 * INN[8] +
+                    6 * INN[9] + 8 * INN[10]) % 11) % 10);
+                return INN[10] === dgt11 && INN[11] === dgt12;
+            }
     };
 
 
@@ -35,13 +99,14 @@ class Login extends React.Component{
                        onClick={this.toggleMenu}>
                         {this.state.userINN}
                     </p> :
-                    <div className = 'f5'>
-                        <label htmlFor="INN">{"INN: "}</label>
+                    <div className = 'f5 flex-column ma2'>
+                        {/*<label htmlFor="INN">{"INN: "}</label>*/}
                         <input
-                            className="tc"
+                            onChange={this.handleInnInput}
+                            className="tc ma0"
                             placeholder="INN" type="text" name="INN">
                         </input>
-                        <button className="ma1">{"Proceed"}</button>
+                        <p className="ma0">{this.state.advice}</p>
                     </div>
                 }
                 {this.state.isDroppedDown &&
@@ -58,7 +123,8 @@ class Login extends React.Component{
                 }
             </div>
         )
+    }
+
 }
-};
 
 export default Login;

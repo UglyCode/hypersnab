@@ -5,7 +5,7 @@ import Login from './Login';
 class NavSticky extends React.Component{
 
     constructor(props){
-        super(props)
+        super(props);
 
         this.state = {
             top: 0,
