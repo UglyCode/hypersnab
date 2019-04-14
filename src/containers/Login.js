@@ -1,4 +1,5 @@
 import React from 'react';
+import ENV from '../settings/env';
 
 class Login extends React.Component{
 
@@ -28,26 +29,8 @@ class Login extends React.Component{
     handleInnInput = (event) => {
         const INN = event.target.value;
         if (this.checkINN(INN)){
-            fetch('https://suggestions.dadata.ru/suggestions/api/4_1/rs/findById/party',
-                {
-                    method: 'POST',
-                    headers:{
-                        "Content-Type": "application/json",
-                        "Accept": "application/json",
-                        "Authorization": "Token "
-                    },
-                    body: JSON.stringify({
-                        "query": INN,
-                        "branch_type": "MAIN"
-                    })
-                })
-                .then(resp=>resp.json())
+            fetch(`${ENV.server}/info/${INN}`)
                 .then(console.log)
-                .catch(console.log);
-            this.setState(prevState => ({
-                ...prevState,
-                advice: 'trying to fetch result'
-            }))
         } else {
             this.setState(prevState => ({
                 ...prevState,
