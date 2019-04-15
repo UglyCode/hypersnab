@@ -13,10 +13,10 @@ class App extends Component {
     constructor(props){
         super(props);
         this.state = {
-            isProfileOpen: false
+            isProfileOpen: false,
+            user: {}
         }
     }
-
 
     toggleProfile = () =>{
         this.setState(prevState => ({
@@ -25,15 +25,19 @@ class App extends Component {
         }))
     };
 
+    setUserData = (userObj, cb) => {
+        this.setState({user: userObj}, cb)
+    };
+
   render() {
     return (
       <div className="App vh-100 pa2 flex flex-column">
-        <Header toggleProfile={this.toggleProfile}/>
+        <Header toggleProfile={this.toggleProfile} setUserData={this.setUserData}/>
         <Main />
         <Footer/>
           {this.state.isProfileOpen &&
             <Modal>
-                <Profile toggleProfile={this.toggleProfile}/>
+                <Profile toggleProfile={this.toggleProfile} user={this.state.user}/>
             </Modal>
           }
       </div>

@@ -6,26 +6,14 @@ class Profile extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            name: 'your name',
-            age: 'this.props.user.age',
-            pet: 'this.props.user.pet',
-        }
+            user: props.user
+        };
     }
 
     onFormChange = (event) =>{
-      switch (event.target.name) {
-          case 'user-name':
-              this.setState({name: event.target.value});
-              break;
-          case 'user-age':
-              this.setState({age: event.target.value});
-              break;
-          case 'user-pet':
-              this.setState({pet: event.target.value});
-              break;
-          default:
-              return;
-      }
+        let stateObj = {};
+        stateObj[event.target.name] = event.target.value;
+        this.setState(stateObj);
     };
 
     onProfileSubmit = (data) => {
@@ -46,55 +34,97 @@ class Profile extends React.Component {
     };
 
     render() {
-        const {user} = this.props;
-        const {name, age, pet} = this.state;
+        const {user} = this.state;
+        console.log(user, this.props.user);
         return (
             <div className='profile-modal'>
                 <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center bg-white">
                     <main className="pa4 black-80">
-                        <img
-                            src="https://www.logolynx.com/images/logolynx/b0/b09b64189a867aa07cc02c2ad40288ca.png"
-                            className="h3 w3 dib" alt="avatar" />
-
-                        <h1>{this.state.name}</h1>
+                        <h1>{user.companyName}</h1>
                         <hr />
                         <div className="mt3">
-                            <label htmlFor="user-name">Name:</label>
+                            <label htmlFor="companyName">Company:</label>
                             <input
                                 onChange={this.onFormChange}
                                 className="pa2 b--black-10 w-100"
                                 type="text"
-                                name="user-name"
-                                id="user-name"
-                                placeholder={'just your cool name'}
+                                name="companyName"
+                                id="companyName"
+                                placeholder={'company name'}
+                                value={user.companyName}
                             ></input>
-                        </div>
-                        <div className="mv3">
-                            <label htmlFor="user-age">Phone:</label>
-                            <input
-                                onChange={this.onFormChange}
-                                className="b pa2 b--black-10 w-100"
-                                type="number"
-                                name="user-age"
-                                id="user-age"
-                                placeholder="+79995555555"
-                            ></input>
-                        </div>
-                        <div className="mt3">
-                            <label htmlFor="user-pet">INN:</label>
+
+                            <label htmlFor="inn">INN:</label>
                             <input
                                 onChange={this.onFormChange}
                                 className="pa2 b--black-10 w-100"
                                 type="text"
-                                name="user-pet"
-                                id="user-pet"
-                                placeholder="770789123"
+                                name="inn"
+                                id="inn"
+                                placeholder={'company name'}
+                                value={user.inn}
                             ></input>
+
+                            <label htmlFor="kpp">KPP:</label>
+                            <input
+                                onChange={this.onFormChange}
+                                className="pa2 b--black-10 w-100"
+                                type="text"
+                                name="kpp"
+                                id="kpp"
+                                placeholder={'KPP'}
+                                value={user.kpp}
+                            ></input>
+
+                            <label htmlFor="management">management:</label>
+                            <input
+                                onChange={this.onFormChange}
+                                className="pa2 b--black-10 w-100"
+                                type="text"
+                                name="management"
+                                id="management"
+                                placeholder={'management'}
+                                value={user.management}
+                            ></input>
+
+                            <label htmlFor="management">address:</label>
+                            <input
+                                onChange={this.onFormChange}
+                                className="pa2 b--black-10 w-100"
+                                type="text"
+                                name="address"
+                                id="address"
+                                placeholder={'address'}
+                                value={user.address}
+                            ></input>
+
+                            <label htmlFor="email">email:</label>
+                            <input
+                                onChange={this.onFormChange}
+                                className="pa2 b--black-10 w-100"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder={'email'}
+                                value={user.email}
+                            ></input>
+
+                            <label htmlFor="phone">phone:</label>
+                            <input
+                                onChange={this.onFormChange}
+                                className="pa2 b--black-10 w-100"
+                                type="phone"
+                                name="phone"
+                                id="phone"
+                                placeholder={'phone'}
+                                value={user.phone}
+                            ></input>
+
                         </div>
                         <div className='mt4' style={{display: 'flex', justifyContent: 'space-evenly'}}>
                             <button
                                 className={'b pa2 pointer grow hover-white w-40 bg-light-green b--black-30'}
-                                // onClick={() => this.onProfileSubmit({name, age, pet})}
+                                onClick={() => this.onProfileSubmit()}
                             >
                                 Save
                             </button>

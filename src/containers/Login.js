@@ -7,7 +7,8 @@ class Login extends React.Component{
         super(props);
         this.state = {
             isDroppedDown: false,
-            userINN: null,
+            loggedIn: false,
+            userINN: '',
             advice: 'enter your INN'
         };
     }
@@ -30,7 +31,14 @@ class Login extends React.Component{
         const INN = event.target.value;
         if (this.checkINN(INN)){
             fetch(`${ENV.server}/info/${INN}`)
-                .then(console.log)
+                .then(res => res.json())
+                .then(response => {
+                    if (response.userId) {
+                        this.getUserInfo(response.userId)
+                    } else {
+                        this.props.setUserData(response, this.props.toggleProfile)
+                    }
+                })
         } else {
             this.setState(prevState => ({
                 ...prevState,
@@ -71,24 +79,41 @@ class Login extends React.Component{
             }
     };
 
+    handlePasswordInput = (event) => {
+
+    };
 
     render() {
         const el = document.querySelector('#innSign');
 
         return(
             <div className='w-20 pr3 flex items-center justify-end bg-lightest-blue br3'>
-                { this.state.userINN ?
+                { this.state.loggedIn ?
                     <p id='innSign' className='pointer f5 underline-hover dark-blue'
                        onClick={this.toggleMenu}>
                         {this.state.userINN}
                     </p> :
                     <div className = 'f5 flex-column ma2'>
-                        {/*<label htmlFor="INN">{"INN: "}</label>*/}
-                        <input
-                            onChange={this.handleInnInput}
-                            className="tc ma0"
-                            placeholder="INN" type="text" name="INN">
-                        </input>
+                        {   this.state.userINN ?
+                            <div>
+                                <input
+                                    className="tc ma0"
+                                    placeholder="password" type="text" name="password">
+                                </input>
+                                <button
+                                    className='tc ma0'
+                                    onClick={this.handlePasswordInput}
+                                >
+                                    {'=>'}
+                                </button>
+                            </div>
+                            :
+                            <input
+                                onChange={this.handleInnInput}
+                                className="tc ma0"
+                                placeholder="INN" type="text" name="INN">
+                            </input>
+                        }
                         <p className="ma0">{this.state.advice}</p>
                     </div>
                 }

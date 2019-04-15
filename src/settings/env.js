@@ -1,6 +1,6 @@
 
 const ENV = {
-    server: 'localhost:3001'
+    server: 'http://localhost:3001'
 };
 
 export default ENV;
