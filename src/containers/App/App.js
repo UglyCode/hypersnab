@@ -8,14 +8,18 @@ import Main from '../../components/Main';
 import Footer from '../../components/Footer';
 
 
+const initialState = {
+    route: 'about',
+    isSignedIn: false,
+    isProfileOpen: false,
+    user: {}
+};
+
 class App extends Component {
 
     constructor(props){
         super(props);
-        this.state = {
-            isProfileOpen: false,
-            user: {}
-        }
+        this.state = initialState;
     }
 
     toggleProfile = () =>{
