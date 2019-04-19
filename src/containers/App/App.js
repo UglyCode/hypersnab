@@ -37,13 +37,13 @@ class App extends Component {
     return (
       <div className="App vh-100 pa2 flex flex-column">
         <Header toggleProfile={this.toggleProfile} setUserData={this.setUserData}/>
-        <Main />
+        <Main/>
         <Footer/>
-          {this.state.isProfileOpen &&
+        {this.state.isProfileOpen &&
             <Modal>
                 <Profile toggleProfile={this.toggleProfile} user={this.state.user}/>
             </Modal>
-          }
+        }
       </div>
     );
   }
