@@ -16,20 +16,27 @@ class Profile extends React.Component {
         this.setState(stateObj);
     };
 
-    onProfileSubmit = (data) => {
-        fetch(`http://localhost:3001/profile/${this.props.user.id}`, {
+    onProfileSubmit = () => {
+
+    };
+
+    updateUser = (userObj) => {
+        fetch(`http://localhost:3001/profile/${userObj.inn}`, {
             method: 'POST',
             headers : {
                 'Content-type': 'application/json',
                 'Authorization': window.sessionStorage.getItem('token')
             },
-            body: JSON.stringify({formInput: data})
+            body: JSON.stringify({formInput: userObj})
         }).then(resp => {
             if (resp.status === 200 || resp.status === 304){
                 this.props.toggleProfile();
-                this.props.userUpdate({...this.props.user, ...data});
+                this.props.userUpdate({...this.props.user, ...userObj});
             }
         }).catch( err => console.log);
+    };
+
+    createUser = (userObj) => {
 
     };
 
@@ -126,7 +133,7 @@ class Profile extends React.Component {
                                 className={'b pa2 pointer grow hover-white w-40 bg-light-green b--black-30'}
                                 onClick={() => this.onProfileSubmit()}
                             >
-                                Save
+                                {this.state.user.inn ? 'Save' : 'Create'}
                             </button>
                             <button className={'b pa2 pointer grow hover-white w-40 bg-light-red b--black-30'}
                                     onClick={this.props.toggleProfile}>
