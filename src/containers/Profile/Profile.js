@@ -148,3 +148,9 @@ class Profile extends React.Component {
 };
 
 export default Profile;
+
+//TODO:
+//  1. get inn from params, if it exists it does not changes
+//  2. Register\save depend on inn existing
+//  3. Register -> API register -> save token -> setInn in App
+//  4. Save -> API update (authorization required)

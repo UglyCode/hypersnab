@@ -12,7 +12,7 @@ const initialState = {
     route: 'about',
     isSignedIn: false,
     isProfileOpen: false,
-    user: {}
+    userInn: ''
 };
 
 class App extends Component {
@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <div className="App vh-100 pa2 flex flex-column">
         <Header toggleProfile={this.toggleProfile} setUserData={this.setUserData}/>
-        <Main/>
+        <Main inn={this.state.userInn}/>
         <Footer/>
         {this.state.isProfileOpen &&
             <Modal>
@@ -50,3 +50,9 @@ class App extends Component {
 }
 
 export default App;
+
+
+//TODO:
+//  1. ComponentDidMount => check token exists & inn===''
+//  2. foo(get user inn by token API) => setInn(inn, that api returned, can be empty) => setState(inn)
+//  3. token check in toggle menu => in token not valid -> distract inn

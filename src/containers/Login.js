@@ -7,8 +7,7 @@ class Login extends React.Component{
         super(props);
         this.state = {
             isDroppedDown: false,
-            loggedIn: false,
-            userINN: '',
+            passwordEntering: false,
             advice: 'enter your INN'
         };
     }
@@ -27,10 +26,9 @@ class Login extends React.Component{
         document.removeEventListener('click', this.closeMenu);
     };
 
-    handleInnInput = (event) => {
-        const INN = event.target.value;
-        if (this.checkINN(INN)){
-            fetch(`${ENV.server}/info/${INN}`)
+    openRegisterationForm = (inn) =>{
+        if (this.checkINN(inn)){
+            fetch(`${ENV.server}/info/${inn}`)
                 .then(res => res.json())
                 .then(response => {
                     if (response.userId) {
@@ -45,6 +43,10 @@ class Login extends React.Component{
                 advice: 'wrong INN format'
             }));
         }
+    };
+
+    handleInnInput = (event) => {
+        this.openRegisterationForm(event.target.value);
     };
 
     checkINN = (INN) => {
@@ -83,30 +85,28 @@ class Login extends React.Component{
 
     };
 
+    onSubmitPress = () => {
+
+    };
+
     render() {
         const el = document.querySelector('#innSign');
+        const userInn = this.props.inn;
 
         return(
             <div className='w-20 pr3 flex items-center justify-end bg-lightest-blue br3'>
                 { this.state.loggedIn ?
                     <p id='innSign' className='pointer f5 underline-hover dark-blue'
                        onClick={this.toggleMenu}>
-                        {this.state.userINN}
+                        {this.state.userInn}
                     </p> :
                     <div className = 'f5 flex-column ma2'>
-                        {   this.state.userINN ?
-                            <div>
+                        <div className='flex'>
+                        {   userInn ?
                                 <input
                                     className="tc ma0"
                                     placeholder="password" type="text" name="password">
                                 </input>
-                                <button
-                                    className='tc ma0'
-                                    onClick={this.handlePasswordInput}
-                                >
-                                    {'=>'}
-                                </button>
-                            </div>
                             :
                             <input
                                 onChange={this.handleInnInput}
@@ -114,6 +114,14 @@ class Login extends React.Component{
                                 placeholder="INN" type="text" name="INN">
                             </input>
                         }
+                            <button
+                                id='submitButton'
+                                className='tc ma0'
+                                onClick={this.onSubmitPress}
+                            >
+                                {'B'}
+                            </button>
+                        </div>
                         <p className="ma0">{this.state.advice}</p>
                     </div>
                 }
@@ -136,3 +144,8 @@ class Login extends React.Component{
 }
 
 export default Login;
+
+
+//TODO:
+//  1. get inn from props => if it exist show as logged in
+//  2. passwordEntering set tru after valid inn enter\submited
