@@ -51,7 +51,11 @@ class NavSticky extends React.Component{
                         </input>
                     </div>
                 </div>
-                <Login toggleProfile = {this.props.toggleProfile} setUserData={this.props.setUserData}/>
+                <Login
+                    toggleProfile = {this.props.toggleProfile}
+                    inn={this.props.inn}
+                    isSignedIn={this.props.isSignedIn}
+                />
             </nav>
         )
 

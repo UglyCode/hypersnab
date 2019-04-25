@@ -7,12 +7,16 @@ import Header from '../../components/Header';
 import Main from '../../components/Main';
 import Footer from '../../components/Footer';
 
+import ENV from '../../settings/env';
+
+const SERVER = ENV.server || 'http://localhost:3001';
 
 const initialState = {
     route: 'about',
     isSignedIn: false,
     isProfileOpen: false,
-    userInn: ''
+    userInn: '',
+    userInfo: {}
 };
 
 class App extends Component {
@@ -22,30 +26,71 @@ class App extends Component {
         this.state = initialState;
     }
 
-    toggleProfile = () =>{
+    toggleProfile = (userInfo) =>{
         this.setState(prevState => ({
-            ...prevState,
-            isProfileOpen: !prevState.isProfileOpen
-        }))
+                ...prevState,
+                isProfileOpen: !prevState.isProfileOpen,
+                userInfo: userInfo
+            })
+        )
     };
 
-    setUserData = (userObj, cb) => {
-        this.setState({user: userObj}, cb)
-    };
+    componentDidMount() {
+        const token = window.sessionStorage.getItem('token');
+        this.setInnFromToken(token);
+        this.signInByToken(token);
+    }
 
-  render() {
-    return (
-      <div className="App vh-100 pa2 flex flex-column">
-        <Header toggleProfile={this.toggleProfile} setUserData={this.setUserData}/>
-        <Main inn={this.state.userInn}/>
-        <Footer/>
-        {this.state.isProfileOpen &&
-            <Modal>
-                <Profile toggleProfile={this.toggleProfile} user={this.state.user}/>
-            </Modal>
+    setInnFromToken = (token) => {
+        if (token){
+            const payload = this.parseJwt(token);
+            if (payload.inn) this.setState({userInn: payload.inn});
         }
-      </div>
-    );
+    };
+
+    parseJwt = (token) => {
+        const base64Url = token.split('.')[1];
+        const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        return JSON.parse(window.atob(base64));
+    };
+
+    signInByToken = (token) => {
+        if (token){
+           return( fetch(`${SERVER}/signIn`, {
+                method: 'POST',
+                headers : {
+                    'Content-type': 'application/json',
+                    'Authorization': token
+                }
+            })
+                .then(res=>res.json())
+                .then(data => {
+                    if (data && data.id) {
+                        this.setState({isSignedIn: true});
+                    } else {
+                        this.setState({isSignedIn: false});
+                    }
+                }) );
+        }
+    };
+
+    render() {
+        return (
+            <div className="App vh-100 pa2 flex flex-column">
+                <Header
+                    toggleProfile={this.toggleProfile}
+                    inn={this.state.userInn}
+                    isSignedIn = {this.state.isSignedIn}
+                />
+                <Main rote={this.state.route}/>
+                <Footer/>
+                {this.state.isProfileOpen &&
+                    <Modal>
+                        <Profile toggleProfile={this.toggleProfile} user={this.state.user}/>
+                    </Modal>
+                }
+            </div>
+        );
   }
 }
 

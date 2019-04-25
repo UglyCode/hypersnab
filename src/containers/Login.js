@@ -8,7 +8,8 @@ class Login extends React.Component{
         this.state = {
             isDroppedDown: false,
             passwordEntering: false,
-            advice: 'enter your INN'
+            advice: 'enter your INN',
+            user: {}
         };
     }
 
@@ -30,11 +31,11 @@ class Login extends React.Component{
         if (this.checkINN(inn)){
             fetch(`${ENV.server}/info/${inn}`)
                 .then(res => res.json())
-                .then(response => {
-                    if (response.userId) {
-                        this.getUserInfo(response.userId)
+                .then(innInfo => {
+                    if (innInfo.newUser) {
+                        this.props.toggleProfile(innInfo)
                     } else {
-                        this.props.setUserData(response, this.props.toggleProfile)
+                        this.setState({passwordEntering: true})
                     }
                 })
         } else {
@@ -89,20 +90,25 @@ class Login extends React.Component{
 
     };
 
+
+    getUserInfo = () =>{
+
+    };
+
     render() {
         const el = document.querySelector('#innSign');
         const userInn = this.props.inn;
 
         return(
             <div className='w-20 pr3 flex items-center justify-end bg-lightest-blue br3'>
-                { this.state.loggedIn ?
+                { this.props.isSignedIn ?
                     <p id='innSign' className='pointer f5 underline-hover dark-blue'
                        onClick={this.toggleMenu}>
-                        {this.state.userInn}
+                        {this.props.inn}
                     </p> :
                     <div className = 'f5 flex-column ma2'>
                         <div className='flex'>
-                        {   userInn ?
+                        {   this.props.inn ?
                                 <input
                                     className="tc ma0"
                                     placeholder="password" type="text" name="password">
@@ -131,7 +137,7 @@ class Login extends React.Component{
                         style={{top: el.offsetTop, listStyleType: "none", backgroundColor:'rgba(255,255,255,0.8)'}}>
                         <li className='ma3 pointer underline-hover'> Log out </li>
                         <li className='ma3 pointer underline-hover'
-                        onClick={this.props.toggleProfile}>
+                        onClick={this.props.toggleProfile(this.state.user)}>
                             Profile
                         </li>
                         <li className='ma3 pointer underline-hover'> Orders </li>
