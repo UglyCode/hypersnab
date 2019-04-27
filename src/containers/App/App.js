@@ -97,7 +97,5 @@ class App extends Component {
 export default App;
 
 
-//TODO:
-//  1. ComponentDidMount => check token exists & inn===''
-//  2. foo(get user inn by token API) => setInn(inn, that api returned, can be empty) => setState(inn)
-//  3. token check in toggle menu => in token not valid -> distract inn
+//TODO
+//  refactor -> remove inn and replace it to user object (for toggle menu and so on)

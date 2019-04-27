@@ -90,9 +90,27 @@ class Login extends React.Component{
 
     };
 
+    componentDidMount() {
+        if (this.props.isSignedIn) {
+            this.updateUser()
+        }
+    }
 
-    getUserInfo = () =>{
-
+    updateUser = () => {
+        const token = window.sessionStorage.getItem('token');
+        fetch(`${ENV.server}/userData`, {
+            method: 'GET',
+            headers : {
+                'Content-type': 'application/json',
+                'Authorization': token
+            }
+        })
+            .then(res => res.json())
+            .then( userData =>{
+                if (userData && userData.inn){
+                    this.setState({user: userData});
+                }
+            })
     };
 
     render() {
@@ -152,6 +170,5 @@ class Login extends React.Component{
 export default Login;
 
 
-//TODO:
-//  1. get inn from props => if it exist show as logged in
-//  2. passwordEntering set tru after valid inn enter\submited
+//TODO
+// replase fet usr info to App
