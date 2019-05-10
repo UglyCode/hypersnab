@@ -13,10 +13,9 @@ const SERVER = ENV.server || 'http://localhost:3001';
 
 const initialState = {
     route: 'about',
-    isSignedIn: false,
     isProfileOpen: false,
     userInn: '',
-    userInfo: {}
+    userStatus: 'loggedOut'
 };
 
 class App extends Component {
@@ -80,7 +79,7 @@ class App extends Component {
                 <Header
                     toggleProfile={this.toggleProfile}
                     inn={this.state.userInn}
-                    isSignedIn = {this.state.isSignedIn}
+                    userStatus = {this.state.userStatus}
                 />
                 <Main rote={this.state.route}/>
                 <Footer/>

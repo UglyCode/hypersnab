@@ -2,7 +2,7 @@ import React from 'react';
 
 const CurrPage = (props) => {
     return(
-            <div className="br3 ma2 bw-2 shadow-5-l tc bg-white">
+            <div className="br3 ma2 bw-2 shadow-5-l tc bg-white pa3">
                 <p className="times">
                     Prasat Suor Prat (Khmer: ប្រាសាទសួព្រ័ត) is a series of twelve towers spanne
                     north to south lining the eastern side of royal square in Angkor Thom,

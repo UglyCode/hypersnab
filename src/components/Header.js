@@ -5,7 +5,7 @@ import NavSticky from '../containers/NavSticky';
 import Login from '../containers/Login';
 import BasketCard from './BasketCard';
 
-const Header = ({toggleProfile, setUserData, inn, isSignedIn}) => {
+const Header = ({toggleProfile, setUserData, inn, userStatus}) => {
     return(
         <div className = 'flex flex-column content-stretch'>
             {/*<BasketCard/>*/}
@@ -13,7 +13,7 @@ const Header = ({toggleProfile, setUserData, inn, isSignedIn}) => {
             <NavSticky
                 toggleProfile ={toggleProfile}
                 inn={inn}
-                isSignedIn={isSignedIn}
+                userStatus={userStatus}
             />
             {/*<Login/>*/}
         </div>
