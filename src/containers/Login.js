@@ -118,7 +118,7 @@ class Login extends React.Component{
         const userInn = this.props.inn;
 
         return(
-            <div className='w-20 pr3 flex items-center justify-end bg-lightest-blue br3'>
+            <div className='w-20 pr3 flex items-center justify-end bg-lightest-blue br3 br--right'>
                 { this.props.isSignedIn ?
                     <p id='innSign' className='pointer f5 underline-hover dark-blue'
                        onClick={this.toggleMenu}>

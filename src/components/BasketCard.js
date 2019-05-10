@@ -10,7 +10,7 @@ const BasketCard = (props) => {
     // });
 
     return(
-        <div className='w-20 items-center tc pl3 f5 br3 bg-lightest-blue'>
+        <div className='w-20 items-center tc pl3 f5 br3 br--left bg-lightest-blue'>
             <div className='flex-column ma2'>
                 <div>{'CART: '}</div>
                 <div className = ''
