@@ -112,13 +112,16 @@ class Login extends React.Component{
             })
     };
 
-
     saveAuthToken = (token) =>{
         window.localStorage.setItem('token', token);
     };
 
     componentDidMount() {
 
+    }
+
+    openProfile = (event) => {
+        this.props.toggleProfile();
     }
 
     render() {
@@ -177,7 +180,7 @@ class Login extends React.Component{
                         style={{top: el.offsetTop, listStyleType: "none", backgroundColor:'rgba(255,255,255,0.8)'}}>
                         <li className='ma3 pointer underline-hover'> Log out </li>
                         <li className='ma3 pointer underline-hover'
-                        onClick={this.props.toggleProfile}>
+                        onClick={this.openProfile}>
                             Profile
                         </li>
                         <li className='ma3 pointer underline-hover'> Orders </li>

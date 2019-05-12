@@ -1,31 +1,43 @@
 import React from 'react';
 import './profile.css'
+import ENV from "../../settings/env";
 
 class Profile extends React.Component {
 
     constructor(props){
         super(props);
         this.state = {
-            userExists: false
-        };
+            user: {}
+        }
     }
 
     componentDidMount() {
-
+        this.getDataByInn(this.props.inn, this.props.loggedIn)
+            .then(res => res.json())
+            .then(userData => {
+                this.setState({user: userData})
+            })
+            .catch(console.log)
     }
 
-    getDataByInn(inn) {
-
+    getDataByInn(inn, userExists) {
+       return  fetch(`${ENV.server}/${userExists ? 'profile' : 'data'}/${inn}`)
     }
 
     onFormChange = (event) =>{
         let stateObj = {};
         stateObj[event.target.name] = event.target.value;
-        this.setState(stateObj);
+        this.setState({user: stateObj});
+        console.log(event.target.name, event.target.value, stateObj)
     };
 
     onProfileSubmit = () => {
-
+        if (this.props.loggedIn){
+            this.updateUser(this.state.user)
+        } else {
+            this.createUser(this.state.user)
+        }
+        this.closeProfile();
     };
 
     updateUser = (userObj) => {
@@ -45,17 +57,31 @@ class Profile extends React.Component {
     };
 
     createUser = (userObj) => {
+        fetch(`http://localhost:3001/register/${userObj.inn}`, {
+            method: 'POST',
+            headers : {
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify({formInput: userObj})
+        }).then(resp => {
+            if (resp.status === 200 || resp.status === 304){
+                this.props.toggleProfile();
+                this.props.userUpdate({...this.props.user, ...userObj});
+            }
+        }).catch( err => console.log);
+    };
 
+    closeProfile = (event) => {
+        this.props.toggleProfile();
     };
 
     render() {
         const {user} = this.state;
-        console.log(user, this.props.user);
         return (
             <div className='profile-modal'>
-                <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center bg-white">
+                <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-50-l mw6 shadow-5 center bg-white">
                     <main className="pa4 black-80">
-                        <h1>{user.companyName}</h1>
+                        <h1>{user.name}</h1>
                         <hr />
                         <div className="mt3">
                             <label htmlFor="companyName">Company:</label>
@@ -63,10 +89,10 @@ class Profile extends React.Component {
                                 onChange={this.onFormChange}
                                 className="pa2 b--black-10 w-100"
                                 type="text"
-                                name="companyName"
-                                id="companyName"
+                                name="name"
+                                id="name"
                                 placeholder={'company name'}
-                                value={user.companyName}
+                                value={user.name}
                             ></input>
 
                             <label htmlFor="inn">INN:</label>
@@ -99,7 +125,7 @@ class Profile extends React.Component {
                                 name="management"
                                 id="management"
                                 placeholder={'management'}
-                                value={user.management}
+                                value={user.contact}
                             ></input>
 
                             <label htmlFor="management">address:</label>
@@ -128,12 +154,22 @@ class Profile extends React.Component {
                             <input
                                 onChange={this.onFormChange}
                                 className="pa2 b--black-10 w-100"
-                                type="phone"
+                                type="text"
                                 name="phone"
                                 id="phone"
                                 placeholder={'phone'}
                                 value={user.phone}
                             ></input>
+
+                            <label htmlFor="password">password:</label>
+                            <input
+                                className="pa2 b--black-10 w-100"
+                                type="password"
+                                name="password"
+                                id="password"
+                                placeholder={'new password'}
+                            ></input>
+
 
                         </div>
                         <div className='mt4' style={{display: 'flex', justifyContent: 'space-evenly'}}>
@@ -141,10 +177,10 @@ class Profile extends React.Component {
                                 className={'b pa2 pointer grow hover-white w-40 bg-light-green b--black-30'}
                                 onClick={() => this.onProfileSubmit()}
                             >
-                                {this.state.user.inn ? 'Save' : 'Create'}
+                                {this.props.logedIn ? 'Save' : 'Create'}
                             </button>
                             <button className={'b pa2 pointer grow hover-white w-40 bg-light-red b--black-30'}
-                                    onClick={this.props.toggleProfile}>
+                                    onClick={this.closeProfile}>
                                 Cancel
                             </button>
                         </div>

@@ -30,9 +30,10 @@ class App extends Component {
         this.setState(prevState => ({
                 ...prevState,
                 isProfileOpen: !prevState.isProfileOpen,
-                userInn: inn || this.state.inn
+                userInn: inn || this.state.userInn
             })
         )
+        console.log(inn, this.state.userInn, inn || this.state.userInn)
     };
 
     componentDidMount() {
@@ -44,6 +45,7 @@ class App extends Component {
         if (token){
             const payload = this.parseJwtPayload(token);
             if (payload) this.setState({userInn: payload.inn, userStatus: 'loggedIn'});
+            console.log(payload, payload.inn);
         }
     };
 
@@ -74,7 +76,7 @@ class App extends Component {
     };
 
     setUserStatus = (status, inn) => {
-        this.setState({userStatus: status, userInn: inn || this.state.inn});
+        this.setState({userStatus: status, userInn: inn || this.state.userInn});
     };
 
     render() {
@@ -93,6 +95,7 @@ class App extends Component {
                         <Profile
                             toggleProfile={this.toggleProfile}
                             inn = {this.state.userInn}
+                            logedIn = {this.state.userStatus === 'loggedIn'}
                         />
                     </Modal>
                 }
