@@ -7,7 +7,6 @@ class Login extends React.Component{
         super(props);
         this.state = {
             isDroppedDown: false,
-            passwordEntering: false,
             advice: 'enter your INN',
             user: {}
         };
@@ -27,27 +26,27 @@ class Login extends React.Component{
         document.removeEventListener('click', this.closeMenu);
     };
 
-    openRegisterationForm = (inn) =>{
+    handleInnInput = (event) => {
+        this.processInn(event.target.value);
+    };
+
+    processInn = (inn) =>{
         if (this.checkINN(inn)){
             fetch(`${ENV.server}/info/${inn}`)
                 .then(res => res.json())
                 .then(innInfo => {
-                    if (innInfo.newUser) {
-                        this.props.toggleProfile(innInfo)
+                    if (innInfo.userExists) {
+                        this.setState({advice: 'Input your pwd'});
+                        this.props.setUserStatus('passwordRequired', innInfo.inn);
                     } else {
-                        this.setState({passwordEntering: true})
+                        this.props.toggleProfile(inn)
                     }
                 })
         } else {
-            this.setState(prevState => ({
-                ...prevState,
-                advice: 'wrong INN format'
-            }));
+            this.setState(
+                {advice: 'wrong INN format'}
+            );
         }
-    };
-
-    handleInnInput = (event) => {
-        this.openRegisterationForm(event.target.value);
     };
 
     checkINN = (INN) => {
@@ -82,85 +81,109 @@ class Login extends React.Component{
             }
     };
 
-    handlePasswordInput = (event) => {
-
+    submitInn = (event) => {
+        const inn = document.querySelector('#inn').value;
+        this.processInn(inn);
     };
 
-    onSubmitPress = () => {
+    submitPassword = (event) => {
 
-    };
+        console.log(JSON.stringify({
+            inn: this.props.inn,
+            password: document.querySelector('#password').value
+        }));
 
-    componentDidMount() {
-        if (this.props.isSignedIn) {
-            this.updateUser()
-        }
-    }
-
-    updateUser = () => {
-        const token = window.sessionStorage.getItem('token');
-        fetch(`${ENV.server}/userData`, {
-            method: 'GET',
-            headers : {
-                'Content-type': 'application/json',
-                'Authorization': token
-            }
+        fetch(`${ENV.server}/signIn`, {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify({
+                inn: this.props.inn,
+                password: document.querySelector('#password').value
+            })
         })
             .then(res => res.json())
-            .then( userData =>{
-                if (userData && userData.inn){
-                    this.setState({user: userData});
+            .then(data => {
+                if (data.inn && data.success === 'true') {
+                    this.saveAuthToken(data.token);
+                    this.props.setUserStatus('loggedIn', data.inn);
                 }
             })
     };
 
+
+    saveAuthToken = (token) =>{
+        window.localStorage.setItem('token', token);
+    };
+
+    componentDidMount() {
+
+    }
+
     render() {
         const el = document.querySelector('#innSign');
-        const userInn = this.props.inn;
+        const {inn, userStatus} = this.props;
 
         return(
             <div className='w-20 pr3 flex items-center justify-end bg-lightest-blue br3 br--right'>
-                { this.props.isSignedIn ?
-                    <p id='innSign' className='pointer f5 underline-hover dark-blue'
-                       onClick={this.toggleMenu}>
-                        {this.props.inn}
-                    </p> :
-                    <div className = 'f5 flex-column ma2'>
-                        <div className='flex'>
-                        {   this.props.inn ?
-                                <input
-                                    className="tc ma0"
-                                    placeholder="password" type="text" name="password">
-                                </input>
-                            :
-                            <input
-                                onChange={this.handleInnInput}
-                                className="tc ma0"
-                                placeholder="INN" type="text" name="INN">
-                            </input>
-                        }
-                            <button
-                                id='submitButton'
-                                className='tc ma0'
-                                onClick={this.onSubmitPress}
-                            >
-                                {'B'}
-                            </button>
-                        </div>
-                        <p className="ma0">{this.state.advice}</p>
-                    </div>
-                }
+
+                {(()=>{
+                    switch(userStatus){
+                        case 'loggedIn':
+                            return (
+                                <p id='innSign' className='pointer f5 underline-hover dark-blue'
+                                   onClick={this.toggleMenu}>
+                                    {inn}
+                                </p>
+                            );
+                        case 'passwordRequired':
+                            return (
+                                    <div className = 'f5 flex-column ma2'>
+                                        <div className='flex'>
+                                            <input
+                                                className="tc ma0"
+                                                placeholder="password" type="text" id="password">
+                                            </input>
+                                            <button onClick={this.submitPassword}>
+                                                {'Go'}
+                                            </button>
+                                        </div>
+                                        <p className="ma0">{this.state.advice}</p>
+                                    </div>
+                            );
+                        default: //loggedOut
+                            return (
+                                    <div className = 'f5 flex-column ma2'>
+                                        <div className='flex'>
+                                            <input
+                                                onChange={this.handleInnInput}
+                                                className="tc ma0"
+                                                placeholder="INN" type="text" id="inn">
+                                            </input>
+                                            <button onClick={this.submitInn}>
+                                                {'Go'}
+                                            </button>
+                                        </div>
+                                        <p className="ma0">{this.state.advice}</p>
+                                    </div>
+                            );
+                    }
+                })()}
+
                 {this.state.isDroppedDown &&
                     <ul id='dropdown'
                         className="absolute pa0"
                         style={{top: el.offsetTop, listStyleType: "none", backgroundColor:'rgba(255,255,255,0.8)'}}>
                         <li className='ma3 pointer underline-hover'> Log out </li>
                         <li className='ma3 pointer underline-hover'
-                        onClick={this.props.toggleProfile(this.state.user)}>
+                        onClick={this.props.toggleProfile}>
                             Profile
                         </li>
                         <li className='ma3 pointer underline-hover'> Orders </li>
                     </ul>
                 }
+
             </div>
         )
     }

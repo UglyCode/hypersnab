@@ -15,7 +15,8 @@ const initialState = {
     route: 'about',
     isProfileOpen: false,
     userInn: '',
-    userStatus: 'loggedOut'
+    userStatus: 'loggedOut',
+    userDataCache: {}
 };
 
 class App extends Component {
@@ -25,29 +26,28 @@ class App extends Component {
         this.state = initialState;
     }
 
-    toggleProfile = (userInfo) =>{
+    toggleProfile = (inn) =>{
         this.setState(prevState => ({
                 ...prevState,
                 isProfileOpen: !prevState.isProfileOpen,
-                userInfo: userInfo
+                userInn: inn || this.state.inn
             })
         )
     };
 
     componentDidMount() {
-        const token = window.sessionStorage.getItem('token');
+        const token = window.localStorage.getItem('token');
         this.setInnFromToken(token);
-        this.signInByToken(token);
     }
 
     setInnFromToken = (token) => {
         if (token){
-            const payload = this.parseJwt(token);
-            if (payload.inn) this.setState({userInn: payload.inn});
+            const payload = this.parseJwtPayload(token);
+            if (payload) this.setState({userInn: payload.inn, userStatus: 'loggedIn'});
         }
     };
 
-    parseJwt = (token) => {
+    parseJwtPayload = (token) => {
         const base64Url = token.split('.')[1];
         const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
         return JSON.parse(window.atob(base64));
@@ -73,11 +73,16 @@ class App extends Component {
         }
     };
 
+    setUserStatus = (status, inn) => {
+        this.setState({userStatus: status, userInn: inn || this.state.inn});
+    };
+
     render() {
         return (
             <div className="App vh-100 pa2 flex flex-column">
                 <Header
                     toggleProfile={this.toggleProfile}
+                    setUserStatus={this.setUserStatus}
                     inn={this.state.userInn}
                     userStatus = {this.state.userStatus}
                 />
@@ -85,7 +90,10 @@ class App extends Component {
                 <Footer/>
                 {this.state.isProfileOpen &&
                     <Modal>
-                        <Profile toggleProfile={this.toggleProfile} user={this.state.user}/>
+                        <Profile
+                            toggleProfile={this.toggleProfile}
+                            inn = {this.state.userInn}
+                        />
                     </Modal>
                 }
             </div>

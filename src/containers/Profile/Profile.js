@@ -6,8 +6,16 @@ class Profile extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            user: props.user
+            userExists: false
         };
+    }
+
+    componentDidMount() {
+
+    }
+
+    getDataByInn(inn) {
+
     }
 
     onFormChange = (event) =>{
