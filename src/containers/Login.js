@@ -116,6 +116,11 @@ class Login extends React.Component{
         window.localStorage.setItem('token', token);
     };
 
+    logOut = () =>{
+        window.localStorage.removeItem('token');
+        this.props.setUserStatus('loggedOut');
+    };
+
     componentDidMount() {
 
     }
@@ -145,14 +150,14 @@ class Login extends React.Component{
                                     <div className = 'f5 flex-column ma2'>
                                         <div className='flex'>
                                             <input
-                                                className="tc ma0"
-                                                placeholder="password" type="text" id="password">
+                                                className="tc ma0" key="pwd"
+                                                placeholder="password" type="password" id="password">
                                             </input>
                                             <button onClick={this.submitPassword}>
                                                 {'Go'}
                                             </button>
                                         </div>
-                                        <p className="ma0">{this.state.advice}</p>
+                                        <p className="ma0">{'input your pass'}</p>
                                     </div>
                             );
                         default: //loggedOut
@@ -161,7 +166,7 @@ class Login extends React.Component{
                                         <div className='flex'>
                                             <input
                                                 onChange={this.handleInnInput}
-                                                className="tc ma0"
+                                                className="tc ma0" key="inn"
                                                 placeholder="INN" type="text" id="inn">
                                             </input>
                                             <button onClick={this.submitInn}>
@@ -178,7 +183,9 @@ class Login extends React.Component{
                     <ul id='dropdown'
                         className="absolute pa0"
                         style={{top: el.offsetTop, listStyleType: "none", backgroundColor:'rgba(255,255,255,0.8)'}}>
-                        <li className='ma3 pointer underline-hover'> Log out </li>
+                        <li className='ma3 pointer underline-hover'
+                        onClick={this.logOut}>
+                            Log out </li>
                         <li className='ma3 pointer underline-hover'
                         onClick={this.openProfile}>
                             Profile

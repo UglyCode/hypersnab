@@ -27,7 +27,7 @@ class Profile extends React.Component {
     onFormChange = (event) =>{
         let stateObj = {};
         stateObj[event.target.name] = event.target.value;
-        this.setState({user: stateObj});
+        this.setState({user: Object.assign(this.state.user,stateObj)});
         console.log(event.target.name, event.target.value, stateObj)
     };
 
@@ -50,23 +50,22 @@ class Profile extends React.Component {
             body: JSON.stringify({formInput: userObj})
         }).then(resp => {
             if (resp.status === 200 || resp.status === 304){
-                this.props.toggleProfile();
                 this.props.userUpdate({...this.props.user, ...userObj});
             }
         }).catch( err => console.log);
     };
 
     createUser = (userObj) => {
-        fetch(`http://localhost:3001/register/${userObj.inn}`, {
+        console.log(userObj)
+        fetch('http://localhost:3001/register', {
             method: 'POST',
             headers : {
                 'Content-type': 'application/json',
             },
-            body: JSON.stringify({formInput: userObj})
+            body: JSON.stringify(userObj)
         }).then(resp => {
             if (resp.status === 200 || resp.status === 304){
-                this.props.toggleProfile();
-                this.props.userUpdate({...this.props.user, ...userObj});
+                this.props.setUserStatus('passwordRequired', userObj.inn);
             }
         }).catch( err => console.log);
     };
@@ -161,14 +160,19 @@ class Profile extends React.Component {
                                 value={user.phone}
                             ></input>
 
-                            <label htmlFor="password">password:</label>
-                            <input
-                                className="pa2 b--black-10 w-100"
-                                type="password"
-                                name="password"
-                                id="password"
-                                placeholder={'new password'}
-                            ></input>
+                            {this.props.logedIn ||
+                                <div className="pv2">
+                                    <label htmlFor="password">password:</label>
+                                    <input
+                                        onChange={this.onFormChange}
+                                        className="pa2 b--black-10 w-100"
+                                        type="password"
+                                        name="password"
+                                        id="password"
+                                        placeholder={'new password'}
+                                    ></input>
+                                </div>
+                            }
 
 
                         </div>
@@ -192,9 +196,3 @@ class Profile extends React.Component {
 };
 
 export default Profile;
-
-//TODO:
-//  1. get inn from params, if it exists it does not changes
-//  2. Register\save depend on inn existing
-//  3. Register -> API register -> save token -> setInn in App
-//  4. Save -> API update (authorization required)

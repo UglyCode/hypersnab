@@ -32,7 +32,7 @@ class App extends Component {
                 isProfileOpen: !prevState.isProfileOpen,
                 userInn: inn || this.state.userInn
             })
-        )
+        );
         console.log(inn, this.state.userInn, inn || this.state.userInn)
     };
 
@@ -76,6 +76,7 @@ class App extends Component {
     };
 
     setUserStatus = (status, inn) => {
+        console.log(status, inn);
         this.setState({userStatus: status, userInn: inn || this.state.userInn});
     };
 
@@ -94,6 +95,7 @@ class App extends Component {
                     <Modal>
                         <Profile
                             toggleProfile={this.toggleProfile}
+                            setUserStatus = {this.setUserStatus}
                             inn = {this.state.userInn}
                             logedIn = {this.state.userStatus === 'loggedIn'}
                         />
