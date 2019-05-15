@@ -21,7 +21,13 @@ class Profile extends React.Component {
     }
 
     getDataByInn(inn, userExists) {
-       return  fetch(`${ENV.server}/${userExists ? 'profile' : 'data'}/${inn}`)
+       console.log(window.localStorage.getItem('token'));
+       return  fetch(`${ENV.server}/${userExists ? 'profile' : 'data'}/${inn}`,{
+           method : 'GET',
+           headers : {
+               'Authorization': window.localStorage.getItem('token')
+           }
+       })
     }
 
     onFormChange = (event) =>{
@@ -45,7 +51,7 @@ class Profile extends React.Component {
             method: 'POST',
             headers : {
                 'Content-type': 'application/json',
-                'Authorization': window.sessionStorage.getItem('token')
+                'Authorization': window.localStorage.getItem('token')
             },
             body: JSON.stringify({formInput: userObj})
         }).then(resp => {
@@ -116,14 +122,14 @@ class Profile extends React.Component {
                                 value={user.kpp}
                             ></input>
 
-                            <label htmlFor="management">management:</label>
+                            <label htmlFor="management">contact:</label>
                             <input
                                 onChange={this.onFormChange}
                                 className="pa2 b--black-10 w-100"
                                 type="text"
-                                name="management"
-                                id="management"
-                                placeholder={'management'}
+                                name="contact"
+                                id="contact"
+                                placeholder={'contact'}
                                 value={user.contact}
                             ></input>
 
@@ -160,7 +166,7 @@ class Profile extends React.Component {
                                 value={user.phone}
                             ></input>
 
-                            {this.props.logedIn ||
+                            {this.props.loggedIn ||
                                 <div className="pv2">
                                     <label htmlFor="password">password:</label>
                                     <input
@@ -181,7 +187,7 @@ class Profile extends React.Component {
                                 className={'b pa2 pointer grow hover-white w-40 bg-light-green b--black-30'}
                                 onClick={() => this.onProfileSubmit()}
                             >
-                                {this.props.logedIn ? 'Save' : 'Create'}
+                                {this.props.loggedIn ? 'Save' : 'Create'}
                             </button>
                             <button className={'b pa2 pointer grow hover-white w-40 bg-light-red b--black-30'}
                                     onClick={this.closeProfile}>

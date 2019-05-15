@@ -97,7 +97,7 @@ class App extends Component {
                             toggleProfile={this.toggleProfile}
                             setUserStatus = {this.setUserStatus}
                             inn = {this.state.userInn}
-                            logedIn = {this.state.userStatus === 'loggedIn'}
+                            loggedIn = {this.state.userStatus === 'loggedIn'}
                         />
                     </Modal>
                 }
