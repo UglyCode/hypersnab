@@ -80,6 +80,10 @@ class App extends Component {
         this.setState({userStatus: status, userInn: inn || this.state.userInn});
     };
 
+    onRouteChange = (route) => {
+        this.setState({route});
+    };
+
     render() {
         return (
             <div className="App vh-100 pa2 flex flex-column">
@@ -88,8 +92,10 @@ class App extends Component {
                     setUserStatus={this.setUserStatus}
                     inn={this.state.userInn}
                     userStatus = {this.state.userStatus}
+                    route={this.state.route}
+                    onRouteChange = {this.onRouteChange}
                 />
-                <Main rote={this.state.route}/>
+                <Main route={this.state.route}/>
                 <Footer/>
                 {this.state.isProfileOpen &&
                     <Modal>

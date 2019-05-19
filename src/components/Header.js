@@ -5,7 +5,7 @@ import NavSticky from '../containers/NavSticky';
 import Login from '../containers/Login';
 import BasketCard from './BasketCard';
 
-const Header = ({toggleProfile, setUserStatus, inn, userStatus}) => {
+const Header = ({toggleProfile, setUserStatus, inn, userStatus, route, onRouteChange}) => {
     return(
         <div className = 'flex flex-column content-stretch'>
             {/*<BasketCard/>*/}
@@ -15,6 +15,8 @@ const Header = ({toggleProfile, setUserStatus, inn, userStatus}) => {
                 setUserStatus = {setUserStatus}
                 inn = {inn}
                 userStatus={userStatus}
+                route={route}
+                onRouteChange={onRouteChange}
             />
             {/*<Login/>*/}
         </div>
