@@ -32,8 +32,10 @@ class NavSticky extends React.Component{
 
     render() {
 
-        let navClass = "flex items-stretch bw-2 shadow-5-l tc bg-white"
-            + (this.state.scroll > this.state.top ? " fixed w-100 left-0 top-0 pr3 pl3 bg-transparent" : " br3 ma2");
+        let navClass = "flex items-stretch bw-2 shadow-5-l tc bg-transparent"
+            + (this.state.scroll > this.state.top ?
+                " fixed w-100 left-0 top-0 pr3 pl3 " :
+                " br3 ma2");
         const pageLinkClass = "f6 f5-l link black-90 underline-hover pointer hover-blue dib pa3 ph4-l";
         const route = this.props.route;
         console.log(pageLinkClass + (route==='about') ? ' ba' : '');

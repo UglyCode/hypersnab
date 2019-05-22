@@ -163,10 +163,10 @@ class Login extends React.Component{
                         default: //loggedOut
                             return (
                                     <div className = 'f5 flex-column ma2'>
-                                        <div className='flex'>
+                                        <div className='flex justify-between'>
                                             <input
                                                 onChange={this.handleInnInput}
-                                                className="tc ma0" key="inn"
+                                                className="tc ma0 w-80" key="inn"
                                                 placeholder="INN" type="text" id="inn">
                                             </input>
                                             <button onClick={this.submitInn}>
