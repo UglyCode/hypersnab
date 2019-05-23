@@ -13,7 +13,8 @@ class Catalog extends React.Component {
             filter: '',
             page: 1,
             goods: [],
-            folders: []
+            folders:[{name: 'Категория 1', children:[{name:'Папка 1', id:'1'},{name:'Папка 2', id:'2'}]},
+                {name: 'Категория 2', children:[{name:'Папка 3', id:'3'}]}]
         }
     }
 
