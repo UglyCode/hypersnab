@@ -1,7 +1,6 @@
 import React from 'react';
 
 const CatalogItem = ({description, code, img, set}) => {
-    console.log(set);
     return (
         <div className={`flex items-center w-100 f5 items-center justify-between ${(set%2)?'':'bg-lightest-blue'}`}>
             <img className='' src={img}/>

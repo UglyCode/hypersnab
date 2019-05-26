@@ -1,35 +1,32 @@
 import React from 'react';
 
 
-const CatalogStructure = (props) => {
+const CatalogStructure = ({folders, toggleChildren, folderSelect, folder}) => {
     return(
 
         <div className='w-20 br3 pl3 ma2 bw-2 shadow-5-l bg-lightest-blue f5 tl'>
-            <ul className='pl3'>
-                <li>
-                    {'Категория 1'}
-                </li>
-                <ul className='pl3'>
-                    <li>
-                        {'папка 1'}
-                    </li>
-                    <li>
-                        {'папка 2'}
-                    </li>
-                </ul>
-            </ul>
-            <ul className='pl3'>
-                <li>
-                    {'Категория 2'}
-                </li>
-                <ul className='pl3'>
-                    <li>
-                        {'папка 3'}
-                    </li>
-                </ul>
-            </ul>
+            {
+                folders.map(elem => createFolderElement(elem, toggleChildren, folderSelect, folder))
+            }
         </div>
     )
 };
+
+const createFolderElement = (folderObj, toggleChildren, folderSelect, folder) => {
+
+    const folderFunction = (folderObj.children.length)? toggleChildren : folderSelect;
+    const folderClassList = 'pointer hover-blue underline-hover' + (folderObj.name === folder ? ' b' : ' ');
+
+    return(
+        <ul className='pl3' onClick={folderFunction}>
+            <li className={folderClassList}>{folderObj.name}</li>
+            {
+                folderObj.children.map(elem => createFolderElement(elem, toggleChildren, folderSelect, folder))
+            }
+        </ul>
+    );
+
+};
+
 
 export default CatalogStructure;
