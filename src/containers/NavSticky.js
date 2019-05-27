@@ -61,7 +61,7 @@ class NavSticky extends React.Component{
                     <div className="dib ph4-l flex justify-around">
                         <input
                             className="f6 f5-l w-90"
-                            placeholder="search text" type="text" name="searchText">
+                            placeholder="поиск товаров" type="text" name="searchText">
                         </input>
                         <button className='w-10'>
                             <img src={require('../static/search.png')} className='mw-100'></img>

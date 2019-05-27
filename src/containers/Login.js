@@ -7,7 +7,7 @@ class Login extends React.Component{
         super(props);
         this.state = {
             isDroppedDown: false,
-            advice: 'enter your INN',
+            advice: 'введите ваш ИНН',
             user: {}
         };
     }
@@ -32,11 +32,12 @@ class Login extends React.Component{
 
     processInn = (inn) =>{
         if (this.checkINN(inn)){
+            this.setState({advice: 'идет обработка ИНН...'});
             fetch(`${ENV.server}/info/${inn}`)
                 .then(res => res.json())
                 .then(innInfo => {
                     if (innInfo.userExists) {
-                        this.setState({advice: 'Input your pwd'});
+                        this.setState({advice: 'введите пароль'});
                         this.props.setUserStatus('passwordRequired', innInfo.inn);
                     } else {
                         this.props.toggleProfile(inn)
@@ -44,7 +45,7 @@ class Login extends React.Component{
                 })
         } else {
             this.setState(
-                {advice: 'wrong INN format'}
+                {advice: 'некорректный ИНН'}
             );
         }
     };
@@ -151,7 +152,7 @@ class Login extends React.Component{
                                         <div className='flex justify-around'>
                                             <input
                                                 className="tc ma0 w-80" key="pwd"
-                                                placeholder="password" type="password" id="password">
+                                                placeholder="пароль" type="password" id="password">
                                             </input>
                                             <button className='w-10' onClick={this.submitPassword}>
                                                 <img src={require('../static/arrow.png')} className='mw-100'></img>
@@ -167,7 +168,7 @@ class Login extends React.Component{
                                             <input
                                                 onChange={this.handleInnInput}
                                                 className="tc ma0 w-80" key="inn"
-                                                placeholder="INN" type="text" id="inn">
+                                                placeholder="ИНН" type="text" id="inn">
                                             </input>
                                             <div className='w-10 ma0 pa0 br3 pointer' onClick={this.submitInn}>
                                                 <img src={require('../static/arrow.png')} className='mw-100'></img>

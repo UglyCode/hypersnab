@@ -2,7 +2,7 @@ import React from 'react';
 import CatalogStructure from '../../components/CatalogStructure';
 import CatalogPage from '../../components/CatalogPage';
 import Scroll from '../../components/Scroll';
-import goods from '../../goodsMock';
+import goods from '../../static/goodsMock';
 
 class Catalog extends React.Component {
 
@@ -41,7 +41,23 @@ class Catalog extends React.Component {
         event.stopPropagation();
     };
 
+    //TODO
+    // replace with GET /spec request to server with cache and add at componentDidMount()
+    getSpecOffers = () => {
+        return this.state.goods.filter((elem) => elem.spec);
+    };
+
+    //TODO
+    // replace with GET /goods?folder=<folderName> request to server with cache and add at folderSelect
+    getFolderFiltererdGoods = (folderName) => {
+        return this.state.goods.filter((elem) => (elem.folder === folderName));
+    };
+
+
     render() {
+
+        const goods = (this.state.folder) ? this.getFolderFiltererdGoods(this.state.folder) : this.getSpecOffers();
+
         return(
             <div className = 'f3 flex items-stretch w-100'>
                 <CatalogStructure
@@ -50,7 +66,7 @@ class Catalog extends React.Component {
                     folderSelect = {this.folderSelect}
                     folder={this.state.folder}
                 />
-                <CatalogPage goods={this.state.goods}/>
+                <CatalogPage goods={goods}/>
             </div>
         )
     }
