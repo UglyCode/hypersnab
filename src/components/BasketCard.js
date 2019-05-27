@@ -10,13 +10,16 @@ const BasketCard = (props) => {
     // });
 
     return(
-        <div className='w-20 items-center tc pl3 f5 br3 br--left bg-lightest-blue'>
-            <div className='flex-column ma2'>
-                <div>{'CART: '}</div>
-                <div className = ''
+        <div className='w-20 items-center tc pl3 f6 br3 br--left bg-lightest-blue'>
+            <div className='flex justify-center content-center ma2'>
+                <div className='w-20'>
+                    <img src={require('../static/cart.png')} className='mw-100'></img>
+                </div>
+                <div className = 'w-80 tc flex flex-column justify-center'
                 // onClick={()=>setSum(sum+11)}
                 >
-                    {`(11) 330000RUR`}
+                    <p className='ma1'>{'Позиций: 11'}</p>
+                    <p className='ma1'>{'Сумма: 110000.00'}</p>
                 </div>
             </div>
 

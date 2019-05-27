@@ -11,6 +11,8 @@ const CatalogPage = ({goods}) => {
                         set={i}
                         code={elem.code}
                         description={elem.description}
+                        price={elem.price}
+                        quantity={elem.quantity}
                         img={elem.img}
                     />
                 );

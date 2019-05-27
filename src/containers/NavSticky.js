@@ -58,15 +58,14 @@ class NavSticky extends React.Component{
                            onClick={this.pageLinkOnClick}
                         >Contacts</a>
                     </div>
-                    <div className="dib ph4-l">
+                    <div className="dib ph4-l flex justify-around">
                         <input
-                            className="f6 f5-l"
+                            className="f6 f5-l w-90"
                             placeholder="search text" type="text" name="searchText">
                         </input>
-                        <input
-                            className="f6 f5-l button-reset ml1"
-                            type="submit" value="Search">
-                        </input>
+                        <button className='w-10'>
+                            <img src={require('../static/search.png')} className='mw-100'></img>
+                        </button>
                     </div>
                 </div>
                 <Login

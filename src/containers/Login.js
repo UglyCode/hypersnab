@@ -148,13 +148,13 @@ class Login extends React.Component{
                         case 'passwordRequired':
                             return (
                                     <div className = 'f5 flex-column ma2'>
-                                        <div className='flex'>
+                                        <div className='flex justify-around'>
                                             <input
-                                                className="tc ma0" key="pwd"
+                                                className="tc ma0 w-80" key="pwd"
                                                 placeholder="password" type="password" id="password">
                                             </input>
-                                            <button onClick={this.submitPassword}>
-                                                {'Go'}
+                                            <button className='w-10' onClick={this.submitPassword}>
+                                                <img src={require('../static/arrow.png')} className='mw-100'></img>
                                             </button>
                                         </div>
                                         <p className="ma0">{'input your pass'}</p>
@@ -163,15 +163,15 @@ class Login extends React.Component{
                         default: //loggedOut
                             return (
                                     <div className = 'f5 flex-column ma2'>
-                                        <div className='flex justify-between'>
+                                        <div className='flex justify-center'>
                                             <input
                                                 onChange={this.handleInnInput}
                                                 className="tc ma0 w-80" key="inn"
                                                 placeholder="INN" type="text" id="inn">
                                             </input>
-                                            <button onClick={this.submitInn}>
-                                                {'Go'}
-                                            </button>
+                                            <div className='w-10 ma0 pa0 br3 pointer' onClick={this.submitInn}>
+                                                <img src={require('../static/arrow.png')} className='mw-100'></img>
+                                            </div>
                                         </div>
                                         <p className="ma0">{this.state.advice}</p>
                                     </div>
