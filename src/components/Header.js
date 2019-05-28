@@ -5,6 +5,9 @@ import NavSticky from '../containers/NavSticky';
 import Login from '../containers/Login';
 import BasketCard from './BasketCard';
 
+//TODO
+// Implement transparent nav shadow
+
 const Header = ({toggleProfile, setUserStatus, inn, userStatus, route, onRouteChange}) => {
     return(
         <div className = 'flex flex-column content-stretch'>

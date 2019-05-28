@@ -148,33 +148,33 @@ class Login extends React.Component{
                             );
                         case 'passwordRequired':
                             return (
-                                    <div className = 'f5 flex-column ma2'>
-                                        <div className='flex justify-around'>
+                                    <div className = 'f5 flex justify-between ma2 w-80'>
+                                        <div className='flex=column content-center'>
                                             <input
                                                 className="tc ma0 w-80" key="pwd"
                                                 placeholder="пароль" type="password" id="password">
                                             </input>
-                                            <button className='w-10' onClick={this.submitPassword}>
-                                                <img src={require('../static/arrow.png')} className='mw-100'></img>
-                                            </button>
+                                            <p className="ma0">{'input your pass'}</p>
                                         </div>
-                                        <p className="ma0">{'input your pass'}</p>
+                                        <div className='w-20' onClick={this.submitPassword}>
+                                            <img src={require('../static/building.png')} className='mw-100'></img>
+                                        </div>
                                     </div>
                             );
                         default: //loggedOut
                             return (
-                                    <div className = 'f5 flex-column ma2'>
-                                        <div className='flex justify-center'>
+                                    <div className = 'f6 flex ma2 justify-between'>
+                                        <div className='flex-column justify-between content-center w-80'>
                                             <input
                                                 onChange={this.handleInnInput}
                                                 className="tc ma0 w-80" key="inn"
                                                 placeholder="ИНН" type="text" id="inn">
                                             </input>
-                                            <div className='w-10 ma0 pa0 br3 pointer' onClick={this.submitInn}>
-                                                <img src={require('../static/arrow.png')} className='mw-100'></img>
-                                            </div>
+                                            <p className="ma1">{this.state.advice}</p>
                                         </div>
-                                        <p className="ma0">{this.state.advice}</p>
+                                        <div className='w-20 ma0 pa0 br3 pointer flex-column content-start' onClick={this.submitInn}>
+                                            <img src={require('../static/building.png')} className='mw-100'></img>
+                                        </div>
                                     </div>
                             );
                     }

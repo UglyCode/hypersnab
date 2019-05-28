@@ -50,14 +50,15 @@ class Catalog extends React.Component {
     //TODO
     // replace with GET /goods?folder=<folderName> request to server with cache and add at folderSelect
     getFolderFiltererdGoods = (folderName) => {
-        return this.state.goods.filter((elem) => (elem.folder === folderName));
+        return this.state.goods.filter((elem) => (elem.folder === this.state.folder));
     };
 
 
     render() {
 
-        const goods = (this.state.folder) ? this.getFolderFiltererdGoods(this.state.folder) : this.getSpecOffers();
+        const goods = (this.state.folder) ? this.getFolderFiltererdGoods() : this.getSpecOffers();
 
+        console.log('catalog render');
         return(
             <div className = 'f3 flex items-stretch w-100'>
                 <CatalogStructure
@@ -66,7 +67,7 @@ class Catalog extends React.Component {
                     folderSelect = {this.folderSelect}
                     folder={this.state.folder}
                 />
-                <CatalogPage goods={goods}/>
+                <CatalogPage goods={goods} stuff={goods}/>
             </div>
         )
     }

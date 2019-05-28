@@ -9,9 +9,13 @@ const CatalogItem = ({description, code, img, set, quantity, price}) => {
             <p className='w-10 ma0'>{`${quantity} шт.`}</p>
             <p className='w-10 ma0'>{`${price} руб.`}</p>
             <div className='flex justify-between items-center w-10'>
-                <p className='f3 w-30'>+</p>
-                <input className='h-25 ba w-40' type='number'/>
-                <p className='f3 w-30'>-</p>
+                <div className='w-20 pointer'>
+                    <img src={require('../static/plus.png')} className='mw-100'></img>
+                </div>
+                <input className='h-25 ba w-60' type='number'/>
+                <div className='w-20 pointer'>
+                    <img src={require('../static/minus.png')} className='mw-100'></img>
+                </div>
             </div>
         </div>
     )
