@@ -141,15 +141,20 @@ class Login extends React.Component{
                     switch(userStatus){
                         case 'loggedIn':
                             return (
-                                <p id='innSign' className='pointer f5 underline-hover dark-blue'
-                                   onClick={this.toggleMenu}>
-                                    {inn}
-                                </p>
+                                <div className={'f5 flex justify-between ma2'}>
+                                    <p id='innSign' className='pointer underline-hover dark-blue w-80'
+                                       onClick={this.toggleMenu}>
+                                        {inn}
+                                    </p>
+                                    <div className='w-20' onClick={this.toggleMenu}>
+                                        <img src={require('../static/building.png')} className='mw-100'></img>
+                                    </div>
+                                </div>
                             );
                         case 'passwordRequired':
                             return (
-                                    <div className = 'f5 flex justify-between ma2 w-80'>
-                                        <div className='flex=column content-center'>
+                                    <div className = 'f6 flex justify-between ma2'>
+                                        <div className='flex=column content-center w-80'>
                                             <input
                                                 className="tc ma0 w-80" key="pwd"
                                                 placeholder="пароль" type="password" id="password">

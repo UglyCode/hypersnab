@@ -14,12 +14,15 @@ class Catalog extends React.Component {
             page: 1,
             goods: [],
             folders:[{name: 'Категория 1', children:[{name:'Папка 1', children:[]},{name:'Папка 2', children:[]}]},
-                {name: 'Категория 2', children:[{name:'Папка 3', children:[]}]}]
+                {name: 'Категория 2', children:[{name:'Папка 3', children:[]}]}],
+            order: new Map()
         }
     }
 
     componentDidMount() {
-        this.setState({goods: goods});
+        const order = this.jsonToMap(window.localStorage.getItem('order')) || this.state.order;
+        this.setState({goods: goods, order: order});
+        console.log(order);
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -53,10 +56,32 @@ class Catalog extends React.Component {
         return this.state.goods.filter((elem) => (elem.folder === this.state.folder));
     };
 
+    updateAmountOfOrderedGood = (goodId, newAmount) => {
+        newAmount = Number(newAmount);
+        console.log(goodId, newAmount);
+        let order = this.state.order;
+        if (newAmount > 0) {
+            order.set(goodId, newAmount);
+        } else {
+            order.delete(goodId);
+        }
+        this.setState({order});
+        console.log(order);
+        window.localStorage.setItem('order', this.mapToJson(order));
+    };
+
+
+    mapToJson(map) {
+        return JSON.stringify([...map]);
+    }
+
+    jsonToMap(jsonStr) {
+        return new Map(JSON.parse(jsonStr));
+    }
 
     render() {
 
-        const goods = (this.state.folder) ? this.getFolderFiltererdGoods() : this.getSpecOffers();
+        let goods = (this.state.folder) ? this.getFolderFiltererdGoods() : this.getSpecOffers();
 
         console.log('catalog render');
         return(
@@ -67,7 +92,10 @@ class Catalog extends React.Component {
                     folderSelect = {this.folderSelect}
                     folder={this.state.folder}
                 />
-                <CatalogPage goods={goods} stuff={goods}/>
+                <CatalogPage
+                    goods={goods}
+                    order={this.state.order}
+                    amountUpdate={this.updateAmountOfOrderedGood}/>
             </div>
         )
     }

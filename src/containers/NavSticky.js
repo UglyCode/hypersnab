@@ -48,15 +48,15 @@ class NavSticky extends React.Component{
                             <a name='catalog'
                                className={pageLinkClass + ((route==='catalog') ? ' ba' : '')}
                                onClick={this.pageLinkOnClick}
-                            >Catalog</a>
+                            >Каталог</a>
                             <a name='about'
                                className={pageLinkClass + ((route==='about') ? ' ba' : '')}
                                onClick={this.pageLinkOnClick}
-                            >About</a>
+                            >О нас</a>
                             <a name='contacts'
                                className={pageLinkClass + ((route==='contacts') ? ' ba' : '')}
                                onClick={this.pageLinkOnClick}
-                            >Contacts</a>
+                            >Как добраться</a>
                         </div>
                         <div className="dib ph4-l flex justify-around">
                             <input

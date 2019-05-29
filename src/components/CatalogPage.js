@@ -1,7 +1,7 @@
 import React from 'react';
 import CatalogItem from './CatalogItem';
 
-const CatalogPage = ({goods}) => {
+const CatalogPage = ({goods, order, amountUpdate}) => {
     return(
         <div className="flex-column w-100 br3 bg-white pa3 ma2">
             {goods.length && goods.map((elem, i) => {
@@ -14,6 +14,8 @@ const CatalogPage = ({goods}) => {
                         price={elem.price}
                         quantity={elem.quantity}
                         img={elem.img}
+                        amount={order.get(elem.code)||0}
+                        amountUpdate={amountUpdate}
                     />
                 );
             })}
