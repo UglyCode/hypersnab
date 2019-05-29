@@ -8,7 +8,8 @@ class Login extends React.Component{
         this.state = {
             isDroppedDown: false,
             advice: 'введите ваш ИНН',
-            user: {}
+            user: {},
+            toggleLeft: 0
         };
     }
 
