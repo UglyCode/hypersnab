@@ -142,12 +142,12 @@ class Login extends React.Component{
                     switch(userStatus){
                         case 'loggedIn':
                             return (
-                                <div className={'f5 flex justify-between ma2'}>
-                                    <p id='innSign' className='pointer underline-hover dark-blue w-80'
+                                <div className='f5 flex justify-between ma2 content-center b'>
+                                    <p id='innSign' className='center'
                                        onClick={this.toggleMenu}>
-                                        {inn}
+                                        {`ИНН: ${inn}`}
                                     </p>
-                                    <div className='w-20' onClick={this.toggleMenu}>
+                                    <div className='w-20 pointer' onClick={this.toggleMenu}>
                                         <img src={require('../static/building.png')} className='mw-100'></img>
                                     </div>
                                 </div>
@@ -162,7 +162,7 @@ class Login extends React.Component{
                                             </input>
                                             <p className="ma0">{'input your pass'}</p>
                                         </div>
-                                        <div className='w-20' onClick={this.submitPassword}>
+                                        <div className='w-20 pointer' onClick={this.submitPassword}>
                                             <img src={require('../static/building.png')} className='mw-100'></img>
                                         </div>
                                     </div>

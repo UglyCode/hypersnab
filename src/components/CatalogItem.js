@@ -26,7 +26,7 @@ class CatalogItem extends React.Component{
 
         return (
             <div className={`flex items-center w-100 f5 items-center justify-between ${(set%2)?'':'bg-lightest-blue'}`}>
-                <img className='' src={img}/>
+                <img style={{width: '55px'}} src={img}/>
                 <p className='w-10 ma0'>{code}</p>
                 <p className='w-60 ma0'>{description}</p>
                 <p className='w-10 ma0'>{`${quantity} шт.`}</p>

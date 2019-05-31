@@ -72,6 +72,42 @@ const goods = [
         folder: 'Папка 2'
     },
     {
+        description: 'DIN-рейка L=30см',
+        price:111,
+        quantity:10000,
+        code:'11AA-08',
+        img: 'https://robohash.org/17?size=50x50',
+        spec: false,
+        folder: 'Папка 2'
+    },
+    {
+        description: 'DIN-рейка L=60см',
+        price:111,
+        quantity:10000,
+        code:'11AA-08',
+        img: 'https://robohash.org/17?size=50x50',
+        spec: false,
+        folder: 'Папка 2'
+    },
+    {
+        description: 'Розетка с заземляющим контактом РАр10-3-ОП Shuko',
+        price:111,
+        quantity:10000,
+        code:'11AA-08',
+        img: 'https://robohash.org/17?size=50x50',
+        spec: false,
+        folder: 'Папка 2'
+    },
+    {
+        description: 'DIN-рейка L=7,5см',
+        price:111,
+        quantity:10000,
+        code:'11AA-08',
+        img: 'https://robohash.org/17?size=50x50',
+        spec: false,
+        folder: 'Папка 2'
+    },
+    {
         description: 'Фотореле ФРЛ-11 2-100Лк 20А DIN-рейка (с датчиком IP65)',
         price:111,
         quantity:10000,
@@ -99,7 +135,7 @@ const goods = [
         folder: 'Папка 2'
     },
     {
-        description: 'cool brand new gadget',
+        description: 'Розетка стационарная 123 2Р+PE 32А 220В IP44',
         price:111,
         quantity:10000,
         code:'11AA-12',
@@ -171,7 +207,7 @@ const goods = [
         folder: 'Папка 1'
     },
     {
-        description: 'cool brand new gadget',
+        description: 'Розетка стационарная 115 3P+E+N 16А 380В IP44',
         price:111,
         quantity:10000,
         code:'11AA-20',

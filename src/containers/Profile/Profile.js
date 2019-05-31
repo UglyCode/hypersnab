@@ -187,11 +187,11 @@ class Profile extends React.Component {
                                 className={'b pa2 pointer grow hover-white w-40 bg-light-green b--black-30'}
                                 onClick={() => this.onProfileSubmit()}
                             >
-                                {this.props.loggedIn ? 'Save' : 'Create'}
+                                {this.props.loggedIn ? 'Сохранить' : 'Создать'}
                             </button>
                             <button className={'b pa2 pointer grow hover-white w-40 bg-light-red b--black-30'}
                                     onClick={this.closeProfile}>
-                                Cancel
+                                Отмена
                             </button>
                         </div>
                     </main>
