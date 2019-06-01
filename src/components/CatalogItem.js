@@ -7,22 +7,21 @@ class CatalogItem extends React.Component{
     }
 
     increaseAmount = (event) => {
-        this.props.amountUpdate(this.props.code, ++event.currentTarget.nextSibling.value);
+        this.props.updateAmount(this.props.code, ++event.currentTarget.nextSibling.value);
     };
 
     decreaseAmount = (event) => {
-        this.props.amountUpdate(this.props.code, --event.currentTarget.previousSibling.value);
+        this.props.updateAmount(this.props.code, --event.currentTarget.previousSibling.value);
     };
 
     handleAmountEnter = (event) => {
-        this.props.amountUpdate(this.props.code, event.target.value);
+        this.props.updateAmount(this.props.code, event.target.value);
     };
 
     handleFocus = (event) => event.target.select()
 
     render(){
         const {description, code, img, set, quantity, price, amount} = this.props;
-        console.log(amount);
 
         return (
             <div className={`flex items-center w-100 f5 items-center justify-between ${(set%2)?'':'bg-lightest-blue'}`}>

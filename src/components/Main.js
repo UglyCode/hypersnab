@@ -4,10 +4,13 @@ import RightCol from './RightCol';
 import CurrPage from './CurrPage';
 import Catalog from '../containers/Catalog/Catalog';
 
-const Main = ({route}) => {
+const Main = ({route, updateAmount, order}) => {
 
         if (route === 'catalog'){
-            return (<Catalog/>)
+            return (<Catalog
+                updateAmount={updateAmount}
+                order={order}
+            />)
         } else {
             return(
             <div className='f3 flex items-stretch w-100'>

@@ -16,7 +16,8 @@ const initialState = {
     isProfileOpen: false,
     userInn: '',
     userStatus: 'loggedOut',
-    userDataCache: {}
+    userDataCache: {},
+    order: new Map()
 };
 
 class App extends Component {
@@ -39,6 +40,8 @@ class App extends Component {
     componentDidMount() {
         const token = window.localStorage.getItem('token');
         this.setInnFromToken(token);
+        const order = this.jsonToMap(window.localStorage.getItem('order')) || this.state.order;
+        this.setState({order});
     }
 
     setInnFromToken = (token) => {
@@ -55,25 +58,28 @@ class App extends Component {
         return JSON.parse(window.atob(base64));
     };
 
-    signInByToken = (token) => {
-        if (token){
-           return( fetch(`${SERVER}/signIn`, {
-                method: 'POST',
-                headers : {
-                    'Content-type': 'application/json',
-                    'Authorization': token
-                }
-            })
-                .then(res=>res.json())
-                .then(data => {
-                    if (data && data.id) {
-                        this.setState({isSignedIn: true});
-                    } else {
-                        this.setState({isSignedIn: false});
-                    }
-                }) );
+
+    updateAmountOfOrderedGood = (goodId, newAmount) => {
+        newAmount = Number(newAmount);
+        let order = this.state.order;
+        if (newAmount > 0) {
+            order.set(goodId, newAmount);
+        } else {
+            order.delete(goodId);
         }
+        this.setState({order});
+        console.log(order);
+        window.localStorage.setItem('order', this.mapToJson(order));
     };
+
+
+    mapToJson(map) {
+        return JSON.stringify([...map]);
+    }
+
+    jsonToMap(jsonStr) {
+        return new Map(JSON.parse(jsonStr));
+    }
 
     setUserStatus = (status, inn) => {
         console.log(status, inn);
@@ -95,7 +101,11 @@ class App extends Component {
                     route={this.state.route}
                     onRouteChange = {this.onRouteChange}
                 />
-                <Main route={this.state.route}/>
+                <Main
+                    route={this.state.route}
+                    updateAmount = {this.updateAmountOfOrderedGood}
+                    order = {this.state.order}
+                />
                 <Footer/>
                 {this.state.isProfileOpen &&
                     <Modal>
@@ -104,6 +114,7 @@ class App extends Component {
                             setUserStatus = {this.setUserStatus}
                             inn = {this.state.userInn}
                             loggedIn = {this.state.userStatus === 'loggedIn'}
+                            order = {this.props.order}
                         />
                     </Modal>
                 }
