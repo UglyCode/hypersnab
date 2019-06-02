@@ -89,18 +89,18 @@ class Profile extends React.Component {
                         <h1>{user.name}</h1>
                         <hr />
                         <div className="mt3">
-                            <label htmlFor="companyName">Company:</label>
+                            <label htmlFor="companyName">Имя компании:</label>
                             <input
                                 onChange={this.onFormChange}
                                 className="pa2 b--black-10 w-100"
                                 type="text"
                                 name="name"
                                 id="name"
-                                placeholder={'company name'}
+                                placeholder={'Ни'}
                                 value={user.name}
                             ></input>
 
-                            <label htmlFor="inn">INN:</label>
+                            <label htmlFor="inn">ИНН:</label>
                             <input
                                 onChange={this.onFormChange}
                                 className="pa2 b--black-10 w-100"
@@ -111,7 +111,7 @@ class Profile extends React.Component {
                                 value={user.inn}
                             ></input>
 
-                            <label htmlFor="kpp">KPP:</label>
+                            <label htmlFor="kpp">КПП:</label>
                             <input
                                 onChange={this.onFormChange}
                                 className="pa2 b--black-10 w-100"
@@ -122,7 +122,7 @@ class Profile extends React.Component {
                                 value={user.kpp}
                             ></input>
 
-                            <label htmlFor="management">contact:</label>
+                            <label htmlFor="management">Контактное лицо:</label>
                             <input
                                 onChange={this.onFormChange}
                                 className="pa2 b--black-10 w-100"
@@ -133,7 +133,7 @@ class Profile extends React.Component {
                                 value={user.contact}
                             ></input>
 
-                            <label htmlFor="management">address:</label>
+                            <label htmlFor="management">Адрес:</label>
                             <input
                                 onChange={this.onFormChange}
                                 className="pa2 b--black-10 w-100"
@@ -144,7 +144,7 @@ class Profile extends React.Component {
                                 value={user.address}
                             ></input>
 
-                            <label htmlFor="email">email:</label>
+                            <label htmlFor="email">E-mail:</label>
                             <input
                                 onChange={this.onFormChange}
                                 className="pa2 b--black-10 w-100"
@@ -155,7 +155,7 @@ class Profile extends React.Component {
                                 value={user.email}
                             ></input>
 
-                            <label htmlFor="phone">phone:</label>
+                            <label htmlFor="phone">Телефон:</label>
                             <input
                                 onChange={this.onFormChange}
                                 className="pa2 b--black-10 w-100"
@@ -168,7 +168,7 @@ class Profile extends React.Component {
 
                             {this.props.loggedIn ||
                                 <div className="pv2">
-                                    <label htmlFor="password">password:</label>
+                                    <label htmlFor="password">Пароль:</label>
                                     <input
                                         onChange={this.onFormChange}
                                         className="pa2 b--black-10 w-100"
