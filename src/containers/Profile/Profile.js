@@ -96,7 +96,7 @@ class Profile extends React.Component {
                                 type="text"
                                 name="name"
                                 id="name"
-                                placeholder={'Ни'}
+                                placeholder={'название организации'}
                                 value={user.name}
                             ></input>
 
@@ -107,7 +107,7 @@ class Profile extends React.Component {
                                 type="text"
                                 name="inn"
                                 id="inn"
-                                placeholder={'company name'}
+                                placeholder={'ИНН'}
                                 value={user.inn}
                             ></input>
 
@@ -118,7 +118,7 @@ class Profile extends React.Component {
                                 type="text"
                                 name="kpp"
                                 id="kpp"
-                                placeholder={'KPP'}
+                                placeholder={'КПП'}
                                 value={user.kpp}
                             ></input>
 
@@ -129,7 +129,7 @@ class Profile extends React.Component {
                                 type="text"
                                 name="contact"
                                 id="contact"
-                                placeholder={'contact'}
+                                placeholder={'контактное лицо'}
                                 value={user.contact}
                             ></input>
 
@@ -140,7 +140,7 @@ class Profile extends React.Component {
                                 type="text"
                                 name="address"
                                 id="address"
-                                placeholder={'address'}
+                                placeholder={'адрес'}
                                 value={user.address}
                             ></input>
 
@@ -162,7 +162,7 @@ class Profile extends React.Component {
                                 type="text"
                                 name="phone"
                                 id="phone"
-                                placeholder={'phone'}
+                                placeholder={'телефон'}
                                 value={user.phone}
                             ></input>
 
