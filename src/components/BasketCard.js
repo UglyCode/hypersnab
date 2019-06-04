@@ -18,8 +18,8 @@ const BasketCard = (props) => {
                 <div className = 'w-80 tc flex flex-column justify-center'
                 // onClick={()=>setSum(sum+11)}
                 >
-                    <p className='ma1'>{'Позиций: 11'}</p>
-                    <p className='ma1'>{'Сумма: 110000.00'}</p>
+                    <p className='ma1'>{`Позиций: ${props.goodsAmount}`}</p>
+                    <p className='ma1'>{`Сумма: ${props.orderSum}`}</p>
                 </div>
             </div>
 
