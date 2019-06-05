@@ -6,6 +6,7 @@ import Profile from '../Profile/Profile';
 import Header from '../../components/Header';
 import Main from '../../components/Main';
 import Footer from '../../components/Footer';
+import goods from '../../static/goodsMock';
 
 import ENV from '../../settings/env';
 
@@ -17,7 +18,8 @@ const initialState = {
     userInn: '',
     userStatus: 'loggedOut',
     userDataCache: {},
-    order: new Map()
+    order: new Map(),
+    orderSum: 0
 };
 
 class App extends Component {
@@ -41,8 +43,19 @@ class App extends Component {
         const token = window.localStorage.getItem('token');
         this.setInnFromToken(token);
         const order = this.jsonToMap(window.localStorage.getItem('order')) || this.state.order;
-        this.setState({order});
+        this.updateOrder(order);
     }
+
+
+    //TODO
+    // replace with fetching data from server GET /orderSum
+    updateOrder = (order) => {
+        const orderSum = goods.reduce((accumulator, currentValue) =>{
+            let orderedAmount = order.get(currentValue.code) || 0;
+            return accumulator + orderedAmount * currentValue.price;
+        },0);
+        this.setState({order, orderSum});
+    };
 
     setInnFromToken = (token) => {
         if (token){
@@ -67,7 +80,7 @@ class App extends Component {
         } else {
             order.delete(goodId);
         }
-        this.setState({order});
+        this.updateOrder(order);
         console.log(order);
         window.localStorage.setItem('order', this.mapToJson(order));
     };
@@ -100,6 +113,8 @@ class App extends Component {
                     userStatus = {this.state.userStatus}
                     route={this.state.route}
                     onRouteChange = {this.onRouteChange}
+                    orderSum = {this.state.orderSum}
+                    goodsAmount = {this.state.order.size}
                 />
                 <Main
                     route={this.state.route}

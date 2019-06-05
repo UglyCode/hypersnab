@@ -42,7 +42,10 @@ class NavSticky extends React.Component{
             <div>
                 {isStick && <div className='w-100 bg-transparent' style={{height: this.state.height}}>{'shadow'}</div>}
                 <nav id='navSticky' className={navClass}>
-                    <BasketCard/>
+                    <BasketCard
+                        orderSum={this.props.orderSum}
+                        goodsAmount={this.props.goodsAmount}
+                    />
                     <div className='w-80 flex justify-between items-center bg-white'>
                         <div>
                             <a name='catalog'
