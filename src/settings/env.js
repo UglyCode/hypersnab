@@ -1,6 +1,6 @@
 
 const ENV = {
-    server: 'http://localhost:3001'
+    server: 'https://thawing-tundra-53917.herokuapp.com'
 };
 
 export default ENV;
