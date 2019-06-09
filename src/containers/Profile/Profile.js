@@ -47,7 +47,7 @@ class Profile extends React.Component {
     };
 
     updateUser = (userObj) => {
-        fetch(`http://${ENV.server}/profile/${userObj.inn}`, {
+        fetch(`${ENV.server}/profile/${userObj.inn}`, {
             method: 'POST',
             headers : {
                 'Content-type': 'application/json',
@@ -62,7 +62,7 @@ class Profile extends React.Component {
     };
 
     createUser = (userObj) => {
-        fetch(`http://${ENV.server}/register`, {
+        fetch(`${ENV.server}/register`, {
             method: 'POST',
             headers : {
                 'Content-type': 'application/json',
