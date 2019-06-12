@@ -1,7 +1,10 @@
 import React from 'react';
 
-const Basket = (props) => {
+class Basket extends React.Component{
 
+    constructor(props){
+        super(props)
+    }
 }
 
 export default Basket;
