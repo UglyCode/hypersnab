@@ -7,7 +7,7 @@ class Basket extends React.Component{
     }
 
     render() {
-        return <div>A</div>
+        return (<div>A</div>)
     }
 }
 
