@@ -16,7 +16,11 @@ const Main = ({route, updateAmount, order}) => {
             <div className='f3 flex items-stretch w-100'>
                     <LeftCol/>
                     <div id='center' className='w-80 flex flex-column'>
-                        <CurrPage route={route}/>
+                        <CurrPage
+                            route={route}
+                            updateAmount={updateAmount}
+                            order={order}
+                        />
                     </div>
                     <RightCol/>
             </div>

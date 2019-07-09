@@ -1,6 +1,6 @@
 import React from 'react';
-import BasketCard from '../components/BasketCard';
-import Login from './Login';
+import BasketCard from '../../components/BasketCard';
+import Login from '../Login/Login';
 
 class NavSticky extends React.Component{
 
@@ -67,7 +67,7 @@ class NavSticky extends React.Component{
                                 placeholder="поиск товаров" type="text" name="searchText">
                             </input>
                             <button className='w-10'>
-                                <img src={require('../static/search.png')} className='mw-100'></img>
+                                <img src={require('../../static/search.png')} className='mw-100'></img>
                             </button>
                         </div>
                     </div>

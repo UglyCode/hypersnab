@@ -1,8 +1,8 @@
 import React from 'react';
 import Logo from './Logo';
-import NavSticky from '../containers/NavSticky';
+import NavSticky from '../containers/NavSicky/NavSticky';
 
-import Login from '../containers/Login';
+import Login from '../containers/Login/Login';
 import BasketCard from './BasketCard';
 
 //TODO
