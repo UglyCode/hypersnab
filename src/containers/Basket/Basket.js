@@ -1,5 +1,6 @@
 import React from 'react';
 import CatalogPage from '../../components/CatalogPage';
+import goods from '../../static/goodsMock';
 
 class Basket extends React.Component{
 
@@ -10,33 +11,40 @@ class Basket extends React.Component{
         };
     }
 
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        if (this.state.orderedGoods.keys().equals(this.props.order.keys())) {
-            return;    
-        }
+    componentDidMount() {
         this.updateOrderedGoods();
     }
 
     updateOrderedGoods = () => {
         const goodsToUpDate = this.getDifferentKeys(this.props.order, this.state.orderedGoods);
-
+        this.setState({orderedGoods: goods.filter(elem => this.props.order.has(elem.code))})
     };
 
     getDifferentKeys = (mapOne, mapTwo) => {
-       return mapOne.keys().reduce((accum, currKey) => {
-           if (mapTwo.has(currKey)) {
-               return accum;
-           } else {
-               return accum.add(currKey);
+       return [...mapOne.keys()].reduce((accum, currKey) => {
+           console.log(accum);
+           if (mapTwo.indexOf(currKey)<0) {
+               accum.push(currKey);
            }
+           return accum;
        }, []);
     };
 
     render() {
 
-        return (<CatalogPage goods={this.state.orderedGoods}
-                             order={this.props.order}
-                             updateAmount={this.props.updateAmount}/>)
+        return (
+            <div className='flex-column'>
+                <CatalogPage goods={this.state.orderedGoods}
+                                 order={this.props.order}
+                                 updateAmount={this.props.updateAmount}
+                />
+
+                <div>
+                    <button>ОФОРМИТЬ ЗАКАЗ</button>
+                </div>
+            </div>
+
+        )
     }
 }
 

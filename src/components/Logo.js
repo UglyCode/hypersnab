@@ -11,7 +11,7 @@ const Logo = (props) => {
 
             <div className='flex-column justify-center content-center w-80 ma0 pa2'>
                 <p className='f2 ma0'>{'ГИПЕРСНАБ'}</p>
-                <p className='f3 ma0'>{'Оперативность для проффесионалов'}</p>
+                <p className='f3 ma0'>{'Оперативность для профеcсионалов'}</p>
             </div>
             <div className='w-20 f4 ma0 flex-column justify-center content-center bg-lightest-blue pa2'>
                 <p className='ma0'>{'Мы работаем только с'}</p>

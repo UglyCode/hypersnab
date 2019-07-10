@@ -45,6 +45,7 @@ class NavSticky extends React.Component{
                     <BasketCard
                         orderSum={this.props.orderSum}
                         goodsAmount={this.props.goodsAmount}
+                        onRouteChange={this.props.onRouteChange}
                     />
                     <div className='w-80 flex justify-between items-center bg-white'>
                         <div>
