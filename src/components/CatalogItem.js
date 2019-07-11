@@ -27,7 +27,7 @@ class CatalogItem extends React.Component{
             <div className={`flex items-center w-100 f5 items-center justify-between ${(set%2)?'':'bg-lightest-blue'}`}>
                 <img style={{width: '55px'}} src={img}/>
                 <p className='w-10 ma0'>{code}</p>
-                <p className='w-60 ma0'>{description}</p>
+                <p className='w-50 ma0'>{description}</p>
                 <p className='w-10 ma0'>{`${quantity} шт.`}</p>
                 <p className='w-10 ma0'>{`${price} руб.`}</p>
                 <div className='flex justify-between items-center w-10'>
@@ -41,6 +41,7 @@ class CatalogItem extends React.Component{
                         <img src={require('../static/minus.png')} className='mw-100'></img>
                     </div>
                 </div>
+                <p className='w-10 ma0'>{`${amount*price} руб.`}</p>
             </div>
         );
     }

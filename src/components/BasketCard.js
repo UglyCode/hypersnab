@@ -22,7 +22,7 @@ class BasketCard extends React.Component{
             <div className='w-20 items-center tc pl3 f6 br3 br--left bg-lightest-blue'>
                 <div className='flex justify-center content-center ma2'>
                     <div className='w-20 pointer' onClick={this.basketPressHandler}>
-                        <img src={require('../static/cart.png')} className='mw-100'></img>
+                        <img src={require('../static/cart.png')} className='mw-100 pointer link dim'></img>
                     </div>
                     <div className = 'w-80 tc flex flex-column justify-center'
                     // onClick={()=>setSum(sum+11)}

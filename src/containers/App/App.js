@@ -120,6 +120,7 @@ class App extends Component {
                     route={this.state.route}
                     updateAmount = {this.updateAmountOfOrderedGood}
                     order = {this.state.order}
+                    orderSum = {this.state.orderSum}
                 />
                 <Footer/>
                 {this.state.isProfileOpen &&

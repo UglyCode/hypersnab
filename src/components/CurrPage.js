@@ -4,7 +4,7 @@ import AboutPage from './AboutPage';
 import Basket from '../containers/Basket/Basket';
 import Catalog from "../containers/Catalog/Catalog";
 
-const CurrPage = ({route, updateAmount, order}) => {
+const CurrPage = ({route, updateAmount, order, orderSum}) => {
     console.log(route);
     return(
         <div className="br3 ma2 bw-2 shadow-5-l tc bg-white pa3">
@@ -17,7 +17,7 @@ const CurrPage = ({route, updateAmount, order}) => {
                         return <ContactPage/>;
                         break;
                     case 'basket':
-                        return <Basket updateAmount={updateAmount} order={order}/>;
+                        return <Basket updateAmount={updateAmount} order={order} orderSum={orderSum}/>;
                     default:
                         return null;
                 }

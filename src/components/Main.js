@@ -4,7 +4,7 @@ import RightCol from './RightCol';
 import CurrPage from './CurrPage';
 import Catalog from '../containers/Catalog/Catalog';
 
-const Main = ({route, updateAmount, order}) => {
+const Main = ({route, updateAmount, order, orderSum}) => {
 
         if (route === 'catalog'){
             return (<Catalog
@@ -20,6 +20,7 @@ const Main = ({route, updateAmount, order}) => {
                             route={route}
                             updateAmount={updateAmount}
                             order={order}
+                            orderSum = {orderSum}
                         />
                     </div>
                     <RightCol/>

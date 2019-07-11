@@ -38,9 +38,13 @@ class Basket extends React.Component{
                                  order={this.props.order}
                                  updateAmount={this.props.updateAmount}
                 />
-
-                <div>
-                    <button>ОФОРМИТЬ ЗАКАЗ</button>
+                <div className='flex flex-row-reverse ma0'>
+                    <p className='f4'>{`ИТОГО: ${this.props.orderSum} руб.`}</p>
+                </div>
+                <div className="ph3 mt4 b">
+                    <a className="f6 link br1 ba bw1 ph3 pv2 mb2 dib black hover-blue underline-hover" href="#0">
+                        ОФОРМИТЬ ЗАКАЗ
+                    </a>
                 </div>
             </div>
 
