@@ -3,7 +3,7 @@ import CatalogItem from './CatalogItem';
 
 const CatalogPage = ({goods, order, updateAmount}) => {
     return(
-        <div className="flex-column w-100 br3 bg-white pa3 ma2">
+        <div className="flex-column w-100 br3 bg-white pa3 ma0">
             {goods.length && goods.map((elem, i) => {
                 return (
                     <CatalogItem

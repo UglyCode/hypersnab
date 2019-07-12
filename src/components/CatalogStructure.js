@@ -3,8 +3,7 @@ import React from 'react';
 
 const CatalogStructure = ({folders, toggleChildren, folderSelect, folder}) => {
     return(
-
-        <div className='w-20 br3 pl3 ma2 bw-2 shadow-5-l bg-lightest-blue f5 tl'>
+        <div className='h-100 w-100 br3 pl3 pt1 bw-2 bg-lightest-blue f5 tl'>
             {
                 folders.map(elem => createFolderElement(elem, toggleChildren, folderSelect, folder))
             }
@@ -15,7 +14,7 @@ const CatalogStructure = ({folders, toggleChildren, folderSelect, folder}) => {
 const createFolderElement = (folderObj, toggleChildren, folderSelect, folder) => {
 
     const folderFunction = (folderObj.children.length)? toggleChildren : folderSelect;
-    const folderClassList = 'pointer hover-blue underline-hover' + (folderObj.name === folder ? ' b' : ' ');
+    const folderClassList = 'mt1 pointer hover-blue underline-hover' + (folderObj.name === folder ? ' b' : ' ');
 
     return(
         <ul className='pl3' onClick={folderFunction}>

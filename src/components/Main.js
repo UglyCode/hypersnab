@@ -7,10 +7,11 @@ import Catalog from '../containers/Catalog/Catalog';
 const Main = ({route, updateAmount, order, orderSum}) => {
 
         if (route === 'catalog'){
-            return (<Catalog
-                updateAmount={updateAmount}
-                order={order}
-            />)
+            return (
+                <Catalog
+                    updateAmount={updateAmount}
+                    order={order}
+                />)
         } else {
             return(
             <div className='f3 flex items-stretch w-100'>

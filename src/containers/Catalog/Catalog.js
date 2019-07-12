@@ -81,17 +81,22 @@ class Catalog extends React.Component {
 
         console.log('catalog render');
         return(
-            <div className = 'f3 flex items-stretch w-100'>
-                <CatalogStructure
-                    folders={this.state.folders}
-                    toggleChildren = {this.toggleChildrenDisplay}
-                    folderSelect = {this.folderSelect}
-                    folder={this.state.folder}
-                />
-                <CatalogPage
-                    goods={goods}
-                    order={this.props.order}
-                    updateAmount={this.props.updateAmount}/>
+            <div className = 'f3 flex w-100'>
+                <div className='flex-column w-20 ma2'>
+                    <CatalogStructure
+                            folders={this.state.folders}
+                            toggleChildren = {this.toggleChildrenDisplay}
+                            folderSelect = {this.folderSelect}
+                            folder={this.state.folder}
+                    />
+                </div>
+
+                <div className='w-100 ma2'>
+                        <CatalogPage
+                            goods={goods}
+                            order={this.props.order}
+                            updateAmount={this.props.updateAmount}/>
+                </div>
             </div>
         )
     }

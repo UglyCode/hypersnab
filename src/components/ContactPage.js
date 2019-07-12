@@ -34,8 +34,10 @@ const ContactPage = (props) => {
                     <br></br>ул. Ясеневая, вл. 14
                 </address>
             </div>
-            <div className="ma2 pa2" id='yandexMap'>
+            <div className='flex justify-center'>
+                <div className="ma2 pa2" id='yandexMap'>
 
+                </div>
             </div>
         </div>
     )

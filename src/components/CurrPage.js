@@ -7,7 +7,7 @@ import Catalog from "../containers/Catalog/Catalog";
 const CurrPage = ({route, updateAmount, order, orderSum}) => {
     console.log(route);
     return(
-        <div className="br3 ma2 bw-2 shadow-5-l tc bg-white pa3">
+        <div className="br3 ma2 bw-2 shadow-5-l tc bg-white pa1">
             {(() => {
                 switch(route) {
                     case 'about':
