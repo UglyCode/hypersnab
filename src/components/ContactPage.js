@@ -21,18 +21,20 @@ const ContactPage = (props) => {
 
     return (
         <div className="flex-column">
-            <div className="ma2 pa2">
-                <address><strong translate="OFFICE" className="ng-scope">Офис</strong>
-                    <br></br>г. Москва
-                    <br></br>Астраханский пер., д. 5/9
-                    стр.10
-                    <br></br>Тел.:(495) 505-78-25</address>
-            </div>
-            <div className="ma2 pa2">
-                <address><strong translate="STORAGE" className="ng-scope">Склад</strong>
-                    <br></br>г. Москва
-                    <br></br>ул. Ясеневая, вл. 14
-                </address>
+            <div className='flex items-stretch'>
+                <div className="ma2 pa2 w-50">
+                    <address><strong translate="OFFICE" className="ng-scope">Офис</strong>
+                        <br></br>г. Москва
+                        <br></br>Астраханский пер., д. 5/9
+                        стр.10
+                        <br></br>Тел.:(495) 505-78-25</address>
+                </div>
+                <div className="ma2 pa2 w-50">
+                    <address><strong translate="STORAGE" className="ng-scope">Склад</strong>
+                        <br></br>г. Москва
+                        <br></br>ул. Ясеневая, вл. 14
+                    </address>
+                </div>
             </div>
             <div className='flex justify-center'>
                 <div className="ma2 pa2" id='yandexMap'>
