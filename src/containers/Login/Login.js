@@ -148,7 +148,7 @@ class Login extends React.Component{
                                         {`ИНН: ${inn}`}
                                     </p>
                                     <div className='w-20 pointer' onClick={this.toggleMenu}>
-                                        <img src={require('../../static/building.png')} className='mw-100'></img>
+                                        <img src={require('../../static/building.png')} className='mw-100 pointer link dim'></img>
                                     </div>
                                 </div>
                             );
@@ -163,7 +163,7 @@ class Login extends React.Component{
                                             <p className="ma0">{'input your pass'}</p>
                                         </div>
                                         <div className='w-20 pointer' onClick={this.submitPassword}>
-                                            <img src={require('../../static/building.png')} className='mw-100'></img>
+                                            <img src={require('../../static/building.png')} className='mw-100 link dim'></img>
                                         </div>
                                     </div>
                             );
@@ -179,7 +179,7 @@ class Login extends React.Component{
                                             <p className="ma1">{this.state.advice}</p>
                                         </div>
                                         <div className='w-20 ma0 pa0 br3 pointer flex-column content-start' onClick={this.submitInn}>
-                                            <img src={require('../../static/building.png')} className='mw-100'></img>
+                                            <img src={require('../../static/building.png')} className='mw-100 link dim'></img>
                                         </div>
                                     </div>
                             );
