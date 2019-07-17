@@ -14,6 +14,7 @@ const CatalogPage = ({goods, order, updateAmount}) => {
                         price={elem.price}
                         quantity={elem.quantity}
                         img={elem.img}
+                        measure={elem.measure}
                         amount={order.get(elem.code)||0}
                         updateAmount={updateAmount}
                     />
