@@ -5,7 +5,8 @@ const goods = [
             description: 'Лампа накаливания ЛОН-40 40Вт 220В Е27',
             price: 7.34,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10923
         },
         {
@@ -14,7 +15,8 @@ const goods = [
             description: 'Лампа накаливания ЛОН-60 60Вт 220В Е27',
             price: 8.51,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 30816
         },
         {
@@ -23,7 +25,8 @@ const goods = [
             description: 'Лампа накаливания ЛОН-75 75Вт 220В Е27',
             price: 8.51,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3860
         },
         {
@@ -32,7 +35,8 @@ const goods = [
             description: 'Лампа накаливания ЛОН-95 95Вт 220В Е27',
             price: 8.51,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 9163
         },
         {
@@ -41,7 +45,8 @@ const goods = [
             description: 'Лампа накаливания ЛОН-150 150Вт 220В Е27',
             price: 19.42,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 151
         },
         {
@@ -50,7 +55,8 @@ const goods = [
             description: 'Лампа накаливания ЛОН-200 200Вт 220В Е27',
             price: 21.97,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 350
         },
         {
@@ -59,7 +65,8 @@ const goods = [
             description: 'Лампа накаливания ЛОН-500 500Вт 220В Е40',
             price: 66.58,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 192
         },
         {
@@ -68,7 +75,8 @@ const goods = [
             description: 'Лампа накаливания МО 12В 60Вт',
             price: 13.74,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 183
         },
         {
@@ -77,7 +85,8 @@ const goods = [
             description: 'Лампа накаливания МО 24В 60Вт',
             price: 13.39,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -86,7 +95,8 @@ const goods = [
             description: 'Лампа накаливания МО 36В 40Вт',
             price: 13.39,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 562
         },
         {
@@ -95,7 +105,8 @@ const goods = [
             description: 'Лампа накаливания МО 36В 60Вт',
             price: 13.39,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1135
         },
         {
@@ -104,7 +115,8 @@ const goods = [
             description: 'Лампа накаливания ДС-40 40Вт 220В Е14',
             price: 11.81,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 755
         },
         {
@@ -113,7 +125,8 @@ const goods = [
             description: 'Лампа накаливания ДС-60 60Вт 220В Е14',
             price: 11.81,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -122,7 +135,8 @@ const goods = [
             description: 'Лампа накаливания зеркальная R50 40W E14',
             price: 26.37,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 306
         },
         {
@@ -131,7 +145,8 @@ const goods = [
             description: 'Лампа накаливания зеркальная R50 60W E14',
             price: 26.37,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 143
         },
         {
@@ -140,7 +155,8 @@ const goods = [
             description: 'Лампа накаливания зеркальная R63 40W E27',
             price: 28.61,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 20
         },
         {
@@ -149,7 +165,8 @@ const goods = [
             description: 'Лампа накаливания зеркальная R63 60W E27',
             price: 28.61,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 125
         },
         {
@@ -158,7 +175,8 @@ const goods = [
             description: 'Лампа люминесцентная компактная PL-9 9W G23 6500К',
             price: 38.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4850
         },
         {
@@ -167,7 +185,8 @@ const goods = [
             description: 'Лампа люминесцентная компактная PL-11 11W G23 4000К',
             price: 55.08,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 31758
         },
         {
@@ -176,7 +195,8 @@ const goods = [
             description: 'Лампа люминесцентная компактная PL-11 11W G23 6500К',
             price: 44.06,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -185,7 +205,8 @@ const goods = [
             description: 'Лампа люминесцентная компактная OSRAM DULUX S 11W/21-840 G23 ',
             price: 89.06,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1043
         },
         {
@@ -194,7 +215,8 @@ const goods = [
             description: 'Лампа люминесцентная компактная SPC 11W E14 2700K',
             price: 48.99,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 117
         },
         {
@@ -203,7 +225,8 @@ const goods = [
             description: 'Лампа люминесцентная компактная SPC 11W E14 4200K',
             price: 48.99,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 932
         },
         {
@@ -212,7 +235,8 @@ const goods = [
             description: 'Лампа люминесцентная компактная SPC 11W E27 2700K',
             price: 48.99,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3471
         },
         {
@@ -221,7 +245,8 @@ const goods = [
             description: 'Лампа люминесцентная компактная SPC 11W E27 4200K',
             price: 48.99,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2457
         },
         {
@@ -230,7 +255,8 @@ const goods = [
             description: 'Лампа компактная люминесцентная SPC 15W Е14 2700К ',
             price: 54.11,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 409
         },
         {
@@ -239,7 +265,8 @@ const goods = [
             description: 'Лампа компактная люминесцентная SPC 15W Е27 2700К ',
             price: 56.42,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 9451
         },
         {
@@ -248,7 +275,8 @@ const goods = [
             description: 'Лампа компактная люминесцентная SPC 15W Е27 4200К ',
             price: 56.42,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1396
         },
         {
@@ -257,7 +285,8 @@ const goods = [
             description: 'Лампа компактная люминесцентная SPC 15W Е27 6500К ',
             price: 56.42,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 565
         },
         {
@@ -266,7 +295,8 @@ const goods = [
             description: 'Лампа люминесцентная компактная SPC 20W E27 2700K',
             price: 66.42,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1808
         },
         {
@@ -275,7 +305,8 @@ const goods = [
             description: 'Лампа люминесцентная ЛБ-20(18) Вт T8/G13, 4000 К',
             price: 30.19,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -284,7 +315,8 @@ const goods = [
             description: 'Лампа люминесцентная ЛД-20(18) Вт T8/G13, 6500 К',
             price: 30.19,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 13819
         },
         {
@@ -293,7 +325,8 @@ const goods = [
             description: 'Лампа люминесцентная ЛБ-40(36) Вт T8/G13, 4000 К',
             price: 40.54,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 11599
         },
         {
@@ -302,7 +335,8 @@ const goods = [
             description: 'Лампа люминесцентная ЛД-40(36) Вт T8/G13, 6500 К',
             price: 40.54,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1116
         },
         {
@@ -311,7 +345,8 @@ const goods = [
             description: 'Лампа люминесцентная OSRAM L58W/640',
             price: 71.94,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 79
         },
         {
@@ -320,7 +355,8 @@ const goods = [
             description: 'Лампа люминесцентная Philips TL-D 18W/33-640 G13',
             price: 42.2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1102
         },
         {
@@ -329,7 +365,8 @@ const goods = [
             description: 'Лампа люминесцентная Philips TL-D 18W/54-765 G13',
             price: 42.2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 452
         },
         {
@@ -338,7 +375,8 @@ const goods = [
             description: 'Лампа люминесцентная Philips TL-D 36W/33-640 G13 ',
             price: 52.93,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 550
         },
         {
@@ -347,7 +385,8 @@ const goods = [
             description: 'Лампа люминесцентная Philips TL-D 36W/54-765 G13',
             price: 52.93,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 121
         },
         {
@@ -356,7 +395,8 @@ const goods = [
             description: 'Лампа светодиодная 5Вт Е14 4000К свеча',
             price: 45.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 15
         },
         {
@@ -365,7 +405,8 @@ const goods = [
             description: 'Лампа светодиодная 7Вт E14 3000К свеча',
             price: 46.59,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 103
         },
         {
@@ -374,7 +415,8 @@ const goods = [
             description: 'Лампа светодиодная 5Вт Е27 4000К',
             price: 46.41,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2191
         },
         {
@@ -383,7 +425,8 @@ const goods = [
             description: 'Лампа светодиодная 7Вт Е14 4000К',
             price: 46.59,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 67
         },
         {
@@ -392,7 +435,8 @@ const goods = [
             description: 'Лампа светодиодная 7Вт Е27 3000К',
             price: 46.24,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3910
         },
         {
@@ -401,7 +445,8 @@ const goods = [
             description: 'Лампа светодиодная 7Вт Е27 4000К',
             price: 46.24,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4416
         },
         {
@@ -410,7 +455,8 @@ const goods = [
             description: 'Лампа светодиодная 8Вт Е27 3000К',
             price: 47.98,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 148
         },
         {
@@ -419,7 +465,8 @@ const goods = [
             description: 'Лампа светодиодная 8Вт Е27 4000К',
             price: 47.98,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 194
         },
         {
@@ -428,7 +475,8 @@ const goods = [
             description: 'Лампа светодиодная 9Вт Е27 3000К',
             price: 48.36,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 861
         },
         {
@@ -437,7 +485,8 @@ const goods = [
             description: 'Лампа светодиодная 9Вт Е27 4000К',
             price: 48.36,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 71
         },
         {
@@ -446,7 +495,8 @@ const goods = [
             description: 'Лампа светодиодная 10Вт Е27 3000К',
             price: 49.32,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 169
         },
         {
@@ -455,7 +505,8 @@ const goods = [
             description: 'Лампа светодиодная 10Вт Е27 4000К',
             price: 49.32,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 399
         },
         {
@@ -464,7 +515,8 @@ const goods = [
             description: 'Лампа светодиодная 11Вт Е27 4000К',
             price: 52.16,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3277
         },
         {
@@ -473,7 +525,8 @@ const goods = [
             description: 'Лампа светодиодная 12Вт Е27 3000К',
             price: 53.43,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 794
         },
         {
@@ -482,7 +535,8 @@ const goods = [
             description: 'Лампа светодиодная 12Вт Е27 4000К',
             price: 53.43,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 101
         },
         {
@@ -491,7 +545,8 @@ const goods = [
             description: 'Лампа светодиодная 15Вт Е27 4000К',
             price: 75.53,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 87
         },
         {
@@ -500,7 +555,8 @@ const goods = [
             description: 'Лампа светодиодная 20Вт Е27 4000K ',
             price: 90.29,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 330
         },
         {
@@ -509,7 +565,8 @@ const goods = [
             description: 'Лампа светодиодная 30Вт Е27 6500K ',
             price: 223.62,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 36
         },
         {
@@ -518,7 +575,8 @@ const goods = [
             description: 'Лампа светодиодная 40Вт Е27 6500K ',
             price: 317.3,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 50
         },
         {
@@ -527,7 +585,8 @@ const goods = [
             description: 'Лампа светодиодная 9Вт T8 G13 4000К (аналог ЛБ-20)',
             price: 83.75,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 939
         },
         {
@@ -536,7 +595,8 @@ const goods = [
             description: 'Лампа светодиодная 9Вт T8 G13 6500K (аналог ЛД-20)',
             price: 83.75,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 182
         },
         {
@@ -545,7 +605,8 @@ const goods = [
             description: 'Лампа светодиодная 18Вт T8 G13 4000К (аналог ЛБ-40)',
             price: 100.19,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1449
         },
         {
@@ -554,7 +615,8 @@ const goods = [
             description: 'Лампа светодиодная 18Вт T8 G13 6500K (аналог ЛД-40)',
             price: 100.19,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1117
         },
         {
@@ -563,7 +625,8 @@ const goods = [
             description: 'Лампа кварцевая галогеновая КГ-150 R7s L=78мм (Китай)',
             price: 25.65,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 93
         },
         {
@@ -572,7 +635,8 @@ const goods = [
             description: 'Лампа кварцевая галогеновая КГ-300 R7s L=117мм (Китай)',
             price: 28.26,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 50
         },
         {
@@ -581,7 +645,8 @@ const goods = [
             description: 'Лампа кварцевая галогеновая КГ-500 R7s L=117мм (Китай)',
             price: 28.8,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -590,7 +655,8 @@ const goods = [
             description: 'Лампа кварцевая галогеновая КГ-1000 R7s L=189мм (Китай)',
             price: 40.02,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 474
         },
         {
@@ -599,7 +665,8 @@ const goods = [
             description: 'Лампа кварцевая галогеновая КГ-1000 R7s L=189мм (Россия)',
             price: 200.49,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 114
         },
         {
@@ -608,7 +675,8 @@ const goods = [
             description: 'Лампа галогенная капсульная HCS CL 220V 40W G9',
             price: 25.18,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 87
         },
         {
@@ -617,7 +685,8 @@ const goods = [
             description: 'Лампа ртутная ДРЛ-125 125Вт Е27',
             price: 96.74,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 486
         },
         {
@@ -626,7 +695,8 @@ const goods = [
             description: 'Лампа ртутная ДРЛ-250 250Вт Е40',
             price: 138.78,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1539
         },
         {
@@ -635,7 +705,8 @@ const goods = [
             description: 'Лампа ртутная ДРЛ-400 400Вт Е40',
             price: 182.02,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 66
         },
         {
@@ -644,7 +715,8 @@ const goods = [
             description: 'Лампа ртутная бездроссельная ДРВ-160 Е27',
             price: 104.15,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 118
         },
         {
@@ -653,7 +725,8 @@ const goods = [
             description: 'Лампа ртутная бездроссельная ДРВ-250 Е40',
             price: 181.84,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 134
         },
         {
@@ -662,7 +735,8 @@ const goods = [
             description: 'Лампа натриевая ДНаТ-150 250Вт Е40',
             price: 239.3,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 19
         },
         {
@@ -671,7 +745,8 @@ const goods = [
             description: 'Лампа натриевая ДНаТ-250 250Вт Е40',
             price: 241.21,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -680,7 +755,8 @@ const goods = [
             description: 'Лампа металлогалогеновая ДРИ-400 400Вт Е40',
             price: 426.16,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 70
         },
         {
@@ -689,7 +765,8 @@ const goods = [
             description: 'Стартер S10 4-65Вт 220-240В Китай',
             price: 4.98,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4769
         },
         {
@@ -698,7 +775,8 @@ const goods = [
             description: 'Стартер S2 4-22Вт 127-240В Китай',
             price: 4.98,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10931
         },
         {
@@ -707,7 +785,8 @@ const goods = [
             description: '4008321166333 Стартер OSRAM ST-111 4-65W ',
             price: 14.95,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 980
         },
         {
@@ -716,7 +795,8 @@ const goods = [
             description: '4008321364920 Стартер OSRAM ST-151 4-22W',
             price: 15.69,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 996
         },
         {
@@ -725,7 +805,8 @@ const goods = [
             description: 'Стартер Philips S10 4-65W 220-240V',
             price: 18.48,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 420
         },
         {
@@ -734,7 +815,8 @@ const goods = [
             description: 'Стартер Philips S2 4-22W 127-240V',
             price: 18.48,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1156
         },
         {
@@ -743,7 +825,8 @@ const goods = [
             description: 'Дроссель для люминесцентных ламп АВТ 1И18/20 (для ЛБ-20/18)',
             price: 164.33,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 585
         },
         {
@@ -752,7 +835,8 @@ const goods = [
             description: 'Дроссель для люминесцентных ламп АВТ 1И36/40 (для ЛБ-40/36)',
             price: 164.33,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2314
         },
         {
@@ -761,7 +845,8 @@ const goods = [
             description: 'Дроссель c патроном G23 для PL-11',
             price: 101.7,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -770,7 +855,8 @@ const goods = [
             description: 'ЭПРА 1х18 ',
             price: 112.61,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 20
         },
         {
@@ -779,7 +865,8 @@ const goods = [
             description: 'ЭПРА 1х36',
             price: 118.53,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 632
         },
         {
@@ -788,7 +875,8 @@ const goods = [
             description: 'ЭПРА 2х18',
             price: 140.01,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 410
         },
         {
@@ -797,7 +885,8 @@ const goods = [
             description: 'ЭПРА 2х36',
             price: 163.21,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 350
         },
         {
@@ -806,7 +895,8 @@ const goods = [
             description: 'ЭПРА 4х18 ',
             price: 210.64,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1809
         },
         {
@@ -815,7 +905,8 @@ const goods = [
             description: 'Датчик движения ДДП-03 1200Вт, 10-420с, 6м , 3+Лк, 120(сбоку)+360(сверху)гр IP33',
             price: 297.03,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -824,7 +915,8 @@ const goods = [
             description: 'Фотореле ФРЛ-01 10Лк 6А',
             price: 124.68,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 5
         },
         {
@@ -833,7 +925,8 @@ const goods = [
             description: 'Фотореле ФРЛ-02 5-50Лк 10А',
             price: 162.47,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 61
         },
         {
@@ -842,7 +935,8 @@ const goods = [
             description: 'Фотореле ФРЛ-03 5-50Лк 25А',
             price: 224.67,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -851,7 +945,8 @@ const goods = [
             description: 'Фотореле ФРЛ-11 2-100Лк 20А DIN-рейка (с датчиком IP65)',
             price: 467.05,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -860,7 +955,8 @@ const goods = [
             description: 'Патрон Е27 подвесной карболитовый ',
             price: 13.25,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 30857
         },
         {
@@ -869,7 +965,8 @@ const goods = [
             description: 'Патрон Е27 потолочный карболитовый прямой ',
             price: 20.52,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 295
         },
         {
@@ -878,7 +975,8 @@ const goods = [
             description: 'Патрон Е27 настенный карболитовый',
             price: 20.52,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 42
         },
         {
@@ -887,7 +985,8 @@ const goods = [
             description: 'Патрон Е27 карболитовый с кольцом',
             price: 27.76,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 169
         },
         {
@@ -896,7 +995,8 @@ const goods = [
             description: 'Патрон Е27 подвесной керамический ',
             price: 7.21,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2151
         },
         {
@@ -905,7 +1005,8 @@ const goods = [
             description: 'Патрон Е27 подвесной пластиковый',
             price: 11.83,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -914,7 +1015,8 @@ const goods = [
             description: 'Патрон E14 керамический',
             price: 8.53,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 590
         },
         {
@@ -923,7 +1025,8 @@ const goods = [
             description: 'Патрон Е14 подвесной карболитовый',
             price: 14.63,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 185
         },
         {
@@ -932,7 +1035,8 @@ const goods = [
             description: 'Патрон E14 пластиковый с кольцом',
             price: 10.1,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 440
         },
         {
@@ -941,7 +1045,8 @@ const goods = [
             description: 'Патрон подвесной керамический Е40',
             price: 36.2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 53
         },
         {
@@ -950,7 +1055,8 @@ const goods = [
             description: 'Патрон G23',
             price: 21.48,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 769
         },
         {
@@ -959,7 +1065,8 @@ const goods = [
             description: 'Светильник антивандальный ЛПБ-31-11-006 G23',
             price: 263.01,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -968,7 +1075,8 @@ const goods = [
             description: 'Светильник ЛПО 1х20(18)',
             price: 268.21,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -977,7 +1085,8 @@ const goods = [
             description: 'Светильник ЛПО 1х40(36)',
             price: 321.73,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 400
         },
         {
@@ -986,7 +1095,8 @@ const goods = [
             description: 'Светильник ЛПО 2х20(18)',
             price: 338.04,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 391
         },
         {
@@ -995,7 +1105,8 @@ const goods = [
             description: 'Светильник ЛПО 2х40(36)',
             price: 478.91,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 335
         },
         {
@@ -1004,7 +1115,8 @@ const goods = [
             description: 'Светильник ЛПО 2х40(36) с ЭПРА',
             price: 501.71,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 37
         },
         {
@@ -1013,7 +1125,8 @@ const goods = [
             description: 'Светильник ЛПО 418 накладной зеркальный',
             price: 963.52,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 42
         },
         {
@@ -1022,7 +1135,8 @@ const goods = [
             description: 'Светильник ЛВО 418 встраиваемый зеркальный',
             price: 650.72,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 102
         },
         {
@@ -1031,7 +1145,8 @@ const goods = [
             description: 'Светильник ЛСП 2х36 IP65 с ЭПРА',
             price: 663.64,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 8
         },
         {
@@ -1040,7 +1155,8 @@ const goods = [
             description: 'Рассеиватель к ЛПО 1х20 (прямоугольное сечение)',
             price: 157.2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -1049,7 +1165,8 @@ const goods = [
             description: 'Рассеиватель к ЛПО 1х40 (прямоугольное сечение)',
             price: 192.6,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -1058,7 +1175,8 @@ const goods = [
             description: 'Рассеиватель к ЛПО 2х20 (прямоугольное сечение)',
             price: 163.8,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 20
         },
         {
@@ -1067,7 +1185,8 @@ const goods = [
             description: 'Рассеиватель к ЛПО 2х40 (прямоугольное сечение)',
             price: 211.9,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -1076,7 +1195,8 @@ const goods = [
             description: 'Арматура НСП 03-60 (НСП 01-60-001)',
             price: 39.9,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 410
         },
         {
@@ -1085,7 +1205,8 @@ const goods = [
             description: 'Светильник НСП 02-100-001 без решетки',
             price: 199.32,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 387
         },
         {
@@ -1094,7 +1215,8 @@ const goods = [
             description: 'Светильник НСП 02-100-003 с решеткой',
             price: 220.61,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 295
         },
         {
@@ -1103,7 +1225,8 @@ const goods = [
             description: 'Арматура светильника НББ-64-60 (основание прямое)',
             price: 19,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 832
         },
         {
@@ -1112,7 +1235,8 @@ const goods = [
             description: 'Арматура светильника НББ-64-60 (основание косое)',
             price: 19,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 657
         },
         {
@@ -1121,7 +1245,8 @@ const goods = [
             description: 'Рассеиватель НББ-64-60 (шар стеклянный)',
             price: 52.56,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 763
         },
         {
@@ -1130,7 +1255,8 @@ const goods = [
             description: 'Рассеиватель НББ-64-60 (шар пластиковый)',
             price: 26,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 713
         },
         {
@@ -1139,7 +1265,8 @@ const goods = [
             description: 'Светильник НПП 03-100 IP65',
             price: 149.9,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 151
         },
         {
@@ -1148,7 +1275,8 @@ const goods = [
             description: 'Светодиодный светильник 6 Вт IP40 круглый (таблетка)',
             price: 224.6,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 39
         },
         {
@@ -1157,7 +1285,8 @@ const goods = [
             description: 'Светильник светодиодный 8 Вт IP65 круглый',
             price: 190.35,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 322
         },
         {
@@ -1166,7 +1295,8 @@ const goods = [
             description: 'Светильник светодиодный 12 Вт IP65 круглый',
             price: 255.15,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 126
         },
         {
@@ -1175,7 +1305,8 @@ const goods = [
             description: 'Светильник светодиодный ДПБ 01-2х6-001 12 Вт',
             price: 364,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3712
         },
         {
@@ -1184,7 +1315,8 @@ const goods = [
             description: 'Светильник СПО 60х1 под LED лампу T8 G13',
             price: 261.3,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2
         },
         {
@@ -1193,7 +1325,8 @@ const goods = [
             description: 'Светильник СПО 60х2 под LED лампу T8 G13',
             price: 305.87,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3
         },
         {
@@ -1202,7 +1335,8 @@ const goods = [
             description: 'Светильник СПО 120х1 под LED лампу T8 G13',
             price: 290.83,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 29
         },
         {
@@ -1211,7 +1345,8 @@ const goods = [
             description: 'Светильник СПО 120х2 под LED лампу T8 G13',
             price: 356.57,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -1220,7 +1355,8 @@ const goods = [
             description: 'Светильник светодиодный 18 Вт 600 мм IP40 (аналог ЛПО)',
             price: 206.98,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 826
         },
         {
@@ -1229,7 +1365,8 @@ const goods = [
             description: 'Светильник светодиодный 36 Вт 1200 мм IP40 (аналог ЛПО)',
             price: 353.98,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1479
         },
         {
@@ -1238,7 +1375,8 @@ const goods = [
             description: 'Светильник светодиодный 18 Вт 600 мм IP65 (аналог ЛСП узкий)',
             price: 346.2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 15
         },
         {
@@ -1247,7 +1385,8 @@ const goods = [
             description: 'Светильник светодиодный 36 Вт 1200 мм IP65 (аналог ЛСП узкий)',
             price: 540.8,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 27
         },
         {
@@ -1256,7 +1395,8 @@ const goods = [
             description: 'Светильник светодиодный 36 Вт 1200 мм IP65 (аналог ЛСП широкий)',
             price: 920.7,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3
         },
         {
@@ -1265,7 +1405,8 @@ const goods = [
             description: 'Светильник светодиодный 595х595 36Вт 4000К (для накладного и встраиваемого монтажа)',
             price: 460.32,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 414
         },
         {
@@ -1274,7 +1415,8 @@ const goods = [
             description: 'Светильник светодиодный 595х595 36Вт 6500К (для накладного и встраиваемого монтажа)',
             price: 460.32,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1458
         },
         {
@@ -1283,7 +1425,8 @@ const goods = [
             description: 'Светильник светодиодный уличный ДКУ29-40-501 40 Вт',
             price: 2102.65,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 20
         },
         {
@@ -1292,7 +1435,8 @@ const goods = [
             description: 'Светильник светодиодный уличный ДКУ29-80-501 80 Вт',
             price: 3764.12,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 15
         },
         {
@@ -1301,7 +1445,8 @@ const goods = [
             description: 'Прожектор светодиодный 10W',
             price: 136.66,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 111
         },
         {
@@ -1310,7 +1455,8 @@ const goods = [
             description: 'Прожектор светодиодный 20W',
             price: 199.96,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 163
         },
         {
@@ -1319,7 +1465,8 @@ const goods = [
             description: 'Прожектор светодиодный 30W',
             price: 279.55,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 37
         },
         {
@@ -1328,7 +1475,8 @@ const goods = [
             description: 'Прожектор светодиодный 50W',
             price: 414.77,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 63
         },
         {
@@ -1337,7 +1485,8 @@ const goods = [
             description: 'Прожектор светодиодный 70W',
             price: 641.38,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -1346,7 +1495,8 @@ const goods = [
             description: 'Прожектор светодиодный 100W',
             price: 899.07,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 27
         },
         {
@@ -1355,7 +1505,8 @@ const goods = [
             description: 'Прожектор светодиодный 150W',
             price: 1462.62,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -1364,7 +1515,8 @@ const goods = [
             description: 'Фонарь аккумуляторный ',
             price: 1031.25,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 14
         },
         {
@@ -1373,7 +1525,8 @@ const goods = [
             description: 'Фонарь светодиодный аккумуляторный налобный',
             price: 280,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 26
         },
         {
@@ -1382,7 +1535,8 @@ const goods = [
             description: 'Светильник ССА 1001 ',
             price: 425.15,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 56
         },
         {
@@ -1391,7 +1545,8 @@ const goods = [
             description: 'Элемент питания Duracell MN 1500 ',
             price: 41.7,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 177
         },
         {
@@ -1400,7 +1555,8 @@ const goods = [
             description: 'Элемент питания Duracell MN 2400 ',
             price: 41.7,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 235
         },
         {
@@ -1409,7 +1565,8 @@ const goods = [
             description: 'Элемент питания LR03AAA ',
             price: 9.56,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 420
         },
         {
@@ -1418,7 +1575,8 @@ const goods = [
             description: 'Элемент питания LR6AA ',
             price: 11.86,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 401
         },
         {
@@ -1427,7 +1585,8 @@ const goods = [
             description: 'Элемент питания R20 (D)',
             price: 62.42,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 14
         },
         {
@@ -1436,7 +1595,8 @@ const goods = [
             description: 'Элемент питания ',
             price: 60.73,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 58
         },
         {
@@ -1445,7 +1605,8 @@ const goods = [
             description: 'Канал соединительный для установочных коробок ',
             price: 0.98,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1162
         },
         {
@@ -1454,7 +1615,8 @@ const goods = [
             description: 'Коробка 68х45 скрытой проводки (для бетонных стен)',
             price: 4.69,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1780
         },
         {
@@ -1463,7 +1625,8 @@ const goods = [
             description: 'Коробка 68х42 скрытой проводки (подрозетник стыковочный для бетонных стен)',
             price: 4.84,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1750
         },
         {
@@ -1472,7 +1635,8 @@ const goods = [
             description: 'Коробка 68х45 установочная для Г/К стен',
             price: 6,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 288
         },
         {
@@ -1481,7 +1645,8 @@ const goods = [
             description: 'Розетка 1-я открытой проводки б/з',
             price: 30.04,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 167
         },
         {
@@ -1490,7 +1655,8 @@ const goods = [
             description: 'Розетка 2-я открытой проводки б/з',
             price: 46.36,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 25
         },
         {
@@ -1499,7 +1665,8 @@ const goods = [
             description: 'Розетка 1-я открытой проводки с/з',
             price: 36.92,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 284
         },
         {
@@ -1508,7 +1675,8 @@ const goods = [
             description: 'Розетка 2-я открытой проводки с/з',
             price: 55.75,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 374
         },
         {
@@ -1517,7 +1685,8 @@ const goods = [
             description: 'Розетка 3-я открытой проводки с/з',
             price: 111.27,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 190
         },
         {
@@ -1526,7 +1695,8 @@ const goods = [
             description: 'Розетка 4-я открытой проводки с/з',
             price: 151.2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 280
         },
         {
@@ -1535,7 +1705,8 @@ const goods = [
             description: 'Колодка удлинителя 2-я с заземлением',
             price: 66.83,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 54
         },
         {
@@ -1544,7 +1715,8 @@ const goods = [
             description: 'Колодка удлинителя 3-я с заземлением',
             price: 86.29,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 74
         },
         {
@@ -1553,7 +1725,8 @@ const goods = [
             description: 'Колодка удлинителя 4-я с заземлением',
             price: 104.39,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 34
         },
         {
@@ -1562,7 +1735,8 @@ const goods = [
             description: 'Розетка 1-я открытой проводки с/з брызгозащищенная полугерметичная с крышкой',
             price: 68.38,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 55
         },
         {
@@ -1571,7 +1745,8 @@ const goods = [
             description: 'Розетка 2-я открытой проводки с/з брызгозащищенная полугерметичная с крышкой',
             price: 130.35,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 383
         },
         {
@@ -1580,7 +1755,8 @@ const goods = [
             description: 'Розетка 1-я открытой проводки с заземлением IP54',
             price: 110.14,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 313
         },
         {
@@ -1589,7 +1765,8 @@ const goods = [
             description: 'Розетка 1-я скрытой проводки с/з',
             price: 48.21,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 907
         },
         {
@@ -1598,7 +1775,8 @@ const goods = [
             description: 'Розетка 2-я скрытой проводки с/з',
             price: 60.14,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 154
         },
         {
@@ -1607,7 +1785,8 @@ const goods = [
             description: 'Розетка 1-я скрытой проводки с заземлением со шторками',
             price: 53.12,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 339
         },
         {
@@ -1616,7 +1795,8 @@ const goods = [
             description: 'Розетка 2-я скрытой проводки с заземлением со шторками',
             price: 74.18,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 58
         },
         {
@@ -1625,7 +1805,8 @@ const goods = [
             description: 'Вилка без заземления',
             price: 16.42,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 129
         },
         {
@@ -1634,7 +1815,8 @@ const goods = [
             description: 'Вилка евро угловая',
             price: 21.81,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 192
         },
         {
@@ -1643,7 +1825,8 @@ const goods = [
             description: 'Вилка евро прямая',
             price: 26.61,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 348
         },
         {
@@ -1652,7 +1835,8 @@ const goods = [
             description: 'Вилка евро боковая с ушком белая',
             price: 29,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 66
         },
         {
@@ -1661,7 +1845,8 @@ const goods = [
             description: 'Вилка евро боковая с ушком черная',
             price: 29,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 35
         },
         {
@@ -1670,7 +1855,8 @@ const goods = [
             description: '10027 Вилка MAKEL евро боковая белая',
             price: 38.01,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 197
         },
         {
@@ -1679,7 +1865,8 @@ const goods = [
             description: '10002 Вилка MAKEL евро прямая белая',
             price: 42.77,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 96
         },
         {
@@ -1688,7 +1875,8 @@ const goods = [
             description: 'Удлинитель на катушке 4х30м ПВС 3х1,5',
             price: 1632.8,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -1697,7 +1885,8 @@ const goods = [
             description: 'Удлинитель на катушке 4х30м ПВС 3х2,5',
             price: 2262,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -1706,7 +1895,8 @@ const goods = [
             description: 'Удлинитель на катушке 4х50м ПВС 3х1,5',
             price: 2328,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -1715,7 +1905,8 @@ const goods = [
             description: 'Удлинитель на катушке 4х50м ПВС 3х2,5',
             price: 2898.6,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -1724,7 +1915,8 @@ const goods = [
             description: 'Выключатель 1-клавишный открытой проводки',
             price: 28.61,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 649
         },
         {
@@ -1733,7 +1925,8 @@ const goods = [
             description: 'Выключатель 2-клавишный открытой проводки',
             price: 32.1,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 413
         },
         {
@@ -1742,7 +1935,8 @@ const goods = [
             description: 'Выключатель 1-клавишный открытой проводки проходной (переключатель)',
             price: 38.63,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -1751,7 +1945,8 @@ const goods = [
             description: 'Выключатель 1-клавишный открытой проводки с подсветкой',
             price: 33,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 13
         },
         {
@@ -1760,7 +1955,8 @@ const goods = [
             description: 'Выключатель 1-клавишный открытой проводки IP44',
             price: 63.02,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 169
         },
         {
@@ -1769,7 +1965,8 @@ const goods = [
             description: 'Выключатель 1-клавишный открытой проводки IP54',
             price: 103.5,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 157
         },
         {
@@ -1778,7 +1975,8 @@ const goods = [
             description: 'Выключатель 1-клавишный скрытой проводки',
             price: 41.68,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 403
         },
         {
@@ -1787,7 +1985,8 @@ const goods = [
             description: 'Выключатель 2-клавишный скрытой проводки',
             price: 24.98,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 829
         },
         {
@@ -1796,7 +1995,8 @@ const goods = [
             description: 'Колодка каучуковая переносная на 1 розетку 16A 2P+E IP44',
             price: 248.12,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7
         },
         {
@@ -1805,7 +2005,8 @@ const goods = [
             description: 'Колодка каучуковая на 1 розетку 16A 2P+E IP44',
             price: 108.24,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 28
         },
         {
@@ -1814,7 +2015,8 @@ const goods = [
             description: 'Колодка каучуковая на 2 розетки 16A 2P+E IP44',
             price: 81.54,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2
         },
         {
@@ -1823,7 +2025,8 @@ const goods = [
             description: 'Колодка каучуковая на 3 розетки IP44',
             price: 172.59,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 365
         },
         {
@@ -1832,7 +2035,8 @@ const goods = [
             description: 'Вилка евро каучуковая',
             price: 45.4,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 461
         },
         {
@@ -1841,7 +2045,8 @@ const goods = [
             description: 'Соединительный элемент РШ-ВШ 32А 3-х штырьковый 220В белый',
             price: 99.76,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 13
         },
         {
@@ -1850,7 +2055,8 @@ const goods = [
             description: 'Вилка переносная 013 2Р+PE 16А 220В IP44',
             price: 90.78,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 17
         },
         {
@@ -1859,7 +2065,8 @@ const goods = [
             description: 'Вилка переносная 014 3Р+PE 16А 380В IP44\n',
             price: 101.99,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 102
         },
         {
@@ -1868,7 +2075,8 @@ const goods = [
             description: 'Вилка переносная 015 3Р+PE+N 16А 380В IP44\n',
             price: 121.96,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -1877,7 +2085,8 @@ const goods = [
             description: 'Вилка переносная 023 2Р+PE 32А 220В IP44',
             price: 140.84,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 36
         },
         {
@@ -1886,7 +2095,8 @@ const goods = [
             description: 'Вилка переносная 024 3P+E 32А 380В IP44',
             price: 152.28,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 21
         },
         {
@@ -1895,7 +2105,8 @@ const goods = [
             description: 'Вилка переносная 025 3P+E+N 32А 380В IP44',
             price: 180.53,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 29
         },
         {
@@ -1904,7 +2115,8 @@ const goods = [
             description: 'Розетка стационарная 113 2Р+PE 16А 380В IP44',
             price: 146.91,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1
         },
         {
@@ -1913,7 +2125,8 @@ const goods = [
             description: 'Розетка стационарная 114 3Р+PE 16А 380В IP44',
             price: 156.71,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 47
         },
         {
@@ -1922,7 +2135,8 @@ const goods = [
             description: 'Розетка стационарная 115 3P+E+N 16А 380В IP44',
             price: 166.92,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 11
         },
         {
@@ -1931,7 +2145,8 @@ const goods = [
             description: 'Розетка стационарная 123 2Р+PE 32А 220В IP44',
             price: 186.53,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 47
         },
         {
@@ -1940,7 +2155,8 @@ const goods = [
             description: 'Розетка стационарная 124 3Р+PE 32А 380В IP44',
             price: 200.94,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 28
         },
         {
@@ -1949,7 +2165,8 @@ const goods = [
             description: 'Розетка стационарная 125 32А 3Р+N+E 380В IР44',
             price: 214.59,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 32
         },
         {
@@ -1958,7 +2175,8 @@ const goods = [
             description: 'Розетка переносная 213 2P+E 16А 220В IP44',
             price: 110.62,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -1967,7 +2185,8 @@ const goods = [
             description: 'Розетка переносная 214 3Р+PE 16А 380B IP44',
             price: 120.68,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -1976,7 +2195,8 @@ const goods = [
             description: 'Розетка переносная 224 3P+E 32А 380В IP44',
             price: 166.04,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 48
         },
         {
@@ -1985,7 +2205,8 @@ const goods = [
             description: 'Розетка переносная 225 3P+E+N 32А 380В IP44',
             price: 204.83,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 117
         },
         {
@@ -1994,7 +2215,8 @@ const goods = [
             description: 'Кабель АВВГ 2х2,5',
             price: 6.94,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2425
         },
         {
@@ -2003,7 +2225,8 @@ const goods = [
             description: 'Провод АППВ 2х2,5',
             price: 6.55,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 5035
         },
         {
@@ -2012,7 +2235,8 @@ const goods = [
             description: 'Провод АПВ 2,5',
             price: 2.78,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3450
         },
         {
@@ -2021,7 +2245,8 @@ const goods = [
             description: 'Провод АПВ 4',
             price: 4.07,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1645
         },
         {
@@ -2030,7 +2255,8 @@ const goods = [
             description: 'Провод АПВ 6',
             price: 5.61,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 610
         },
         {
@@ -2039,7 +2265,8 @@ const goods = [
             description: 'Провод АПВ 10',
             price: 9.24,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 190
         },
         {
@@ -2048,7 +2275,8 @@ const goods = [
             description: 'Кабель ВВГнг 3x6 плоский',
             price: 88.78,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2335
         },
         {
@@ -2057,7 +2285,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 2х1,5 плоский',
             price: 18.45,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 158
         },
         {
@@ -2066,7 +2295,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 2х2,5 плоский',
             price: 28.83,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 163
         },
         {
@@ -2075,7 +2305,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 3х1,5 плоский',
             price: 28.61,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 5131
         },
         {
@@ -2084,7 +2315,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 3х2,5 плоский',
             price: 44.98,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2982
         },
         {
@@ -2093,7 +2325,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 3x4 плоский',
             price: 65.59,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -2102,7 +2335,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 3x6 плоский',
             price: 95.14,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 95
         },
         {
@@ -2111,7 +2345,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 3x10',
             price: 168.87,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 250
         },
         {
@@ -2120,7 +2355,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 4х1,5',
             price: 35.26,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 366
         },
         {
@@ -2129,7 +2365,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 4х2,5',
             price: 55.57,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 176
         },
         {
@@ -2138,7 +2375,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 4х4',
             price: 87.26,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 130
         },
         {
@@ -2147,7 +2385,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 4х6',
             price: 127.1,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 565
         },
         {
@@ -2156,7 +2395,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 4х10',
             price: 198.27,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 886
         },
         {
@@ -2165,7 +2405,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 5х1,5',
             price: 44.34,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 200
         },
         {
@@ -2174,7 +2415,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 5х2,5',
             price: 68.49,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 659
         },
         {
@@ -2183,7 +2425,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 5х4',
             price: 107.43,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 330
         },
         {
@@ -2192,7 +2435,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 5х6',
             price: 156.9,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 738
         },
         {
@@ -2201,7 +2445,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 5х10',
             price: 259.45,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 400
         },
         {
@@ -2210,7 +2455,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 5х16',
             price: 399.47,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1020
         },
         {
@@ -2219,7 +2465,8 @@ const goods = [
             description: 'Кабель ВВГнг-LS 5х25',
             price: 642.42,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 130
         },
         {
@@ -2228,7 +2475,8 @@ const goods = [
             description: 'Кабель ВВГнг-FRLS 3х1,5',
             price: 40.19,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 6556
         },
         {
@@ -2237,7 +2485,8 @@ const goods = [
             description: 'Кабель ВВГнг-FRLS 3х2,5',
             price: 58.13,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7701
         },
         {
@@ -2246,7 +2495,8 @@ const goods = [
             description: 'Кабель ВВГнг-FRLS 5х4',
             price: 146.22,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 600
         },
         {
@@ -2255,7 +2505,8 @@ const goods = [
             description: 'Кабель ВВГнг-FRLS 5х6',
             price: 197.55,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 505
         },
         {
@@ -2264,7 +2515,8 @@ const goods = [
             description: 'Кабель КГ 3х1,5',
             price: 32.03,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 400
         },
         {
@@ -2273,7 +2525,8 @@ const goods = [
             description: 'Кабель КГ 3х2,5',
             price: 49.19,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 980
         },
         {
@@ -2282,7 +2535,8 @@ const goods = [
             description: 'Кабель КГ 4х2,5',
             price: 62.89,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 115
         },
         {
@@ -2291,7 +2545,8 @@ const goods = [
             description: 'Кабель КГ 4х4',
             price: 97.51,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 400
         },
         {
@@ -2300,7 +2555,8 @@ const goods = [
             description: 'Кабель КГ 4х6',
             price: 143.64,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 240
         },
         {
@@ -2309,7 +2565,8 @@ const goods = [
             description: 'Кабель КГ 4х10',
             price: 242.51,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 140
         },
         {
@@ -2318,7 +2575,8 @@ const goods = [
             description: 'Кабель NYM 3х1,5',
             price: 30.95,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1318
         },
         {
@@ -2327,7 +2585,8 @@ const goods = [
             description: 'Кабель NYM 3х2,5',
             price: 47.34,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 800
         },
         {
@@ -2336,7 +2595,8 @@ const goods = [
             description: 'Кабель NYM 3х4',
             price: 72.57,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -2345,7 +2605,8 @@ const goods = [
             description: 'Провод ПВ-3 0,75',
             price: 4.97,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 670
         },
         {
@@ -2354,7 +2615,8 @@ const goods = [
             description: 'Провод ПВ-3 1,5',
             price: 7.85,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 453
         },
         {
@@ -2363,7 +2625,8 @@ const goods = [
             description: 'Провод ПВ-3 2,5',
             price: 12.81,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 355
         },
         {
@@ -2372,7 +2635,8 @@ const goods = [
             description: 'Провод ПВ-3 4',
             price: 20.39,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 17
         },
         {
@@ -2381,7 +2645,8 @@ const goods = [
             description: 'Провод ПВ-3 6 ',
             price: 30.17,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 124
         },
         {
@@ -2390,7 +2655,8 @@ const goods = [
             description: 'Провод ПВ-3 10',
             price: 51.31,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 588
         },
         {
@@ -2399,7 +2665,8 @@ const goods = [
             description: 'Провод ПВ-3 16',
             price: 81.92,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 505
         },
         {
@@ -2408,7 +2675,8 @@ const goods = [
             description: 'Провод ПВ-3 25',
             price: 124.93,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 599
         },
         {
@@ -2417,7 +2685,8 @@ const goods = [
             description: 'Провод ПВ-3 35',
             price: 184.49,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 294
         },
         {
@@ -2426,7 +2695,8 @@ const goods = [
             description: 'Провод ПВ-3 50',
             price: 276.41,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -2435,7 +2705,8 @@ const goods = [
             description: 'Провод ПВ-3 70',
             price: 385.98,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 92
         },
         {
@@ -2444,7 +2715,8 @@ const goods = [
             description: 'Провод ПВ-1 1,5',
             price: 7.69,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 200
         },
         {
@@ -2453,7 +2725,8 @@ const goods = [
             description: 'Провод ПВ-1 2,5',
             price: 12.32,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 462
         },
         {
@@ -2462,7 +2735,8 @@ const goods = [
             description: 'Провод ПВ-1 4',
             price: 20.54,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1339
         },
         {
@@ -2471,7 +2745,8 @@ const goods = [
             description: 'Провод ПВ-1 6',
             price: 30.43,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1185
         },
         {
@@ -2480,7 +2755,8 @@ const goods = [
             description: 'Провод ПВ-1 10',
             price: 51.09,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 540
         },
         {
@@ -2489,7 +2765,8 @@ const goods = [
             description: 'Провод ПВ-1 16',
             price: 82.19,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 310
         },
         {
@@ -2498,7 +2775,8 @@ const goods = [
             description: 'Провод ПВС 2х0,75',
             price: 12.18,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 350
         },
         {
@@ -2507,7 +2785,8 @@ const goods = [
             description: 'Провод ПВС 2х1,5',
             price: 19.61,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2650
         },
         {
@@ -2516,7 +2795,8 @@ const goods = [
             description: 'Провод ПВС 2х2,5',
             price: 30.82,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 584
         },
         {
@@ -2525,7 +2805,8 @@ const goods = [
             description: 'Провод ПВС 3х0,75',
             price: 16.11,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 255
         },
         {
@@ -2534,7 +2815,8 @@ const goods = [
             description: 'Провод ПВС 3х1,5',
             price: 26.96,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3545
         },
         {
@@ -2543,7 +2825,8 @@ const goods = [
             description: 'Провод ПВС 3х2,5',
             price: 43.23,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 5277
         },
         {
@@ -2552,7 +2835,8 @@ const goods = [
             description: 'Провод ПВС 3х4',
             price: 67.01,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 675
         },
         {
@@ -2561,7 +2845,8 @@ const goods = [
             description: 'Провод ПВС 4х1,5',
             price: 34.68,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 361
         },
         {
@@ -2570,7 +2855,8 @@ const goods = [
             description: 'Провод ПВС 4х2,5',
             price: 55.69,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 860
         },
         {
@@ -2579,7 +2865,8 @@ const goods = [
             description: 'Провод ПВС 4х4',
             price: 92.04,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 50
         },
         {
@@ -2588,7 +2875,8 @@ const goods = [
             description: 'Провод ПВС 4х6',
             price: 141.68,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 280
         },
         {
@@ -2597,7 +2885,8 @@ const goods = [
             description: 'Провод ПВС 4х10',
             price: 237.26,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -2606,7 +2895,8 @@ const goods = [
             description: 'Провод ПВС 5х2,5',
             price: 77.17,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 410
         },
         {
@@ -2615,7 +2905,8 @@ const goods = [
             description: 'Провод ШВВП 2х0,75',
             price: 9.23,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 945
         },
         {
@@ -2624,7 +2915,8 @@ const goods = [
             description: 'Провод ПУгНП 2х1,5',
             price: 15.88,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2070
         },
         {
@@ -2633,7 +2925,8 @@ const goods = [
             description: 'Провод ПУгНП 2х2,5',
             price: 24.56,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 811
         },
         {
@@ -2642,7 +2935,8 @@ const goods = [
             description: 'Провод ШВВП 3х0,75',
             price: 13.48,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 200
         },
         {
@@ -2651,7 +2945,8 @@ const goods = [
             description: 'Провод ПУгНП 3х1,5',
             price: 23.39,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1945
         },
         {
@@ -2660,7 +2955,8 @@ const goods = [
             description: 'Провод ПУгНП 3х2,5',
             price: 36.42,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 220
         },
         {
@@ -2669,7 +2965,8 @@ const goods = [
             description: 'Провод ПУНП 2х1,5',
             price: 15.35,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 570
         },
         {
@@ -2678,7 +2975,8 @@ const goods = [
             description: 'Провод ПУНП 2х2,5',
             price: 23.8,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -2687,7 +2985,8 @@ const goods = [
             description: 'Провод ПУНП 3х1,5 ',
             price: 22.64,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 200
         },
         {
@@ -2696,7 +2995,8 @@ const goods = [
             description: 'Провод ПУНП 3х2,5',
             price: 35.34,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 320
         },
         {
@@ -2705,7 +3005,8 @@ const goods = [
             description: 'Кабель коаксиальный RG-6 (телевизионный)',
             price: 7.92,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 109
         },
         {
@@ -2714,7 +3015,8 @@ const goods = [
             description: 'Кабель информационный UTP 4х2х0,52 Категория 5 (Интернет)',
             price: 7.1,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2866
         },
         {
@@ -2723,7 +3025,8 @@ const goods = [
             description: 'Труба гофрированная ПВХ d16мм (100м)',
             price: 3.38,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2200
         },
         {
@@ -2732,7 +3035,8 @@ const goods = [
             description: 'Труба гофрированная ПВХ d20мм (100м)',
             price: 4.47,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3850
         },
         {
@@ -2741,7 +3045,8 @@ const goods = [
             description: 'Труба гофрированная ПВХ d25мм (50м)',
             price: 7.02,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1000
         },
         {
@@ -2750,7 +3055,8 @@ const goods = [
             description: 'Труба гофрированная ПВХ d32мм (50м)',
             price: 10.3,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 600
         },
         {
@@ -2759,7 +3065,8 @@ const goods = [
             description: 'Труба гофрированная ПВХ d40мм (20м)',
             price: 15.65,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 250
         },
         {
@@ -2768,7 +3075,8 @@ const goods = [
             description: 'Труба гофрированная ПВХ d50мм (20м)',
             price: 18.04,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 135
         },
         {
@@ -2777,7 +3085,8 @@ const goods = [
             description: 'Труба гофрированная ПНД d16мм (100м)',
             price: 6.19,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1600
         },
         {
@@ -2786,7 +3095,8 @@ const goods = [
             description: 'Труба гофрированная ПНД d20мм (100м)',
             price: 8.68,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3500
         },
         {
@@ -2795,7 +3105,8 @@ const goods = [
             description: 'Труба гофрированная ПНД d25мм (100м)',
             price: 11.84,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 600
         },
         {
@@ -2804,7 +3115,8 @@ const goods = [
             description: 'Труба гофрированная ПНД d32мм (100м)',
             price: 19.6,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 650
         },
         {
@@ -2813,7 +3125,8 @@ const goods = [
             description: 'Труба жесткая гладкая ПВХ d16мм (3м)',
             price: 6.98,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1322
         },
         {
@@ -2822,7 +3135,8 @@ const goods = [
             description: 'Труба жесткая гладкая ПВХ d20мм (3м)',
             price: 9.22,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 885
         },
         {
@@ -2831,7 +3145,8 @@ const goods = [
             description: 'Труба жесткая гладкая ПВХ d25мм (3м)',
             price: 12.16,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 150
         },
         {
@@ -2840,7 +3155,8 @@ const goods = [
             description: 'Труба жесткая гладкая ПВХ d32мм (3м)',
             price: 29.34,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 15
         },
         {
@@ -2849,7 +3165,8 @@ const goods = [
             description: 'Труба жесткая гладкая ПВХ d40мм (3м)',
             price: 26.46,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 174
         },
         {
@@ -2858,7 +3175,8 @@ const goods = [
             description: 'Труба жесткая гладкая ПВХ d50мм (3м)',
             price: 34.02,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 9
         },
         {
@@ -2867,7 +3185,8 @@ const goods = [
             description: 'Металлорукав 12 РЗ-ЦХ',
             price: 18.52,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -2876,7 +3195,8 @@ const goods = [
             description: 'Металлорукав 15 РЗ-ЦХ',
             price: 21.47,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 50
         },
         {
@@ -2885,7 +3205,8 @@ const goods = [
             description: 'Металлорукав 20 РЗ-ЦХ',
             price: 29.66,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -2894,7 +3215,8 @@ const goods = [
             description: 'Металлорукав 25 РЗ-ЦХ',
             price: 41.18,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -2903,7 +3225,8 @@ const goods = [
             description: 'Клипса 16 для трубы',
             price: 0.56,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 5506
         },
         {
@@ -2912,7 +3235,8 @@ const goods = [
             description: 'Клипса 20 для трубы',
             price: 0.67,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 14505
         },
         {
@@ -2921,7 +3245,8 @@ const goods = [
             description: 'Клипса 25 для трубы',
             price: 0.85,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1595
         },
         {
@@ -2930,7 +3255,8 @@ const goods = [
             description: 'Клипса 32 для трубы',
             price: 1.5,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 327
         },
         {
@@ -2939,7 +3265,8 @@ const goods = [
             description: 'Клипса 40 для трубы',
             price: 2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 550
         },
         {
@@ -2948,7 +3275,8 @@ const goods = [
             description: 'Клипса 50 для трубы',
             price: 5.62,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 170
         },
         {
@@ -2957,7 +3285,8 @@ const goods = [
             description: 'Клипса 16 для трубы черная',
             price: 0.81,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 950
         },
         {
@@ -2966,7 +3295,8 @@ const goods = [
             description: 'Клипса 20 для трубы черная',
             price: 0.94,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1550
         },
         {
@@ -2975,7 +3305,8 @@ const goods = [
             description: 'Клипса 25 для трубы черная',
             price: 1.1,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 200
         },
         {
@@ -2984,7 +3315,8 @@ const goods = [
             description: 'Угол 20 соединительный 90 градусов ПВХ ',
             price: 5.38,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1010
         },
         {
@@ -2993,7 +3325,8 @@ const goods = [
             description: 'Муфта 16 соединительная ПВХ',
             price: 2.16,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1145
         },
         {
@@ -3002,7 +3335,8 @@ const goods = [
             description: 'Муфта 20 соединительная ПВХ',
             price: 2.53,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 16
         },
         {
@@ -3011,7 +3345,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 12х12',
             price: 5.89,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 550
         },
         {
@@ -3020,7 +3355,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 15х10',
             price: 7.92,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -3029,7 +3365,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 16х16',
             price: 7.62,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -3038,7 +3375,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 20х10',
             price: 10.21,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 560
         },
         {
@@ -3047,7 +3385,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 25х16',
             price: 12.52,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3358
         },
         {
@@ -3056,7 +3395,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 25х25',
             price: 16.87,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -3065,7 +3405,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 40х16',
             price: 18.52,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 440
         },
         {
@@ -3074,7 +3415,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 40х25',
             price: 23.56,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 278
         },
         {
@@ -3083,7 +3425,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 40х40',
             price: 31.31,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 844
         },
         {
@@ -3092,7 +3435,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 60х40',
             price: 45.55,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2114
         },
         {
@@ -3101,7 +3445,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 60х60',
             price: 60.9,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 176
         },
         {
@@ -3110,7 +3455,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 80х40',
             price: 66.58,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 156
         },
         {
@@ -3119,7 +3465,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 80х60',
             price: 80.42,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 144
         },
         {
@@ -3128,7 +3475,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 100х40',
             price: 81.92,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -3137,7 +3485,8 @@ const goods = [
             description: 'Кабель-канал ПВХ 100х60',
             price: 98.34,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -3146,7 +3495,8 @@ const goods = [
             description: 'Коробка распределительная 70х70х40 открытой установки IP54',
             price: 16.42,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 399
         },
         {
@@ -3155,7 +3505,8 @@ const goods = [
             description: 'Коробка распределительная 80х80х50 открытой установки IP54',
             price: 20.43,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 125
         },
         {
@@ -3164,7 +3515,8 @@ const goods = [
             description: 'Коробка распределительная 100х100х50 открытой установки IP54',
             price: 30.51,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 649
         },
         {
@@ -3173,7 +3525,8 @@ const goods = [
             description: 'Коробка распределительная 150х110х70 открытой установки IP55',
             price: 76.32,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 22
         },
         {
@@ -3182,7 +3535,8 @@ const goods = [
             description: 'Сжим ответвительный У-731',
             price: 17.45,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 760
         },
         {
@@ -3191,7 +3545,8 @@ const goods = [
             description: 'Сжим ответвительный У-733',
             price: 17.45,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1577
         },
         {
@@ -3200,7 +3555,8 @@ const goods = [
             description: 'Сжим ответвительный У-734',
             price: 17.45,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 594
         },
         {
@@ -3209,7 +3565,8 @@ const goods = [
             description: 'Сжим ответвительный У-739',
             price: 16.97,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -3218,7 +3575,8 @@ const goods = [
             description: 'Сжим ответвительный У-859',
             price: 63.16,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 372
         },
         {
@@ -3227,7 +3585,8 @@ const goods = [
             description: 'Сжим ответвительный У-871',
             price: 159.29,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 162
         },
         {
@@ -3236,7 +3595,8 @@ const goods = [
             description: 'Провод СИП-4 2х16',
             price: 28.36,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2140
         },
         {
@@ -3245,7 +3605,8 @@ const goods = [
             description: 'Провод СИП-4 4х16',
             price: 56.29,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 5788
         },
         {
@@ -3254,7 +3615,8 @@ const goods = [
             description: 'Зажим анкерный ЗАБ 16-25 М',
             price: 49.62,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 197
         },
         {
@@ -3263,7 +3625,8 @@ const goods = [
             description: 'Зажим анкерный клиновой ЗАК 50-70/1500',
             price: 240.62,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 105
         },
         {
@@ -3272,7 +3635,8 @@ const goods = [
             description: 'Зажим герметичный ответвительный прокалывающий ЗГОП 16-95/1,5-10',
             price: 68.99,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 516
         },
         {
@@ -3281,7 +3645,8 @@ const goods = [
             description: 'Зажим герметичный ответвительный прокалывающий ЗГОП 16-95/2,5-35',
             price: 96.65,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 348
         },
         {
@@ -3290,7 +3655,8 @@ const goods = [
             description: 'Зажим герметичный ответвительный прокалывающий ЗГОП 25-150/25-95',
             price: 123.85,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 18
         },
         {
@@ -3299,7 +3665,8 @@ const goods = [
             description: 'Кронштейн анкерный КАМ-1500',
             price: 151.64,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 118
         },
         {
@@ -3308,7 +3675,8 @@ const goods = [
             description: 'Комплект промежуточной подвески КОПП-1500',
             price: 243.77,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -3317,7 +3685,8 @@ const goods = [
             description: 'Лента бандажная ЛМ-50',
             price: 1575,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 14
         },
         {
@@ -3326,7 +3695,8 @@ const goods = [
             description: 'Скрепа-бугель усиленная СУ-20 (100 шт/уп)',
             price: 971.48,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2
         },
         {
@@ -3335,7 +3705,8 @@ const goods = [
             description: '222-412 WAGO Клеммник 2х(0,08-2,5) для медных многожильных проводов',
             price: 15.23,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 112
         },
         {
@@ -3344,7 +3715,8 @@ const goods = [
             description: '222-413 WAGO Клеммник 3х(0,08-2,5) для медных многожильных проводов',
             price: 18.97,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 830
         },
         {
@@ -3353,7 +3725,8 @@ const goods = [
             description: '222-415 WAGO Клеммник 5х(0,08-2,5) для медных многожильных проводов',
             price: 30.44,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 151
         },
         {
@@ -3362,7 +3735,8 @@ const goods = [
             description: '2273-202 WAGO Клеммник 2х(0,5-2,5) без наполнителя',
             price: 5.67,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 460
         },
         {
@@ -3371,7 +3745,8 @@ const goods = [
             description: '2273-203 WAGO Клеммник 3х(0,5-2,5) без наполнителя',
             price: 6.07,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 900
         },
         {
@@ -3380,7 +3755,8 @@ const goods = [
             description: '2273-204 WAGO Клеммник 4х(0,5-2,5) без наполнителя',
             price: 7.67,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1108
         },
         {
@@ -3389,7 +3765,8 @@ const goods = [
             description: '2273-205 WAGO Клеммник 5х(0,5-2,5) без наполнителя',
             price: 8.38,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 180
         },
         {
@@ -3398,7 +3775,8 @@ const goods = [
             description: 'СК-412 Клеммник 2х(0,08-2,5) для медных многожильных проводов',
             price: 8.39,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7576
         },
         {
@@ -3407,7 +3785,8 @@ const goods = [
             description: 'СК-413 Клеммник 3х(0,08-2,5) для медных многожильных проводов',
             price: 11.4,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4351
         },
         {
@@ -3416,7 +3795,8 @@ const goods = [
             description: 'СК-415 Клеммник 5х(0,08-2,5) для медных многожильных проводов',
             price: 32.8,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1899
         },
         {
@@ -3425,7 +3805,8 @@ const goods = [
             description: '2273-232 Клеммник 2х(0,5-2,5) для распределительных коробок',
             price: 3.71,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 444
         },
         {
@@ -3434,7 +3815,8 @@ const goods = [
             description: '2273-233 Клеммник 3х(0,5-2,5) с наполнителем',
             price: 4.79,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 308
         },
         {
@@ -3443,7 +3825,8 @@ const goods = [
             description: '2273-244 Клеммник 4х(0,5-2,5) с наполнителем',
             price: 4.59,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 11613
         },
         {
@@ -3452,7 +3835,8 @@ const goods = [
             description: '2273-235 Клеммник 5х(0,5-2,5) с наполнителем',
             price: 6.68,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 150
         },
         {
@@ -3461,7 +3845,8 @@ const goods = [
             description: '2273-246 Клеммник 6х(0,5-2,5) с наполнителем',
             price: 6.9,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 935
         },
         {
@@ -3470,7 +3855,8 @@ const goods = [
             description: '2273-248 Клеммник 8х(0,5-2,5) с наполнителем',
             price: 8.96,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 92
         },
         {
@@ -3479,7 +3865,8 @@ const goods = [
             description: 'Зажим винтовой ЗВИ-3     4 кв.мм 12пар',
             price: 16.76,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 300
         },
         {
@@ -3488,7 +3875,8 @@ const goods = [
             description: 'Зажим винтовой ЗВИ-5     6 кв.мм 12пар',
             price: 17.83,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 200
         },
         {
@@ -3497,7 +3885,8 @@ const goods = [
             description: 'Зажим винтовой ЗВИ-10 10 кв.мм 12пар',
             price: 29.02,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 65
         },
         {
@@ -3506,7 +3895,8 @@ const goods = [
             description: 'Зажим винтовой ЗВИ-15 12 кв.мм 12пар',
             price: 31.22,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 321
         },
         {
@@ -3515,7 +3905,8 @@ const goods = [
             description: 'Зажим винтовой ЗВИ-20 14 кв.мм 12пар',
             price: 35.67,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 235
         },
         {
@@ -3524,7 +3915,8 @@ const goods = [
             description: 'Зажим винтовой ЗВИ-30 16 кв.мм 12пар',
             price: 49.21,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 110
         },
         {
@@ -3533,7 +3925,8 @@ const goods = [
             description: 'Зажим винтовой ЗВИ-60 25 кв.мм 12пар',
             price: 77.2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -3542,7 +3935,8 @@ const goods = [
             description: 'Наконечник кабельный ТА-16 алюминиевый под опрессовку',
             price: 5.93,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 55
         },
         {
@@ -3551,7 +3945,8 @@ const goods = [
             description: 'Наконечник кабельный ТА-25 алюминиевый под опрессовку',
             price: 8.63,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 88
         },
         {
@@ -3560,7 +3955,8 @@ const goods = [
             description: 'Наконечник кабельный ТА-35 алюминиевый под опрессовку',
             price: 9.42,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -3569,7 +3965,8 @@ const goods = [
             description: 'Наконечник кабельный ТА-50 алюминиевый под опрессовку',
             price: 11.78,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 116
         },
         {
@@ -3578,7 +3975,8 @@ const goods = [
             description: 'Наконечник кабельный ТА-70 алюминиевый под опрессовку',
             price: 15.68,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 27
         },
         {
@@ -3587,7 +3985,8 @@ const goods = [
             description: 'Наконечник кабельный ТА-95 алюминиевый под опрессовку',
             price: 17.69,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 39
         },
         {
@@ -3596,7 +3995,8 @@ const goods = [
             description: 'Наконечник кабельный ТА-120 алюминиевый под опрессовку',
             price: 24.37,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 69
         },
         {
@@ -3605,7 +4005,8 @@ const goods = [
             description: 'Наконечник кабельный ТМЛ-2,5 медный луженый под опрессовку',
             price: 4.09,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1280
         },
         {
@@ -3614,7 +4015,8 @@ const goods = [
             description: 'Наконечник кабельный ТМЛ-4 медный луженый под опрессовку',
             price: 4.42,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 657
         },
         {
@@ -3623,7 +4025,8 @@ const goods = [
             description: 'Наконечник кабельный ТМЛ-6 медный луженый под опрессовку',
             price: 4.6,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4174
         },
         {
@@ -3632,7 +4035,8 @@ const goods = [
             description: 'Наконечник кабельный ТМЛ-10 медный луженый под опрессовку',
             price: 9.2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1589
         },
         {
@@ -3641,7 +4045,8 @@ const goods = [
             description: 'Наконечник кабельный ТМЛ-16 медный луженый под опрессовку',
             price: 10.65,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1558
         },
         {
@@ -3650,7 +4055,8 @@ const goods = [
             description: 'Наконечник кабельный ТМЛ-25 медный луженый под опрессовку',
             price: 15.15,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 929
         },
         {
@@ -3659,7 +4065,8 @@ const goods = [
             description: 'Наконечник кабельный ТМЛ-35 медный луженый под опрессовку',
             price: 19.8,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 349
         },
         {
@@ -3668,7 +4075,8 @@ const goods = [
             description: 'Наконечник кабельный ТМЛ-50 медный луженый под опрессовку',
             price: 26.85,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 363
         },
         {
@@ -3677,7 +4085,8 @@ const goods = [
             description: 'Наконечник кабельный ТМЛ-70 медный луженый под опрессовку',
             price: 34.35,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 326
         },
         {
@@ -3686,7 +4095,8 @@ const goods = [
             description: 'Наконечник кабельный ТМЛ-95 медный луженый под опрессовку',
             price: 60.75,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 88
         },
         {
@@ -3695,7 +4105,8 @@ const goods = [
             description: 'Наконечник кабельный ТМЛ-120 медный луженый под опрессовку',
             price: 83.32,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 66
         },
         {
@@ -3704,7 +4115,8 @@ const goods = [
             description: 'Наконечник кабельный ТМЛ-150 медный луженый под опрессовку',
             price: 119.18,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 47
         },
         {
@@ -3713,7 +4125,8 @@ const goods = [
             description: 'Гильза медная луженая ГМЛ 4-3',
             price: 5.22,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 98
         },
         {
@@ -3722,7 +4135,8 @@ const goods = [
             description: 'Гильза медная луженая ГМЛ 6-4 ',
             price: 6.03,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 131
         },
         {
@@ -3731,7 +4145,8 @@ const goods = [
             description: 'Гильза медная луженая ГМЛ 10-5',
             price: 10.1,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 194
         },
         {
@@ -3740,7 +4155,8 @@ const goods = [
             description: 'Гильза медная луженая ГМЛ 16-6',
             price: 11.68,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 270
         },
         {
@@ -3749,7 +4165,8 @@ const goods = [
             description: 'Гильза медная луженая ГМЛ 25-8',
             price: 18.98,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 92
         },
         {
@@ -3758,7 +4175,8 @@ const goods = [
             description: 'Гильза медная луженая ГМЛ 35-9',
             price: 26.29,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 84
         },
         {
@@ -3767,7 +4185,8 @@ const goods = [
             description: 'Гильза медная луженая ГМЛ 50-11',
             price: 31.68,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 95
         },
         {
@@ -3776,7 +4195,8 @@ const goods = [
             description: 'Наконечник штыревой НШвИ 0,5-8 изолированный упаковка 100шт',
             price: 22.14,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 24
         },
         {
@@ -3785,7 +4205,8 @@ const goods = [
             description: 'Наконечник штыревой НШвИ 0,75-8 изолированный упаковка 100шт',
             price: 23.25,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 21
         },
         {
@@ -3794,7 +4215,8 @@ const goods = [
             description: 'Наконечник штыревой НШвИ 1,0-8 изолированный упаковка 100шт',
             price: 25.3,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 50
         },
         {
@@ -3803,7 +4225,8 @@ const goods = [
             description: 'Наконечник штыревой НШвИ 1,5-8 изолированный упаковка 100шт',
             price: 28.89,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 28
         },
         {
@@ -3812,7 +4235,8 @@ const goods = [
             description: 'Наконечник штыревой НШвИ 2,5-8 изолированный упаковка 100шт',
             price: 37.38,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 39
         },
         {
@@ -3821,7 +4245,8 @@ const goods = [
             description: 'Наконечник штыревой НШвИ 4-10 изолированный упаковка 100шт',
             price: 55.27,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3
         },
         {
@@ -3830,7 +4255,8 @@ const goods = [
             description: 'Наконечник штыревой НШвИ 6-12 изолированный упаковка 100шт',
             price: 74.3,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 8
         },
         {
@@ -3839,7 +4265,8 @@ const goods = [
             description: 'Наконечник штыревой НШвИ 10-12 изолированный упаковка 100шт',
             price: 100.5,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 6
         },
         {
@@ -3848,7 +4275,8 @@ const goods = [
             description: 'Наконечник штыревой НШвИ 16-12 изолированный упаковка 100шт',
             price: 131.28,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7
         },
         {
@@ -3857,7 +4285,8 @@ const goods = [
             description: 'Наконечник штыревой НШвИ 25-16 изолированный упаковка 100шт',
             price: 233.75,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -3866,7 +4295,8 @@ const goods = [
             description: 'Корпус металлический ЩМП-04-2 400х300х220 IP31',
             price: 741.23,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3
         },
         {
@@ -3875,7 +4305,8 @@ const goods = [
             description: 'Корпус металлический ЩМП-06-2 500х400х220 IP54',
             price: 1464.73,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3
         },
         {
@@ -3884,7 +4315,8 @@ const goods = [
             description: 'Корпус металлический ЩМП-08    650х500х220 IP54',
             price: 1411.65,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1
         },
         {
@@ -3893,7 +4325,8 @@ const goods = [
             description: 'Корпус металлический ЩМП-09   800х600х250 IP54',
             price: 2840.09,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 17
         },
         {
@@ -3902,7 +4335,8 @@ const goods = [
             description: 'Щит навесной ЩРН-12 IP31',
             price: 618.34,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 20
         },
         {
@@ -3911,7 +4345,8 @@ const goods = [
             description: 'Щит навесной ЩРН-12 IP54',
             price: 1182.36,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -3920,7 +4355,8 @@ const goods = [
             description: 'Щит навесной ЩРН-18 IP31',
             price: 781.43,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1
         },
         {
@@ -3929,7 +4365,8 @@ const goods = [
             description: 'Щит навесной ЩРН-24 IР31',
             price: 781.43,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 12
         },
         {
@@ -3938,7 +4375,8 @@ const goods = [
             description: 'Щит навесной ЩРН-24 IР54',
             price: 1318.97,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7
         },
         {
@@ -3947,7 +4385,8 @@ const goods = [
             description: 'Щит навесной ЩРН-36 IР31',
             price: 1032.39,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3
         },
         {
@@ -3956,7 +4395,8 @@ const goods = [
             description: 'Щит учета электроэнергии ЩУ-1ф/1-1-6 310х300х150 2 двери IP66',
             price: 1314.07,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 36
         },
         {
@@ -3965,7 +4405,8 @@ const goods = [
             description: 'Щит учета электроэнергии ЩУ-3ф/1-1-6 445х400х150 2 двери IP66',
             price: 1885.69,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 21
         },
         {
@@ -3974,7 +4415,8 @@ const goods = [
             description: 'Щит учета электроэнергии ЩУ-3ф/1-0-3 310х300х150 1 дверь IP66',
             price: 1574.51,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 18
         },
         {
@@ -3983,7 +4425,8 @@ const goods = [
             description: 'Бокс КМПн 1/2 для наружной установки 1р/2мод.',
             price: 14.44,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 46
         },
         {
@@ -3992,7 +4435,8 @@ const goods = [
             description: 'Бокс КМПн 1/2 для наружной установки 1р/2мод. с крышкой',
             price: 86.77,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 19
         },
         {
@@ -4001,7 +4445,8 @@ const goods = [
             description: 'Бокс КМПн 1/4 для наружной установки 2/4мод.',
             price: 19.81,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 17
         },
         {
@@ -4010,7 +4455,8 @@ const goods = [
             description: 'Бокс КМПн 1/4 для наружной установки 2/4мод. с крышкой',
             price: 108.6,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 5
         },
         {
@@ -4019,7 +4465,8 @@ const goods = [
             description: 'Бокс ЩРН-П-4 модуля пластик IP40',
             price: 166.02,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 21
         },
         {
@@ -4028,7 +4475,8 @@ const goods = [
             description: 'Бокс ЩРН-П-6 модулей пластик IP40',
             price: 205.06,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -4037,7 +4485,8 @@ const goods = [
             description: 'Бокс ЩРН-П-8 модулей пластик IP40',
             price: 251.5,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 19
         },
         {
@@ -4046,7 +4495,8 @@ const goods = [
             description: 'Бокс ЩРН-П-10 модулей пластик IP40',
             price: 302.39,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7
         },
         {
@@ -4055,7 +4505,8 @@ const goods = [
             description: 'Бокс ЩРН-П-12 модулей пластик IP40',
             price: 316.72,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 18
         },
         {
@@ -4064,7 +4515,8 @@ const goods = [
             description: 'Бокс ЩРН-П-18 модулей пластик IP40',
             price: 495.59,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 34
         },
         {
@@ -4073,7 +4525,8 @@ const goods = [
             description: 'Бокс ЩРН-П-24 модуля пластик IP40',
             price: 934.18,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 12
         },
         {
@@ -4082,7 +4535,8 @@ const goods = [
             description: 'Бокс ЩРН-П-36 модуля пластик IP40',
             price: 1141.37,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 6
         },
         {
@@ -4091,7 +4545,8 @@ const goods = [
             description: 'Бокс ЩРН-П-12 модулей пластик IP40 сосна',
             price: 420.39,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2
         },
         {
@@ -4100,7 +4555,8 @@ const goods = [
             description: 'Бокс ЩРН-П-24 модуля пластик IP40 сосна',
             price: 1040.04,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 9
         },
         {
@@ -4109,7 +4565,8 @@ const goods = [
             description: 'Бокс ЩРН-П-8 модулей пластик IP65',
             price: 425.25,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 55
         },
         {
@@ -4118,7 +4575,8 @@ const goods = [
             description: 'DIN-рейка L=7,5см',
             price: 4.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 28
         },
         {
@@ -4127,7 +4585,8 @@ const goods = [
             description: 'DIN-рейка L=30см',
             price: 14.93,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 207
         },
         {
@@ -4136,7 +4595,8 @@ const goods = [
             description: 'DIN-рейка L=60см',
             price: 28.2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 67
         },
         {
@@ -4145,7 +4605,8 @@ const goods = [
             description: 'DIN-рейка L=100см',
             price: 104.63,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 12
         },
         {
@@ -4154,7 +4615,8 @@ const goods = [
             description: 'DIN-рейка L=120см',
             price: 56.06,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 216
         },
         {
@@ -4163,7 +4625,8 @@ const goods = [
             description: 'DIN-рейка L=125см',
             price: 59.12,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 120
         },
         {
@@ -4172,7 +4635,8 @@ const goods = [
             description: 'DIN-рейка L=140см',
             price: 75.83,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 58
         },
         {
@@ -4181,7 +4645,8 @@ const goods = [
             description: 'DIN-рейка L=2м',
             price: 95.2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 110
         },
         {
@@ -4190,7 +4655,8 @@ const goods = [
             description: 'Розетка с заземляющим контактом РАр10-3-ОП Shuko',
             price: 109.67,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 44
         },
         {
@@ -4199,7 +4665,8 @@ const goods = [
             description: 'Шина ',
             price: 71.71,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 40
         },
         {
@@ -4208,7 +4675,8 @@ const goods = [
             description: 'Шина ',
             price: 146.05,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 33
         },
         {
@@ -4217,7 +4685,8 @@ const goods = [
             description: 'Шина нулевая  8/1 6х9мм',
             price: 29.12,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 11
         },
         {
@@ -4226,7 +4695,8 @@ const goods = [
             description: 'Шина ',
             price: 96.94,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 14
         },
         {
@@ -4235,7 +4705,8 @@ const goods = [
             description: 'Шина нулевая N на DIN-рейку в корпусе 4х7 групп',
             price: 370.01,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 38
         },
         {
@@ -4244,7 +4715,8 @@ const goods = [
             description: 'Шина нулевая N на DIN-рейку в корпусе 4х11 групп',
             price: 471.6,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 38
         },
         {
@@ -4253,7 +4725,8 @@ const goods = [
             description: 'Шина N-PE 6 на DIN-рейку',
             price: 33.05,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 276
         },
         {
@@ -4262,7 +4735,8 @@ const goods = [
             description: 'Шина N-PE 8 на DIN-рейку',
             price: 37.97,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 253
         },
         {
@@ -4271,7 +4745,8 @@ const goods = [
             description: 'Шина N-PE 10 на DIN-рейку',
             price: 40.52,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 169
         },
         {
@@ -4280,7 +4755,8 @@ const goods = [
             description: 'Шина N-PE 12 на DIN-рейку',
             price: 47.94,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 190
         },
         {
@@ -4289,7 +4765,8 @@ const goods = [
             description: 'Шина 1ф гребёнка 63А',
             price: 192.11,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7
         },
         {
@@ -4298,7 +4775,8 @@ const goods = [
             description: 'Шина 2ф гребёнка 63А',
             price: 379.03,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 16
         },
         {
@@ -4307,7 +4785,8 @@ const goods = [
             description: 'Шина 3ф гребёнка 63А',
             price: 545.59,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 21
         },
         {
@@ -4316,7 +4795,8 @@ const goods = [
             description: 'Изолятор SM25K с крепежом',
             price: 19.28,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 50
         },
         {
@@ -4325,7 +4805,8 @@ const goods = [
             description: 'Изолятор SM35K с крепежом',
             price: 31.1,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 27
         },
         {
@@ -4334,7 +4815,8 @@ const goods = [
             description: 'Изолятор SM40K с крепежом',
             price: 33.17,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 56
         },
         {
@@ -4343,7 +4825,8 @@ const goods = [
             description: 'Изолятор угловой для нулевой шины синий',
             price: 1.54,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 116
         },
         {
@@ -4352,7 +4835,8 @@ const goods = [
             description: 'Ограничитель клеммных зажимов на Din-рейку пластиковый',
             price: 6.93,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 79
         },
         {
@@ -4361,7 +4845,8 @@ const goods = [
             description: 'Ограничитель клеммных зажимов на Din-рейку металлический',
             price: 5.91,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 94
         },
         {
@@ -4370,7 +4855,8 @@ const goods = [
             description: 'Зажим наборный ЗНИ-4мм2 (JXB35А) серый',
             price: 10.73,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -4379,7 +4865,8 @@ const goods = [
             description: 'Зажим наборный ЗНИ-2,5мм2 (JXB25А) серый',
             price: 9.34,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 180
         },
         {
@@ -4388,7 +4875,8 @@ const goods = [
             description: 'Арматура светосигнальная AD22DS 230В зеленая',
             price: 41.28,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 29
         },
         {
@@ -4397,7 +4885,8 @@ const goods = [
             description: 'Арматура светосигнальная AD22DS 230В красная',
             price: 41.28,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 8
         },
         {
@@ -4406,7 +4895,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 1P 6А (C)',
             price: 51.79,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 31
         },
         {
@@ -4415,7 +4905,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 1P 10А (C)',
             price: 51.79,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 208
         },
         {
@@ -4424,7 +4915,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 1P 16А (C)',
             price: 48.54,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2024
         },
         {
@@ -4433,7 +4925,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 1P 20А (C)',
             price: 51.79,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 497
         },
         {
@@ -4442,7 +4935,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 1P 25А (C)',
             price: 49.03,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1238
         },
         {
@@ -4451,7 +4945,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 1P 32А (C)',
             price: 51.79,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 653
         },
         {
@@ -4460,7 +4955,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 1P 40А (C)',
             price: 52.71,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 103
         },
         {
@@ -4469,7 +4965,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 1P 50А (C)',
             price: 64.9,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 570
         },
         {
@@ -4478,7 +4975,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 1P 63А (C)',
             price: 64.9,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 120
         },
         {
@@ -4487,7 +4985,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 2P 10А (C)',
             price: 108.32,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2
         },
         {
@@ -4496,7 +4995,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 2P 16А (C)',
             price: 103.52,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -4505,7 +5005,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 2P 25А (C)',
             price: 103.52,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -4514,7 +5015,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 2P 32А (C)',
             price: 103.52,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 195
         },
         {
@@ -4523,7 +5025,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 2P 40А (C)',
             price: 108.21,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 405
         },
         {
@@ -4532,7 +5035,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 2P 50А (C)',
             price: 137.26,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 172
         },
         {
@@ -4541,7 +5045,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 2P 63А (C)',
             price: 137.26,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 182
         },
         {
@@ -4550,7 +5055,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 3P 6А (C)',
             price: 168.08,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 11
         },
         {
@@ -4559,7 +5065,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 3P 10А (С)',
             price: 161.07,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 12
         },
         {
@@ -4568,7 +5075,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 3P 16А (C)',
             price: 161.07,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 226
         },
         {
@@ -4577,7 +5085,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 3P 20А (C)',
             price: 161.07,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 233
         },
         {
@@ -4586,7 +5095,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 3P 25А (C)',
             price: 161.07,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 110
         },
         {
@@ -4595,7 +5105,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 3P 32А (C)',
             price: 161.07,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 109
         },
         {
@@ -4604,7 +5115,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 3P 40А (C)',
             price: 169.25,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 133
         },
         {
@@ -4613,7 +5125,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 3P 50А (C)',
             price: 200.76,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 61
         },
         {
@@ -4622,7 +5135,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-63 4,5кА, 3P 63А (C)',
             price: 200.76,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 21
         },
         {
@@ -4631,7 +5145,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 1P 10А (C)',
             price: 77.06,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 18
         },
         {
@@ -4640,7 +5155,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 1P 16А (C)',
             price: 72.27,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 249
         },
         {
@@ -4649,7 +5165,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 1P 25А (C)',
             price: 78.61,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 120
         },
         {
@@ -4658,7 +5175,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 1P 32А (C)',
             price: 75.77,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 24
         },
         {
@@ -4667,7 +5185,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 1P 40А (C)',
             price: 79.64,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 12
         },
         {
@@ -4676,7 +5195,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 2P 25А (C)',
             price: 151.55,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 120
         },
         {
@@ -4685,7 +5205,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 2P 32А (C)',
             price: 151.55,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 24
         },
         {
@@ -4694,7 +5215,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 2P 40А (C)',
             price: 151.55,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 12
         },
         {
@@ -4703,7 +5225,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 3P 16А (C)',
             price: 236.07,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 22
         },
         {
@@ -4712,7 +5235,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 3P 25А (C)',
             price: 236.07,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 40
         },
         {
@@ -4721,7 +5245,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 3P 32А (C)',
             price: 236.07,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 13
         },
         {
@@ -4730,7 +5255,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 3P 40А (C)',
             price: 236.07,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 29
         },
         {
@@ -4739,7 +5265,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 3P 50А (C)',
             price: 320.99,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 6
         },
         {
@@ -4748,7 +5275,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-29 6кА, 3P 63А (C)',
             price: 256.66,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -4757,7 +5285,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-100 10кА, 1п 10А (С)',
             price: 330.52,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 43
         },
         {
@@ -4766,7 +5295,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-100 10кА, 1п 16А (С)',
             price: 330.52,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 9
         },
         {
@@ -4775,7 +5305,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-100 10кА, 1п 25А (С)',
             price: 330.52,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 15
         },
         {
@@ -4784,7 +5315,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-100 10кА, 1п 100А (С)',
             price: 332.78,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -4793,7 +5325,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-100 10кА, 3п 25А (С)',
             price: 973.26,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -4802,7 +5335,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-100 10кА, 3п 32А (С)',
             price: 973.26,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -4811,7 +5345,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-100 10кА, 3п 40А (С)',
             price: 973.26,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -4820,7 +5355,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-100 10кА, 3п 50А (С)',
             price: 973.26,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 8
         },
         {
@@ -4829,7 +5365,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-100 10кА, 3п 63А (С)',
             price: 926.75,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -4838,7 +5375,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-100 10кА, 3п 80А (С)',
             price: 833.79,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 30
         },
         {
@@ -4847,7 +5385,8 @@ const goods = [
             description: 'Автоматический выключатель ВА47-100 10кА, 3п 100А (С)',
             price: 811.83,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 61
         },
         {
@@ -4856,7 +5395,8 @@ const goods = [
             description: 'Автоматический выключатель АЕ2056М-100 80А',
             price: 1722.27,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1
         },
         {
@@ -4865,7 +5405,8 @@ const goods = [
             description: 'Автоматический выключатель АЕ2056М-100 100А',
             price: 1722.27,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 12
         },
         {
@@ -4874,7 +5415,8 @@ const goods = [
             description: 'Автоматический выключатель АЕ2066М1-100 160А',
             price: 3736.01,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -4883,7 +5425,8 @@ const goods = [
             description: 'Автоматический выключатель ВА57Ф35-340010 63А',
             price: 1801.07,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 34
         },
         {
@@ -4892,7 +5435,8 @@ const goods = [
             description: 'Автоматический выключатель ВА57Ф35-340010 80А',
             price: 1868.2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 11
         },
         {
@@ -4901,7 +5445,8 @@ const goods = [
             description: 'Автоматический выключатель ВА87-33 3п 100А 18кА ',
             price: 1250.61,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 27
         },
         {
@@ -4910,7 +5455,8 @@ const goods = [
             description: 'Автоматический выключатель ВА57Ф35-340010 125А',
             price: 2348.57,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 6
         },
         {
@@ -4919,7 +5465,8 @@ const goods = [
             description: 'Автоматический выключатель ВА87-35 3п 160А 25кА',
             price: 1962,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 25
         },
         {
@@ -4928,7 +5475,8 @@ const goods = [
             description: 'Автоматический выключатель ВА87-35 3п 200А 25кА',
             price: 1965.62,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -4937,7 +5485,8 @@ const goods = [
             description: 'Автоматический выключатель ВА87-35 3п 250А 25кА',
             price: 1965.62,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 16
         },
         {
@@ -4946,7 +5495,8 @@ const goods = [
             description: 'Автоматический выключатель АП50Б-3МТ-10КР 40А',
             price: 1081.2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7
         },
         {
@@ -4955,7 +5505,8 @@ const goods = [
             description: 'Автоматический выключатель АП50Б-3МТ-10КР 63А',
             price: 1081.2,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1
         },
         {
@@ -4964,7 +5515,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 1п SH201L C10 10А 4,5кА',
             price: 164.76,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 16
         },
         {
@@ -4973,7 +5525,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 1п SH201L C16 16А 4,5кА',
             price: 164.76,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 70
         },
         {
@@ -4982,7 +5535,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 1п SH201L C25 25А 4,5кА',
             price: 164.76,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 12
         },
         {
@@ -4991,7 +5545,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 3п SH201L C25 25А 4,5кА',
             price: 564.61,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 12
         },
         {
@@ -5000,7 +5555,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 1п S201 C6     6А 6кА',
             price: 365.96,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 18
         },
         {
@@ -5009,7 +5565,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 1п S201 C10 10А 6кА',
             price: 291.69,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 64
         },
         {
@@ -5018,7 +5575,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 1п S201 C16 16А 6кА',
             price: 266.32,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 143
         },
         {
@@ -5027,7 +5585,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 1п S201 C20 20А 6кА',
             price: 303.71,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 19
         },
         {
@@ -5036,7 +5595,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 1п S201 C25 25А 6кА',
             price: 293.68,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 43
         },
         {
@@ -5045,7 +5605,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 1п S201 C32 32А 6кА',
             price: 338.74,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 19
         },
         {
@@ -5054,7 +5615,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 1п S201 C40 40А 6кА',
             price: 366.27,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 9
         },
         {
@@ -5063,7 +5625,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 1п S201 C50 50А 6кА',
             price: 559.01,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2
         },
         {
@@ -5072,7 +5635,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 1п S201 C63 63А 6кА',
             price: 559.01,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3
         },
         {
@@ -5081,7 +5645,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 3п S203 C10 10А 6кА',
             price: 976.18,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1
         },
         {
@@ -5090,7 +5655,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 3п S203 C16 16А 6кА',
             price: 909.44,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7
         },
         {
@@ -5099,7 +5665,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 3п S203 C25 25А 6кА',
             price: 1195.74,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 11
         },
         {
@@ -5108,7 +5675,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 3п S203 C32 32А 6кА',
             price: 1201.46,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 9
         },
         {
@@ -5117,7 +5685,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 3п S203 C40 40А 6кА',
             price: 1413.14,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 16
         },
         {
@@ -5126,7 +5695,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 3п S203 C50 50А 6кА',
             price: 1829.82,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2
         },
         {
@@ -5135,7 +5705,8 @@ const goods = [
             description: 'Автоматический выключатель ABB 3п S203 C63 63А 6кА',
             price: 1911.37,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 14
         },
         {
@@ -5144,7 +5715,8 @@ const goods = [
             description: 'Автоматический выключатель дифференциального тока АВДТ-32 2P ',
             price: 509.61,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -5153,7 +5725,8 @@ const goods = [
             description: 'Автоматический выключатель дифференциального тока АВДТ-32 2P ',
             price: 509.61,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 252
         },
         {
@@ -5162,7 +5735,8 @@ const goods = [
             description: 'Автоматический выключатель дифференциального тока АВДТ-32 2P ',
             price: 509.61,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -5171,7 +5745,8 @@ const goods = [
             description: 'Автоматический выключатель дифференциального тока DSH941R AC-C16/0,03 16A/30mA 2CSR145001R1164 ABB ',
             price: 2191.86,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -5180,7 +5755,8 @@ const goods = [
             description: 'Автоматический выключатель дифференциального тока DSH941R AC-C25/0,03 25A/30mA 2CSR145001R1254 ABB ',
             price: 2191.86,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -5189,7 +5765,8 @@ const goods = [
             description: 'Выключатель дифференциального тока (УЗО) ВД1-63 2р 16А/30мА',
             price: 485.77,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 248
         },
         {
@@ -5198,7 +5775,8 @@ const goods = [
             description: 'Выключатель дифференциального тока (УЗО) ВД1-63 2р 25А/30мА',
             price: 485.77,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 218
         },
         {
@@ -5207,7 +5785,8 @@ const goods = [
             description: 'Выключатель дифференциального тока (УЗО) ВД1-63 2р 32А/30мА',
             price: 485.77,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 122
         },
         {
@@ -5216,7 +5795,8 @@ const goods = [
             description: 'Выключатель дифференциального тока (УЗО) ВД1-63 2р 40А/30мА',
             price: 485.77,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 90
         },
         {
@@ -5225,7 +5805,8 @@ const goods = [
             description: 'Контактор КМН-10910 9А   230В/АС3 1НО',
             price: 259.58,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -5234,7 +5815,8 @@ const goods = [
             description: 'Контактор КМН-11210 12А 230В/АС3 1НО',
             price: 267.39,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1
         },
         {
@@ -5243,7 +5825,8 @@ const goods = [
             description: 'Контактор КМН-11810 18А 230В/АС3 1НО',
             price: 305.08,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 5
         },
         {
@@ -5252,7 +5835,8 @@ const goods = [
             description: 'Контактор КМН-22510 25А 230В/АС3 1НО',
             price: 411.79,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7
         },
         {
@@ -5261,7 +5845,8 @@ const goods = [
             description: 'Контактор КМН-22510 25А 400В/АС3 1НО',
             price: 457.41,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2
         },
         {
@@ -5270,7 +5855,8 @@ const goods = [
             description: 'Контактор КМН-22511 25А 230В/АС3 1НЗ',
             price: 451.68,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 5
         },
         {
@@ -5279,7 +5865,8 @@ const goods = [
             description: 'Контактор КМН-23210 32А 230В/АС3 1НО',
             price: 469.91,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 12
         },
         {
@@ -5288,7 +5875,8 @@ const goods = [
             description: 'Контактор КМН-34012 40А 230В/АС3 1НО+1НЗ',
             price: 994.48,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 5
         },
         {
@@ -5297,7 +5885,8 @@ const goods = [
             description: 'Контактор КМН-34012 40А 400В/АС3 1НО+1НЗ',
             price: 1009.52,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2
         },
         {
@@ -5306,7 +5895,8 @@ const goods = [
             description: 'Контактор КМН-46512 65А 230В/АС3 1НО+1НЗ',
             price: 1105.64,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 8
         },
         {
@@ -5315,7 +5905,8 @@ const goods = [
             description: 'Выключатель нагрузки ВН-32 2P 25A',
             price: 145.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 345
         },
         {
@@ -5324,7 +5915,8 @@ const goods = [
             description: 'Рубильник ВР32-35 В31250 250А',
             price: 1056.14,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 15
         },
         {
@@ -5333,7 +5925,8 @@ const goods = [
             description: 'Переключатель ВР32-35 А70220 250А ',
             price: 1525.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1
         },
         {
@@ -5342,7 +5935,8 @@ const goods = [
             description: 'Переключатель ВР32-35 В71250 250А ',
             price: 1743.74,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 8
         },
         {
@@ -5351,7 +5945,8 @@ const goods = [
             description: 'Рубильник ВР32-37 В31250 400А',
             price: 1463.19,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2
         },
         {
@@ -5360,7 +5955,8 @@ const goods = [
             description: 'Переключатель ВР32-37 А70220 400А ',
             price: 2008.37,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -5369,7 +5965,8 @@ const goods = [
             description: 'Переключатель ВР32-37 В71250 400А ',
             price: 2209.94,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 8
         },
         {
@@ -5378,7 +5975,8 @@ const goods = [
             description: 'Плавкая вставка ПН-2 100А',
             price: 52.56,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 80
         },
         {
@@ -5387,7 +5985,8 @@ const goods = [
             description: 'Плавкая вставка ПН-2 100/80А',
             price: 53.19,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 28
         },
         {
@@ -5396,7 +5995,8 @@ const goods = [
             description: 'Плавкая вставка ПН-2 250А',
             price: 70.9,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 86
         },
         {
@@ -5405,7 +6005,8 @@ const goods = [
             description: 'Плавкая вставка ПН-2 250/160А',
             price: 71.53,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 26
         },
         {
@@ -5414,7 +6015,8 @@ const goods = [
             description: 'Плавкая вставка ПН-2 400А',
             price: 126.56,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 44
         },
         {
@@ -5423,7 +6025,8 @@ const goods = [
             description: 'Контакт основания (держатель) 100А для ПН-2',
             price: 18.86,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 24
         },
         {
@@ -5432,7 +6035,8 @@ const goods = [
             description: 'Контакт основания (держатель) 250А для ПН-2',
             price: 43.53,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 9
         },
         {
@@ -5441,7 +6045,8 @@ const goods = [
             description: 'Контакт основания (держатель) 400А для ПН-2',
             price: 65.21,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -5450,7 +6055,8 @@ const goods = [
             description: 'Трансформатор тока Т-0,66   20/5 кл.0,5 5ВА',
             price: 414.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 28
         },
         {
@@ -5459,7 +6065,8 @@ const goods = [
             description: 'Трансформатор тока Т-0,66   30/5 кл.0,5 5ВА',
             price: 414.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 20
         },
         {
@@ -5468,7 +6075,8 @@ const goods = [
             description: 'Трансформатор тока Т-0,66   50/5 кл.0,5 5ВА',
             price: 414.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 66
         },
         {
@@ -5477,7 +6085,8 @@ const goods = [
             description: 'Трансформатор тока Т-0,66   75/5 кл.0,5 5ВА',
             price: 414.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1
         },
         {
@@ -5486,7 +6095,8 @@ const goods = [
             description: 'Трансформатор тока Т-0,66 100/5 кл.0,5 5ВА',
             price: 414.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3
         },
         {
@@ -5495,7 +6105,8 @@ const goods = [
             description: 'Трансформатор тока Т-0,66 150/5 кл.0,5 5ВА',
             price: 414.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 16
         },
         {
@@ -5504,7 +6115,8 @@ const goods = [
             description: 'Трансформатор тока Т-0,66 200/5 кл.0,5 5ВА',
             price: 414.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -5513,7 +6125,8 @@ const goods = [
             description: 'Трансформатор тока Т-0,66 300/5 кл.0,5 5ВА',
             price: 414.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 12
         },
         {
@@ -5522,7 +6135,8 @@ const goods = [
             description: 'Трансформатор тока Т-0,66 400/5 кл.0,5 5ВА',
             price: 414.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2
         },
         {
@@ -5531,7 +6145,8 @@ const goods = [
             description: 'Ящик с понижающим трансформатором ЯТП-0,25-220-12 IP30',
             price: 1308.44,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3
         },
         {
@@ -5540,7 +6155,8 @@ const goods = [
             description: 'Ящик с понижающим трансформатором ЯТП-0,25-220-24 IP30',
             price: 1250.61,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7
         },
         {
@@ -5549,7 +6165,8 @@ const goods = [
             description: 'Ящик с понижающим трансформатором ЯТП-0,25-220-36 IP30',
             price: 1308.44,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2
         },
         {
@@ -5558,7 +6175,8 @@ const goods = [
             description: 'Счетчик электроэнергии Меркурий 201.5 1ф 1т 5-60А',
             price: 564.76,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 103
         },
         {
@@ -5567,7 +6185,8 @@ const goods = [
             description: 'Счетчик электроэнергии Меркурий 200.02 1ф 2т 5-60А',
             price: 1581.84,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 9
         },
         {
@@ -5576,7 +6195,8 @@ const goods = [
             description: 'Счетчик электроэнергии Меркурий 230AM-01 3ф 1т 5-60А',
             price: 1881.7,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7
         },
         {
@@ -5585,7 +6205,8 @@ const goods = [
             description: 'Счетчик электроэнергии Меркурий 230AM-02 3ф 1т 10-100А',
             price: 1881.7,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1
         },
         {
@@ -5594,7 +6215,8 @@ const goods = [
             description: 'Счетчик электроэнергии Меркурий 230AM-03 3ф 1т 5-7,5А',
             price: 1881.7,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 6
         },
         {
@@ -5603,7 +6225,8 @@ const goods = [
             description: 'Счетчик электроэнергии Меркурий 230ART-01 CN 3ф 2т 5-60А',
             price: 4036.47,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -5612,7 +6235,8 @@ const goods = [
             description: 'Счетчик электроэнергии Меркурий 230ART-02 CN 3ф 2т 10-100А',
             price: 4141.62,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 6
         },
         {
@@ -5621,7 +6245,8 @@ const goods = [
             description: 'Счетчик электроэнергии Меркурий 230ART-03 CN 3ф 2т 5-7,5А',
             price: 4141.62,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 11
         },
         {
@@ -5630,7 +6255,8 @@ const goods = [
             description: 'Счетчик электроэнергии Меркурий 230ART-03 RN 3ф 2т 5-50А ',
             price: 4141.62,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -5639,7 +6265,8 @@ const goods = [
             description: 'Счетчик эл.энергии Меркурий 231AM-01 3ф 5(60)A/380В',
             price: 1805.59,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -5648,7 +6275,8 @@ const goods = [
             description: 'Счетчик эл.энергии Меркурий 231AТ-01 IrDA 2т 5(60)А/380В',
             price: 2646.14,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -5657,7 +6285,8 @@ const goods = [
             description: 'Коробка испытательная д/счетчиков КИП прозрачная крышка',
             price: 181.5,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 23
         },
         {
@@ -5666,7 +6295,8 @@ const goods = [
             description: 'Знак ',
             price: 1.93,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 205
         },
         {
@@ -5675,7 +6305,8 @@ const goods = [
             description: 'Знак ',
             price: 6.15,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1136
         },
         {
@@ -5684,7 +6315,8 @@ const goods = [
             description: 'Знак ',
             price: 22.36,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 128
         },
         {
@@ -5693,7 +6325,8 @@ const goods = [
             description: 'Знак «220В» 15х50мм',
             price: 1.12,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 310
         },
         {
@@ -5702,7 +6335,8 @@ const goods = [
             description: 'Знак «380В» 15х50мм',
             price: 1.12,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 240
         },
         {
@@ -5711,7 +6345,8 @@ const goods = [
             description: 'Знак «Заземление» 30х30мм',
             price: 0.77,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 14
         },
         {
@@ -5720,7 +6355,8 @@ const goods = [
             description: 'Коврик диэлектрический 500х500',
             price: 228.71,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -5729,7 +6365,8 @@ const goods = [
             description: 'Коврик диэлектрический 750х750',
             price: 204.75,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 13
         },
         {
@@ -5738,7 +6375,8 @@ const goods = [
             description: 'Боты диэлектрические',
             price: 632.5,
             measure: 'пар',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 32
         },
         {
@@ -5747,7 +6385,8 @@ const goods = [
             description: 'Перчатки латексные диэлектрические',
             price: 312.8,
             measure: 'пар',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 41
         },
         {
@@ -5756,7 +6395,8 @@ const goods = [
             description: 'Очки защитные',
             price: 66.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -5765,7 +6405,8 @@ const goods = [
             description: 'Перчатки Х/Б с ПВХ точки 4-нитка',
             price: 11.44,
             measure: 'пар',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2530
         },
         {
@@ -5774,7 +6415,8 @@ const goods = [
             description: 'Указатель напряжения Контакт 55 ЭМ (звук)',
             price: 357.88,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7
         },
         {
@@ -5783,7 +6425,8 @@ const goods = [
             description: 'Клещи токоизмерительные М266',
             price: 390.98,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 6
         },
         {
@@ -5792,7 +6435,8 @@ const goods = [
             description: 'Отвертка-пробник ОП-1',
             price: 64.89,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -5801,7 +6445,8 @@ const goods = [
             description: 'Изолента ПВХ белая 20м х 18мм х 0,18мм',
             price: 24.73,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1572
         },
         {
@@ -5810,7 +6455,8 @@ const goods = [
             description: 'Изолента ПВХ желтая 20м х 18мм х 0,18мм',
             price: 24.73,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3939
         },
         {
@@ -5819,7 +6465,8 @@ const goods = [
             description: 'Изолента ПВХ желто-зеленая 20м х 18мм х 0,18мм',
             price: 28.29,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2589
         },
         {
@@ -5828,7 +6475,8 @@ const goods = [
             description: 'Изолента ПВХ зеленая 20м х 18мм х 0,18мм',
             price: 24.73,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4650
         },
         {
@@ -5837,7 +6485,8 @@ const goods = [
             description: 'Изолента ПВХ красная 20м х 18мм х 0,18мм',
             price: 24.73,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4669
         },
         {
@@ -5846,7 +6495,8 @@ const goods = [
             description: 'Изолента ПВХ синяя 20м х 18мм х 0,18мм',
             price: 24.73,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 21544
         },
         {
@@ -5855,7 +6505,8 @@ const goods = [
             description: 'Изолента ПВХ черная 20м х 18мм х 0,18мм',
             price: 24.73,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3455
         },
         {
@@ -5864,7 +6515,8 @@ const goods = [
             description: 'Изолента ХБ 100г',
             price: 31.54,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 20
         },
         {
@@ -5873,7 +6525,8 @@ const goods = [
             description: 'Изолента ХБ 300г',
             price: 84.56,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 1397
         },
         {
@@ -5882,7 +6535,8 @@ const goods = [
             description: 'Изолента ХБ 600г',
             price: 162.78,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 172
         },
         {
@@ -5891,7 +6545,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 1,5/0,75',
             price: 3.31,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 9
         },
         {
@@ -5900,7 +6555,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 3/1,5',
             price: 4.4,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 8
         },
         {
@@ -5909,7 +6565,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 4/2',
             price: 5.87,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -5918,7 +6575,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 6/3',
             price: 9.35,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7
         },
         {
@@ -5927,7 +6585,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 8/4',
             price: 10.49,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -5936,7 +6595,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 10/5',
             price: 12.18,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 9
         },
         {
@@ -5945,7 +6605,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 12/6',
             price: 13.28,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -5954,7 +6615,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 16/8',
             price: 22.77,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 20
         },
         {
@@ -5963,7 +6625,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 20/10',
             price: 36.18,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -5972,7 +6635,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 25/12,5',
             price: 84.25,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 50
         },
         {
@@ -5981,7 +6645,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 30/15',
             price: 56.19,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 5
         },
         {
@@ -5990,7 +6655,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 40/20',
             price: 80.28,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -5999,7 +6665,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 60/30',
             price: 128.01,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 5
         },
         {
@@ -6008,7 +6675,8 @@ const goods = [
             description: 'Трубка термоусаживаемая ТУТ 80/40',
             price: 199.73,
             measure: 'м',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 3
         },
         {
@@ -6017,7 +6685,8 @@ const goods = [
             description: 'Бирка кабельная У-134 квадратная',
             price: 1.28,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2510
         },
         {
@@ -6026,7 +6695,8 @@ const goods = [
             description: 'Бирка кабельная У-135 круглая',
             price: 0.59,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 100
         },
         {
@@ -6035,7 +6705,8 @@ const goods = [
             description: 'Бирка кабельная У-136 треугольная',
             price: 1.13,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 600
         },
         {
@@ -6044,7 +6715,8 @@ const goods = [
             description: 'Бирка кабельная У-153 квадратная',
             price: 1.08,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 700
         },
         {
@@ -6053,7 +6725,8 @@ const goods = [
             description: 'Хомут нейлоновый 2,5х100 (100шт) ',
             price: 22.04,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 197
         },
         {
@@ -6062,7 +6735,8 @@ const goods = [
             description: 'Хомут нейлоновый 2,5х150 (100шт)',
             price: 32.57,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 124
         },
         {
@@ -6071,7 +6745,8 @@ const goods = [
             description: 'Хомут нейлоновый 2,5х150 (100шт) чёрный',
             price: 32.95,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -6080,7 +6755,8 @@ const goods = [
             description: 'Хомут нейлоновый 2,5х200 (100шт)',
             price: 41.99,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 198
         },
         {
@@ -6089,7 +6765,8 @@ const goods = [
             description: 'Хомут нейлоновый 2,5х200 (100шт) чёрный',
             price: 73.98,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 300
         },
         {
@@ -6098,7 +6775,8 @@ const goods = [
             description: 'Хомут нейлоновый 2,5х250 (100шт)',
             price: 72.98,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 97
         },
         {
@@ -6107,7 +6785,8 @@ const goods = [
             description: 'Хомут нейлоновый 3,6х300 (100шт)',
             price: 106.57,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 0
         },
         {
@@ -6116,7 +6795,8 @@ const goods = [
             description: 'Хомут нейлоновый 3,6х300 (100шт) черный',
             price: 108.24,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 187
         },
         {
@@ -6125,7 +6805,8 @@ const goods = [
             description: 'Хомут нейлоновый 5,0х350 (100шт)',
             price: 157.85,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 55
         },
         {
@@ -6134,7 +6815,8 @@ const goods = [
             description: 'Хомут нейлоновый 5,0х400 (100шт)',
             price: 181.77,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 75
         },
         {
@@ -6143,7 +6825,8 @@ const goods = [
             description: 'Хомут нейлоновый 5,0х500 (100шт)',
             price: 256.68,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 12
         },
         {
@@ -6152,7 +6835,8 @@ const goods = [
             description: 'Площадка 20х20 самоклеющаяся под хомут белая',
             price: 110.43,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 52
         },
         {
@@ -6161,7 +6845,8 @@ const goods = [
             description: 'Бокорезы диэлектрические 160мм',
             price: 234,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 5
         },
         {
@@ -6170,7 +6855,8 @@ const goods = [
             description: 'Пассатижи диэлектрические 160мм',
             price: 385.56,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2
         },
         {
@@ -6179,7 +6865,8 @@ const goods = [
             description: 'Набор отверток диэлектрических 7шт. в коробке',
             price: 314.84,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 10
         },
         {
@@ -6188,7 +6875,8 @@ const goods = [
             description: 'Дюбель 6х40',
             price: 0.22,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 15980
         },
         {
@@ -6197,7 +6885,8 @@ const goods = [
             description: 'Дюбель-гвоздь 6х40',
             price: 0.55,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 20418
         },
         {
@@ -6206,7 +6895,8 @@ const goods = [
             description: 'Саморез 3,5х35',
             price: 0.47,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 2300
         },
         {
@@ -6215,7 +6905,8 @@ const goods = [
             description: 'Саморез 3,5х41',
             price: 0.55,
             measure: 'шт',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 7175
         },
         {
@@ -6224,7 +6915,8 @@ const goods = [
             description: 'Соединительный изолирующий зажим СИЗ-1 (от 1,0 до 3,0 кв. мм) уп. 100 шт.',
             price: 51.43,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 4
         },
         {
@@ -6233,7 +6925,8 @@ const goods = [
             description: 'Соединительный изолирующий зажим СИЗ-2 (от 2,5 до 4,5 кв. мм) уп. 100 шт.',
             price: 70.28,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 11
         },
         {
@@ -6242,7 +6935,8 @@ const goods = [
             description: 'Соединительный изолирующий зажим СИЗ-3 (от 2,5 до 5,5 кв. мм) уп. 100 шт.',
             price: 110.09,
             measure: 'упак',
-            spec: false,
+            img:"https://robohash.org/3?size=50x50",
+            spec:false,
             quantity: 19
         }
     ];

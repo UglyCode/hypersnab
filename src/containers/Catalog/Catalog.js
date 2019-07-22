@@ -2,7 +2,7 @@ import React from 'react';
 import CatalogStructure from '../../components/CatalogStructure';
 import CatalogPage from '../../components/CatalogPage';
 import Scroll from '../../components/Scroll';
-import goods from '../../static/goodsMock';
+import {goods, folders} from '../../static/realGoodsMock';
 
 class Catalog extends React.Component {
 
@@ -13,8 +13,7 @@ class Catalog extends React.Component {
             filter: '',
             page: 1,
             goods: [],
-            folders:[{name: 'Категория 1', children:[{name:'Папка 1', children:[]},{name:'Папка 2', children:[]}]},
-                {name: 'Категория 2', children:[{name:'Папка 3', children:[]}]}],
+            folders: folders,
         }
     }
 
@@ -39,6 +38,7 @@ class Catalog extends React.Component {
         const selectedFolder = event.target.innerText;
         this.setState({folder: (this.state.folder !== selectedFolder) ? selectedFolder : ''});
         event.stopPropagation();
+        window.scrollTo(0,0);
     };
 
     //TODO
