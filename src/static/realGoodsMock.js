@@ -5066,7 +5066,7 @@ const goods = [
             price: 161.07,
             measure: 'шт',
             img:"https://robohash.org/3?size=50x50",
-            spec:false,
+            spec:true,
             quantity: 12
         },
         {
@@ -5096,7 +5096,7 @@ const goods = [
             price: 161.07,
             measure: 'шт',
             img:"https://robohash.org/3?size=50x50",
-            spec:false,
+            spec:true,
             quantity: 110
         },
         {
@@ -5136,7 +5136,7 @@ const goods = [
             price: 200.76,
             measure: 'шт',
             img:"https://robohash.org/3?size=50x50",
-            spec:false,
+            spec:true,
             quantity: 21
         },
         {
@@ -5146,7 +5146,7 @@ const goods = [
             price: 77.06,
             measure: 'шт',
             img:"https://robohash.org/3?size=50x50",
-            spec:false,
+            spec:true,
             quantity: 18
         },
         {
@@ -6786,7 +6786,7 @@ const goods = [
             price: 106.57,
             measure: 'упак',
             img:"https://robohash.org/3?size=50x50",
-            spec:false,
+            spec:true,
             quantity: 0
         },
         {
@@ -6856,7 +6856,7 @@ const goods = [
             price: 385.56,
             measure: 'шт',
             img:"https://robohash.org/3?size=50x50",
-            spec:false,
+            spec:true,
             quantity: 2
         },
         {
@@ -6886,7 +6886,7 @@ const goods = [
             price: 0.55,
             measure: 'шт',
             img:"https://robohash.org/3?size=50x50",
-            spec:false,
+            spec:true,
             quantity: 20418
         },
         {
@@ -6896,7 +6896,7 @@ const goods = [
             price: 0.47,
             measure: 'шт',
             img:"https://robohash.org/3?size=50x50",
-            spec:false,
+            spec:true,
             quantity: 2300
         },
         {
@@ -6906,7 +6906,7 @@ const goods = [
             price: 0.55,
             measure: 'шт',
             img:"https://robohash.org/3?size=50x50",
-            spec:false,
+            spec:true,
             quantity: 7175
         },
         {
@@ -6936,7 +6936,7 @@ const goods = [
             price: 110.09,
             measure: 'упак',
             img:"https://robohash.org/3?size=50x50",
-            spec:false,
+            spec:true,
             quantity: 19
         }
     ];

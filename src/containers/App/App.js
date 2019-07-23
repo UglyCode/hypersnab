@@ -6,8 +6,7 @@ import Profile from '../Profile/Profile';
 import Header from '../../components/Header';
 import Main from '../../components/Main';
 import Footer from '../../components/Footer';
-import goods from '../../static/goodsMock';
-
+import {goods} from '../../static/realGoodsMock';
 import ENV from '../../settings/env';
 
 const SERVER = ENV.server || 'http://localhost:3001';
@@ -54,7 +53,7 @@ class App extends Component {
             let orderedAmount = order.get(currentValue.code) || 0;
             return accumulator + orderedAmount * currentValue.price;
         },0);
-        this.setState({order, orderSum});
+        this.setState({order:order, orderSum:orderSum.toFixed(2)});
     };
 
     setInnFromToken = (token) => {

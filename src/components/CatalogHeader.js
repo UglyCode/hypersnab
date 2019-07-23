@@ -7,9 +7,9 @@ const CatalogHeader = (props) => {
             <p className='w-20 ma0'>{'Код'}</p>
             <p className='w-100 ma0'>{'Наименование'}</p>
             <p className='w-20 ma0'>{`Остаток`}</p>
-            <p className='w-20 ma0'>{`Цена`}</p>
+            <p className='w-20 ma0'>{`Цена(руб.)`}</p>
             <p className='w-20 ma0'>{`Заказано`}</p>
-            <p className='w-20 ma0'>{`Сумма`}</p>
+            <p className='w-20 ma0'>{`Сумма(руб.)`}</p>
         </div>
     );
 };

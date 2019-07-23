@@ -1,6 +1,6 @@
 import React from 'react';
 import CatalogPage from '../../components/CatalogPage';
-import goods from '../../static/goodsMock';
+import {goods} from '../../static/realGoodsMock';
 
 class Basket extends React.Component{
 
