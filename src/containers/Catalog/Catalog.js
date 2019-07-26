@@ -95,7 +95,8 @@ class Catalog extends React.Component {
                         <CatalogPage
                             goods={goods}
                             order={this.props.order}
-                            updateAmount={this.props.updateAmount}/>
+                            updateAmount={this.props.updateAmount}
+                            setSelectedItem={this.props.setSelectedItem}/>
                 </div>
             </div>
         )

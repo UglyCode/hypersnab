@@ -6,6 +6,7 @@ import Profile from '../Profile/Profile';
 import Header from '../../components/Header';
 import Main from '../../components/Main';
 import Footer from '../../components/Footer';
+import ProductCard from '../ProductCard/ProductCard';
 import {goods} from '../../static/realGoodsMock';
 import ENV from '../../settings/env';
 
@@ -18,7 +19,8 @@ const initialState = {
     userStatus: 'loggedOut',
     userDataCache: {},
     order: new Map(),
-    orderSum: 0
+    orderSum: 0,
+    selectedItem: undefined
 };
 
 class App extends Component {
@@ -36,6 +38,14 @@ class App extends Component {
             })
         );
         console.log(inn, this.state.userInn, inn || this.state.userInn)
+    };
+
+    setSelectedItem = (item) => {
+        this.setState({selectedItem: item});
+    };
+
+    clearItem = () => {
+        this.setSelectedItem(undefined);
     };
 
     componentDidMount() {
@@ -120,6 +130,7 @@ class App extends Component {
                     updateAmount = {this.updateAmountOfOrderedGood}
                     order = {this.state.order}
                     orderSum = {this.state.orderSum}
+                    setSelectedItem = {this.setSelectedItem}
                 />
                 <Footer/>
                 {this.state.isProfileOpen &&
@@ -130,6 +141,14 @@ class App extends Component {
                             inn = {this.state.userInn}
                             loggedIn = {this.state.userStatus === 'loggedIn'}
                             order = {this.props.order}
+                        />
+                    </Modal>
+                }
+                {this.state.selectedItem &&
+                    <Modal>
+                        <ProductCard
+                            item = {this.state.selectedItem}
+                            clearItem = {this.clearItem}
                         />
                     </Modal>
                 }

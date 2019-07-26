@@ -2,7 +2,7 @@ import React from 'react';
 import CatalogItem from './CatalogItem';
 import CatalogHeader from './CatalogHeader';
 
-const CatalogPage = ({goods, order, updateAmount}) => {
+const CatalogPage = ({goods, order, setSelectedItem, updateAmount}) => {
     return(
         <div className="flex-column w-100 br3 bg-white pa3 ma0">
             <CatalogHeader/>
@@ -19,6 +19,8 @@ const CatalogPage = ({goods, order, updateAmount}) => {
                         measure={elem.measure}
                         amount={order.get(elem.code)||0}
                         updateAmount={updateAmount}
+                        item = {elem}
+                        setSelectedItem = {setSelectedItem}
                     />
                 );
             })}

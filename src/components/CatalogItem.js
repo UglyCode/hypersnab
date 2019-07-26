@@ -18,7 +18,11 @@ class CatalogItem extends React.Component{
         this.props.updateAmount(this.props.code, event.target.value);
     };
 
-    handleFocus = (event) => event.target.select()
+    handleFocus = (event) => event.target.select();
+
+    openProductCard = (event) => {
+        this.props.setSelectedItem(this.props.item);
+    };
 
     render(){
         const {description, code, set, quantity, price, amount, measure} = this.props;
@@ -29,7 +33,7 @@ class CatalogItem extends React.Component{
             <div className={`flex items-center w-100 f5 items-center justify-between ${(set%2)?'':'bg-lightest-blue'}`}>
                 <p className='w-10 ma0'><img className={'ma0'} src={img}/></p>
                 <p className='w-20 ma0'>{code}</p>
-                <p className='w-100 ma0'>{description}</p>
+                <p className='w-100 ma0 pointer underline-hover' onClick={this.openProductCard}>{description}</p>
                 <p className='w-20 ma0'>{`${quantity} ${measure}.`}</p>
                 <p className='w-20 ma0'>{`${price}`}</p>
                 <div className='flex justify-between items-center w-20'>

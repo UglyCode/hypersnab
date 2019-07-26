@@ -4,13 +4,14 @@ import RightCol from './RightCol';
 import CurrPage from './CurrPage';
 import Catalog from '../containers/Catalog/Catalog';
 
-const Main = ({route, updateAmount, order, orderSum}) => {
+const Main = ({route, setSelectedItem, updateAmount, order, orderSum}) => {
 
         if (route === 'catalog'){
             return (
                 <Catalog
                     updateAmount={updateAmount}
                     order={order}
+                    setSelectedItem = {setSelectedItem}
                 />)
         } else {
             return(
