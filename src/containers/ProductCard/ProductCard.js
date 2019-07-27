@@ -28,24 +28,26 @@ class ProductCard extends React.Component{
         console.log(this.props.item, this.state);
 
         return (
-            <div className='flex-column content-center product-modal'>
-                <div
-                    className='br3 f4 bg-light-blue hover-dark-blue'
-                onClick={this.props.clearItem}>
-                    {'X'}
-                </div>
+            <div className='profile-modal'>
+                <article
+                    className="br3 ba b--black-10 mv4 w-100 w-50-m w-50-l mw6 shadow-5 center bg-white tc
+                        flex-column content-center justify-center">
+                    <div
+                        className='br3 f4 bg-light-blue hover-dark-blue pointer'
+                        onClick={this.props.clearItem}>
+                        {'Закрыть карточку'}
+                    </div>
                     <div style={{width: '175px'}} className='center'>
                         <img src={this.state.img} className="db" alt='spec img'/>
                     </div>
-                    <div className="v-top pl2 tc">
                         <h2 className="f6 fw4 mt2 mb0 black-60 b">
                             {`${this.state.description} (${this.state.code})`}
                         </h2>
                         <dl className="mt2 f6">
-                            <dt className="clip">Цена</dt>
-                            <dd className="ml0">{this.state.price}</dd>
-                            <dt className="clip">Остатток</dt>
-                            <dd className="ml0">{`${this.state.quantity} ${this.state.measure}.`}</dd>
+                            <dt className="clip">{'Цена'}</dt>
+                            <dd className="ml0">{`Цена: ${this.state.price}`}</dd>
+                            <dt className="clip">{'Остаток'}</dt>
+                            <dd className="ml0">{`Остаток: ${this.state.quantity} ${this.state.measure}.`}</dd>
                         </dl>
                         <div className='flex justify-between items-center w-20'>
                             <div className='w-20 pointer' onClick={this.increaseAmount}>
@@ -58,7 +60,7 @@ class ProductCard extends React.Component{
                                 <img src={require('../../static/minus.png')} className='mw-100'></img>
                             </div>
                         </div>
-                    </div>
+                </article>
             </div>
         );
     };
