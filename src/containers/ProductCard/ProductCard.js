@@ -33,7 +33,7 @@ class ProductCard extends React.Component{
                     className="br3 ba b--black-10 mv4 w-100 w-50-m w-50-l mw6 shadow-5 center bg-white tc
                         flex-column content-center justify-center">
                     <div
-                        className='br3 f4 bg-light-blue hover-dark-blue pointer'
+                        className='br3 f4 bg-light-blue hover-dark-blue pointer underline-hover'
                         onClick={this.props.clearItem}>
                         {'Закрыть карточку'}
                     </div>
