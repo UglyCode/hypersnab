@@ -90,7 +90,6 @@ class App extends Component {
             order.delete(goodId);
         }
         this.updateOrder(order);
-        console.log(order);
         window.localStorage.setItem('order', this.mapToJson(order));
     };
 
@@ -149,6 +148,8 @@ class App extends Component {
                         <ProductCard
                             item = {this.state.selectedItem}
                             clearItem = {this.clearItem}
+                            updateAmount = {this.updateAmountOfOrderedGood}
+                            orderedAmount = {this.state.order.get(this.state.selectedItem.code)}
                         />
                     </Modal>
                 }
