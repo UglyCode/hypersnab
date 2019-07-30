@@ -4,7 +4,7 @@ import RightCol from './RightCol';
 import CurrPage from './CurrPage';
 import Catalog from '../containers/Catalog/Catalog';
 
-const Main = ({route, setSelectedItem, updateAmount, order, orderSum}) => {
+const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecOffers}) => {
 
         if (route === 'catalog'){
             return (
@@ -16,7 +16,10 @@ const Main = ({route, setSelectedItem, updateAmount, order, orderSum}) => {
         } else {
             return(
             <div className='f3 flex items-stretch w-100'>
-                    <LeftCol/>
+                    <LeftCol
+                        shownSpecOffers={shownSpecOffers}
+                        setSelectedItem={setSelectedItem}
+                    />
                     <div id='center' className='w-80 flex flex-column'>
                         <CurrPage
                             route={route}
@@ -25,7 +28,10 @@ const Main = ({route, setSelectedItem, updateAmount, order, orderSum}) => {
                             orderSum = {orderSum}
                         />
                     </div>
-                    <RightCol/>
+                    <RightCol
+                        shownSpecOffers={shownSpecOffers}
+                        setSelectedItem={setSelectedItem}
+                    />
             </div>
         )}
 };

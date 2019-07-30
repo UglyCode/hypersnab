@@ -20,7 +20,8 @@ const initialState = {
     userDataCache: {},
     order: new Map(),
     orderSum: 0,
-    selectedItem: undefined
+    selectedItem: undefined,
+    shownSpecOffers: []
 };
 
 class App extends Component {
@@ -53,6 +54,27 @@ class App extends Component {
         this.setInnFromToken(token);
         const order = this.jsonToMap(window.localStorage.getItem('order')) || this.state.order;
         this.updateOrder(order);
+        this.chooseShownSpecOffers(2);
+    }
+
+    chooseShownSpecOffers(columnLength){
+
+       let spec = goods.reduce((accum, elem, index) =>{
+                if (elem.spec) {
+                    accum.push(elem);
+                    return accum;
+                }
+                else return accum;
+            }, []);
+
+        const seed = Math.floor(Math.random()*spec.length);
+
+        let shownSpecOffers = [];
+        for (let i=0; i<2*columnLength; i++){
+            shownSpecOffers.push(spec[(seed+i)%spec.length])
+        }
+        this.setState({shownSpecOffers});
+        console.log(shownSpecOffers);
     }
 
 
@@ -70,7 +92,6 @@ class App extends Component {
         if (token){
             const payload = this.parseJwtPayload(token);
             if (payload) this.setState({userInn: payload.inn, userStatus: 'loggedIn'});
-            console.log(payload, payload.inn);
         }
     };
 
@@ -103,7 +124,6 @@ class App extends Component {
     }
 
     setUserStatus = (status, inn) => {
-        console.log(status, inn);
         this.setState({userStatus: status, userInn: inn || this.state.userInn});
     };
 
@@ -130,6 +150,7 @@ class App extends Component {
                     order = {this.state.order}
                     orderSum = {this.state.orderSum}
                     setSelectedItem = {this.setSelectedItem}
+                    shownSpecOffers = {this.state.shownSpecOffers}
                 />
                 <Footer/>
                 {this.state.isProfileOpen &&
