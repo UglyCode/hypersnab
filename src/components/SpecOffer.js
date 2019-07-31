@@ -12,7 +12,7 @@ const SpecOffer = (props) => {
                     <h2 className="f6 fw4 mt2 mb0 black-60 b">
                         {props.description}
                     </h2>
-                    <dl className="mt2 f6">
+                    <dl className="mt2 f5">
                         <dt className="clip">Цена</dt>
                         <dd className="ml0">{`${props.price} руб.`}</dd>
                     </dl>
