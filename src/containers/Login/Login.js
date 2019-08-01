@@ -160,7 +160,7 @@ class Login extends React.Component{
                                                 className="tc ma0 w-80" key="pwd"
                                                 placeholder="пароль" type="password" id="password">
                                             </input>
-                                            <p className="ma0">{'input your pass'}</p>
+                                            <p className="ma0">{'введиете пароль и нажмите =>'}</p>
                                         </div>
                                         <div className='w-20 pointer' onClick={this.submitPassword}>
                                             <img src={require('../../static/building.png')} className='mw-100 link dim'></img>

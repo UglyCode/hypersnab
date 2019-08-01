@@ -47,6 +47,12 @@ class Catalog extends React.Component {
         return this.state.goods.filter((elem) => elem.spec);
     };
 
+    getSearchResult = () => {
+        return this.state.goods.filter((elem) => {
+            return (elem.description.toLowerCase().indexOf(this.props.searchString) >= 0);
+        });
+    };
+
     //TODO
     // replace with GET /goods?folder=<folderName> request to server with cache and add at folderSelect
     getFolderFiltererdGoods = (folderName) => {
@@ -77,9 +83,15 @@ class Catalog extends React.Component {
 
     render() {
 
-        let goods = (this.state.folder) ? this.getFolderFiltererdGoods() : this.getSpecOffers();
+        let goods = [];
+        if (this.state.folder) {
+            goods =  this.getFolderFiltererdGoods();
+        } else if (this.props.searchString){
+            goods = this.getSearchResult()
+        } else {
+            goods = this.getSpecOffers();
+        };
 
-        console.log('catalog render');
         return(
             <div className = 'f3 flex w-100'>
                 <div className='flex-column w-20 ma2'>

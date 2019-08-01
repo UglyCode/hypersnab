@@ -21,7 +21,8 @@ const initialState = {
     order: new Map(),
     orderSum: 0,
     selectedItem: undefined,
-    shownSpecOffers: []
+    shownSpecOffers: [],
+    searchString: ''
 };
 
 class App extends Component {
@@ -77,6 +78,9 @@ class App extends Component {
         console.log(shownSpecOffers);
     }
 
+    updateSearchString = (searchString) => {
+        this.setState({searchString: searchString.toLowerCase(), route: "catalog"});
+    };
 
     //TODO
     // replace with fetching data from server GET /orderSum
@@ -143,6 +147,7 @@ class App extends Component {
                     onRouteChange = {this.onRouteChange}
                     orderSum = {this.state.orderSum}
                     goodsAmount = {this.state.order.size}
+                    updateSearchString = {this.updateSearchString}
                 />
                 <Main
                     route={this.state.route}
@@ -151,6 +156,7 @@ class App extends Component {
                     orderSum = {this.state.orderSum}
                     setSelectedItem = {this.setSelectedItem}
                     shownSpecOffers = {this.state.shownSpecOffers}
+                    searchString = {this.state.searchString}
                 />
                 <Footer/>
                 {this.state.isProfileOpen &&

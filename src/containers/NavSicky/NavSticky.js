@@ -28,6 +28,21 @@ class NavSticky extends React.Component{
         this.props.onRouteChange(event.target.name);
     };
 
+    handleSearchInput = (event) =>{
+        const searchField = document.querySelector('#searchField');
+        if (searchField.value.length > 3){
+            this.props.updateSearchString(searchField.value);
+        } else {
+            searchField.placeholder = 'введите более 3х символов';
+        }
+    };
+
+    clearSearchField = (event) => {
+        const searchField = document.querySelector('#searchField');
+        this.props.updateSearchString('');
+        searchField.value = '';
+    };
+
     render() {
 
         const isStick = this.state.scroll > this.state.top;
@@ -64,11 +79,15 @@ class NavSticky extends React.Component{
                         </div>
                         <div className="dib ph4-l flex justify-around">
                             <input
-                                className="f6 f5-l w-90"
+                                id={'searchField'}
+                                className="f6 f5-l w-80"
                                 placeholder="поиск товаров" type="text" name="searchText">
                             </input>
-                            <button className='w-10'>
+                            <button className='w-10' onClick={this.handleSearchInput}>
                                 <img src={require('../../static/search.png')} className='mw-100'></img>
+                            </button>
+                            <button className='w-10 b' onClick={this.clearSearchField}>
+                                X
                             </button>
                         </div>
                     </div>
