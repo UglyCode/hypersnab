@@ -48,8 +48,8 @@ class NavSticky extends React.Component{
     clearSearchString = (event) => {
         const searchField = document.querySelector('#searchField');
         searchField.placeholder = 'поиск товара';
-        this.props.updateSearchString('');
         this.clearSearchField(searchField);
+        this.props.updateSearchString('');
     };
 
     render() {
