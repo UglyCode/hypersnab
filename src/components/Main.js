@@ -27,6 +27,7 @@ const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecO
                             updateAmount={updateAmount}
                             order={order}
                             orderSum = {orderSum}
+                            setSelectedItem = {setSelectedItem}
                         />
                     </div>
                     <RightCol

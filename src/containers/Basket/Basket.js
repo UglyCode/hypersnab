@@ -35,8 +35,9 @@ class Basket extends React.Component{
         return (
             <div className='flex-column'>
                 <CatalogPage goods={this.state.orderedGoods}
-                                 order={this.props.order}
-                                 updateAmount={this.props.updateAmount}
+                             order={this.props.order}
+                             updateAmount={this.props.updateAmount}
+                             setSelectedItem={this.props.setSelectedItem}
                 />
                 <div className='flex flex-row-reverse ma0'>
                     <p className='f4'>{`ИТОГО: ${this.props.orderSum} руб.`}</p>
