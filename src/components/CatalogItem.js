@@ -1,7 +1,7 @@
 import React from 'react';
+import ENV from "../settings/env";
 
 class CatalogItem extends React.Component{
-
     constructor(props){
         super(props);
     }
@@ -26,7 +26,7 @@ class CatalogItem extends React.Component{
 
     render(){
         const {description, code, set, quantity, price, amount, measure} = this.props;
-        const img = `https://robohash.org/${code}?size=50x50`;
+        const img = `${ENV.imgPath}${code}.jpg`;
 
 
         return (

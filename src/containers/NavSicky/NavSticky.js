@@ -41,6 +41,13 @@ class NavSticky extends React.Component{
 
     };
 
+    handleEnterPress = (event) =>{
+        if (event.key === 'Enter') {
+            console.log(event.target);
+            this.handleSearchInput();
+        }
+    };
+
     clearSearchField = (searchField) => {
         searchField.value = '';
     };
@@ -89,6 +96,7 @@ class NavSticky extends React.Component{
                         <div className="dib ph4-l flex justify-around">
                             <input
                                 id={'searchField'}
+                                onKeyPress={this.handleEnterPress}
                                 className="f6 f5-l w-90"
                                 placeholder="поиск товаров" type="text" name="searchText">
                             </input>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './productCard.css';
+import ENV from "../../settings/env";
 
 class ProductCard extends React.Component{
 
@@ -36,7 +37,7 @@ class ProductCard extends React.Component{
                         {'Закрыть карточку'}
                     </div>
                     <div style={{width: '200px'}} className='center'>
-                        <img src={(this.state.img).replace('3?size=50x50',`${this.state.code}?size=200x200`)} className="db" alt='spec img'/>
+                        <img src={`${ENV.imgPath}${this.state.code}.jpg`} className="db" alt='spec img'/>
                     </div>
                         <h2 className="f3 mt2 mb0 black-60 b">
                             {`${this.state.description} (${this.state.code})`}

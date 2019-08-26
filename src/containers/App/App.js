@@ -105,7 +105,6 @@ class App extends Component {
         return JSON.parse(window.atob(base64));
     };
 
-
     updateAmountOfOrderedGood = (goodId, newAmount) => {
         newAmount = Number(newAmount);
         let order = this.state.order;
@@ -117,7 +116,6 @@ class App extends Component {
         this.updateOrder(order);
         window.localStorage.setItem('order', this.mapToJson(order));
     };
-
 
     mapToJson(map) {
         return JSON.stringify([...map]);

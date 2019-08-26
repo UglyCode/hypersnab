@@ -125,11 +125,24 @@ class Login extends React.Component{
 
     componentDidMount() {
 
-    }
+    };
 
     openProfile = (event) => {
         this.props.toggleProfile();
-    }
+    };
+
+    handleEnterPress = (event) =>{
+        if (event.key === 'Enter') {
+            console.log(event.target);
+            switch (this.props.userStatus) {
+                case 'passwordRequired':
+                    this.submitPassword();
+                    break;
+                case 'loggedOut':
+                    this.submitInn();
+            }
+        }
+    };
 
     render() {
         const el = document.querySelector('#innSign');
@@ -157,7 +170,7 @@ class Login extends React.Component{
                                     <div className = 'f6 flex justify-between ma2'>
                                         <div className='flex=column content-center w-80'>
                                             <input
-                                                className="tc ma0 w-80" key="pwd"
+                                                className="tc ma0 w-80" key="pwd" onKeyPress={this.handleEnterPress}
                                                 placeholder="пароль" type="password" id="password">
                                             </input>
                                             <p className="ma0">{'введиете пароль и нажмите =>'}</p>
@@ -173,7 +186,7 @@ class Login extends React.Component{
                                         <div className='flex-column justify-between content-center w-80'>
                                             <input
                                                 onChange={this.handleInnInput}
-                                                className="tc ma0 w-80" key="inn"
+                                                className="tc ma0 w-80" key="inn" onKeyPress={this.handleEnterPress}
                                                 placeholder="ИНН" type="text" id="inn">
                                             </input>
                                             <p className="ma1">{this.state.advice}</p>

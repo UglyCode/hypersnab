@@ -1,6 +1,7 @@
 import React from 'react';
 import CatalogItem from './CatalogItem';
 import CatalogHeader from './CatalogHeader';
+import ENV from "../settings/env";
 
 const CatalogPage = ({goods, order, setSelectedItem, updateAmount}) => {
     return(
@@ -15,7 +16,7 @@ const CatalogPage = ({goods, order, setSelectedItem, updateAmount}) => {
                         description={elem.description}
                         price={elem.price}
                         quantity={elem.quantity}
-                        img={elem.img}
+                        img={`${ENV.imgPath}${elem.code}.jpg`}
                         measure={elem.measure}
                         amount={order.get(elem.code)||0}
                         updateAmount={updateAmount}

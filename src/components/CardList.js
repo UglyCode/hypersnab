@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ENV from "../settings/env";
 import SpecOffer from './SpecOffer';
 
 const CardList = (props) => {
@@ -7,7 +7,7 @@ const CardList = (props) => {
         <main className="mw6 center">
             {props.shownSpecOffers.map(elem => {
                 return <SpecOffer
-                    img={elem.img}
+                    img={`${ENV.imgPath}${elem.code}.jpg`}
                     price={elem.price}
                     description={elem.description}
                     item={elem}
