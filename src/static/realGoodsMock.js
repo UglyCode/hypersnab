@@ -5,7 +5,7 @@ const goods = [
             description: 'Лампа накаливания ЛОН-40 40Вт 220В Е27',
             price: 7.34,
             measure: 'шт',
-            img:"https://robohash.org/3?size=50x50",
+            //img:"https://robohash.org/3?size=50x50",
             spec:false,
             quantity: 10923
         },
