@@ -5,7 +5,6 @@ const goods = [
             description: 'Лампа накаливания ЛОН-40 40Вт 220В Е27',
             price: 7.34,
             measure: 'шт',
-            //img:"https://robohash.org/3?size=50x50",
             spec:false,
             quantity: 10923
         },
@@ -15,7 +14,6 @@ const goods = [
             description: 'Лампа накаливания ЛОН-60 60Вт 220В Е27',
             price: 8.51,
             measure: 'шт',
-            img:"https://robohash.org/3?size=50x50",
             spec:false,
             quantity: 30816
         },
@@ -25,7 +23,6 @@ const goods = [
             description: 'Лампа накаливания ЛОН-75 75Вт 220В Е27',
             price: 8.51,
             measure: 'шт',
-            img:"https://robohash.org/3?size=50x50",
             spec:false,
             quantity: 3860
         },
@@ -35,7 +32,6 @@ const goods = [
             description: 'Лампа накаливания ЛОН-95 95Вт 220В Е27',
             price: 8.51,
             measure: 'шт',
-            img:"https://robohash.org/3?size=50x50",
             spec:false,
             quantity: 9163
         },
