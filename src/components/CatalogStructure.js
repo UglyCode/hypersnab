@@ -17,7 +17,7 @@ const createFolderElement = (folderObj, toggleChildren, folderSelect, folder) =>
     const folderFunction = (folderHasChildren) ? toggleChildren : folderSelect;
     const folderClassList = 'mt1 pointer hover-blue underline-hover'
             + (folderObj.name === folder ? ' b' : '')
-            + (folderHasChildren ? '' : 'dn');
+            + (folderHasChildren ? '' : ' dn');
 
     return(
         <ul className='pl3' onClick={folderFunction}>
