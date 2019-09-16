@@ -13,8 +13,11 @@ const CatalogStructure = ({folders, toggleChildren, folderSelect, folder}) => {
 
 const createFolderElement = (folderObj, toggleChildren, folderSelect, folder) => {
 
-    const folderFunction = (folderObj.children.length)? toggleChildren : folderSelect;
-    const folderClassList = 'mt1 pointer hover-blue underline-hover' + (folderObj.name === folder ? ' b' : ' ');
+    const folderHasChildren = !!folderObj.children.length;
+    const folderFunction = (folderHasChildren) ? toggleChildren : folderSelect;
+    const folderClassList = 'mt1 pointer hover-blue underline-hover'
+            + (folderObj.name === folder ? ' b' : '')
+            + (folderHasChildren ? '' : 'dn');
 
     return(
         <ul className='pl3' onClick={folderFunction}>
