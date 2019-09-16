@@ -5,7 +5,7 @@ const goods = [
         description: 'Счетчик электроэнергии Меркурий 230AM-01 3ф 1т 5-60А',
         price: 2304.12,
         measure: 'шт',
-        spec: false,
+        spec: true,
         quantity: 3
     },
     {
@@ -14,7 +14,7 @@ const goods = [
         description: 'Счетчик электроэнергии Меркурий 230AM-03 3ф 1т 5-7,5А',
         price: 2282.52,
         measure: 'шт',
-        spec: false,
+        spec: true,
         quantity: 4
     },
     {
@@ -23,7 +23,7 @@ const goods = [
         description: 'Круг отрезной по металлу 230x2,5x22,2мм',
         price: 74,
         measure: 'шт',
-        spec: false,
+        spec: true,
         quantity: 124
     },
     {
@@ -32,7 +32,7 @@ const goods = [
         description: 'Стартер Philips S10 4-65W 220-240V',
         price: 21.12,
         measure: 'шт',
-        spec: false,
+        spec: true,
         quantity: 714
     },
     {
@@ -41,7 +41,7 @@ const goods = [
         description: 'Стартер Philips S2 4-22W 127-240V',
         price: 21.12,
         measure: 'шт',
-        spec: false,
+        spec: true,
         quantity: 1454
     },
     {
