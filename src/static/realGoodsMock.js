@@ -2,43 +2,43 @@ const goods = [
     {
         folder: 'Приборы учета электроэнергии',
         code: 13,
-        description: '230AM-01 Счетчик эл.энергии Меркурий 3ф 1т 5-60А',
+        description: 'Счетчик электроэнергии Меркурий 230AM-01 3ф 1т 5-60А',
         price: 2304.12,
         measure: 'шт',
-        spec: true,
+        spec: false,
         quantity: 3
     },
     {
         folder: 'Приборы учета электроэнергии',
         code: 14,
-        description: '230AM-03 Счетчик эл.энергии Меркурий 3ф 1т 5-7,5А',
+        description: 'Счетчик электроэнергии Меркурий 230AM-03 3ф 1т 5-7,5А',
         price: 2282.52,
         measure: 'шт',
-        spec: true,
+        spec: false,
         quantity: 4
     },
     {
         folder: 'Расходные материалы',
         code: 43,
-        description: 'Круг 230x2,5x22мм отрезной по металлу  (25шт./упак.)',
+        description: 'Круг отрезной по металлу 230x2,5x22,2мм',
         price: 74,
         measure: 'шт',
-        spec: true,
+        spec: false,
         quantity: 124
     },
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 126,
-        description: 'S10 Стартер 4-65W 220-240V Philips 25 шт.уп.',
+        description: 'Стартер Philips S10 4-65W 220-240V',
         price: 21.12,
         measure: 'шт',
-        spec: true,
+        spec: false,
         quantity: 714
     },
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 127,
-        description: 'S2 Стартер 4-22W 127-240V Philips 25 шт.уп.',
+        description: 'Стартер Philips S2 4-22W 127-240V',
         price: 21.12,
         measure: 'шт',
         spec: false,
@@ -47,7 +47,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 129,
-        description: 'SH201L C16 Автоматический выключатель ABB 1п 16А 4,5кА   (10шт./упак.)',
+        description: '2CDS241001R0164 ABB Автоматический выключатель 1п SH201L C16 16А 4,5кА ',
         price: 188.16,
         measure: 'шт',
         spec: false,
@@ -56,7 +56,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 132,
-        description: 'SH203L C25 Автоматический выключатель ABB 3п 25А 4,5кА',
+        description: '2CDS243001R0254 ABB Автоматический выключатель 3п SH203L C25 25А 4,5кА',
         price: 644.88,
         measure: 'шт',
         spec: false,
@@ -65,16 +65,16 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 159,
-        description: 'ВВГнг-LS 5х 10 Кабель ГОСТ   (100м./бух.)',
+        description: 'Кабель ВВГнг-LS 5х10',
         price: 305.52,
         measure: 'м',
         spec: false,
-        quantity: 659
+        quantity: 589
     },
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 160,
-        description: 'ВВГнг-LS 5х  6 Кабель (есть 50м ГОСТ)',
+        description: 'Кабель ВВГнг-LS 5х6',
         price: 183.12,
         measure: 'м',
         spec: false,
@@ -83,7 +83,7 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 161,
-        description: 'ВВГнг-LS 5х 25 Кабель ГОСТ',
+        description: 'Кабель ВВГнг-LS 5х25',
         price: 785.7,
         measure: 'м',
         spec: false,
@@ -92,7 +92,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 163,
-        description: 'Вилка евро прямая   (25шт./упак.)',
+        description: 'Вилка евро прямая',
         price: 35.4,
         measure: 'шт',
         spec: false,
@@ -101,7 +101,7 @@ const goods = [
     {
         folder: 'Лампы галогеновые',
         code: 180,
-        description: 'КГ-1000 R7s L=189мм Россия (лампа галогеновая)  (20шт/упак.)',
+        description: 'Лампа кварцевая галогеновая КГ-1000 R7s L=189мм',
         price: 200.52,
         measure: 'шт',
         spec: false,
@@ -110,7 +110,7 @@ const goods = [
     {
         folder: 'Клипсы для труб ПВХ и ПНД',
         code: 184,
-        description: 'Клипса 16 д/трубы (№50)   (50шт./упак.)',
+        description: 'Клипса 16 для трубы',
         price: 0.78,
         measure: 'шт',
         spec: false,
@@ -119,7 +119,7 @@ const goods = [
     {
         folder: 'Клипсы для труб ПВХ и ПНД',
         code: 185,
-        description: 'Клипса 20 д/трубы (№50)   (50шт./упак.)',
+        description: 'Клипса 20 для трубы',
         price: 0.96,
         measure: 'шт',
         spec: false,
@@ -128,7 +128,7 @@ const goods = [
     {
         folder: 'Коробки распределительные (распаячные)',
         code: 187,
-        description: 'Коробка 150х110х70 распределительная IP55   (30шт./в кор.)',
+        description: 'Коробка распределительная 150х110х70 открытой установки IP55 ',
         price: 89.16,
         measure: 'шт',
         spec: false,
@@ -137,7 +137,7 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 204,
-        description: 'ЛОН-500 220В Е40 (48шт)',
+        description: 'Лампа накаливания ЛОН-500 500Вт 220В Е40',
         price: 72.66,
         measure: 'шт',
         spec: false,
@@ -146,7 +146,7 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 214,
-        description: 'МО 36В 60Вт E27 (100 шт./кор.)',
+        description: 'Лампа накаливания МО 36В 60Вт E27',
         price: 13.56,
         measure: 'шт',
         spec: false,
@@ -155,16 +155,16 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 226,
-        description: 'ПВ3  10 Желто-зеленый',
+        description: 'Провод ПВ-3 10 желто-зеленый',
         price: 0,
         measure: 'м',
         spec: false,
-        quantity: 220
+        quantity: 190
     },
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 227,
-        description: 'ПВ3   6 Желто-зеленый',
+        description: 'Провод ПВ-3 6 желто-зеленый',
         price: 0,
         measure: 'м',
         spec: false,
@@ -173,7 +173,7 @@ const goods = [
     {
         folder: 'Провод ПВС',
         code: 228,
-        description: 'ПВС 3х  0,75   (200м.)',
+        description: 'Провод ПВС 3х0,75',
         price: 17.82,
         measure: 'м',
         spec: false,
@@ -182,34 +182,34 @@ const goods = [
     {
         folder: 'Провод ПВС',
         code: 229,
-        description: 'ПВС 3х  1,5   (100м.)',
+        description: 'Провод ПВС 3х1,5',
         price: 29.64,
         measure: 'м',
         spec: false,
-        quantity: 1506
+        quantity: 3506
     },
     {
         folder: 'Провод ПВС',
         code: 230,
-        description: 'ПВС 3х  2,5   (100м.)',
+        description: 'Провод ПВС 3х2,5',
         price: 46.98,
         measure: 'м',
         spec: false,
-        quantity: 2392
+        quantity: 6392
     },
     {
         folder: 'Провод ПВС',
         code: 231,
-        description: 'ПВС 4х  1,5   (100м.)',
+        description: 'Провод ПВС 4х1,5',
         price: 38.34,
         measure: 'м',
         spec: false,
-        quantity: 361
+        quantity: 761
     },
     {
         folder: 'Провод ПВС',
         code: 232,
-        description: 'ПВС 4х  2,5   (100м.)',
+        description: 'Провод ПВС 4х2,5',
         price: 61.44,
         measure: 'м',
         spec: false,
@@ -218,7 +218,7 @@ const goods = [
     {
         folder: 'Провод ПВС',
         code: 233,
-        description: 'ПВС 4х  4   (100м.)',
+        description: 'Провод ПВС 4х4',
         price: 103.14,
         measure: 'м',
         spec: false,
@@ -227,7 +227,7 @@ const goods = [
     {
         folder: 'Провод ПВС',
         code: 234,
-        description: 'ПВС 4х  6   (100м.)',
+        description: 'Провод ПВС 4х6',
         price: 150.24,
         measure: 'м',
         spec: false,
@@ -240,21 +240,21 @@ const goods = [
         price: 13.08,
         measure: 'пар',
         spec: false,
-        quantity: 1202
+        quantity: 1052
     },
     {
         folder: 'Трубы для электропроводки',
         code: 298,
-        description: 'Труба 16 гофр ПВХ (100м)',
+        description: 'Труба гофрированная ПВХ d16мм (100м)',
         price: 4.14,
         measure: 'м',
         spec: false,
-        quantity: 7600
+        quantity: 7500
     },
     {
         folder: 'Трубы для электропроводки',
         code: 299,
-        description: 'Труба 16 жесткая ПВХ (по 3м)',
+        description: 'Труба жесткая гладкая ПВХ d16мм (3м)',
         price: 9.06,
         measure: 'м',
         spec: false,
@@ -263,7 +263,7 @@ const goods = [
     {
         folder: 'Трубы для электропроводки',
         code: 300,
-        description: 'Труба 20 гофр ПВХ (100м)',
+        description: 'Труба гофрированная ПВХ d20мм (100м)',
         price: 5.52,
         measure: 'м',
         spec: false,
@@ -272,7 +272,7 @@ const goods = [
     {
         folder: 'Трубы для электропроводки',
         code: 301,
-        description: 'Труба 20 ПНД гофрированная с протяжкой   (100м./бух.)',
+        description: 'Труба гофрированная с протяжкой ПНД d20мм (100м)',
         price: 11.34,
         measure: 'м',
         spec: false,
@@ -281,7 +281,7 @@ const goods = [
     {
         folder: 'Трубы для электропроводки',
         code: 317,
-        description: 'Труба 20 жесткая ПВХ (по 3м)',
+        description: 'Труба жесткая гладкая ПВХ d20мм (3м)',
         price: 11.94,
         measure: 'м',
         spec: false,
@@ -290,16 +290,16 @@ const goods = [
     {
         folder: 'Хомуты нейлоновые',
         code: 340,
-        description: 'Хомут  200х2,5-3 нейл. бел. (100шт.)',
+        description: 'Хомут нейлоновый белый 200х2,5-3 (100шт.)',
         price: 50.4,
         measure: 'упак',
         spec: false,
-        quantity: 146
+        quantity: 121
     },
     {
         folder: 'Хомуты нейлоновые',
         code: 342,
-        description: 'Хомут  400х5 нейл. бел. (100шт.)',
+        description: 'Хомут нейлоновый белый 400х5 (100шт.)',
         price: 218.16,
         measure: 'упак',
         spec: false,
@@ -308,25 +308,25 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 532,
-        description: 'S201  C10 Автоматический выключатель ABB 1п 10А 6кА   (10шт./упак.)',
+        description: '2CDS251001R0104 ABB Автоматический выключатель 1п S201 C10 10А 6кА',
         price: 343.68,
         measure: 'шт',
         spec: false,
-        quantity: 73
+        quantity: 53
     },
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 533,
-        description: 'S201  C16 Автоматический выключатель ABB 1п 16А 6кА  (10шт./упак.)',
+        description: '2CDS251001R0164 ABB Автоматический выключатель 1п S201 C16 16А 6кА',
         price: 313.8,
         measure: 'шт',
         spec: false,
-        quantity: 203
+        quantity: 202
     },
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 534,
-        description: 'S201  C20 Автоматический выключатель ABB 1п 20А 6кА',
+        description: '2CDS251001R0204 ABB Автоматический выключатель 1п S201 C20 20А 6кА',
         price: 388.5,
         measure: 'шт',
         spec: false,
@@ -335,7 +335,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 535,
-        description: 'S201  C25 Автоматический выключатель ABB 1п 25А 6кА   (10шт./упак.)',
+        description: '2CDS251001R0254 ABB Автоматический выключатель 1п S201 C25 25А 6кА',
         price: 375.66,
         measure: 'шт',
         spec: false,
@@ -344,7 +344,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 536,
-        description: 'S201  C32 Автоматический выключатель ABB 1п 32А 6кА   (10шт./упак.)',
+        description: '2CDS251001R0324 ABB Автоматический выключатель 1п S201 C32 32А 6кА',
         price: 433.32,
         measure: 'шт',
         spec: false,
@@ -353,16 +353,16 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 537,
-        description: 'S201   C6 Автоматический выключатель ABB 1п 6A 6кА  (10шт./упак.)',
+        description: '2CDS251001R0064 ABB Автоматический выключатель 1п S201 C6 6А 6кА',
         price: 431.16,
         measure: 'шт',
         spec: false,
-        quantity: 20
+        quantity: 10
     },
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 539,
-        description: 'S203 C10 Автоматический выключатель ABB 3п 10А 6кА',
+        description: '2CDS253001R0104 ABB Автоматический выключатель 3п S203 C10 10А 6кА',
         price: 1248.72,
         measure: 'шт',
         spec: false,
@@ -371,7 +371,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 540,
-        description: 'S203 C16 Автоматический выключатель ABB 3п 16А 6кА',
+        description: '2CDS253001R0164 ABB Автоматический выключатель 3п S203 C16 16А 6кА',
         price: 1163.34,
         measure: 'шт',
         spec: false,
@@ -380,7 +380,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 541,
-        description: 'S203 C25 Автоматический выключатель ABB 3п 25А 6кА',
+        description: '2CDS253001R0254 ABB Автоматический выключатель 3п S203 C25 25А 6кА',
         price: 1408.86,
         measure: 'шт',
         spec: false,
@@ -389,7 +389,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 542,
-        description: 'S203 C32 Автоматический выключатель ABB 3п 32А 6кА',
+        description: '2CDS253001R0324 ABB Автоматический выключатель 3п S203 C32 32А 6кА',
         price: 1536.9,
         measure: 'шт',
         spec: false,
@@ -398,7 +398,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 543,
-        description: 'S203 C40 Автоматический выключатель ABB 3п 40А 6кА',
+        description: '2CDS253001R0404 ABB Автоматический выключатель 3п S203 C40 40А 6кА',
         price: 1665,
         measure: 'шт',
         spec: false,
@@ -407,7 +407,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 545,
-        description: 'S203 C63 Автоматический выключатель ABB 3п 63А 6кА',
+        description: '2CDS253001R0634 ABB Автоматический выключатель 3п S203 C63 63А 6кА',
         price: 2251.98,
         measure: 'шт',
         spec: false,
@@ -416,16 +416,16 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 583,
-        description: 'ВА47-63 1п C 16А 4,5кА (12 шт.)',
+        description: 'Автоматический выключатель ВА47-63 1п C 16А 4,5кА',
         price: 60.48,
         measure: 'шт',
         spec: false,
-        quantity: 1321
+        quantity: 1285
     },
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 584,
-        description: 'ВА47-63 1п C 25А 4,5кА (12 шт.)',
+        description: 'Автоматический выключатель ВА47-63 1п C 25А 4,5кА',
         price: 61.08,
         measure: 'шт',
         spec: false,
@@ -434,7 +434,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 585,
-        description: 'ВА47-63 2п C 40А 4,5кА (6 шт.)',
+        description: 'Автоматический выключатель ВА47-63 2п C 40А 4,5кА',
         price: 134.82,
         measure: 'шт',
         spec: false,
@@ -443,7 +443,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели дифференциального тока (дифференциальные автоматы) 2п',
         code: 592,
-        description: 'АВДТ-32 2P 25А/30мА диф.авт.',
+        description: 'Автоматический выключатель дифференциального тока АВДТ-32 2P C 25А/30мА',
         price: 595.32,
         measure: 'шт',
         spec: false,
@@ -452,7 +452,7 @@ const goods = [
     {
         folder: 'Элементы питания и аккумуляторы',
         code: 622,
-        description: 'R20 BL-2 Элемент питания (2шт./упак.)',
+        description: 'Элемент питания R20',
         price: 69.9,
         measure: 'шт',
         spec: false,
@@ -461,34 +461,34 @@ const goods = [
     {
         folder: 'Кабель NYM',
         code: 626,
-        description: 'NYM 3х  2,5 Кабель (100м.)',
+        description: 'Кабель NYM 3х2,5',
         price: 50.1,
         measure: 'м',
         spec: false,
-        quantity: 406
+        quantity: 706
     },
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 641,
-        description: 'ВВГнг-LS 3х  1,5 ГОСТ Кабель   (бухта 100м.)',
+        description: 'Кабель ВВГнг-LS 3х1,5',
         price: 32.52,
         measure: 'м',
         spec: false,
-        quantity: 5339
+        quantity: 5139
     },
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 642,
-        description: 'ВВГнг-LS 3х  2,5 ГОСТ Кабель   (бухта 100м.)',
+        description: 'Кабель ВВГнг-LS 3х2,5',
         price: 50.28,
         measure: 'м',
         spec: false,
-        quantity: 4143
+        quantity: 3843
     },
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 643,
-        description: 'ВВГнг-LS 5х 16 Кабель ГОСТ',
+        description: 'Кабель ВВГнг-LS 5х16',
         price: 499.62,
         measure: 'м',
         spec: false,
@@ -497,7 +497,7 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 644,
-        description: 'ВВГнг-LS 5х  4 Кабель ГОСТ',
+        description: 'Кабель ВВГнг-LS 5х4',
         price: 125.16,
         measure: 'м',
         spec: false,
@@ -506,7 +506,7 @@ const goods = [
     {
         folder: 'Кабель КГ',
         code: 647,
-        description: 'КГ 3х  1,5 Кабель  (100м./бух.)',
+        description: 'Кабель КГ 3х1,5',
         price: 33.42,
         measure: 'м',
         spec: false,
@@ -515,7 +515,7 @@ const goods = [
     {
         folder: 'Кабель КГ',
         code: 648,
-        description: 'КГ 3х  2,5 Кабель  (на барабане)',
+        description: 'Кабель КГ 3х2,5',
         price: 51.12,
         measure: 'м',
         spec: false,
@@ -524,7 +524,7 @@ const goods = [
     {
         folder: 'Кабель КГ',
         code: 649,
-        description: 'КГ 4х  4 Кабель  ',
+        description: 'Кабель КГ 4х4',
         price: 101.52,
         measure: 'м',
         spec: false,
@@ -533,7 +533,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 657,
-        description: 'ПВ1  4 Белый  (200м./бух.)',
+        description: 'Провод ПВ1 4 белый',
         price: 21.66,
         measure: 'м',
         spec: false,
@@ -542,34 +542,34 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 658,
-        description: 'ПВ1  4 Желто-зеленый',
+        description: 'Провод ПВ1 4 желто-зеленый',
         price: 0,
         measure: 'м',
         spec: false,
-        quantity: 853
+        quantity: 1153
     },
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 660,
-        description: 'ПВ1  4 Синий',
+        description: 'Провод ПВ1 4 синий',
         price: 0,
         measure: 'м',
         spec: false,
-        quantity: 593
+        quantity: 543
     },
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 663,
-        description: 'ПВ3  16 Белый   (150м./бух.)',
+        description: 'Провод ПВ-3 16 белый',
         price: 91.56,
         measure: 'м',
         spec: false,
-        quantity: 37
+        quantity: 7
     },
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 664,
-        description: 'ПВ3  16 Желто-зеленый',
+        description: 'Провод ПВ-3 16 желто-зеленый',
         price: 0,
         measure: 'м',
         spec: false,
@@ -578,16 +578,16 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 668,
-        description: 'ПВ3   4 Синий ',
+        description: 'Провод ПВ-3 4 синий',
         price: 0,
         measure: 'м',
         spec: false,
-        quantity: 2155
+        quantity: 2395
     },
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 669,
-        description: 'ПВ3   6 Белый',
+        description: 'Провод ПВ-3 6 белый',
         price: 31.92,
         measure: 'м',
         spec: false,
@@ -596,7 +596,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 673,
-        description: 'ПВ3   6 Черный',
+        description: 'Провод ПВ-3 6 черный',
         price: 0,
         measure: 'м',
         spec: false,
@@ -605,7 +605,7 @@ const goods = [
     {
         folder: 'Провод ПВС',
         code: 674,
-        description: 'ПВС 2х  2,5   (100м.)',
+        description: 'Провод ПВС 2х2,5',
         price: 33.96,
         measure: 'м',
         spec: false,
@@ -614,7 +614,7 @@ const goods = [
     {
         folder: 'Провода ПУНП, ПУгНП и ШВВП',
         code: 675,
-        description: 'ПУНП 2х  1,5   (100м./бух.)',
+        description: 'Провод ПУНП 2х1,5',
         price: 18.6,
         measure: 'м',
         spec: false,
@@ -623,7 +623,7 @@ const goods = [
     {
         folder: 'Провода ПУНП, ПУгНП и ШВВП',
         code: 676,
-        description: 'ПУНП 2х  2,5  (100м./бух.)',
+        description: 'Провод ПУНП 2х2,5',
         price: 28.5,
         measure: 'м',
         spec: false,
@@ -632,7 +632,7 @@ const goods = [
     {
         folder: 'Провода ПУНП, ПУгНП и ШВВП',
         code: 677,
-        description: 'ШВВП 2х  0,75',
+        description: 'Провод ШВВП 2х0,75',
         price: 9.48,
         measure: 'м',
         spec: false,
@@ -641,7 +641,7 @@ const goods = [
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 699,
-        description: 'ST-111 Стартер 4-65W 220V OSRAM   (25шт.уп)',
+        description: '4008321364876 Стартер OSRAM ST-111 4-65W',
         price: 17.1,
         measure: 'шт',
         spec: false,
@@ -650,7 +650,7 @@ const goods = [
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 700,
-        description: 'ST-151 Стартер 4-22W 127V OSRAM   (25шт.уп)',
+        description: '4008321364920 Стартер OSRAM ST-151 4-22W',
         price: 17.94,
         measure: 'шт',
         spec: false,
@@ -659,25 +659,25 @@ const goods = [
     {
         folder: 'Линейные люминесцентные лампы',
         code: 702,
-        description: 'TL-D 18W/54-765 G13 Philips (25шт)',
+        description: 'Лампа люминесцентная Philips TL-D 18W/54-765 G13 ',
         price: 46.02,
         measure: 'шт',
         spec: false,
-        quantity: 559
+        quantity: 604
     },
     {
         folder: 'Линейные люминесцентные лампы',
         code: 703,
-        description: 'TL-D 36W/54-765 G13 Philips (25шт)',
+        description: 'Лампа люминесцентная Philips TL-D 36W/54-765 G13 ',
         price: 57.72,
         measure: 'шт',
         spec: false,
-        quantity: 259
+        quantity: 228
     },
     {
         folder: 'Лампы газоразрядные',
         code: 713,
-        description: 'ДНаТ-250 Е40   (30шт.)',
+        description: 'Лампа натриевая ДНаТ-250 250Вт Е40',
         price: 258.42,
         measure: 'шт',
         spec: false,
@@ -686,7 +686,7 @@ const goods = [
     {
         folder: 'Лампы газоразрядные',
         code: 714,
-        description: 'ДРЛ-125 Е27 (25шт.)',
+        description: 'Лампа ртутная ДРЛ-125 125Вт Е27',
         price: 128.28,
         measure: 'шт',
         spec: false,
@@ -695,7 +695,7 @@ const goods = [
     {
         folder: 'Лампы газоразрядные',
         code: 715,
-        description: 'ДРЛ-250 Е40   (20шт)',
+        description: 'Лампа ртутная ДРЛ-250 250Вт Е40',
         price: 158.4,
         measure: 'шт',
         spec: false,
@@ -704,7 +704,7 @@ const goods = [
     {
         folder: 'Лампы газоразрядные',
         code: 716,
-        description: 'ДРЛ-400 Е40   (15шт)',
+        description: 'Лампа ртутная ДРЛ-400 400Вт Е40',
         price: 220.02,
         measure: 'шт',
         spec: false,
@@ -713,7 +713,7 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 717,
-        description: 'ДС-60 220В Е14',
+        description: 'Лампа накаливания ДС-60 60Вт 220В Е14',
         price: 12.3,
         measure: 'шт',
         spec: false,
@@ -722,7 +722,7 @@ const goods = [
     {
         folder: 'Линейные люминесцентные лампы',
         code: 719,
-        description: 'ЛБ-20 (18) G13 (25шт/упак) строго кратно упаковке (!!! пока их нет продаём ЛД)',
+        description: 'Лампа люминесцентная ЛБ-20 (18) G13',
         price: 40.74,
         measure: 'шт',
         spec: false,
@@ -731,25 +731,25 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 720,
-        description: 'ЛОН- 40 220В Е27 (100шт.)',
+        description: 'Лампа накаливания ЛОН-40 40Вт 220В Е27',
         price: 10.86,
         measure: 'шт',
         spec: false,
-        quantity: 15516
+        quantity: 14516
     },
     {
         folder: 'Лампы накаливания',
         code: 721,
-        description: 'ЛОН- 60 220В Е27 (100шт.)',
+        description: 'Лампа накаливания ЛОН-60 60Вт 220В Е27',
         price: 10.86,
         measure: 'шт',
         spec: false,
-        quantity: 22130
+        quantity: 21630
     },
     {
         folder: 'Лампы накаливания',
         code: 722,
-        description: 'ЛОН- 75 220В Е27 (154шт.)',
+        description: 'Лампа накаливания ЛОН-75 75Вт 220В Е27',
         price: 10.86,
         measure: 'шт',
         spec: false,
@@ -758,7 +758,7 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 723,
-        description: 'ЛОН- 95 220В Е27 (154шт.)',
+        description: 'Лампа накаливания ЛОН-95 95Вт 220В Е27',
         price: 10.86,
         measure: 'шт',
         spec: false,
@@ -767,7 +767,7 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 724,
-        description: 'ЛОН-200 220В Е27 (90шт)',
+        description: 'Лампа накаливания ЛОН-200 200Вт 220В Е27',
         price: 17.76,
         measure: 'шт',
         spec: false,
@@ -776,7 +776,7 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 725,
-        description: 'МО 24В 60Вт E27   (100шт./кор.)',
+        description: 'Лампа накаливания МО 24В 60Вт E27',
         price: 14.22,
         measure: 'шт',
         spec: false,
@@ -785,7 +785,7 @@ const goods = [
     {
         folder: 'Компактные люминесцентные лампы',
         code: 728,
-        description: 'SPC 11W E14 2700K  (100шт./кор.)',
+        description: 'Лампа люминесцентная компактная SPC 11W E14 2700K',
         price: 72.24,
         measure: 'шт',
         spec: false,
@@ -794,7 +794,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на монтажную панель',
         code: 736,
-        description: 'АЕ2056М-100 100А Автоматический выключатель',
+        description: 'Автоматический выключатель АЕ2056М-100 100А',
         price: 1878.84,
         measure: 'шт',
         spec: false,
@@ -803,7 +803,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на монтажную панель',
         code: 737,
-        description: 'АЕ2056М-100  80А Автоматический выключатель',
+        description: 'Автоматический выключатель АЕ2056М-100 80А',
         price: 1878.84,
         measure: 'шт',
         spec: false,
@@ -812,7 +812,7 @@ const goods = [
     {
         folder: 'Плавкие вставки и держатели к ним',
         code: 746,
-        description: 'ПН-2 100 А Плавкая вставка  (20шт./в кор.)',
+        description: 'Плавкая вставка ПН-2 100А',
         price: 56.04,
         measure: 'шт',
         spec: false,
@@ -821,16 +821,16 @@ const goods = [
     {
         folder: 'Плавкие вставки и держатели к ним',
         code: 747,
-        description: 'ПН-2 250 А Плавкая вставка   (20шт./в кор.)',
+        description: 'Плавкая вставка ПН-2 250А',
         price: 74.22,
         measure: 'шт',
         spec: false,
-        quantity: 20
+        quantity: 40
     },
     {
         folder: 'Плавкие вставки и держатели к ним',
         code: 748,
-        description: 'ПН-2 400 А Плавкая вставка  (8шт./в кор.)',
+        description: 'Плавкая вставка ПН-2 400А',
         price: 137.58,
         measure: 'шт',
         spec: false,
@@ -839,7 +839,7 @@ const goods = [
     {
         folder: 'Светильники люминесцентные',
         code: 762,
-        description: 'ЛПБ-31-11-006 Светильник антивандальный G23   (10шт./упак.)',
+        description: 'Светильник ЛПБ-31-11-006 G23 антивандальный',
         price: 310.32,
         measure: 'шт',
         spec: false,
@@ -848,7 +848,7 @@ const goods = [
     {
         folder: 'Светильники люминесцентные',
         code: 763,
-        description: 'ЛПО 1х20 Светильник   8шт/упак. (!!! стартер код 794 выставляется отдельно кратно упаковкам)',
+        description: 'Светильник ЛПО 1х20(18)',
         price: 332.64,
         measure: 'шт',
         spec: false,
@@ -857,7 +857,7 @@ const goods = [
     {
         folder: 'Светильники люминесцентные',
         code: 764,
-        description: 'ЛПО 1х40 Светильник   4шт/упак. (!!! стартер код 795 выставляется отдельно кратно упаковкам)',
+        description: 'Светильник ЛПО 1х40(36)',
         price: 402.54,
         measure: 'шт',
         spec: false,
@@ -866,16 +866,16 @@ const goods = [
     {
         folder: 'Светильники люминесцентные',
         code: 765,
-        description: 'ЛПО 2х40 Светильник   2шт/упак.(!!! стартер код 795 выставляется отдельно кратно упаковкам)',
+        description: 'Светильник ЛПО 2х40(36)',
         price: 577.74,
         measure: 'шт',
         spec: false,
-        quantity: 486
+        quantity: 472
     },
     {
         folder: 'Светильники люминесцентные',
         code: 767,
-        description: 'ЛПО 01 Светильник 2х36-012 с ЭПРА',
+        description: 'Светильник ЛПО 01 2х36-012 с ЭПРА',
         price: 602.82,
         measure: 'шт',
         spec: false,
@@ -884,7 +884,7 @@ const goods = [
     {
         folder: 'Светильники настенно-потолочные',
         code: 768,
-        description: 'НББ-64-60 Арматура светильника (основание косое) (100 шт. в упак.)',
+        description: 'Арматура светильника НББ-64-60 (основание косое)',
         price: 20.34,
         measure: 'шт',
         spec: false,
@@ -893,7 +893,7 @@ const goods = [
     {
         folder: 'Светильники настенно-потолочные',
         code: 769,
-        description: 'НББ-64-60 Арматура светильника (основание прямое) (100 шт. в упак.)',
+        description: 'Арматура светильника НББ-64-60 (основание прямое)',
         price: 20.34,
         measure: 'шт',
         spec: false,
@@ -902,7 +902,7 @@ const goods = [
     {
         folder: 'Светильники настенно-потолочные',
         code: 770,
-        description: 'НББ-64-60 Рассеиватель (шар пластиковый)  (50шт/упак.)',
+        description: 'Рассеиватель НББ-64-60 (шар пластиковый)',
         price: 27.84,
         measure: 'шт',
         spec: false,
@@ -911,7 +911,7 @@ const goods = [
     {
         folder: 'Светильники настенно-потолочные',
         code: 771,
-        description: 'НББ-64-60 Рассеиватель (шар стеклянный)  (4шт/упак.)',
+        description: 'Рассеиватель НББ-64-60 (шар стеклянный)',
         price: 48.54,
         measure: 'шт',
         spec: false,
@@ -920,7 +920,7 @@ const goods = [
     {
         folder: 'Светильники подвесные',
         code: 773,
-        description: 'НСП02-100-003 Светильник с решеткой  (10шт/упак.)',
+        description: 'Светильник НСП 02-100-003 с решеткой',
         price: 258.9,
         measure: 'шт',
         spec: false,
@@ -929,7 +929,7 @@ const goods = [
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 780,
-        description: '1И18/20 Дроссель для люм.ламп АВТ    (40-30шт./упак.)',
+        description: 'Дроссель для люминесцентных ламп АВТ 1И18/20',
         price: 152.58,
         measure: 'шт',
         spec: false,
@@ -938,7 +938,7 @@ const goods = [
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 782,
-        description: '1И36/40 Дроссель для люм.ламп АВТ   (30шт./упак.)',
+        description: 'Дроссель для люминесцентных ламп АВТ 1И36/40',
         price: 152.58,
         measure: 'шт',
         spec: false,
@@ -947,7 +947,7 @@ const goods = [
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 794,
-        description: 'СК-127 Стартер д/ламп 18-20Вт   (25шт./упак.)',
+        description: 'Стартер СК-127 для ламп 18-20Вт',
         price: 5.4,
         measure: 'шт',
         spec: false,
@@ -956,7 +956,7 @@ const goods = [
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 795,
-        description: 'СК-220 Стартер д/ламп 36-40Вт    (25шт./упак.)',
+        description: 'Стартер СК-220 для ламп 36-40Вт',
         price: 4.98,
         measure: 'шт',
         spec: false,
@@ -965,7 +965,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 805,
-        description: 'DIN-рейка 2 м',
+        description: 'DIN-рейка L=2м',
         price: 110.64,
         measure: 'шт',
         spec: false,
@@ -974,7 +974,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 806,
-        description: 'DIN-рейка  60 см',
+        description: 'DIN-рейка L=60см',
         price: 39.12,
         measure: 'шт',
         spec: false,
@@ -983,7 +983,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 815,
-        description: 'ЩРН-П-12 Бокс, пластик IP40   (10шт./упак.)',
+        description: 'Бокс ЩРН-П-12 модулей пластик IP40',
         price: 358.98,
         measure: 'шт',
         spec: false,
@@ -992,7 +992,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 816,
-        description: 'ЩРН-П-24 Бокс, пластик IP40   (10шт./упак.)',
+        description: 'Бокс ЩРН-П-24 модуля пластик IP40',
         price: 747.36,
         measure: 'шт',
         spec: false,
@@ -1001,7 +1001,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 817,
-        description: 'ЩРН-П-36 Бокс, пластик IP40  (5шт./упак.)',
+        description: 'Бокс ЩРН-П-36 модулей пластик IP40',
         price: 1293.54,
         measure: 'шт',
         spec: false,
@@ -1010,16 +1010,16 @@ const goods = [
     {
         folder: 'Изолента',
         code: 822,
-        description: 'Изолента ХБ 19мм х 30м 300г (50шт/уп)',
+        description: 'Изолента ХБ 19мм х 30м 300г',
         price: 97.56,
         measure: 'шт',
         spec: false,
-        quantity: 192
+        quantity: 78
     },
     {
         folder: 'Зажимы винтовые ЗВИ (клеммные колодки)',
         code: 825,
-        description: 'ЗВИ- 60 зажим винтовой 25 кв.мм 12 пар',
+        description: 'Зажим винтовой ЗВИ-60 25 кв.мм 12пар',
         price: 85.98,
         measure: 'шт',
         spec: false,
@@ -1028,7 +1028,7 @@ const goods = [
     {
         folder: 'Кабельные каналы (короба)',
         code: 827,
-        description: 'Короб 100х60 ПВХ (12м в упаковке)',
+        description: 'Кабель-канал ПВХ 100х60',
         price: 133.44,
         measure: 'м',
         spec: false,
@@ -1037,25 +1037,25 @@ const goods = [
     {
         folder: 'Кабельные каналы (короба)',
         code: 828,
-        description: 'Короб  16х16 ПВХ (140м в упаковке)',
+        description: 'Кабель-канал ПВХ 16х16',
         price: 11.22,
         measure: 'м',
         spec: false,
-        quantity: 6102
+        quantity: 5912
     },
     {
         folder: 'Кабельные каналы (короба)',
         code: 829,
-        description: 'Короб  25х25 ПВХ (80м в упаковке)',
+        description: 'Кабель-канал ПВХ 25х25',
         price: 22.92,
         measure: 'м',
         spec: false,
-        quantity: 3568
+        quantity: 3518
     },
     {
         folder: 'Кабельные каналы (короба)',
         code: 830,
-        description: 'Короб  40х16 ПВХ (48м/40м в упаковке)',
+        description: 'Кабель-канал ПВХ 40х16',
         price: 27.24,
         measure: 'м',
         spec: false,
@@ -1064,7 +1064,7 @@ const goods = [
     {
         folder: 'Кабельные каналы (короба)',
         code: 831,
-        description: 'Короб  40х40 ПВХ (30м в упаковке)',
+        description: 'Кабель-канал ПВХ 40х40',
         price: 42.48,
         measure: 'м',
         spec: false,
@@ -1073,7 +1073,7 @@ const goods = [
     {
         folder: 'Кабельные каналы (короба)',
         code: 832,
-        description: 'Короб  60х60 ПВХ (18м. в упаковке)',
+        description: 'Кабель-канал ПВХ 60х60',
         price: 82.62,
         measure: 'м',
         spec: false,
@@ -1082,7 +1082,7 @@ const goods = [
     {
         folder: 'Кабельные каналы (короба)',
         code: 833,
-        description: 'Короб  80х60 ПВХ (24м в упаковке)',
+        description: 'Кабель-канал ПВХ 80х60',
         price: 126.66,
         measure: 'м',
         spec: false,
@@ -1091,7 +1091,7 @@ const goods = [
     {
         folder: 'Коробки распределительные (распаячные)',
         code: 835,
-        description: 'Коробка 100х100х50 распределительная о/у IP54   (60шт./в кор.)',
+        description: 'Коробка распределительная 100х100х50 открытой установки IP54',
         price: 39.18,
         measure: 'шт',
         spec: false,
@@ -1100,7 +1100,7 @@ const goods = [
     {
         folder: 'Коробки распределительные (распаячные)',
         code: 837,
-        description: 'Коробка  70х70х40 распределительная о/у IP54   (150шт./в кор.)',
+        description: 'Коробка распределительная 70х70х40 открытой установки IP54',
         price: 21.66,
         measure: 'шт',
         spec: false,
@@ -1109,16 +1109,16 @@ const goods = [
     {
         folder: 'Наконечники медные луженые под опрессовку',
         code: 843,
-        description: 'ТМЛ- 16-8-6 Наконечник мед.луж.опрес.   (100шт./упак.)',
+        description: 'Наконечник кабельный ТМЛ-16-8-6 медный луженый под опрессовку',
         price: 12.78,
         measure: 'шт',
         spec: false,
-        quantity: 295
+        quantity: 195
     },
     {
         folder: 'Наконечники медные луженые под опрессовку',
         code: 844,
-        description: 'ТМЛ- 25-8-7 Наконечник мед.луж.опрес.    (100шт./упак.)',
+        description: 'Наконечник кабельный ТМЛ-25-8-7 медный луженый под опрессовку',
         price: 18.18,
         measure: 'шт',
         spec: false,
@@ -1127,7 +1127,7 @@ const goods = [
     {
         folder: 'Наконечники медные луженые под опрессовку',
         code: 845,
-        description: 'ТМЛ- 35-8-10  Наконечник мед.луж.опрес.   (100шт./упак.)',
+        description: 'Наконечник кабельный ТМЛ-35-8-10 медный луженый под опрессовку',
         price: 22.44,
         measure: 'шт',
         spec: false,
@@ -1136,7 +1136,7 @@ const goods = [
     {
         folder: 'Наконечники медные луженые под опрессовку',
         code: 846,
-        description: 'ТМЛ- 50-10-11 Наконечник мед.луж.опрес.    (100шт./упак.)',
+        description: 'Наконечник кабельный ТМЛ-50-10-11 медный луженый под опрессовку',
         price: 30.42,
         measure: 'шт',
         spec: false,
@@ -1145,7 +1145,7 @@ const goods = [
     {
         folder: 'Сжимы ответвительные',
         code: 848,
-        description: 'У-731 Сжим ответвительный (12шт/уп.)',
+        description: 'Сжим ответвительный У-731',
         price: 19.8,
         measure: 'шт',
         spec: false,
@@ -1154,7 +1154,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 853,
-        description: 'Вилка евро боковая бел. MAKEL   (125шт./упак.)',
+        description: '10027 Вилка MAKEL евро боковая белая',
         price: 41.22,
         measure: 'шт',
         spec: false,
@@ -1163,16 +1163,16 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 854,
-        description: 'Вилка евро прямая бел. MAKEL  (100шт./упак.)',
+        description: '10002 Вилка MAKEL евро прямая белая',
         price: 46.38,
         measure: 'шт',
         spec: false,
-        quantity: 199
+        quantity: 99
     },
     {
         folder: 'Патроны',
         code: 863,
-        description: 'Е27 Патрон подвесной карболитовый   (200шт./кор./20шт./упак.)',
+        description: 'Патрон Е27 подвесной карболитовый',
         price: 15.36,
         measure: 'шт',
         spec: false,
@@ -1181,7 +1181,7 @@ const goods = [
     {
         folder: 'Патроны',
         code: 864,
-        description: 'Е27 Патрон подвесной керамический   (400шт/.упак.200шт./упак.)',
+        description: 'Патрон Е27 подвесной керамический ',
         price: 8.34,
         measure: 'шт',
         spec: false,
@@ -1190,16 +1190,16 @@ const goods = [
     {
         folder: 'Электроустановочные изделия из каучука',
         code: 866,
-        description: 'Вилка евро каучук   (24шт/упак.)',
+        description: 'Вилка евро каучуковая',
         price: 60.6,
         measure: 'шт',
         spec: false,
-        quantity: 228
+        quantity: 721
     },
     {
         folder: 'Выключатели',
         code: 867,
-        description: 'Выкл.1ОП     120шт/кор.',
+        description: 'Выключатель 1-клавишный открытой проводки',
         price: 34.32,
         measure: 'шт',
         spec: false,
@@ -1208,7 +1208,7 @@ const goods = [
     {
         folder: 'Выключатели',
         code: 868,
-        description: 'Выкл.2ОП    80шт/кор.',
+        description: 'Выключатель 2-клавишный открытой проводки',
         price: 35.94,
         measure: 'шт',
         spec: false,
@@ -1217,16 +1217,16 @@ const goods = [
     {
         folder: 'Электроустановочные изделия из каучука',
         code: 869,
-        description: 'Колодка 3я с/з каучук IP44   9шт/уп.',
+        description: 'Колодка каучуковая на 3 розетки IP44',
         price: 231.36,
         measure: 'шт',
         spec: false,
-        quantity: 438
+        quantity: 437
     },
     {
         folder: 'Розетки и вилки',
         code: 870,
-        description: 'Роз.1ОП с/з     60шт/кор.',
+        description: 'Розетка 1-я открытой проводки с заземлением',
         price: 39.54,
         measure: 'шт',
         spec: false,
@@ -1235,7 +1235,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 872,
-        description: 'Роз.2ОП с/з с крышкой бр/защ полугерметичная (30шт в коробке)',
+        description: 'Розетка 2-я открытой проводки с заземлением брызгозащищенная полугерметичная с крышкой',
         price: 173.82,
         measure: 'шт',
         spec: false,
@@ -1244,7 +1244,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 873,
-        description: 'Роз.2СП с/з 22шт/кор.  (50шт./упак./10шт.упак.)',
+        description: 'Розетка 2-я скрытой проводки с заземлением',
         price: 71.58,
         measure: 'шт',
         spec: false,
@@ -1253,7 +1253,7 @@ const goods = [
     {
         folder: 'Наконечники алюминиевые под опрессовку',
         code: 888,
-        description: 'ТА- 95-12-13 Наконечник алюмин.опрес.   (25шт./упак.)',
+        description: 'Наконечник кабельный ТА-95-12-13 алюминиевый под опрессовку',
         price: 20.04,
         measure: 'шт',
         spec: false,
@@ -1262,7 +1262,7 @@ const goods = [
     {
         folder: 'Светильники люминесцентные',
         code: 922,
-        description: 'ЛВО  4х18 Светильник встраиваемый зерк. 595х595 с ЭПРА  (2шт/упак.)',
+        description: 'Светильник встраиваемый ЛВО 13-4х18-772/F Милано (экстра) ЭПРА',
         price: 708.54,
         measure: 'шт',
         spec: false,
@@ -1275,21 +1275,21 @@ const goods = [
         price: 47.34,
         measure: 'шт',
         spec: false,
-        quantity: 14
+        quantity: 39
     },
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 967,
-        description: 'Шина N-PE 10 на DIN-рейку  (10шт.уп.)',
+        description: 'Шина N-PE 10 на DIN-рейку',
         price: 45.9,
         measure: 'шт',
         spec: false,
-        quantity: 154
+        quantity: 151
     },
     {
         folder: 'Провода и кабели связи',
         code: 974,
-        description: 'UTP 4х  2х0,52 кат.5   (305м./бухта)',
+        description: 'Кабель информационный UTP 4х2х0,52 Категория 5',
         price: 8.1,
         measure: 'м',
         spec: false,
@@ -1298,16 +1298,16 @@ const goods = [
     {
         folder: 'Светильники люминесцентные',
         code: 1002,
-        description: 'ЛПО 418 Светильник накладной зерк. с ЭПРА',
+        description: 'Светильник ЛПО 418 635 NC м.свет ЭПРА/Мистраль 418 А34HF ECO (накладной зеркальный)',
         price: 1196.04,
         measure: 'шт',
         spec: false,
-        quantity: 74
+        quantity: 70
     },
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 1004,
-        description: 'ВВГнг-LS 3х  4 Кабель   100м./бухта',
+        description: 'Кабель ВВГнг-LS 3x4',
         price: 72.78,
         measure: 'м',
         spec: false,
@@ -1316,7 +1316,7 @@ const goods = [
     {
         folder: 'Кабель NYM',
         code: 1005,
-        description: 'NYM 3х  1,5 Кабель (100м.)',
+        description: 'Кабель NYM 3х1,5 ',
         price: 32.76,
         measure: 'м',
         spec: false,
@@ -1325,7 +1325,7 @@ const goods = [
     {
         folder: 'Клеммники WAGO',
         code: 1012,
-        description: '222-413 Клеммник 3х(0,08-2,5-4,0) для многожильн.проводов (50шт.уп.)',
+        description: '222-413 WAGO Клеммник 3х(0,08-2,5) для медных многожильных проводов',
         price: 22.38,
         measure: 'шт',
         spec: false,
@@ -1334,7 +1334,7 @@ const goods = [
     {
         folder: 'Клеммники WAGO',
         code: 1013,
-        description: '222-415 Клеммник 5х(0,08-2,5-4,0) для многожильн.проводов (40шт. в упак.)',
+        description: '222-415 WAGO Клеммник 5х(0,08-2,5) для медных многожильных проводов',
         price: 35.82,
         measure: 'шт',
         spec: false,
@@ -1343,7 +1343,7 @@ const goods = [
     {
         folder: 'Приборы учета электроэнергии',
         code: 1014,
-        description: '230ART-02 CN Счетчик эл. энергии Меркурий 3ф 2т 10-100А',
+        description: 'Счетчик электроэнергии Меркурий 230ART-02 CN 3ф 2т 10-100А',
         price: 5071.38,
         measure: 'шт',
         spec: false,
@@ -1352,7 +1352,7 @@ const goods = [
     {
         folder: 'Провода и кабели с алюминиевой жилой',
         code: 1022,
-        description: 'АПВ  10 Белый    (200м./300м. бухта) ',
+        description: 'Провод АПВ 10 белый',
         price: 10.2,
         measure: 'м',
         spec: false,
@@ -1361,7 +1361,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 1044,
-        description: 'ВА47-63 1п C 40А 4,5кА (!!! продаём 47-29) (12 шт.)',
+        description: 'Автоматический выключатель ВА47-63 1п C 40А 4,5кА',
         price: 65.7,
         measure: 'шт',
         spec: false,
@@ -1370,7 +1370,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 1045,
-        description: 'ВА47-63 2п C 16А 4,5кА (6 шт.)',
+        description: 'Автоматический выключатель ВА47-63 2п C 16А 4,5кА',
         price: 129,
         measure: 'шт',
         spec: false,
@@ -1379,7 +1379,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 1046,
-        description: 'ВА47-63 2п C 25А 4,5кА (6 шт.) (!!! продаём 14810)',
+        description: 'Автоматический выключатель ВА47-63 2п C 25А 4,5кА',
         price: 129,
         measure: 'шт',
         spec: false,
@@ -1388,7 +1388,7 @@ const goods = [
     {
         folder: 'Сжимы ответвительные',
         code: 1047,
-        description: 'У-859 Сжим ответвительный   (6шт./уп)',
+        description: 'Сжим ответвительный У-859',
         price: 71.58,
         measure: 'шт',
         spec: false,
@@ -1397,7 +1397,7 @@ const goods = [
     {
         folder: 'Провода ПУНП, ПУгНП и ШВВП',
         code: 1053,
-        description: 'ПУНП 3х  2,5   (100м./бух.)',
+        description: 'Провод ПУНП 3х2,5',
         price: 42,
         measure: 'м',
         spec: false,
@@ -1406,7 +1406,7 @@ const goods = [
     {
         folder: 'Кабельные каналы (короба)',
         code: 1057,
-        description: 'Короб  20х10 ПВХ (100м в упаковке)',
+        description: 'Кабель-канал ПВХ 20х10',
         price: 11.52,
         measure: 'м',
         spec: false,
@@ -1415,7 +1415,7 @@ const goods = [
     {
         folder: 'Провод ПВС',
         code: 1063,
-        description: 'ПВС 2х  0,75   (200м.)',
+        description: 'Провод ПВС 2х0,75',
         price: 12.66,
         measure: 'м',
         spec: false,
@@ -1424,7 +1424,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 1070,
-        description: 'ЩРН-24з Корпус щита навесной металлический IP54',
+        description: 'Корпус щита навесной металлический ЩРН-24з IP54',
         price: 1494.84,
         measure: 'шт',
         spec: false,
@@ -1433,7 +1433,7 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 1071,
-        description: 'МО 36В 40Вт E27 (100 шт./кор.)',
+        description: 'Лампа накаливания МО 36В 40Вт E27',
         price: 13.56,
         measure: 'шт',
         spec: false,
@@ -1442,7 +1442,7 @@ const goods = [
     {
         folder: 'Наконечники медные луженые под опрессовку',
         code: 1085,
-        description: 'ТМЛ-150-14-17 Наконечник мед.луж.опрес.',
+        description: 'Наконечник кабельный ТМЛ-150-14-17 медный луженый под опрессовку',
         price: 135.06,
         measure: 'шт',
         spec: false,
@@ -1451,16 +1451,16 @@ const goods = [
     {
         folder: 'Наконечники медные луженые под опрессовку',
         code: 1086,
-        description: 'ТМЛ- 10-6-6 Наконечник мед.луж.опрес.   (100шт./упак.)',
+        description: 'Наконечник кабельный ТМЛ-10-6-6 медный луженый под опрессовку',
         price: 11.64,
         measure: 'шт',
         spec: false,
-        quantity: 618
+        quantity: 568
     },
     {
         folder: 'Клипсы для труб ПВХ и ПНД',
         code: 1088,
-        description: 'Клипса 25 д/трубы   (№50)   (50шт./упак.)',
+        description: 'Клипса 25 для трубы',
         price: 1.2,
         measure: 'шт',
         spec: false,
@@ -1469,7 +1469,7 @@ const goods = [
     {
         folder: 'Кабель КГ',
         code: 1102,
-        description: 'КГ 4х  6 Кабель',
+        description: 'Кабель КГ 4х6',
         price: 152.82,
         measure: 'м',
         spec: false,
@@ -1478,7 +1478,7 @@ const goods = [
     {
         folder: 'Лампы газоразрядные',
         code: 1107,
-        description: 'ДРВ-250 Е40 Лампа ртутная бездроссельная   (20шт.)',
+        description: 'Лампа ртутная бездроссельная ДРВ-250 Е40',
         price: 193.98,
         measure: 'шт',
         spec: false,
@@ -1487,7 +1487,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 1113,
-        description: 'S203 C50 Автоматический выключатель ABB 3п 50А 6кА',
+        description: '2CDS253001R0504 ABB Автоматический выключатель 3п S203 C50 50А 6кА',
         price: 2155.92,
         measure: 'шт',
         spec: false,
@@ -1505,7 +1505,7 @@ const goods = [
     {
         folder: 'Средства защиты',
         code: 1127,
-        description: 'Коврик диэлектрический  500х500',
+        description: 'Коврик диэлектрический 500х500',
         price: 259.2,
         measure: 'шт',
         spec: false,
@@ -1514,7 +1514,7 @@ const goods = [
     {
         folder: 'Средства защиты',
         code: 1128,
-        description: 'Коврик диэлектрический  750х750',
+        description: 'Коврик диэлектрический 750х750',
         price: 472.86,
         measure: 'шт',
         spec: false,
@@ -1523,7 +1523,7 @@ const goods = [
     {
         folder: 'Светодиодные фонари и аварийные указатели',
         code: 1152,
-        description: 'Фонарь налобный светод. аккум.',
+        description: 'Фонарь светодиодный аккумуляторный налобный',
         price: 289.62,
         measure: 'шт',
         spec: false,
@@ -1532,7 +1532,7 @@ const goods = [
     {
         folder: 'Расходные материалы',
         code: 1162,
-        description: 'Дюбель 6х40   (1000шт/уп.)',
+        description: 'Дюбель 6х40 ',
         price: 0.3,
         measure: 'шт',
         spec: false,
@@ -1541,7 +1541,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 1164,
-        description: 'Роз.1ОП с/з с крышкой  бр/защ полугерметичная 50шт/кор.',
+        description: 'Розетка 1-я открытой проводки с/з брызгозащищенная полугерметичная с крышкой',
         price: 84.78,
         measure: 'шт',
         spec: false,
@@ -1550,7 +1550,7 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 1168,
-        description: 'ВВГнг-LS 4х  2,5 Кабель   (100м./бухта)',
+        description: 'Кабель ВВГнг-LS 4х2,5',
         price: 63.24,
         measure: 'м',
         spec: false,
@@ -1559,16 +1559,16 @@ const goods = [
     {
         folder: 'Провода и кабели с алюминиевой жилой',
         code: 1182,
-        description: 'АППВ 2х  2,5     (200м. бухта)',
+        description: 'Провод АППВ 2х2,5',
         price: 6.96,
         measure: 'м',
         spec: false,
-        quantity: 1535
+        quantity: 4535
     },
     {
         folder: 'Выключатели',
         code: 1225,
-        description: 'Выкл.1ОП IP44    50шт/кор.',
+        description: 'Выключатель 1-клавишный открытой проводки IP44',
         price: 71.4,
         measure: 'шт',
         spec: false,
@@ -1577,7 +1577,7 @@ const goods = [
     {
         folder: 'Сжимы ответвительные',
         code: 1227,
-        description: 'У-733 Сжим ответвительный (12шт/уп.)',
+        description: 'Сжим ответвительный У-733',
         price: 19.8,
         measure: 'шт',
         spec: false,
@@ -1586,16 +1586,16 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 1228,
-        description: 'ПВ3   4 Белый   (400м./бух.)',
+        description: 'Провод ПВ-3 4 белый',
         price: 21.6,
         measure: 'м',
         spec: false,
-        quantity: 308
+        quantity: 208
     },
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 1229,
-        description: 'ПВ3   4 Желто-зеленый',
+        description: 'Провод ПВ-3 4 желто-зеленый',
         price: 0,
         measure: 'м',
         spec: false,
@@ -1604,7 +1604,7 @@ const goods = [
     {
         folder: 'Трубы для электропроводки',
         code: 1231,
-        description: 'Труба 32 гофр ПВХ (25м)',
+        description: 'Труба гофрированная ПВХ d32мм (50м)',
         price: 12.72,
         measure: 'м',
         spec: false,
@@ -1613,7 +1613,7 @@ const goods = [
     {
         folder: 'Средства защиты',
         code: 1234,
-        description: 'Очки защитные  (50шт./в кор.)',
+        description: 'Очки защитные',
         price: 66.88,
         measure: 'шт',
         spec: false,
@@ -1622,7 +1622,7 @@ const goods = [
     {
         folder: 'Клипсы для труб ПВХ и ПНД',
         code: 1235,
-        description: 'Клипса 32 д/трубы   (№50)',
+        description: 'Клипса 32 для трубы',
         price: 2.1,
         measure: 'шт',
         spec: false,
@@ -1640,7 +1640,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 1244,
-        description: 'ПВ1 10 Белый',
+        description: 'Провод ПВ1 10 белый',
         price: 53.94,
         measure: 'м',
         spec: false,
@@ -1649,16 +1649,16 @@ const goods = [
     {
         folder: 'Электроустановочные изделия из каучука',
         code: 1254,
-        description: 'Колодка 2я с/з каучук IP44',
+        description: 'Колодка каучуковая на 2 розетки 16A 2P+E IP44',
         price: 193.44,
         measure: 'шт',
         spec: false,
-        quantity: 19
+        quantity: 13
     },
     {
         folder: 'Компактные люминесцентные лампы',
         code: 1272,
-        description: 'SPC 15W Е27 2700К   (60шт.кор/50шт.кор)',
+        description: 'Лампа люминесцентная компактная SPC 15W Е27 2700К',
         price: 78,
         measure: 'шт',
         spec: false,
@@ -1667,7 +1667,7 @@ const goods = [
     {
         folder: 'Кабель NYM',
         code: 1384,
-        description: 'NYM 3х  4 Кабель',
+        description: 'Кабель NYM 3х4',
         price: 76.02,
         measure: 'м',
         spec: false,
@@ -1676,16 +1676,16 @@ const goods = [
     {
         folder: 'Автоматические выключатели дифференциального тока (дифференциальные автоматы) 2п',
         code: 1433,
-        description: 'АВДТ-32 2P 16А 30мА диф.авт.',
+        description: 'Автоматический выключатель дифференциального тока АВДТ-32 2P C 16А/30мА',
         price: 595.32,
         measure: 'шт',
         spec: false,
-        quantity: 199
+        quantity: 197
     },
     {
         folder: 'Шкафы пустые',
         code: 1435,
-        description: 'ЩРН-П-18 Бокс, пластик IP40  (10шт.уп.)',
+        description: 'Бокс ЩРН-П-18 модулей пластик IP40',
         price: 561.66,
         measure: 'шт',
         spec: false,
@@ -1694,7 +1694,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 1436,
-        description: 'ПВ3  10 Белый   (200м./бух.)',
+        description: 'Провод ПВ-3 10 белый',
         price: 54.36,
         measure: 'м',
         spec: false,
@@ -1703,7 +1703,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 1437,
-        description: 'ПВ3  10 Синий',
+        description: 'Провод ПВ-3 10 синий',
         price: 0,
         measure: 'м',
         spec: false,
@@ -1712,7 +1712,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 1461,
-        description: 'ВА47-63 1п C 10А 4,5кА (12 шт.)',
+        description: 'Автоматический выключатель ВА47-63 1п C 10А 4,5кА',
         price: 64.5,
         measure: 'шт',
         spec: false,
@@ -1721,25 +1721,25 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 1462,
-        description: 'ВА47-63 1п C 32А 4,5кА (!!! продаём 47-29) (12 шт.)',
+        description: 'Автоматический выключатель ВА47-63 1п C 32А 4,5кА',
         price: 64.5,
         measure: 'шт',
         spec: false,
-        quantity: 7
+        quantity: 242
     },
     {
         folder: 'Трансформаторы',
         code: 1489,
-        description: 'ЯТП-0,25-220-36 Ящик 250А IP31 с понижающим трансформатором',
+        description: 'Ящик с понижающим трансформатором ЯТП-0,25-220-36 250А IP31',
         price: 1534.8,
         measure: 'шт',
         spec: false,
-        quantity: 0
+        quantity: 2
     },
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 1525,
-        description: 'SH201L C25 Автоматический выключатель ABB 1п 25А 4,5кА   (10шт./упак.)',
+        description: '2CDS241001R0254 ABB Автоматический выключатель 1п SH201L C25 25А 4,5кА',
         price: 188.16,
         measure: 'шт',
         spec: false,
@@ -1748,7 +1748,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 1529,
-        description: 'SH201L C10 Автоматический выключатель ABB 1п 10А 4,5кА   (10шт./упак.)',
+        description: '2CDS241001R0104 ABB Автоматический выключатель 1п SH201L C10 10А 4,5кА',
         price: 188.16,
         measure: 'шт',
         spec: false,
@@ -1757,7 +1757,7 @@ const goods = [
     {
         folder: 'Провода ПУНП, ПУгНП и ШВВП',
         code: 1549,
-        description: 'ПУгНП 3х  2,5   (200м./бух)',
+        description: 'Провод ПУгНП 3х2,5',
         price: 41.88,
         measure: 'м',
         spec: false,
@@ -1766,7 +1766,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 1559,
-        description: 'ПВ3  70 Белый',
+        description: 'Провод ПВ-3 70 белый',
         price: 402.6,
         measure: 'м',
         spec: false,
@@ -1775,7 +1775,7 @@ const goods = [
     {
         folder: 'Кабель КГ',
         code: 1560,
-        description: 'КГ 4х  2,5 Кабель',
+        description: 'Кабель КГ 4х2,5',
         price: 66.42,
         measure: 'м',
         spec: false,
@@ -1784,7 +1784,7 @@ const goods = [
     {
         folder: 'Промышленные разъемы',
         code: 1563,
-        description: '024 Вилка переносная 3P+PE 32А 380В IP44  (10шт./упак.)',
+        description: 'Вилка переносная 024 3P+PE 32А 380В IP44',
         price: 194.16,
         measure: 'шт',
         spec: false,
@@ -1793,7 +1793,7 @@ const goods = [
     {
         folder: 'Промышленные разъемы',
         code: 1564,
-        description: '124 Розетка стационарная 3Р+PE 32А 380В IP44  (10шт./упак.)',
+        description: 'Розетка стационарная 124 3Р+PE 32А 380В IP44',
         price: 256.2,
         measure: 'шт',
         spec: false,
@@ -1802,7 +1802,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 1565,
-        description: 'ВА47-100 1п  C 100А 10кА Автоматический выключатель',
+        description: 'Автоматический выключатель модульный ВА47-100 1п C 100А 10кА',
         price: 396,
         measure: 'шт',
         spec: false,
@@ -1811,7 +1811,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 1584,
-        description: 'ВА47-100 3п  C  63А 10кА Автоматический выключатель (4 шт.)',
+        description: 'Автоматический выключатель модульный ВА47-100 3п C 63А 10кА',
         price: 1102.8,
         measure: 'шт',
         spec: false,
@@ -1820,7 +1820,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 1585,
-        description: 'ВА47-100 3п  C  80А 10кА Автоматический выключатель (4 шт.)',
+        description: 'Автоматический выключатель модульный ВА47-100 3п С 80А 10кА',
         price: 1063.08,
         measure: 'шт',
         spec: false,
@@ -1829,7 +1829,7 @@ const goods = [
     {
         folder: 'Приборы учета электроэнергии',
         code: 1603,
-        description: '230ART-01 CN Счетчик эл.энергии Меркурий 3ф 2т 5-60А',
+        description: 'Счетчик электроэнергии Меркурий 230ART-01 CN 3ф 2т 5-60А',
         price: 4942.62,
         measure: 'шт',
         spec: false,
@@ -1838,16 +1838,16 @@ const goods = [
     {
         folder: 'Наконечники НШвИ (штыревые)',
         code: 1617,
-        description: 'НШвИ  2,5- 8 Наконечник штыр.изол. (уп.100шт)',
+        description: 'Наконечник штыревой НШвИ 2,5-8 изолированный упаковка 100шт.',
         price: 38.94,
         measure: 'упак',
         spec: false,
-        quantity: 37
+        quantity: 32
     },
     {
         folder: 'Наконечники НШвИ (штыревые)',
         code: 1619,
-        description: 'НШвИ  6-12 Наконечник штыр.изол. (уп.100шт)',
+        description: 'Наконечник штыревой НШвИ 6-12 изолированный упаковка 100шт.',
         price: 84,
         measure: 'упак',
         spec: false,
@@ -1856,7 +1856,7 @@ const goods = [
     {
         folder: 'Зажимы винтовые ЗВИ (клеммные колодки)',
         code: 1628,
-        description: 'ЗВИ-  5 зажим винтовой 6 кв.мм 12 пар(10шт./упак)',
+        description: 'Зажим винтовой ЗВИ-5 6 кв.мм 12пар',
         price: 21.06,
         measure: 'шт',
         spec: false,
@@ -1865,7 +1865,7 @@ const goods = [
     {
         folder: 'Зажимы винтовые ЗВИ (клеммные колодки)',
         code: 1629,
-        description: 'ЗВИ- 20 зажим винтовой 14 кв.мм 12 пар   (10шт./упак.)',
+        description: 'Зажим винтовой ЗВИ-20 14 кв.мм 12пар',
         price: 41.22,
         measure: 'шт',
         spec: false,
@@ -1874,7 +1874,7 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 1636,
-        description: 'ВВГнг-LS 5х  2,5 Кабель   (бухта 100м.)',
+        description: 'Кабель ВВГнг-LS 5х2,5',
         price: 80.16,
         measure: 'м',
         spec: false,
@@ -1883,7 +1883,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 1642,
-        description: 'ПВ1 16 Белый  ',
+        description: 'Провод ПВ1 16 белый',
         price: 89.52,
         measure: 'м',
         spec: false,
@@ -1892,16 +1892,16 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 1649,
-        description: 'S201  C40 Автоматический выключатель ABB 1п 40А 6кА',
+        description: '2CDS251001R0404 ABB Автоматический выключатель 1п S201 C40 40А 6кА',
         price: 468.54,
         measure: 'шт',
         spec: false,
-        quantity: 29
+        quantity: 19
     },
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 1650,
-        description: 'S201  C63 Автоматический выключатель ABB 1п 63А 6кА',
+        description: '2CDS251001R0634 ABB Автоматический выключатель 1п S201 C63 63А 6кА',
         price: 715.08,
         measure: 'шт',
         spec: false,
@@ -1910,7 +1910,7 @@ const goods = [
     {
         folder: 'Хомуты нейлоновые',
         code: 1659,
-        description: 'Хомут  150х2,5 нейл. бел. (100шт.)',
+        description: 'Хомут нейлоновый белый 150х2,5 (100шт.)',
         price: 39.06,
         measure: 'упак',
         spec: false,
@@ -1919,25 +1919,25 @@ const goods = [
     {
         folder: 'Хомуты нейлоновые',
         code: 1660,
-        description: 'Хомут  300х3,6 нейл. бел. (100шт.)',
+        description: 'Хомут нейлоновый белый 300х3,6 (100шт.)',
         price: 127.92,
         measure: 'упак',
         spec: false,
-        quantity: 174
+        quantity: 164
     },
     {
         folder: 'Промышленные разъемы',
         code: 1731,
-        description: '025 Вилка переносная 3P+E+N 32А 380В IP44  (10шт./упак.)',
+        description: 'Вилка переносная 025 3P+E+N 32А 380В IP44',
         price: 230.16,
         measure: 'шт',
         spec: false,
-        quantity: 42
+        quantity: 52
     },
     {
         folder: 'Промышленные разъемы',
         code: 1732,
-        description: '225 Розетка переносная 3P+E+N 32А 380В IP44   (10шт./упак.)',
+        description: 'Розетка переносная 225 3P+E+N 32А 380В IP44',
         price: 261.18,
         measure: 'шт',
         spec: false,
@@ -1946,61 +1946,61 @@ const goods = [
     {
         folder: 'Изолента',
         code: 1751,
-        description: 'Изолента черная ПВХ  (200шт./в кор.)',
+        description: 'Изолента ПВХ черная',
         price: 30.06,
         measure: 'шт',
         spec: false,
-        quantity: 42
+        quantity: 0
     },
     {
         folder: 'Изолента',
         code: 1752,
-        description: 'Изолента красная ПВХ   (200шт./в кор.)',
+        description: 'Изолента ПВХ красная',
         price: 30.06,
         measure: 'шт',
         spec: false,
-        quantity: 3532
+        quantity: 3522
     },
     {
         folder: 'Изолента',
         code: 1753,
-        description: 'Изолента зеленая ПВХ  (200шт./в кор.)',
+        description: 'Изолента ПВХ зеленая',
         price: 30.06,
         measure: 'шт',
         spec: false,
-        quantity: 3551
+        quantity: 3541
     },
     {
         folder: 'Изолента',
         code: 1754,
-        description: 'Изолента белая ПВХ  (200шт./в кор.)',
+        description: 'Изолента ПВХ белая',
         price: 30.06,
         measure: 'шт',
         spec: false,
-        quantity: 214
+        quantity: 170
     },
     {
         folder: 'Изолента',
         code: 1755,
-        description: 'Изолента желтая ПВХ  (200шт./в кор.)',
+        description: 'Изолента ПВХ желтая',
         price: 30.06,
         measure: 'шт',
         spec: false,
-        quantity: 2888
+        quantity: 2878
     },
     {
         folder: 'Розетки и вилки',
         code: 1756,
-        description: 'Роз.4ОП с/з   (25шт./упак./6шт./упак.)',
+        description: 'Розетка 4-я открытой проводки с заземлением',
         price: 198.48,
         measure: 'шт',
         spec: false,
-        quantity: 182
+        quantity: 181
     },
     {
         folder: 'Розетки и вилки',
         code: 1757,
-        description: 'Роз.2ОП с/з     60шт/кор. (10шт./упак.)',
+        description: 'Розетка 2-я открытой проводки с заземлением',
         price: 59.76,
         measure: 'шт',
         spec: false,
@@ -2009,7 +2009,7 @@ const goods = [
     {
         folder: 'Светильники подвесные',
         code: 1775,
-        description: 'НСП 03-60 (НСП 01-60-001) Арматура светильника (90 шт. в упак.)',
+        description: 'Арматура светильника НСП 03-60 (НСП 01-60-001)',
         price: 42.78,
         measure: 'шт',
         spec: false,
@@ -2018,7 +2018,7 @@ const goods = [
     {
         folder: 'Наконечники НШвИ (штыревые)',
         code: 1799,
-        description: 'НШвИ 25-16 Наконечник штыр.изол. (уп.100шт)',
+        description: 'Наконечник штыревой НШвИ 25-16 изолированный упаковка 100шт.',
         price: 259.38,
         measure: 'упак',
         spec: false,
@@ -2027,7 +2027,7 @@ const goods = [
     {
         folder: 'Наконечники НШвИ (штыревые)',
         code: 1800,
-        description: 'НШвИ 16-12 Наконечник штыр.изол. (уп.100шт)',
+        description: 'Наконечник штыревой НШвИ 16-12 изолированный упаковка 100шт.',
         price: 142.62,
         measure: 'упак',
         spec: false,
@@ -2036,7 +2036,7 @@ const goods = [
     {
         folder: 'Кабельные каналы (короба)',
         code: 1820,
-        description: 'Короб  60х40 ПВХ (40м в упаковке)',
+        description: 'Кабель-канал ПВХ 60х40',
         price: 61.8,
         measure: 'м',
         spec: false,
@@ -2045,7 +2045,7 @@ const goods = [
     {
         folder: 'Промышленные разъемы',
         code: 1838,
-        description: '224 Розетка переносная 3P+PE 32А 380В IP44 (10шт.упак.)',
+        description: 'Розетка переносная 224 3P+PE 32А 380В IP44',
         price: 211.68,
         measure: 'шт',
         spec: false,
@@ -2054,7 +2054,7 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 1864,
-        description: 'ВВГнг-LS 4х  6 Кабель',
+        description: 'Кабель ВВГнг-LS 4х6',
         price: 147.6,
         measure: 'м',
         spec: false,
@@ -2063,16 +2063,16 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 1898,
-        description: 'ВА47-63 1п C  6А 4,5кА (12 шт.)',
+        description: 'Автоматический выключатель ВА47-63 1п C 6А 4,5кА',
         price: 64.5,
         measure: 'шт',
         spec: false,
-        quantity: 51
+        quantity: 40
     },
     {
         folder: 'Розетки и вилки',
         code: 1907,
-        description: 'Роз.1СП с/з  70шт/кор. (10шт./упак.)',
+        description: 'Розетка 1-я скрытой проводки с заземлением',
         price: 58.74,
         measure: 'шт',
         spec: false,
@@ -2081,7 +2081,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 1916,
-        description: 'ВА47-100 3п  C 100А 10кА Автоматический выключатель (4 шт.)',
+        description: 'Автоматический выключатель модульный ВА47-100 3п C 100А 10кА',
         price: 1035.06,
         measure: 'шт',
         spec: false,
@@ -2090,7 +2090,7 @@ const goods = [
     {
         folder: 'Провода и кабели с алюминиевой жилой',
         code: 1938,
-        description: 'АПВ   6 Белый  (300м.) ',
+        description: 'Провод АПВ 6 белый',
         price: 6.18,
         measure: 'м',
         spec: false,
@@ -2099,7 +2099,7 @@ const goods = [
     {
         folder: 'Приборы учета электроэнергии',
         code: 1948,
-        description: '200.02 Счетчик эл.энергии Меркурий 1ф 2т 5-60А',
+        description: 'Счетчик электроэнергии Меркурий 200.02 1ф 2т 5-60А',
         price: 1854.66,
         measure: 'шт',
         spec: false,
@@ -2108,7 +2108,7 @@ const goods = [
     {
         folder: 'Трубы для электропроводки',
         code: 2017,
-        description: 'Труба 40 гофр ПВХ (20м) ',
+        description: 'Труба гофрированная ПВХ d40мм',
         price: 19.32,
         measure: 'м',
         spec: false,
@@ -2117,7 +2117,7 @@ const goods = [
     {
         folder: 'Компактные люминесцентные лампы',
         code: 2018,
-        description: 'SPC 11W E27 2700K  (50шт./кор)',
+        description: 'Лампа люминесцентная компактная SPC 11W E27 2700K',
         price: 72.24,
         measure: 'шт',
         spec: false,
@@ -2126,7 +2126,7 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 2121,
-        description: 'ВВГнг-LS 4х  4 Кабель   (бухта 100м.)',
+        description: 'Кабель ВВГнг-LS 4х4',
         price: 101.04,
         measure: 'м',
         spec: false,
@@ -2135,7 +2135,7 @@ const goods = [
     {
         folder: 'Провод ПВС',
         code: 2179,
-        description: 'ПВС 4х 10',
+        description: 'Провод ПВС 4х10',
         price: 233.4,
         measure: 'м',
         spec: false,
@@ -2144,7 +2144,7 @@ const goods = [
     {
         folder: 'Провода ПУНП, ПУгНП и ШВВП',
         code: 2196,
-        description: 'ПУНП 3х  1,5  (100м./бух.)',
+        description: 'Провод ПУНП 3х1,5 ',
         price: 27.24,
         measure: 'м',
         spec: false,
@@ -2153,7 +2153,7 @@ const goods = [
     {
         folder: 'Линейные люминесцентные лампы',
         code: 2197,
-        description: 'ЛБ-40 (36) G13 (25 шт/упак) (!!! если их нет продаём ЛД)  кратно упаковке.',
+        description: 'Лампа люминесцентная ЛБ-40 (36) G13',
         price: 53.1,
         measure: 'шт',
         spec: false,
@@ -2162,7 +2162,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 2216,
-        description: 'Роз.2ОП б/з    90шт/кор.  (20шт./упак.)',
+        description: 'Розетка 2-я открытой проводки без заземления',
         price: 52.98,
         measure: 'шт',
         spec: false,
@@ -2171,7 +2171,7 @@ const goods = [
     {
         folder: 'Провода и кабели с алюминиевой жилой',
         code: 2219,
-        description: 'АВВГ 2х  2,5 Кабель   (200м./бух.)',
+        description: 'Кабель АВВГ 2х2,5',
         price: 8.46,
         measure: 'м',
         spec: false,
@@ -2180,7 +2180,7 @@ const goods = [
     {
         folder: 'Сжимы ответвительные',
         code: 2266,
-        description: 'У-734 Сжим ответвительный (12шт/уп.)',
+        description: 'Сжим ответвительный У-734',
         price: 19.8,
         measure: 'шт',
         spec: false,
@@ -2189,7 +2189,7 @@ const goods = [
     {
         folder: 'Провода и кабели с алюминиевой жилой',
         code: 2267,
-        description: 'АПВ   2,5 Белый   (500м./бух.)',
+        description: 'Провод АПВ 2,5 белый',
         price: 3.06,
         measure: 'м',
         spec: false,
@@ -2198,16 +2198,16 @@ const goods = [
     {
         folder: 'Светильники подвесные',
         code: 2272,
-        description: 'НСП02-100-001 Светильник без решетки  (10шт/упак.)',
+        description: 'Светильник НСП 02-100-001 без решетки',
         price: 233.88,
         measure: 'шт',
         spec: false,
-        quantity: 491
+        quantity: 489
     },
     {
         folder: 'Кабельные каналы (короба)',
         code: 2312,
-        description: 'Короб  40х25 ПВХ (40м в упаковке)',
+        description: 'Кабель-канал ПВХ 40х25',
         price: 31.98,
         measure: 'м',
         spec: false,
@@ -2216,7 +2216,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 2342,
-        description: 'ПВ3   2,5 Белый   (400м./бух.)',
+        description: 'Провод ПВ3 2,5 белый',
         price: 13.56,
         measure: 'м',
         spec: false,
@@ -2225,7 +2225,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 2353,
-        description: 'ТУТ 30/15 Трубка термоусаживаемая синяя',
+        description: 'Трубка термоусаживаемая ТУТ 30/15 синяя',
         price: 0,
         measure: 'м',
         spec: false,
@@ -2234,7 +2234,7 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 2364,
-        description: 'ЛОН-150 220В Е27   (100шт)',
+        description: 'Лампа накаливания ЛОН-150 150Вт 220В Е27',
         price: 16.14,
         measure: 'шт',
         spec: false,
@@ -2243,7 +2243,7 @@ const goods = [
     {
         folder: 'Лампы галогеновые',
         code: 2391,
-        description: 'КГ-500 R7s L=117мм Китай (лампа галогеновая)  (50шт/упак.)',
+        description: 'Лампа кварцевая галогеновая КГ-500 R7s L=117мм',
         price: 29.94,
         measure: 'шт',
         spec: false,
@@ -2252,7 +2252,7 @@ const goods = [
     {
         folder: 'Хомуты нейлоновые',
         code: 2406,
-        description: 'Хомут  300х3,6-4 нейл. черн. (100шт)',
+        description: 'Хомут нейлоновый черный 300х3,6-4 (100шт)',
         price: 129.9,
         measure: 'упак',
         spec: false,
@@ -2261,16 +2261,16 @@ const goods = [
     {
         folder: 'Изолента',
         code: 2409,
-        description: 'Изолента синяя ПВХ  (200шт./в кор.)',
+        description: 'Изолента ПВХ синяя',
         price: 30.06,
         measure: 'шт',
         spec: false,
-        quantity: 17085
+        quantity: 17075
     },
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 2455,
-        description: 'ПВ1  2,5 Белый  (200м./бух.)',
+        description: 'Провод ПВ1 2,5 белый',
         price: 13.8,
         measure: 'м',
         spec: false,
@@ -2279,7 +2279,7 @@ const goods = [
     {
         folder: 'Провод ПВС',
         code: 2458,
-        description: 'ПВС 3х  4',
+        description: 'Провод ПВС 3х4',
         price: 74.82,
         measure: 'м',
         spec: false,
@@ -2288,7 +2288,7 @@ const goods = [
     {
         folder: 'Промышленные разъемы',
         code: 2494,
-        description: '214 Розетка переносная 3Р+PE 16А 380B IP44   (10шт./упак.)',
+        description: 'Розетка переносная 214 3Р+PE 16А 380B IP44',
         price: 153.9,
         measure: 'шт',
         spec: false,
@@ -2297,7 +2297,7 @@ const goods = [
     {
         folder: 'Промышленные разъемы',
         code: 2495,
-        description: '014 Вилка переносная 3Р+PE 16А 380В IP44   (10шт./упак.)',
+        description: 'Вилка переносная 014 3Р+PE 16А 380В IP44',
         price: 130.02,
         measure: 'шт',
         spec: false,
@@ -2306,16 +2306,16 @@ const goods = [
     {
         folder: 'Выключатели',
         code: 2564,
-        description: 'Выкл.1СП    70шт/кор.',
+        description: 'Выключатель 1-клавишный скрытой проводки',
         price: 45.78,
         measure: 'шт',
         spec: false,
-        quantity: 387
+        quantity: 385
     },
     {
         folder: 'Электроизмерительные приборы',
         code: 2611,
-        description: 'ОП-1 Отвертка-пробник   (10шт./упак.)',
+        description: 'Отвертка-пробник ОП-1 ',
         price: 86.52,
         measure: 'шт',
         spec: false,
@@ -2324,7 +2324,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 2626,
-        description: 'ТУТ 30/15 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 30/15 черная',
         price: 78.18,
         measure: 'м',
         spec: false,
@@ -2333,7 +2333,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 2627,
-        description: 'ТУТ 20/10 Трубка термоусаживаемая синяя',
+        description: 'Трубка термоусаживаемая ТУТ 20/10 синяя',
         price: 50.34,
         measure: 'м',
         spec: false,
@@ -2342,7 +2342,7 @@ const goods = [
     {
         folder: 'Наконечники НШвИ (штыревые)',
         code: 2647,
-        description: 'НШвИ  0,5-8 Наконечник штыр.изол. (уп.100шт)',
+        description: 'Наконечник штыревой НШвИ 0,5-8 изолированный упаковка 100шт.',
         price: 24.3,
         measure: 'упак',
         spec: false,
@@ -2351,7 +2351,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 2655,
-        description: 'Роз.1ОП б/з    120шт/кор. (10шт./упак.)',
+        description: 'Розетка 1-я открытой проводки без заземления',
         price: 32.16,
         measure: 'шт',
         spec: false,
@@ -2360,7 +2360,7 @@ const goods = [
     {
         folder: 'Бирки кабельные',
         code: 2656,
-        description: 'У-136 Бирка кабельная треугольная',
+        description: 'Бирка кабельная У-136 треугольная',
         price: 2.46,
         measure: 'шт',
         spec: false,
@@ -2369,7 +2369,7 @@ const goods = [
     {
         folder: 'Трансформаторы',
         code: 2657,
-        description: 'ЯТП-0,25-220-24 Ящик 250А IP31 с понижающим трансформатором ',
+        description: 'Ящик с понижающим трансформатором ЯТП-0,25-220-24 250А IP31',
         price: 1466.94,
         measure: 'шт',
         spec: false,
@@ -2378,7 +2378,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 2659,
-        description: 'ЩРН-П- 4 Бокс, пластик IP40',
+        description: 'Бокс ЩРН-П-4 модуля пластик IP40',
         price: 188.16,
         measure: 'шт',
         spec: false,
@@ -2387,7 +2387,7 @@ const goods = [
     {
         folder: 'Клипсы для труб ПВХ и ПНД',
         code: 2664,
-        description: 'Клипса 16 д/трубы Черная   (50шт./уп)',
+        description: 'Клипса 16 для трубы черная',
         price: 1.38,
         measure: 'шт',
         spec: false,
@@ -2405,7 +2405,7 @@ const goods = [
     {
         folder: 'Наконечники алюминиевые под опрессовку',
         code: 2708,
-        description: 'ТА- 16-8-5,4 Наконечник алюмин.   (100шт./упак.)',
+        description: 'Наконечник кабельный ТА-16-8-5,4 алюминиевый под опрессовку',
         price: 6.72,
         measure: 'шт',
         spec: false,
@@ -2414,7 +2414,7 @@ const goods = [
     {
         folder: 'Выключатели',
         code: 2714,
-        description: 'Выкл.2СП     ',
+        description: 'Выключатель 2-клавишный скрытой проводки',
         price: 51.36,
         measure: 'шт',
         spec: false,
@@ -2423,7 +2423,7 @@ const goods = [
     {
         folder: 'Зажимы винтовые ЗВИ (клеммные колодки)',
         code: 2715,
-        description: 'ЗВИ- 30 зажим винтовой 16 кв.мм 12 пар   (10шт./упак.)',
+        description: 'Зажим винтовой ЗВИ-30 16 кв.мм 12пар',
         price: 52.02,
         measure: 'шт',
         spec: false,
@@ -2432,7 +2432,7 @@ const goods = [
     {
         folder: 'Наконечники НШвИ (штыревые)',
         code: 2737,
-        description: 'НШвИ  1,5- 8 Наконечник штыр.изол. (уп.100шт)',
+        description: 'Наконечник штыревой НШвИ 1,5-8 изолированный упаковка 100шт.',
         price: 32.64,
         measure: 'упак',
         spec: false,
@@ -2441,7 +2441,7 @@ const goods = [
     {
         folder: 'Провода ПУНП, ПУгНП и ШВВП',
         code: 2801,
-        description: 'ПУгНП 3х  1,5  (100м./бух.)',
+        description: 'Провод ПУгНП 3х1,5',
         price: 26.28,
         measure: 'м',
         spec: false,
@@ -2450,7 +2450,7 @@ const goods = [
     {
         folder: 'Сжимы ответвительные',
         code: 2806,
-        description: 'У-871 Сжим ответвительный   (4шт./упак.)',
+        description: 'Сжим ответвительный У-871',
         price: 180.54,
         measure: 'шт',
         spec: false,
@@ -2459,7 +2459,7 @@ const goods = [
     {
         folder: 'Кабельные каналы (короба)',
         code: 2808,
-        description: 'Короб  15х10 ПВХ (200м в упаковке)',
+        description: 'Кабель-канал ПВХ 15х10',
         price: 8.94,
         measure: 'м',
         spec: false,
@@ -2468,7 +2468,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели ABB на DIN-рейку',
         code: 2826,
-        description: 'S201  C50 Автоматический выключатель ABB 1п 50А 6кА',
+        description: '2CDS251001R0504 ABB Автоматический выключатель 1п S201 C50 50А 6кА',
         price: 715.08,
         measure: 'шт',
         spec: false,
@@ -2477,7 +2477,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели дифференциального тока (дифференциальные автоматы) 2п',
         code: 2828,
-        description: 'DSH941R AC-C16/0,03 16A/30mA диф.авт. ABB',
+        description: '2CSR145001R1164 ABB Автоматический выключатель дифференциального тока DSH941R AC-C16/0,03 16A/30mA',
         price: 2699.82,
         measure: 'шт',
         spec: false,
@@ -2486,7 +2486,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели дифференциального тока (дифференциальные автоматы) 2п',
         code: 2830,
-        description: 'DSH941R AC-C25/0,03 25A/30mA диф.авт. ABB',
+        description: '2CSR145001R1254 ABB Автоматический выключатель дифференциального тока DSH941R AC-C25/0,03 25A/30mA',
         price: 2699.82,
         measure: 'шт',
         spec: false,
@@ -2495,7 +2495,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели дифференциального тока (дифференциальные автоматы) 2п',
         code: 2846,
-        description: 'АВДТ-32 2P 32А/30мА диф.авт.',
+        description: 'Автоматический выключатель дифференциального тока АВДТ-32 2P C 32А/30мА',
         price: 595.32,
         measure: 'шт',
         spec: false,
@@ -2504,7 +2504,7 @@ const goods = [
     {
         folder: 'Провода и кабели с алюминиевой жилой',
         code: 2848,
-        description: 'АПВ   4 Белый  (400м.)',
+        description: 'Провод АПВ 4 белый',
         price: 4.5,
         measure: 'м',
         spec: false,
@@ -2513,16 +2513,16 @@ const goods = [
     {
         folder: 'Хомуты нейлоновые',
         code: 2851,
-        description: 'Хомут  250х2,5-3 нейл. (100шт.)',
+        description: 'Хомут нейлоновый белый 250х2,5-3 (100шт.)',
         price: 87.6,
         measure: 'упак',
         spec: false,
-        quantity: 20
+        quantity: 15
     },
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 2854,
-        description: 'ВВГнг-FRLS 5х  6 Кабель   (200м./бух.)',
+        description: 'Кабель ВВГнг-FRLS 5х6 ',
         price: 234.6,
         measure: 'м',
         spec: false,
@@ -2535,12 +2535,12 @@ const goods = [
         price: 0.74,
         measure: 'шт',
         spec: false,
-        quantity: 51528
+        quantity: 51028
     },
     {
         folder: 'Трубы для электропроводки',
         code: 2905,
-        description: 'Труба 25 гофр ПВХ (50м)',
+        description: 'Труба гофрированная ПВХ d25мм (50м)',
         price: 8.88,
         measure: 'м',
         spec: false,
@@ -2549,7 +2549,7 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 3038,
-        description: 'R63 40W E27 Лампа зеркальная  (25шт./кор.)',
+        description: 'Лампа накаливания зеркальная R63 40W E27',
         price: 30.6,
         measure: 'шт',
         spec: false,
@@ -2558,7 +2558,7 @@ const goods = [
     {
         folder: 'Светодиодные фонари и аварийные указатели',
         code: 3041,
-        description: 'FA19M Фонарь (аккум.прожектор, 19 LED)',
+        description: 'Фонарь FA19M аккумуляторный прожектор 19 LED',
         price: 1375.02,
         measure: 'шт',
         spec: false,
@@ -2567,7 +2567,7 @@ const goods = [
     {
         folder: 'Провод ПВС',
         code: 3044,
-        description: 'ПВС 5х  2,5   (100м.)',
+        description: 'Провод ПВС 5х2,5',
         price: 78.66,
         measure: 'м',
         spec: false,
@@ -2576,16 +2576,16 @@ const goods = [
     {
         folder: 'Изолента',
         code: 3049,
-        description: 'Изолента желто-зеленая ПВХ  (200шт./в кор.)',
+        description: 'Изолента ПВХ желто-зеленая',
         price: 34.38,
         measure: 'шт',
         spec: false,
-        quantity: 1953
+        quantity: 1943
     },
     {
         folder: 'Промышленные разъемы',
         code: 3063,
-        description: '023 Вилка переносная 2P+E 32А 220В IP44   (10шт./упак.)',
+        description: 'Вилка переносная 023 2P+E 32А 220В IP44 ',
         price: 179.58,
         measure: 'шт',
         spec: false,
@@ -2594,7 +2594,7 @@ const goods = [
     {
         folder: 'Хомуты нейлоновые',
         code: 3079,
-        description: 'Хомут  500х5,0 нейл. бел. (100шт)',
+        description: 'Хомут нейлоновый белый 500х5,0 (100шт.)',
         price: 325.14,
         measure: 'упак',
         spec: false,
@@ -2603,7 +2603,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 3083,
-        description: 'Вилка б/з  (20шт./упак.)',
+        description: 'Вилка без заземления',
         price: 20.52,
         measure: 'шт',
         spec: false,
@@ -2621,16 +2621,16 @@ const goods = [
     {
         folder: 'Хомуты нейлоновые',
         code: 3125,
-        description: 'Хомут  100х2,5 нейл. бел. (100шт.)',
+        description: 'Хомут нейлоновый белый 100х2,5 (100шт.)',
         price: 27.9,
         measure: 'упак',
         spec: false,
-        quantity: 57
+        quantity: 47
     },
     {
         folder: 'Провода ПУНП, ПУгНП и ШВВП',
         code: 3129,
-        description: 'ПУгНП 2х  1,5   (200м./бухта)',
+        description: 'Провод ПУгНП 2х1,5',
         price: 18.06,
         measure: 'м',
         spec: false,
@@ -2639,7 +2639,7 @@ const goods = [
     {
         folder: 'Кабельные каналы (короба)',
         code: 3130,
-        description: 'Короб  12х12 ПВХ (200м в упаковке)',
+        description: 'Кабель-канал ПВХ 12х12',
         price: 8.64,
         measure: 'м',
         spec: false,
@@ -2648,16 +2648,16 @@ const goods = [
     {
         folder: 'Кабельные каналы (короба)',
         code: 3132,
-        description: 'Короб  25х16 ПВХ (80м в упаковке)',
+        description: 'Кабель-канал ПВХ 25х16',
         price: 18.42,
         measure: 'м',
         spec: false,
-        quantity: 8150
+        quantity: 8170
     },
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 3184,
-        description: 'ТУТ  1,5/0,75 Трубка термоусаживаемая синяя',
+        description: 'Трубка термоусаживаемая ТУТ 1,5/0,75 синяя',
         price: 0,
         measure: 'м',
         spec: false,
@@ -2666,7 +2666,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 3185,
-        description: 'ТУТ  1,5/0,75 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 1,5/0,75 черная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -2675,7 +2675,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 3186,
-        description: 'ТУТ  1,5/0,75 Трубка термоусаживаемая красная',
+        description: 'Трубка термоусаживаемая ТУТ 1,5/0,75 красная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -2684,7 +2684,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 3187,
-        description: 'ТУТ  1,5/0,75 Трубка термоусаживаемая зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 1,5/0,75 зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -2693,7 +2693,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 3188,
-        description: 'ТУТ  1,5/0,75 Трубка термоусаживаемая желтая',
+        description: 'Трубка термоусаживаемая ТУТ 1,5/0,75 желтая',
         price: 4.5,
         measure: 'м',
         spec: false,
@@ -2702,7 +2702,7 @@ const goods = [
     {
         folder: 'Провод ПВС',
         code: 3203,
-        description: 'ПВС 2х  1,5   (100м.)',
+        description: 'Провод ПВС 2х1,5',
         price: 21.84,
         measure: 'м',
         spec: false,
@@ -2711,7 +2711,7 @@ const goods = [
     {
         folder: 'Кабельные каналы (короба)',
         code: 3258,
-        description: 'Короб 100х40 ПВХ    (12м/уп.)',
+        description: 'Кабель-канал ПВХ 100х40',
         price: 120.42,
         measure: 'м',
         spec: false,
@@ -2729,16 +2729,16 @@ const goods = [
     {
         folder: 'Кабель КГ',
         code: 3317,
-        description: 'КГ 4х 10 Кабель',
+        description: 'Кабель КГ 4х10',
         price: 250.86,
         measure: 'м',
         spec: false,
-        quantity: 140
+        quantity: 110
     },
     {
         folder: 'Промышленные разъемы',
         code: 3329,
-        description: '213 Розетка переносная 2Р+E 16А 220B IP44   (10шт./упак.)',
+        description: 'Розетка переносная 213 2Р+E 16А 220B IP44',
         price: 141.06,
         measure: 'шт',
         spec: false,
@@ -2747,7 +2747,7 @@ const goods = [
     {
         folder: 'Электроизмерительные приборы',
         code: 3339,
-        description: 'Контакт 55 ЭМ (звук) Указатель напряжения',
+        description: 'Указатель напряжения Контакт 55 ЭМ (звук)',
         price: 388.98,
         measure: 'шт',
         spec: false,
@@ -2756,7 +2756,7 @@ const goods = [
     {
         folder: 'Средства защиты',
         code: 3342,
-        description: 'Боты диэлектрические (4 пары/упак.)',
+        description: 'Боты диэлектрические  ',
         price: 722.16,
         measure: 'пар',
         spec: false,
@@ -2765,7 +2765,7 @@ const goods = [
     {
         folder: 'Электроизмерительные приборы',
         code: 3345,
-        description: 'М266 Клещи токоизмерительные',
+        description: 'Клещи токоизмерительные М266',
         price: 449.64,
         measure: 'шт',
         spec: false,
@@ -2774,7 +2774,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 3346,
-        description: 'DIN-рейка 125 см',
+        description: 'DIN-рейка L=125см',
         price: 90.9,
         measure: 'шт',
         spec: false,
@@ -2792,7 +2792,7 @@ const goods = [
     {
         folder: 'Трубы для электропроводки',
         code: 3388,
-        description: 'Труба 50 гофр ПВХ (15м)',
+        description: 'Труба гофрированная ПВХ d50мм (15м)',
         price: 23.22,
         measure: 'м',
         spec: false,
@@ -2801,7 +2801,7 @@ const goods = [
     {
         folder: 'Клипсы для труб ПВХ и ПНД',
         code: 3389,
-        description: 'Клипса 50 д/трубы   (25шт./уп)',
+        description: 'Клипса 50 для трубы',
         price: 9.84,
         measure: 'шт',
         spec: false,
@@ -2810,7 +2810,7 @@ const goods = [
     {
         folder: 'Наконечники НШвИ (штыревые)',
         code: 3399,
-        description: 'НШвИ 10-12 Наконечник штыр.изол. (уп.100шт)',
+        description: 'Наконечник штыревой НШвИ 10-12 изолированный упаковка 100шт.',
         price: 113.64,
         measure: 'упак',
         spec: false,
@@ -2819,7 +2819,7 @@ const goods = [
     {
         folder: 'Гильзы медные луженые',
         code: 3401,
-        description: 'ГМЛ  35-9 Гильза медная луженая',
+        description: 'Гильза медная ГМЛ 35-9 луженая',
         price: 35.04,
         measure: 'шт',
         spec: false,
@@ -2828,7 +2828,7 @@ const goods = [
     {
         folder: 'Гильзы медные луженые',
         code: 3402,
-        description: 'ГМЛ  25-8 Гильза медная луженая',
+        description: 'Гильза медная  ГМЛ 25-8 луженая',
         price: 25.32,
         measure: 'шт',
         spec: false,
@@ -2837,7 +2837,7 @@ const goods = [
     {
         folder: 'Гильзы медные луженые',
         code: 3403,
-        description: 'ГМЛ  16-6 Гильза медная луженая',
+        description: 'Гильза медная  ГМЛ 16-6 луженая',
         price: 15.6,
         measure: 'шт',
         spec: false,
@@ -2846,7 +2846,7 @@ const goods = [
     {
         folder: 'Гильзы медные луженые',
         code: 3404,
-        description: 'ГМЛ  10-5 Гильза медная луженая',
+        description: 'Гильза медная  ГМЛ 10-5 луженая',
         price: 13.44,
         measure: 'шт',
         spec: false,
@@ -2855,7 +2855,7 @@ const goods = [
     {
         folder: 'Гильзы медные луженые',
         code: 3405,
-        description: 'ГМЛ   6-4 Гильза медная луженая',
+        description: 'Гильза медная ГМЛ 6-4 луженая',
         price: 8.04,
         measure: 'шт',
         spec: false,
@@ -2864,16 +2864,16 @@ const goods = [
     {
         folder: 'Светильники люминесцентные',
         code: 3422,
-        description: 'ЛПО 2х20 Светильник    4шт/упак.',
+        description: 'Светильник ЛПО 2х20(18)',
         price: 401.76,
         measure: 'шт',
         spec: false,
-        quantity: 237
+        quantity: 233
     },
     {
         folder: 'Наконечники медные луженые под опрессовку',
         code: 3438,
-        description: 'ТМЛ-  6-6-4 Наконечник мед.луж.опрес.   (100шт./упак.)',
+        description: 'Наконечник кабельный ТМЛ-6-6-4 медный луженый под опрессовку',
         price: 6.54,
         measure: 'шт',
         spec: false,
@@ -2882,7 +2882,7 @@ const goods = [
     {
         folder: 'Трубы для электропроводки',
         code: 3463,
-        description: 'Труба 16 ПНД гофрированная с протяжкой (100м)',
+        description: 'Труба гофрированная с протяжкой ПНД d16мм (100м)',
         price: 8.52,
         measure: 'м',
         spec: false,
@@ -2891,16 +2891,16 @@ const goods = [
     {
         folder: 'Приборы учета электроэнергии',
         code: 3480,
-        description: '230AM-02 Счетчик эл.энергии Меркурий 3ф 1т 10-100А',
+        description: 'Счетчик электроэнергии Меркурий 230AM-02 3ф 1т10-100А',
         price: 2282.52,
         measure: 'шт',
         spec: false,
-        quantity: 3
+        quantity: 0
     },
     {
         folder: 'Шкафы пустые',
         code: 3485,
-        description: 'ЩРН-12з Корпус щита навесной металлический IP54',
+        description: 'Корпус щита навесной металлический ЩРН-12з IP54',
         price: 1340.04,
         measure: 'шт',
         spec: false,
@@ -2909,7 +2909,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 3492,
-        description: 'Роз.3ОП с/з     35шт/кор.',
+        description: 'Розетка 3-я открытой проводки с заземлением',
         price: 146.04,
         measure: 'шт',
         spec: false,
@@ -2918,7 +2918,7 @@ const goods = [
     {
         folder: 'Трансформаторы',
         code: 3502,
-        description: 'Т-0,66 150/5 кл. 0,5 5ВА Трансформатор тока',
+        description: 'Трансформатор тока Т-0,66 150/5, класс точности 0,5, номинальная вторичная нагрузка 5 ВА',
         price: 485.7,
         measure: 'шт',
         spec: false,
@@ -2927,7 +2927,7 @@ const goods = [
     {
         folder: 'Трансформаторы',
         code: 3504,
-        description: 'Т-0,66 200/5 кл. 0,5 5ВА Трансформатор тока   2018г.',
+        description: 'Трансформатор тока Т-0,66 200/5, класс точности 0,5, номинальная вторичная нагрузка 5 ВА',
         price: 485.7,
         measure: 'шт',
         spec: false,
@@ -2936,7 +2936,7 @@ const goods = [
     {
         folder: 'Трансформаторы',
         code: 3505,
-        description: 'Т-0,66 300/5 кл. 0,5 5ВА Трансформатор тока ',
+        description: 'Трансформатор тока Т-0,66 300/5, класс точности 0,5, номинальная вторичная нагрузка 5 ВА',
         price: 485.7,
         measure: 'шт',
         spec: false,
@@ -2945,7 +2945,7 @@ const goods = [
     {
         folder: 'Трансформаторы',
         code: 3506,
-        description: 'Т-0,66  75/5 кл. 0,5 5ВА Трансформатор тока   2017г.',
+        description: 'Трансформатор тока Т-0,66 75/5, класс точности 0,5, номинальная вторичная нагрузка 5 ВА',
         price: 485.7,
         measure: 'шт',
         spec: false,
@@ -2954,7 +2954,7 @@ const goods = [
     {
         folder: 'Трансформаторы',
         code: 3507,
-        description: 'Т-0,66 100/5 кл. 0,5 5ВА Трансформатор тока   2018г.',
+        description: 'Трансформатор тока Т-0,66 100/5, класс точности 0,5, номинальная вторичная нагрузка 5 ВА',
         price: 485.7,
         measure: 'шт',
         spec: false,
@@ -2963,7 +2963,7 @@ const goods = [
     {
         folder: 'Патроны',
         code: 3555,
-        description: 'Е40 Патрон подвесной керамический',
+        description: 'Патрон Е40 подвесной керамический ',
         price: 47.22,
         measure: 'шт',
         spec: false,
@@ -2972,7 +2972,7 @@ const goods = [
     {
         folder: 'Хомуты нейлоновые',
         code: 3663,
-        description: 'Хомут  350х4,8-5 нейл. бел. (100шт.)',
+        description: 'Хомут нейлоновый белый 350х4,8-5 (100шт.)',
         price: 189.42,
         measure: 'упак',
         spec: false,
@@ -2981,7 +2981,7 @@ const goods = [
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 3735,
-        description: 'L 7/9/11W Дроссель для PL-11  (50шт./упак.)',
+        description: 'Дроссель L 7/9/11W для PL-11',
         price: 144.48,
         measure: 'шт',
         spec: false,
@@ -2990,7 +2990,7 @@ const goods = [
     {
         folder: 'Расходные материалы',
         code: 3761,
-        description: 'WD-40, 200 мл Универсальная смазка',
+        description: 'Универсальная смазка WD-40, 200 мл',
         price: 250,
         measure: 'шт',
         spec: false,
@@ -2999,7 +2999,7 @@ const goods = [
     {
         folder: 'Выключатели нагрузки (рубильники) и переключатели',
         code: 3835,
-        description: 'ВР32-35В31250 Рубильник 250А УХЛ3',
+        description: 'Рубильник ВР32-35 В31250 250А УХЛ3',
         price: 1196.94,
         measure: 'шт',
         spec: false,
@@ -3008,7 +3008,7 @@ const goods = [
     {
         folder: 'Компактные люминесцентные лампы',
         code: 3840,
-        description: 'SPC 20W E27 2700K   (50шт./кор.)',
+        description: 'Лампа люминесцентная компактная SPC 20W E27 2700K',
         price: 83.16,
         measure: 'шт',
         spec: false,
@@ -3017,7 +3017,7 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 3841,
-        description: 'ВВГнг-LS 5х  1,5 Кабель   (200м./бух.)',
+        description: 'Кабель ВВГнг-LS 5х1,5',
         price: 51.3,
         measure: 'м',
         spec: false,
@@ -3026,7 +3026,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 3885,
-        description: 'ТУТ 40/20 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 40/20 черная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3035,16 +3035,16 @@ const goods = [
     {
         folder: 'Светильники люминесцентные',
         code: 3899,
-        description: 'ЛСП 2х36 IP65 светильник с ЭПРА (6шт/упак.)',
+        description: 'Светильник ЛСП 2х36 IP65 с ЭПРА',
         price: 862.08,
         measure: 'шт',
         spec: false,
-        quantity: 205
+        quantity: 195
     },
     {
         folder: 'Бирки кабельные',
         code: 3918,
-        description: 'У-134 Бирка кабельная квадратная  (100шт./упак.)',
+        description: 'Бирка кабельная У-134 квадратная',
         price: 2.76,
         measure: 'шт',
         spec: false,
@@ -3053,7 +3053,7 @@ const goods = [
     {
         folder: 'Лампы галогеновые',
         code: 3929,
-        description: 'HCS CL 220V 40W G9 FOTON   (10шт/упак)',
+        description: 'Лампа галогенная капсульная HCS CL 220V 40W G9 FOTON',
         price: 32.1,
         measure: 'шт',
         spec: false,
@@ -3062,7 +3062,7 @@ const goods = [
     {
         folder: 'Наконечники НШвИ (штыревые)',
         code: 3988,
-        description: 'НШвИ  4-10 Наконечник штыр.изол. (уп.100шт)',
+        description: 'Наконечник штыревой НШвИ 4-10 изолированный упаковка 100шт.',
         price: 61.08,
         measure: 'упак',
         spec: false,
@@ -3071,7 +3071,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на монтажную панель',
         code: 3995,
-        description: 'АЕ2066-100 160А Автоматический выключатель',
+        description: 'Автоматический выключатель АЕ2066-100 160А',
         price: 4060.86,
         measure: 'шт',
         spec: false,
@@ -3080,7 +3080,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 3997,
-        description: 'ПВ1  1,5 Белый   (300м./бухта)',
+        description: 'Провод ПВ1 1,5 белый',
         price: 8.16,
         measure: 'м',
         spec: false,
@@ -3089,7 +3089,7 @@ const goods = [
     {
         folder: 'Расходные материалы',
         code: 4000,
-        description: 'СИЗ-1 Соед. изолир. зажим (от 1,0 до 3,0 кв. мм) уп. 100 шт.',
+        description: 'Соединительный изолирующий зажим СИЗ-1 (от 1,0 до 3,0 кв. мм) уп. 100 шт.',
         price: 62.64,
         measure: 'упак',
         spec: false,
@@ -3098,7 +3098,7 @@ const goods = [
     {
         folder: 'Расходные материалы',
         code: 4001,
-        description: 'СИЗ-3 Соед. изолир. зажим от (2,5 до 5,5 кв мм) уп. 100 шт.',
+        description: 'Соединительный изолирующий зажим СИЗ-3 (от 2,5 до 5,5 кв мм) уп. 100 шт.',
         price: 134.04,
         measure: 'упак',
         spec: false,
@@ -3107,7 +3107,7 @@ const goods = [
     {
         folder: 'Расходные материалы',
         code: 4003,
-        description: 'СИЗ-4 Соед. изолир. зажим (от 3,5 до 11 кв мм) уп. 100 шт.',
+        description: 'Соединительный изолирующий зажим СИЗ-4 (от 3,5 до 11 кв мм) уп. 100 шт.',
         price: 178.86,
         measure: 'упак',
         spec: false,
@@ -3116,7 +3116,7 @@ const goods = [
     {
         folder: 'Приборы учета электроэнергии',
         code: 4028,
-        description: '230ART-03 CN (!!! см. описание) Счетчик эл.энергии Меркурий 3ф 2т 5-7,5А',
+        description: 'Счетчик электроэнергии Меркурий 230ART-03 CN 3ф 2т 5-7,5А',
         price: 5071.38,
         measure: 'шт',
         spec: false,
@@ -3125,7 +3125,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 4061,
-        description: 'ВА47-63 2п C 32А 4,5кА (!!! продаём 47-29) (6 шт.)',
+        description: 'Автоматический выключатель ВА47-63 2п C 32А 4,5кА',
         price: 129,
         measure: 'шт',
         spec: false,
@@ -3134,7 +3134,7 @@ const goods = [
     {
         folder: 'Элементы питания и аккумуляторы',
         code: 4070,
-        description: 'MN 1500 Элемент питания (АА) Duracell (бл.18 шт)',
+        description: 'Элемент питания Duracell MN 1500 (блок 18 шт)',
         price: 48.6,
         measure: 'шт',
         spec: false,
@@ -3143,7 +3143,7 @@ const goods = [
     {
         folder: 'Элементы питания и аккумуляторы',
         code: 4071,
-        description: 'MN 2400 Элемент питания (ААА) Duracell (бл.18 шт)',
+        description: 'Элемент питания Duracell MN 2400 (блок 18 шт)',
         price: 48.6,
         measure: 'шт',
         spec: false,
@@ -3152,7 +3152,7 @@ const goods = [
     {
         folder: 'Трубы для электропроводки',
         code: 4105,
-        description: 'Труба 40 жесткая ПВХ (по 3м)',
+        description: 'Труба жесткая гладкая ПВХ d40мм (3м)',
         price: 34.32,
         measure: 'м',
         spec: false,
@@ -3161,7 +3161,7 @@ const goods = [
     {
         folder: 'Кабельные каналы (короба)',
         code: 4141,
-        description: 'Короб  80х40 ПВХ (30м в упаковке)',
+        description: 'Кабель-канал ПВХ 80х40',
         price: 104.88,
         measure: 'м',
         spec: false,
@@ -3170,7 +3170,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 4195,
-        description: 'DIN-рейка  30 см',
+        description: 'DIN-рейка L=30см',
         price: 19.92,
         measure: 'шт',
         spec: false,
@@ -3179,7 +3179,7 @@ const goods = [
     {
         folder: 'Лампы газоразрядные',
         code: 4257,
-        description: 'ДНаТ-150 Е40',
+        description: 'Лампа натриевая ДНаТ-150 150Вт Е40',
         price: 256.38,
         measure: 'шт',
         spec: false,
@@ -3188,7 +3188,7 @@ const goods = [
     {
         folder: 'Выключатели нагрузки (рубильники) и переключатели',
         code: 4308,
-        description: 'ВР32-37В71250 Переключатель 400А',
+        description: 'Переключатель ВР32-37В71250 400А',
         price: 2504.58,
         measure: 'шт',
         spec: false,
@@ -3197,16 +3197,16 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 4317,
-        description: 'ВВГнг-LS 2x  1,5 Кабель   (100м./бух.)',
+        description: 'Кабель ВВГнг-LS 2х1,5',
         price: 18.84,
         measure: 'м',
         spec: false,
-        quantity: 3849.5
+        quantity: 7849.5
     },
     {
         folder: 'Коробки установочные (подрозетники)',
         code: 4319,
-        description: 'Коробка  68х45 СП синяя (подрозет. для бетон. стен) для соед.в ряд испол. код 15456  (200шт./упак.)',
+        description: 'Коробка 68х45 скрытой проводки (для бетонных стен)',
         price: 5.64,
         measure: 'шт',
         spec: false,
@@ -3215,7 +3215,7 @@ const goods = [
     {
         folder: 'Провода ПУНП, ПУгНП и ШВВП',
         code: 4321,
-        description: 'ПУгНП 2х  2,5   (200м./бух.)',
+        description: 'Провод ПУгНП 2х2,5',
         price: 28.5,
         measure: 'м',
         spec: false,
@@ -3224,7 +3224,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 4377,
-        description: 'ПВ3  35 Белый',
+        description: 'Провод ПВ-3 35 белый',
         price: 194.76,
         measure: 'м',
         spec: false,
@@ -3233,7 +3233,7 @@ const goods = [
     {
         folder: 'Наконечники медные луженые под опрессовку',
         code: 4513,
-        description: 'ТМЛ-  4-5-3 Наконечник мед.луж.опрес.   (100шт./упак.)',
+        description: 'Наконечник кабельный ТМЛ-4-5-3 медный луженый под опрессовку',
         price: 5.88,
         measure: 'шт',
         spec: false,
@@ -3242,7 +3242,7 @@ const goods = [
     {
         folder: 'Клипсы для труб ПВХ и ПНД',
         code: 4530,
-        description: 'Клипса 40 д/трубы   (25шт./уп и 30шт.упак',
+        description: 'Клипса 40 для трубы',
         price: 3.48,
         measure: 'шт',
         spec: false,
@@ -3251,7 +3251,7 @@ const goods = [
     {
         folder: 'Наконечники алюминиевые под опрессовку',
         code: 4712,
-        description: 'ТА- 25-8-7 Наконечник алюмин. опрес.   (100шт./упак.)',
+        description: 'Наконечник кабельный ТА-25-8-7 алюминиевый под опрессовку',
         price: 9.78,
         measure: 'шт',
         spec: false,
@@ -3260,7 +3260,7 @@ const goods = [
     {
         folder: 'Наконечники НШвИ (штыревые)',
         code: 4745,
-        description: 'НШвИ  0,75-8 Наконечник штыр.изол. (уп.100шт)',
+        description: 'Наконечник штыревой НШвИ 0,75-8 изолированный упаковка 100шт.',
         price: 24.24,
         measure: 'упак',
         spec: false,
@@ -3269,7 +3269,7 @@ const goods = [
     {
         folder: 'Трубы для электропроводки',
         code: 4786,
-        description: 'Труба 32 жесткая ПВХ (по 3м)',
+        description: 'Труба жесткая гладкая ПВХ d32мм (3м)',
         price: 40.5,
         measure: 'м',
         spec: false,
@@ -3278,7 +3278,7 @@ const goods = [
     {
         folder: 'Выключатели',
         code: 4789,
-        description: 'Выкл.1ОП с подсв.  (10шт./упак.)',
+        description: 'Выключатель 1-клавишный открытой проводки с подсветкой',
         price: 39.6,
         measure: 'шт',
         spec: false,
@@ -3287,7 +3287,7 @@ const goods = [
     {
         folder: 'Контакторы',
         code: 4824,
-        description: 'КМН-10910 Контактор 9А 230В/АС3 1НО ТДМ',
+        description: 'Контактор КМН-10910 9А 230В/АС3 1НО ТДМ',
         price: 294.18,
         measure: 'шт',
         spec: false,
@@ -3296,7 +3296,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 4881,
-        description: 'КМПн 1/2 Бокс для нар.установки 1 р / 2 мод. ИЭК',
+        description: 'Бокс для наружной установки КМПн 1/2 1 р / 2 мод.',
         price: 19.26,
         measure: 'шт',
         spec: false,
@@ -3305,7 +3305,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 4888,
-        description: 'ТУТ 40/20 Трубка термоусаживаемая желтая',
+        description: 'Трубка термоусаживаемая ТУТ 40/20 желтая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3314,7 +3314,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 4889,
-        description: 'ТУТ 40/20 Трубка термоусаживаемая зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 40/20 зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3323,7 +3323,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 4890,
-        description: 'ТУТ 40/20 Трубка термоусаживаемая красная',
+        description: 'Трубка термоусаживаемая ТУТ 40/20 красная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3332,7 +3332,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 4891,
-        description: 'ТУТ 40/20 Трубка термоусаживаемая синяя',
+        description: 'Трубка термоусаживаемая ТУТ 40/20 синяя',
         price: 111.72,
         measure: 'м',
         spec: false,
@@ -3341,7 +3341,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 4892,
-        description: 'ТУТ 40/20 Трубка термоусаживаемая желто-зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 40/20 желто-зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3350,7 +3350,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 4994,
-        description: 'ТУТ 80/40 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 80/40 черная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3359,7 +3359,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5006,
-        description: 'ТУТ  4/2 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 4/2 черная',
         price: 7.32,
         measure: 'м',
         spec: false,
@@ -3368,7 +3368,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5007,
-        description: 'ТУТ  6/3 Трубка термоусаживаемая желтая',
+        description: 'Трубка термоусаживаемая ТУТ 6/3 желтая',
         price: 13.02,
         measure: 'м',
         spec: false,
@@ -3377,7 +3377,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5008,
-        description: 'ТУТ  8/4 Трубка термоусаживаемая зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 8/4 зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3386,16 +3386,16 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5009,
-        description: 'ТУТ 10/5 Трубка термоусаживаемая синяя',
+        description: 'Трубка термоусаживаемая ТУТ 10/5 синяя',
         price: 0,
         measure: 'м',
         spec: false,
-        quantity: 5
+        quantity: 10
     },
     {
         folder: 'Выключатели',
         code: 5042,
-        description: 'Выкл.1ОП IP54   30шт/кор.',
+        description: 'Выключатель 1-клавишный открытой проводки IP54',
         price: 117.3,
         measure: 'шт',
         spec: false,
@@ -3404,7 +3404,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5061,
-        description: 'ТУТ 16/8 Трубка термоусаживаемая зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 16/8 зеленая',
         price: 26.7,
         measure: 'м',
         spec: false,
@@ -3413,7 +3413,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5062,
-        description: 'ТУТ 20/10 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 20/10 черная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3422,7 +3422,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5063,
-        description: 'ТУТ  3/1,5 Трубка термоусаживаемая синяя',
+        description: 'Трубка термоусаживаемая ТУТ 3/1,5 синяя',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3431,7 +3431,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5064,
-        description: 'ТУТ  4/2 Трубка термоусаживаемая зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 4/2 зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3440,7 +3440,7 @@ const goods = [
     {
         folder: 'Промышленные разъемы',
         code: 5066,
-        description: '125 Розетка стационарная 32А 3Р+N+E IР44 380В  (10шт./упак.)',
+        description: 'Розетка стационарная 125 32А 3Р+N+E 380В IР44',
         price: 273.6,
         measure: 'шт',
         spec: false,
@@ -3449,7 +3449,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5075,
-        description: 'ТУТ  8/4 Трубка термоусаживаемая красная',
+        description: 'Трубка термоусаживаемая ТУТ 8/4 красная',
         price: 10.2,
         measure: 'м',
         spec: false,
@@ -3458,7 +3458,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5076,
-        description: 'ТУТ 10/5 Трубка термоусаживаемая зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 10/5 зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3467,7 +3467,7 @@ const goods = [
     {
         folder: 'Клеммники WAGO',
         code: 5152,
-        description: '222-412 Клеммник 2х(0,08-2,5-4,0) для многожильн.проводов (50шт.уп.)',
+        description: '222-412 WAGO Клеммник 2х(0,08-2,5) для медных многожильных проводов',
         price: 17.94,
         measure: 'шт',
         spec: false,
@@ -3476,7 +3476,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 5176,
-        description: 'РАр10-3-ОП Розетка с зазем. контактом на DIN-рейку  (5шт.уп.)',
+        description: 'Розетка с заземляющим контактом РАр10-3-ОП на DIN-рейку',
         price: 124.32,
         measure: 'шт',
         spec: false,
@@ -3485,7 +3485,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 5181,
-        description: 'DIN-рейка 120см',
+        description: 'DIN-рейка L=120см',
         price: 76.98,
         measure: 'шт',
         spec: false,
@@ -3494,7 +3494,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 5196,
-        description: 'ВА47-100 3п  C  32А 10кА Автоматический выключатель   (4шт./упак.)',
+        description: 'Автоматический выключатель модульный ВА47-100 3п C 32А 10кА ',
         price: 1158.18,
         measure: 'шт',
         spec: false,
@@ -3503,25 +3503,25 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 5197,
-        description: 'ВА47-100 3п  C  40А 10кА Автоматический выключатель   (4шт./упак.)',
+        description: 'Автоматический выключатель модульный ВА47-100 3п C 40А 10кА',
         price: 1158.18,
         measure: 'шт',
         spec: false,
-        quantity: 2
+        quantity: 0
     },
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5237,
-        description: 'ТУТ 10/5 Трубка термоусаживаемая желтая',
+        description: 'Трубка термоусаживаемая ТУТ 10/5 желтая',
         price: 13.38,
         measure: 'м',
         spec: false,
-        quantity: 7
+        quantity: 12
     },
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5238,
-        description: 'ТУТ 10/5 Трубка термоусаживаемая красная',
+        description: 'Трубка термоусаживаемая ТУТ 10/5 красная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3530,7 +3530,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5239,
-        description: 'ТУТ 10/5 Трубка термоусаживаемая желто-зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 10/5 желто-зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3539,7 +3539,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5240,
-        description: 'ТУТ 20/10 Трубка термоусаживаемая желтая',
+        description: 'Трубка термоусаживаемая ТУТ 20/10 желтая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3548,7 +3548,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5241,
-        description: 'ТУТ 20/10 Трубка термоусаживаемая красная',
+        description: 'Трубка термоусаживаемая ТУТ 20/10 красная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3557,7 +3557,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5242,
-        description: 'ТУТ 20/10 Трубка термоусаживаемая желто-зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 20/10 желто-зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3566,7 +3566,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5243,
-        description: 'ТУТ 20/10 Трубка термоусаживаемая зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 20/10 зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3575,7 +3575,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5244,
-        description: 'ТУТ 30/15 Трубка термоусаживаемая желтая',
+        description: 'Трубка термоусаживаемая ТУТ 30/15 желтая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3584,7 +3584,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5245,
-        description: 'ТУТ 30/15 Трубка термоусаживаемая зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 30/15 зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3593,7 +3593,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5246,
-        description: 'ТУТ 30/15 Трубка термоусаживаемая красная',
+        description: 'Трубка термоусаживаемая ТУТ 30/15 красная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3602,7 +3602,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5247,
-        description: 'ТУТ 30/15 Трубка термоусаживаемая желто-зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 30/15 желто-зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3611,7 +3611,7 @@ const goods = [
     {
         folder: 'Выключатели нагрузки (рубильники) и переключатели',
         code: 5351,
-        description: 'ВР32-35В71250 Рубильник 250А УХЛ3',
+        description: 'Рубильник ВР32-35 В71250 250А УХЛ3',
         price: 1976.22,
         measure: 'шт',
         spec: false,
@@ -3620,7 +3620,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 5366,
-        description: 'ПВ3  50 Белый',
+        description: 'Провод ПВ-3 50 белый',
         price: 288.3,
         measure: 'м',
         spec: false,
@@ -3629,7 +3629,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5398,
-        description: 'ТУТ  6/3 Трубка термоусаживаемая красная',
+        description: 'Трубка термоусаживаемая ТУТ 6/3 красная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3638,7 +3638,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5399,
-        description: 'ТУТ  6/3 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 6/3 черная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3647,7 +3647,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 5487,
-        description: 'ЩРН-12з Корпус щита навесной металлический IP31',
+        description: 'Корпус щита навесной металлический ЩРН-12з IP31',
         price: 714.78,
         measure: 'шт',
         spec: false,
@@ -3656,7 +3656,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 5488,
-        description: 'ЩРН-18з Корпус щита навесной металлический IP31',
+        description: 'Корпус щита навесной металлический ЩРН-18з IP31',
         price: 938.76,
         measure: 'шт',
         spec: false,
@@ -3665,7 +3665,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5494,
-        description: 'ТУТ  3/1,5 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 3/1,5 черная',
         price: 5.52,
         measure: 'м',
         spec: false,
@@ -3674,7 +3674,7 @@ const goods = [
     {
         folder: 'Расходные материалы',
         code: 5519,
-        description: 'Саморез 3,5х41  (1000 шт./уп.)',
+        description: 'Саморез 3,5х41',
         price: 0.84,
         measure: 'шт',
         spec: false,
@@ -3683,7 +3683,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 5693,
-        description: 'ПВ1  6 Белый  (100м./бух.)',
+        description: 'Провод ПВ1 6 белый',
         price: 35.52,
         measure: 'м',
         spec: false,
@@ -3692,7 +3692,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 5694,
-        description: 'ПВ1  6 Синий',
+        description: 'Провод ПВ1 6 синий',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3701,7 +3701,7 @@ const goods = [
     {
         folder: 'Знаки электробезопасности',
         code: 5763,
-        description: 'Знак "220В" 15х50мм ТДМ',
+        description: 'Знак "220В" 15х50мм',
         price: 1.98,
         measure: 'шт',
         spec: false,
@@ -3710,7 +3710,7 @@ const goods = [
     {
         folder: 'Знаки электробезопасности',
         code: 5764,
-        description: 'Знак "380В" 15х50мм ТДМ',
+        description: 'Знак "380В" 15х50мм',
         price: 1.98,
         measure: 'шт',
         spec: false,
@@ -3719,7 +3719,7 @@ const goods = [
     {
         folder: 'Знаки электробезопасности',
         code: 5765,
-        description: 'Знак "Молния" (треугольник)  50х50х50мм ТДМ',
+        description: 'Знак "Молния" (треугольник) 50х50х50мм',
         price: 3.42,
         measure: 'шт',
         spec: false,
@@ -3728,7 +3728,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5782,
-        description: 'ТУТ  3/1,5 Трубка термоусаживаемая желтая',
+        description: 'Трубка термоусаживаемая ТУТ 3/1,5 желтая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3737,7 +3737,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5783,
-        description: 'ТУТ  3/1,5 Трубка термоусаживаемая зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 3/1,5 зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3746,7 +3746,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5784,
-        description: 'ТУТ  3/1,5 Трубка термоусаживаемая желто-зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 3/1,5 желто-зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3755,7 +3755,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5785,
-        description: 'ТУТ  4/2 Трубка термоусаживаемая желтая',
+        description: 'Трубка термоусаживаемая ТУТ 4/2 желтая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3764,7 +3764,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5786,
-        description: 'ТУТ  4/2 Трубка термоусаживаемая желто-зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 4/2 желто-зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3773,7 +3773,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5787,
-        description: 'ТУТ  4/2 Трубка термоусаживаемая красная',
+        description: 'Трубка термоусаживаемая ТУТ 4/2 красная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3782,7 +3782,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5788,
-        description: 'ТУТ  3/1,5 Трубка термоусаживаемая красная',
+        description: 'Трубка термоусаживаемая ТУТ 3/1,5 красная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3791,16 +3791,16 @@ const goods = [
     {
         folder: 'Приборы учета электроэнергии',
         code: 5821,
-        description: 'Коробка испытательная д/счетчиков КИП прозрачная крышка',
+        description: 'Коробка испытательная для счетчиков КИП прозрачная крышка',
         price: 205.68,
         measure: 'шт',
         spec: false,
-        quantity: 11
+        quantity: 9
     },
     {
         folder: 'Лампы накаливания',
         code: 5822,
-        description: 'R63 60W E27 Лампа зеркальная   (50шт./кор.)',
+        description: 'Лампа накаливания зеркальная R63 60W E27',
         price: 30.6,
         measure: 'шт',
         spec: false,
@@ -3809,7 +3809,7 @@ const goods = [
     {
         folder: 'Провода СИП и арматура к ним',
         code: 5843,
-        description: 'СИП-4 2х 16   (400м./бухта)',
+        description: 'Провод СИП-4 2х16',
         price: 35.16,
         measure: 'м',
         spec: false,
@@ -3818,7 +3818,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5876,
-        description: 'ТУТ 25/12,5 Трубка термоусаживаемая желтая',
+        description: 'Трубка термоусаживаемая ТУТ 25/12,5 желтая',
         price: 67.2,
         measure: 'м',
         spec: false,
@@ -3827,7 +3827,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5877,
-        description: 'ТУТ 25/12,5 Трубка термоусаживаемая зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 25/12,5 зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3836,7 +3836,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5878,
-        description: 'ТУТ 25/12,5 Трубка термоусаживаемая красная',
+        description: 'Трубка термоусаживаемая ТУТ 25/12,5 красная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3845,7 +3845,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5879,
-        description: 'ТУТ 25/12,5 Трубка термоусаживаемая синяя',
+        description: 'Трубка термоусаживаемая ТУТ 25/12,5 синяя',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3854,7 +3854,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5880,
-        description: 'ТУТ 25/12,5 Трубка термоусаживаемая желто-зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 25/12,5 желто-зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3863,7 +3863,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5883,
-        description: 'ТУТ 16/8 Трубка термоусаживаемая желтая',
+        description: 'Трубка термоусаживаемая ТУТ 16/8 желтая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3872,7 +3872,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5884,
-        description: 'ТУТ 16/8 Трубка термоусаживаемая красная',
+        description: 'Трубка термоусаживаемая ТУТ 16/8 красная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3881,7 +3881,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5885,
-        description: 'ТУТ 16/8 Трубка термоусаживаемая синяя',
+        description: 'Трубка термоусаживаемая ТУТ 16/8 синяя',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3890,7 +3890,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 5886,
-        description: 'ТУТ 16/8 Трубка термоусаживаемая желто-зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 16/8 желто-зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -3899,7 +3899,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 5889,
-        description: 'ВА47-63 3п C 25А 4,5кА  (4шт./упак.)',
+        description: 'Автоматический выключатель ВА47-63 3п C 25А 4,5кА',
         price: 200.7,
         measure: 'шт',
         spec: false,
@@ -3908,7 +3908,7 @@ const goods = [
     {
         folder: 'Расходные материалы',
         code: 5961,
-        description: 'Круг 115х1,2х22мм отрезной по металлу (50/уп., 200-400/кор.)',
+        description: 'Круг отрезной по металлу 115х1,2х22мм ',
         price: 36.6,
         measure: 'шт',
         spec: false,
@@ -3917,16 +3917,16 @@ const goods = [
     {
         folder: 'Бирки кабельные',
         code: 6057,
-        description: 'У-135 Бирка кабельная круглая   (100шт./упак.)',
+        description: 'Бирка кабельная У-135 круглая',
         price: 1.92,
         measure: 'шт',
         spec: false,
-        quantity: 1540
+        quantity: 1040
     },
     {
         folder: 'Патроны',
         code: 6130,
-        description: 'Е14 Патрон подвесной керамический   (400шт./упак.)',
+        description: 'Патрон E14 подвесной керамический',
         price: 9.6,
         measure: 'шт',
         spec: false,
@@ -3935,16 +3935,16 @@ const goods = [
     {
         folder: 'Приборы учета электроэнергии',
         code: 6137,
-        description: '201.5 Счетчик эл.энергии Меркурий 1ф 1т 5-60А',
+        description: 'Счетчик электроэнергии Меркурий 201.5 1ф 1т 5-60А',
         price: 673.02,
         measure: 'шт',
         spec: false,
-        quantity: 31
+        quantity: 29
     },
     {
         folder: 'Плавкие вставки и держатели к ним',
         code: 6170,
-        description: 'ПН-2 100/80А Плавкая вставка ',
+        description: 'Плавкая вставка ПН-2 100/80А',
         price: 55.92,
         measure: 'шт',
         spec: false,
@@ -3953,25 +3953,25 @@ const goods = [
     {
         folder: 'Линейные люминесцентные лампы',
         code: 6183,
-        description: 'TL-D 36W/33-640 G13 Philips (25шт)',
+        description: 'Лампа люминесцентная Philips TL-D 36W/33-640 G13',
         price: 57.72,
         measure: 'шт',
         spec: false,
-        quantity: 533
+        quantity: 539
     },
     {
         folder: 'Линейные люминесцентные лампы',
         code: 6184,
-        description: 'TL-D 18W/33-640 G13 Philips (25шт)',
+        description: 'Лампа люминесцентная Philips TL-D 18W/33-640 G13 ',
         price: 46.02,
         measure: 'шт',
         spec: false,
-        quantity: 1102
+        quantity: 1116
     },
     {
         folder: 'Лампы газоразрядные',
         code: 6263,
-        description: 'ДРИ 400 E40',
+        description: 'Лампа металлогалогеновая ДРИ 400 E40',
         price: 389.64,
         measure: 'шт',
         spec: false,
@@ -3980,7 +3980,7 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 6264,
-        description: 'ДС-40 220В Е14   (100 шт./кор)',
+        description: 'Лампа накаливания ДС-40 40Вт 220В Е14',
         price: 12.3,
         measure: 'шт',
         spec: false,
@@ -3989,7 +3989,7 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 6269,
-        description: 'МО 12В 60Вт E27   (100шт./кор.)',
+        description: 'Лампа накаливания МО 12В 60Вт E27',
         price: 14.34,
         measure: 'шт',
         spec: false,
@@ -3998,7 +3998,7 @@ const goods = [
     {
         folder: 'Наконечники НШвИ (штыревые)',
         code: 6435,
-        description: 'НШвИ  1,0- 8 Наконечник штыр.изол. (уп.100шт)',
+        description: 'Наконечник штыревой НШвИ 1,0-8 изолированный упаковка 100шт',
         price: 28.62,
         measure: 'упак',
         spec: false,
@@ -4007,7 +4007,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 6450,
-        description: 'ЩРН-П- 6 Бокс, пластик IP40',
+        description: 'Бокс ЩРН-П-6 модулей пластик IP40',
         price: 232.38,
         measure: 'шт',
         spec: false,
@@ -4016,7 +4016,7 @@ const goods = [
     {
         folder: 'Приборы учета электроэнергии',
         code: 6473,
-        description: '231AM-01 Счетчик эл.энергии Меркурий 3ф 5(60)A/380В (ДИН/din)',
+        description: 'Счетчик электроэнергии Меркурий 231AM-01 3ф 1т 5(60)A/380В (ДИН)',
         price: 0,
         measure: 'шт',
         spec: false,
@@ -4025,7 +4025,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 6480,
-        description: 'ЩМП-09 Щит навесной с монтажной панелью 800х600х250 IP54',
+        description: 'Щит навесной с монтажной панелью ЩМП-09 (800х600х250мм) IP54',
         price: 3412.26,
         measure: 'шт',
         spec: false,
@@ -4034,7 +4034,7 @@ const goods = [
     {
         folder: 'Плавкие вставки и держатели к ним',
         code: 6504,
-        description: 'ПН-2 250/160А Плавкая вставка',
+        description: 'Плавкая вставка ПН-2 250/160А',
         price: 74.88,
         measure: 'шт',
         spec: false,
@@ -4043,7 +4043,7 @@ const goods = [
     {
         folder: 'Зажимы винтовые ЗВИ (клеммные колодки)',
         code: 6554,
-        description: 'ЗВИ-  3 зажим винтовой 4 кв.мм 12 пар.(10шт./упак.)',
+        description: 'Зажим винтовой ЗВИ-3 4кв.мм 12пар',
         price: 19.44,
         measure: 'шт',
         spec: false,
@@ -4052,7 +4052,7 @@ const goods = [
     {
         folder: 'Светодиодные фонари и аварийные указатели',
         code: 6675,
-        description: 'ССА 1001 "ВЫХОД-EXIT" светильник одностор. светодиод. IP20 20шт.кор.',
+        description: 'Светильник ССА 1001 "ВЫХОД-EXIT" односторонний светодиодный IP20',
         price: 453.48,
         measure: 'шт',
         spec: false,
@@ -4061,7 +4061,7 @@ const goods = [
     {
         folder: 'Инструмент ручной',
         code: 6702,
-        description: 'Набор отверток диэл. 7шт. в коробке',
+        description: 'Набор отверток диэлектрических 7шт. в коробке',
         price: 419.82,
         measure: 'шт',
         spec: false,
@@ -4070,11 +4070,11 @@ const goods = [
     {
         folder: 'Инструмент ручной',
         code: 6758,
-        description: 'Бокорезы 160мм диэлектрические',
+        description: 'Бокорезы диэлектрические 160мм',
         price: 312,
         measure: 'шт',
         spec: false,
-        quantity: 0
+        quantity: 16
     },
     {
         folder: 'Инструмент ручной',
@@ -4083,12 +4083,12 @@ const goods = [
         price: 514.08,
         measure: 'шт',
         spec: false,
-        quantity: 1
+        quantity: 12
     },
     {
         folder: 'Выключатели',
         code: 6956,
-        description: 'Выкл.1ОП ПРОХОДНОЙ (переключатель)  (10шт./упак.)',
+        description: 'Выключатель 1-клавишный открытой проводки, проходной (переключатель)',
         price: 46.38,
         measure: 'шт',
         spec: false,
@@ -4097,7 +4097,7 @@ const goods = [
     {
         folder: 'Элементы питания и аккумуляторы',
         code: 6995,
-        description: 'LR6 Элемент питания АА (блист.4шт)',
+        description: 'Элемент питания LR6 АА',
         price: 15.6,
         measure: 'шт',
         spec: false,
@@ -4106,7 +4106,7 @@ const goods = [
     {
         folder: 'Элементы питания и аккумуляторы',
         code: 6996,
-        description: 'LR03 Элемент питания ААА (блист.4шт)',
+        description: 'Элемент питания LR03 ААА',
         price: 12.54,
         measure: 'шт',
         spec: false,
@@ -4115,7 +4115,7 @@ const goods = [
     {
         folder: 'Элементы питания и аккумуляторы',
         code: 6997,
-        description: '6LF22 BL-1 Элемент питания "Крона"',
+        description: 'Элемент питания 6LF22 BL-1 "Крона"',
         price: 76.5,
         measure: 'шт',
         spec: false,
@@ -4124,7 +4124,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 7019,
-        description: 'ПВ3   0,75 Белый',
+        description: 'Провод ПВ-3 0,75 белый',
         price: 5.58,
         measure: 'м',
         spec: false,
@@ -4133,7 +4133,7 @@ const goods = [
     {
         folder: 'Провода СИП и арматура к ним',
         code: 7054,
-        description: 'СИП-4 4х 16   (200м./бухта)+ БАРАБАН',
+        description: 'Провод СИП-4 4х16',
         price: 70.56,
         measure: 'м',
         spec: false,
@@ -4142,16 +4142,16 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 7119,
-        description: 'LED 36Вт Светильник 595х595 4000К  (2шт./упак./4шт./упак.)',
+        description: 'Светильник светодиодный 595х595 4000К',
         price: 526.08,
         measure: 'шт',
         spec: false,
-        quantity: 250
+        quantity: 198
     },
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 7165,
-        description: 'ВВГнг 3x  6 Кабель (когда закончится продаём LS)   (100м./бух.)',
+        description: 'Кабель ВВГнг 3x6',
         price: 86.16,
         measure: 'м',
         spec: false,
@@ -4160,16 +4160,16 @@ const goods = [
     {
         folder: 'Светильники настенно-потолочные',
         code: 7171,
-        description: 'НПП-03-100 Светильник IP65   (5шт./кор.)',
+        description: 'Светильник НПП 03-100 IP65',
         price: 156.54,
         measure: 'шт',
         spec: false,
-        quantity: 52
+        quantity: 42
     },
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 7225,
-        description: 'ПВ3   1,5 Белый   (500м./бух.)',
+        description: 'Провод ПВ3 1,5 белый',
         price: 8.34,
         measure: 'м',
         spec: false,
@@ -4178,7 +4178,7 @@ const goods = [
     {
         folder: 'Электроустановочные изделия из каучука',
         code: 7418,
-        description: 'Колодка 1я с/з каучук IP44',
+        description: 'Колодка каучуковая на 1 розетку 16A 2P+E IP44',
         price: 128.4,
         measure: 'шт',
         spec: false,
@@ -4187,7 +4187,7 @@ const goods = [
     {
         folder: 'Компактные люминесцентные лампы',
         code: 7641,
-        description: 'DULUX S 11W/21-840 G23 OSRAM',
+        description: '4050300010618 Лампа люминесцентная компактная OSRAM DULUX S 11W/21-840 G23',
         price: 101.76,
         measure: 'шт',
         spec: false,
@@ -4196,7 +4196,7 @@ const goods = [
     {
         folder: 'Гильзы медные луженые',
         code: 7824,
-        description: 'ГМЛ  50-11 Гильза медная луженая',
+        description: 'Гильза медная ГМЛ 50-11 луженая',
         price: 42.24,
         measure: 'шт',
         spec: false,
@@ -4205,7 +4205,7 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 8132,
-        description: 'R50 60W E14 Лампа зеркальная   (50шт./кор.)',
+        description: 'Лампа накаливания зеркальная R50 60W E14',
         price: 28.2,
         measure: 'шт',
         spec: false,
@@ -4214,7 +4214,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 8149,
-        description: 'ТУТ 60/30 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 60/30 черная',
         price: 178.08,
         measure: 'м',
         spec: false,
@@ -4223,7 +4223,7 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 8202,
-        description: 'ВВГнг-LS 4х  1,5 Кабель   (100м./бухта)',
+        description: 'Кабель ВВГнг-LS 4х1,5',
         price: 40.92,
         measure: 'м',
         spec: false,
@@ -4232,16 +4232,16 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 8203,
-        description: 'ВВГнг-FRLS 3х  2,5 Кабель   (100м./бух.)',
+        description: 'Кабель ВВГнг-FRLS 3х2,5',
         price: 65.82,
         measure: 'м',
         spec: false,
-        quantity: 900
+        quantity: 2200
     },
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 8208,
-        description: 'ПВ3  25 Желто-зеленый',
+        description: 'Провод ПВ-3 25 желто-зеленый',
         price: 0,
         measure: 'м',
         spec: false,
@@ -4250,7 +4250,7 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 8310,
-        description: 'ВВГнг-LS 2x  2,5 Кабель   (100м./бух.)',
+        description: 'Кабель ВВГнг-LS 2х2,5',
         price: 28.98,
         measure: 'м',
         spec: false,
@@ -4259,7 +4259,7 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 8322,
-        description: 'ВВГнг-FRLS 5х  4 Кабель',
+        description: 'Кабель ВВГнг-FRLS 5х4',
         price: 165,
         measure: 'м',
         spec: false,
@@ -4268,7 +4268,7 @@ const goods = [
     {
         folder: 'Лампы галогеновые',
         code: 8439,
-        description: 'КГ-1000 R7s L=189мм Китай (лампа галогеновая)  (50шт/упак.)',
+        description: 'Лампа кварцевая галогеновая КГ-1000 R7s L=189мм',
         price: 42.9,
         measure: 'шт',
         spec: false,
@@ -4277,7 +4277,7 @@ const goods = [
     {
         folder: 'Лампы галогеновые',
         code: 8440,
-        description: 'КГ-150 R7s L= 78мм Китай (лампа галогеновая)  (50шт/упак.)',
+        description: 'Лампа кварцевая галогеновая КГ-150 R7s L=78мм',
         price: 26.46,
         measure: 'шт',
         spec: false,
@@ -4286,7 +4286,7 @@ const goods = [
     {
         folder: 'Выключатели нагрузки (рубильники) и переключатели',
         code: 8520,
-        description: 'ВР32-37В31250 Рубильник 400А',
+        description: 'Рубильник ВР32-37В31250 400А',
         price: 1658.28,
         measure: 'шт',
         spec: false,
@@ -4295,7 +4295,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 8557,
-        description: 'ТУТ 12/6 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 12/6 черная',
         price: 18.48,
         measure: 'м',
         spec: false,
@@ -4304,7 +4304,7 @@ const goods = [
     {
         folder: 'Патроны',
         code: 8894,
-        description: 'Е14 Патрон подвесной карболитовый  (50шт./упак.)',
+        description: 'Патрон Е14 подвесной карболитовый',
         price: 0,
         measure: 'шт',
         spec: false,
@@ -4313,7 +4313,7 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 8897,
-        description: 'ВВГнг-LS 3х  6 Кабель (!!! продаём -нг без LS)   (100м./бух.)',
+        description: 'Кабель ВВГнг-LS 3x6',
         price: 106.62,
         measure: 'м',
         spec: false,
@@ -4322,7 +4322,7 @@ const goods = [
     {
         folder: 'Выключатели дифференциального тока (УЗО) 2п',
         code: 8926,
-        description: 'ВД1-63 2P  32А/30мА УЗО (ТДМ) (под склад берём только ВД63 электронные)   (6шт./упак.)',
+        description: 'Выключатель дифференциального тока (УЗО) ВД1-63 2р 32А/30мА',
         price: 583.86,
         measure: 'шт',
         spec: false,
@@ -4331,7 +4331,7 @@ const goods = [
     {
         folder: 'Выключатели дифференциального тока (УЗО) 2п',
         code: 8927,
-        description: 'ВД1-63 2P  40А/30мА УЗО (ТДМ) (под склад берём только ВД63 электронные)  (6.шт.уп)',
+        description: 'Выключатель дифференциального тока (УЗО) ВД1-63 2р 40А/30мА ',
         price: 583.86,
         measure: 'шт',
         spec: false,
@@ -4340,7 +4340,7 @@ const goods = [
     {
         folder: 'Лампы накаливания',
         code: 9006,
-        description: 'R50 40W E14 Лампа зеркальная',
+        description: 'Лампа накаливания зеркальная R50 40W E14',
         price: 28.2,
         measure: 'шт',
         spec: false,
@@ -4349,7 +4349,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 9065,
-        description: 'ТУТ 25/12,5 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 25/12,5 черная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -4358,7 +4358,7 @@ const goods = [
     {
         folder: 'Провода СИП и арматура к ним',
         code: 9253,
-        description: 'КОПП-1500 Комплект промежуточной подвески   (20шт./в кор.)',
+        description: 'Комплект промежуточной подвески КОПП-1500',
         price: 276.3,
         measure: 'шт',
         spec: false,
@@ -4376,16 +4376,16 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 9326,
-        description: 'ЩМП-06-2 Щит навесной с монтажной панелью 500х400х220 IP54',
+        description: 'Щит навесной с монтажной панелью ЩМП-06-2 500х400х220 IP54',
         price: 1731.66,
         measure: 'шт',
         spec: false,
-        quantity: 2
+        quantity: 0
     },
     {
         folder: 'Сжимы ответвительные',
         code: 9392,
-        description: 'У-739 Сжим ответвительный (12шт/уп.)',
+        description: 'Сжим ответвительный У-739',
         price: 19.26,
         measure: 'шт',
         spec: false,
@@ -4394,7 +4394,7 @@ const goods = [
     {
         folder: 'Промышленные разъемы',
         code: 9410,
-        description: '113 Розетка стационарная 2Р+PE 16А 220В IP44 ИЭК  (10шт./упак.)',
+        description: 'Розетка стационарная 113 2Р+PE 16А 220В IP44',
         price: 187.32,
         measure: 'шт',
         spec: false,
@@ -4403,7 +4403,7 @@ const goods = [
     {
         folder: 'Промышленные разъемы',
         code: 9411,
-        description: '013 Вилка переносная 2Р+РE 16А 220В IP44  (10шт./упак.)',
+        description: 'Вилка переносная 013 2Р+РE 16А 220В IP44',
         price: 115.74,
         measure: 'шт',
         spec: false,
@@ -4412,7 +4412,7 @@ const goods = [
     {
         folder: 'Промышленные разъемы',
         code: 9412,
-        description: '115 Розетка стационарная 3Р+PE+N 16А 380В IP44   (10шт./упак.)',
+        description: 'Розетка стационарная 115 3Р+PE+N 16А 380В IP44',
         price: 212.82,
         measure: 'шт',
         spec: false,
@@ -4421,7 +4421,7 @@ const goods = [
     {
         folder: 'Промышленные разъемы',
         code: 9413,
-        description: '015 Вилка переносная 3Р+PE+N 16А 380В IP44  (10шт./упак.)',
+        description: 'Вилка переносная 015 3Р+PE+N 16А 380В IP44',
         price: 155.52,
         measure: 'шт',
         spec: false,
@@ -4430,7 +4430,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 9475,
-        description: 'ЩМП-08 Щит с монтажной панелью 650х500х220 IP54',
+        description: 'Щит с монтажной панелью ЩМП-08 (650х500х220мм) IP54',
         price: 0,
         measure: 'шт',
         spec: false,
@@ -4439,7 +4439,7 @@ const goods = [
     {
         folder: 'Компактные люминесцентные лампы',
         code: 9549,
-        description: 'SPC 15W Е27 4200К (50шт./кор.)',
+        description: 'Лампа люминесцентная компактная SPC 15W Е27 4200К ',
         price: 78,
         measure: 'шт',
         spec: false,
@@ -4448,7 +4448,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 9556,
-        description: 'ВА47-63 2п C 63А 4,5кА (6шт.)',
+        description: 'Автоматический выключатель ВА47-63 2п C 63А 4,5кА',
         price: 171.06,
         measure: 'шт',
         spec: false,
@@ -4457,16 +4457,16 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 9605,
-        description: 'ВА47-63 2п C 50А 4,5кА (6 шт.)',
+        description: 'Автоматический выключатель ВА47-63 2п C 50А 4,5кА',
         price: 171.06,
         measure: 'шт',
         spec: false,
-        quantity: 54
+        quantity: 52
     },
     {
         folder: 'Розетки и вилки',
         code: 9652,
-        description: 'Вилка евро боковая  (50шт./упак.)',
+        description: 'Вилка евро боковая',
         price: 22.44,
         measure: 'шт',
         spec: false,
@@ -4475,7 +4475,7 @@ const goods = [
     {
         folder: 'Лампы галогеновые',
         code: 9731,
-        description: 'КГ-300  R7s L=117мм Китай (лампа галогеновая)  (50шт/упак.)',
+        description: 'Лампа кварцевая галогеновая КГ-300 R7s L=117мм',
         price: 0,
         measure: 'шт',
         spec: false,
@@ -4484,7 +4484,7 @@ const goods = [
     {
         folder: 'Прожектора светодиодные',
         code: 9781,
-        description: 'Прожектор светодиодный  10W   20шт/кор',
+        description: 'Прожектор светодиодный 10W',
         price: 143.76,
         measure: 'шт',
         spec: false,
@@ -4493,7 +4493,7 @@ const goods = [
     {
         folder: 'Прожектора светодиодные',
         code: 9782,
-        description: 'Прожектор светодиодный  20W   (40шт/кор.)',
+        description: 'Прожектор светодиодный 20W',
         price: 210.36,
         measure: 'шт',
         spec: false,
@@ -4502,16 +4502,16 @@ const goods = [
     {
         folder: 'Прожектора светодиодные',
         code: 9783,
-        description: 'Прожектор светодиодный  50W',
+        description: 'Прожектор светодиодный 50W',
         price: 436.26,
         measure: 'шт',
         spec: false,
-        quantity: 72
+        quantity: 70
     },
     {
         folder: 'Прожектора светодиодные',
         code: 9784,
-        description: 'Прожектор светодиодный  70W',
+        description: 'Прожектор светодиодный 70W',
         price: 782.52,
         measure: 'шт',
         spec: false,
@@ -4520,7 +4520,7 @@ const goods = [
     {
         folder: 'Клеммники WAGO',
         code: 9799,
-        description: '2273-204 Клеммник 4х(0,5-2,5) для распред. кор. (100шт)',
+        description: '2273-204 WAGO Клеммник 4х(0,5-2,5) для распределительных коробок',
         price: 8.94,
         measure: 'шт',
         spec: false,
@@ -4529,7 +4529,7 @@ const goods = [
     {
         folder: 'Клеммники WAGO',
         code: 9802,
-        description: '2273-205 Клеммник 5х(0,5-2,5) для распред. кор.',
+        description: '2273-205 WAGO Клеммник 5х(0,5-2,5) для распределительных коробок',
         price: 9.84,
         measure: 'шт',
         spec: false,
@@ -4538,25 +4538,25 @@ const goods = [
     {
         folder: 'Прожектора светодиодные',
         code: 9808,
-        description: 'Прожектор светодиодный  30W   (20шт/кор.)',
+        description: 'Прожектор светодиодный 30W',
         price: 312.42,
         measure: 'шт',
         spec: false,
-        quantity: 250
+        quantity: 240
     },
     {
         folder: 'Шкафы пустые',
         code: 9836,
-        description: 'ЩРН-П- 8 Бокс, пластик IP40   (30шт./упак.)',
+        description: 'Бокс ЩРН-П-8 модулей пластик IP40',
         price: 285.06,
         measure: 'шт',
         spec: false,
-        quantity: 8
+        quantity: 23
     },
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 9918,
-        description: 'AD22DS Арматура светосигнальная 230В зеленая  (10шт./упак.)',
+        description: 'Арматура светосигнальная AD22DS 230В зеленая',
         price: 46.8,
         measure: 'шт',
         spec: false,
@@ -4565,7 +4565,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 9919,
-        description: 'AD22DS Арматура светосигнальная 230В красная  (10шт.упак.)',
+        description: 'Арматура светосигнальная AD22DS 230В красная',
         price: 46.8,
         measure: 'шт',
         spec: false,
@@ -4574,7 +4574,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 9968,
-        description: 'Ограничитель на Din-рейку металл.',
+        description: 'Ограничитель на Din-рейку металлический',
         price: 7.86,
         measure: 'шт',
         spec: false,
@@ -4583,7 +4583,7 @@ const goods = [
     {
         folder: 'Выключатели дифференциального тока (УЗО) 2п',
         code: 9984,
-        description: 'ВД1-63 2P  25А/30мА УЗО (ТДМ) (под склад берём только ВД63 электронные)  (6шт./упак.)',
+        description: 'Выключатель дифференциального тока (УЗО) ВД1-63 2р 25А/30мА',
         price: 583.86,
         measure: 'шт',
         spec: false,
@@ -4592,7 +4592,7 @@ const goods = [
     {
         folder: 'Электроустановочные изделия из каучука',
         code: 9985,
-        description: 'Колодка 1я с/з каучук ПЕРЕНОСНАЯ IP44 (см. картинку)  (15шт./упак.)',
+        description: 'Колодка каучуковая переносная на 1 розетку 16A 2P+E IP44',
         price: 96.72,
         measure: 'шт',
         spec: false,
@@ -4601,7 +4601,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 9986,
-        description: 'ЩРН-П-10 Бокс, пластик IP40  (20шт./упак.)',
+        description: 'Бокс ЩРН-П-10 модулей пластик IP40',
         price: 342.72,
         measure: 'шт',
         spec: false,
@@ -4610,7 +4610,7 @@ const goods = [
     {
         folder: 'Клеммники из PRC',
         code: 9991,
-        description: '222-412 (TDM СК-412) Клеммник 2х(0,2-4мм) для многожильн.проводов (50шт.уп.)',
+        description: 'СК-412 Клеммник 2х(0,08-2,5) для медных многожильных проводов',
         price: 10.2,
         measure: 'шт',
         spec: false,
@@ -4619,7 +4619,7 @@ const goods = [
     {
         folder: 'Клеммники из PRC',
         code: 9992,
-        description: '222-413 (TDM СК-413) Клеммник 3х(0,2-4мм) для многожильн.проводов (20шт.уп.)',
+        description: 'СК-413 Клеммник 3х(0,08-2,5) для медных многожильных проводов',
         price: 13.86,
         measure: 'шт',
         spec: false,
@@ -4628,7 +4628,7 @@ const goods = [
     {
         folder: 'Клеммники из PRC',
         code: 9993,
-        description: '222-415 (TDM СК-415) Клеммник 5х(0,2-4мм) для многожильн.проводов (50шт./15шт. в упак.)',
+        description: 'СК-415 Клеммник 5х(0,08-2,5) для медных многожильных проводов',
         price: 22.32,
         measure: 'шт',
         spec: false,
@@ -4637,7 +4637,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 9994,
-        description: 'ВА47-63 1п C 20А 4,5кА (12 шт.)',
+        description: 'Автоматический выключатель ВА47-63 1п C 20А 4,5кА',
         price: 64.5,
         measure: 'шт',
         spec: false,
@@ -4646,7 +4646,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 9995,
-        description: 'ВА47-63 1п C 50А 4,5кА (12 шт.)',
+        description: 'Автоматический выключатель ВА47-63 1п C 50А 4,5кА',
         price: 80.88,
         measure: 'шт',
         spec: false,
@@ -4655,7 +4655,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 9996,
-        description: 'ВА47-63 2п C 10А 4,5кА (6 шт.)',
+        description: 'Автоматический выключатель ВА47-63 2п C 10А 4,5кА',
         price: 135,
         measure: 'шт',
         spec: false,
@@ -4664,7 +4664,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 9997,
-        description: 'ВА47-63 3п C  6А 4,5кА (4 шт.)',
+        description: 'Автоматический выключатель ВА47-63 3п C 6А 4,5кА',
         price: 209.46,
         measure: 'шт',
         spec: false,
@@ -4673,7 +4673,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 9998,
-        description: 'ВА47-63 3п C 16А 4,5кА (4шт.)',
+        description: 'Автоматический выключатель ВА47-63 3п C 16А 4,5кА',
         price: 200.7,
         measure: 'шт',
         spec: false,
@@ -4682,7 +4682,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 9999,
-        description: 'ВА47-63 3п C 20А 4,5кА (4шт.)',
+        description: 'Автоматический выключатель ВА47-63 3п C 20А 4,5кА',
         price: 200.7,
         measure: 'шт',
         spec: false,
@@ -4691,7 +4691,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 10000,
-        description: 'ВА47-63 3п C 32А 4,5кА  (4шт./упак.)',
+        description: 'Автоматический выключатель ВА47-63 3п C 32А 4,5кА',
         price: 200.7,
         measure: 'шт',
         spec: false,
@@ -4700,16 +4700,16 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 10001,
-        description: 'ВА47-63 3п C 40А 4,5кА (4шт.)',
+        description: 'Автоматический выключатель ВА47-63 3п C 40А 4,5кА',
         price: 210.9,
         measure: 'шт',
         spec: false,
-        quantity: 86
+        quantity: 83
     },
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 10002,
-        description: 'ВА47-63 3п C 63А 4,5кА  (4шт.)',
+        description: 'Автоматический выключатель ВА47-63 3п C 63А 4,5кА',
         price: 250.2,
         measure: 'шт',
         spec: false,
@@ -4718,7 +4718,7 @@ const goods = [
     {
         folder: 'Трубы для электропроводки',
         code: 10020,
-        description: 'Труба 25 жесткая ПВХ (по 3м)',
+        description: 'Труба жесткая гладкая ПВХ d25мм (3м)',
         price: 15.78,
         measure: 'м',
         spec: false,
@@ -4727,7 +4727,7 @@ const goods = [
     {
         folder: 'Приборы учета электроэнергии',
         code: 10209,
-        description: '231AТ-01 Счетчик эл.энергии Меркурий IrDA 2т 5(60)А/380В',
+        description: 'Счетчик электроэнергии Меркурий 231AТ-01 IrDa 2т 5(60)A/380В ',
         price: 0,
         measure: 'шт',
         spec: false,
@@ -4736,7 +4736,7 @@ const goods = [
     {
         folder: 'Компактные люминесцентные лампы',
         code: 10355,
-        description: 'SPC 11W E14 4200K  (100шт./кор)',
+        description: 'Лампа люминесцентная компактная SPC 11W E14 4200K',
         price: 72.24,
         measure: 'шт',
         spec: false,
@@ -4745,16 +4745,16 @@ const goods = [
     {
         folder: 'Знаки электробезопасности',
         code: 10609,
-        description: 'Знак "Заземление" 30х30мм ИЭК',
+        description: 'Знак "Заземление" 30х30мм',
         price: 1.8,
         measure: 'шт',
         spec: false,
-        quantity: 0
+        quantity: 96
     },
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 10824,
-        description: 'ЗНИ-4мм2 Зажим наборный (JXB35А) серый ИЭК  (50шт.уп)',
+        description: 'Зажим наборный ЗНИ-4мм2 (JXB35А) серый',
         price: 12.18,
         measure: 'шт',
         spec: false,
@@ -4763,7 +4763,7 @@ const goods = [
     {
         folder: 'Трансформаторы',
         code: 10913,
-        description: 'Т-0,66 400/5 кл. 0,5 5ВА Трансформатор тока',
+        description: 'Трансформатор тока Т-0,66 400/5, класс точности 0,5, номинальная вторичная нагрузка 5 ВА',
         price: 485.7,
         measure: 'шт',
         spec: false,
@@ -4772,7 +4772,7 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 10923,
-        description: 'ВВГнг-FRLS 3х  1,5 Кабель  ГОСТ 100м.бухта',
+        description: 'Кабель ВВГнг-FRLS 3х1,5',
         price: 45.54,
         measure: 'м',
         spec: false,
@@ -4781,7 +4781,7 @@ const goods = [
     {
         folder: 'Патроны',
         code: 11060,
-        description: 'Е27 Патрон настенный карболитовый',
+        description: 'Патрон Е27 настенный карболитовый',
         price: 22.98,
         measure: 'шт',
         spec: false,
@@ -4799,7 +4799,7 @@ const goods = [
     {
         folder: 'Промышленные разъемы',
         code: 11132,
-        description: '114 Розетка стационарная 3Р+PE 16А 380В IP44  (10шт./упак.)',
+        description: 'Розетка стационарная 114 3Р+PE 16А 380В IP44',
         price: 199.8,
         measure: 'шт',
         spec: false,
@@ -4808,7 +4808,7 @@ const goods = [
     {
         folder: 'Провода СИП и арматура к ним',
         code: 11136,
-        description: 'ЗАБ 4/16-35 (SO 158.1) Зажим анкерный ',
+        description: 'Зажим анкерный ЗАБ 4/16-35 (SO 158.1) ',
         price: 0,
         measure: 'шт',
         spec: false,
@@ -4817,7 +4817,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 11182,
-        description: 'ТУТ  8/4 Трубка термоусаживаемая желтая',
+        description: 'Трубка термоусаживаемая ТУТ 8/4 желтая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -4826,7 +4826,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 11183,
-        description: 'ТУТ  8/4 Трубка термоусаживаемая синяя',
+        description: 'Трубка термоусаживаемая ТУТ 8/4 синяя',
         price: 0,
         measure: 'м',
         spec: false,
@@ -4835,7 +4835,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 11184,
-        description: 'ТУТ  8/4 Трубка термоусаживаемая желто-зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 8/4 желто-зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -4844,34 +4844,34 @@ const goods = [
     {
         folder: 'Компактные люминесцентные лампы',
         code: 11245,
-        description: 'PL-11 11W G23 4000К 50шт',
+        description: 'Лампа люминесцентная компактная PL-11 11W G23 4000К',
         price: 57.84,
         measure: 'шт',
         spec: false,
-        quantity: 11692
+        quantity: 11642
     },
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 11378,
-        description: 'SM40K Изолятор с крепежом',
+        description: 'Изолятор SM40K с крепежом',
         price: 43.38,
         measure: 'шт',
         spec: false,
-        quantity: 10
+        quantity: 8
     },
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 11379,
-        description: 'SM25K Изолятор с крепежом',
+        description: 'Изолятор SM25K с крепежом',
         price: 25.2,
         measure: 'шт',
         spec: false,
-        quantity: 23
+        quantity: 33
     },
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 11381,
-        description: 'SM35K Изолятор с крепежом',
+        description: 'Изолятор SM35K с крепежом',
         price: 40.68,
         measure: 'шт',
         spec: false,
@@ -4880,7 +4880,7 @@ const goods = [
     {
         folder: 'Компактные люминесцентные лампы',
         code: 11422,
-        description: 'PL-11 11W G23 6500К   (200шт./кор.)',
+        description: 'Лампа люминесцентная компактная PL-11 11W G23 6500К',
         price: 57.84,
         measure: 'шт',
         spec: false,
@@ -4889,7 +4889,7 @@ const goods = [
     {
         folder: 'Компактные люминесцентные лампы',
         code: 11423,
-        description: 'PL-9 9W G23 6500К  (200шт./кор.)',
+        description: 'Лампа люминесцентная компактная PL-9 9W G23 6500К',
         price: 54.42,
         measure: 'шт',
         spec: false,
@@ -4898,11 +4898,11 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 11575,
-        description: 'ЩРН-24з Корпус щита навесной металлический IР31',
+        description: 'Корпус щита навесной металлический ЩРН-24з IР31',
         price: 758.7,
         measure: 'шт',
         spec: false,
-        quantity: 6
+        quantity: 5
     },
     {
         folder: 'Аксессуары для шкафов и щитов',
@@ -4916,7 +4916,7 @@ const goods = [
     {
         folder: 'Зажимы винтовые ЗВИ (клеммные колодки)',
         code: 11602,
-        description: 'ЗВИ- 15 зажим винтовой 12 кв.мм 12 пар   (10шт./упак.)',
+        description: 'Зажим винтовой ЗВИ-15 12 кв.мм 12пар',
         price: 33.78,
         measure: 'шт',
         spec: false,
@@ -4925,7 +4925,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 11698,
-        description: 'ВА47-63 3п C 50А 4,5кА  (4шт.)',
+        description: 'Автоматический выключатель ВА47-63 3п C 50А 4,5кА',
         price: 250.2,
         measure: 'шт',
         spec: false,
@@ -4934,7 +4934,7 @@ const goods = [
     {
         folder: 'Трансформаторы',
         code: 11699,
-        description: 'ЯТП-0,25-220-12 Ящик 250А IP31 с понижающим трансформатором',
+        description: 'Ящик с понижающим трансформатором ЯТП-0,25-220-12 IP31',
         price: 1534.8,
         measure: 'шт',
         spec: false,
@@ -4943,7 +4943,7 @@ const goods = [
     {
         folder: 'Трубы для электропроводки',
         code: 11977,
-        description: 'Труба 25 ПНД гофрированная с протяжкой (50м)',
+        description: 'Труба гофрированная с протяжкой ПНД d25мм (50м)',
         price: 15.12,
         measure: 'м',
         spec: false,
@@ -4952,7 +4952,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 12006,
-        description: 'ЩМП-04-2 Щит навесной с монтажной панелью 400х300х220 IP31',
+        description: 'Щит навесной с монтажной панелью ЩМП-04-2 400х300х220 IP31',
         price: 944.22,
         measure: 'шт',
         spec: false,
@@ -4961,7 +4961,7 @@ const goods = [
     {
         folder: 'Компактные люминесцентные лампы',
         code: 12085,
-        description: 'SPC 11W E27 4200K   (50шт./кор.)',
+        description: 'Лампа люминесцентная компактная SPC 11W E27 4200K',
         price: 72.24,
         measure: 'шт',
         spec: false,
@@ -4970,7 +4970,7 @@ const goods = [
     {
         folder: 'Лампы газоразрядные',
         code: 12112,
-        description: 'ДРВ-160 Е27 Лампа ртутная бездроссельная   (40шт.)',
+        description: 'Лампа ртутная бездроссельная ДРВ-160 Е27',
         price: 111.12,
         measure: 'шт',
         spec: false,
@@ -4979,7 +4979,7 @@ const goods = [
     {
         folder: 'Выключатели дифференциального тока (УЗО) 2п',
         code: 12127,
-        description: 'ВД1-63 2P  16А/30мА УЗО (под склад берём только ВД63 электронные)  (6шт./упак.)',
+        description: 'Выключатель дифференциального тока (УЗО) ВД1-63 2р 16А/30мА',
         price: 583.86,
         measure: 'шт',
         spec: false,
@@ -4988,7 +4988,7 @@ const goods = [
     {
         folder: 'Трубы для электропроводки',
         code: 12261,
-        description: 'Труба 50 жесткая ПВХ (по 3м)',
+        description: 'Труба жесткая гладкая ПВХ d50мм (3м)',
         price: 0,
         measure: 'м',
         spec: false,
@@ -4997,7 +4997,7 @@ const goods = [
     {
         folder: 'Наконечники медные луженые под опрессовку',
         code: 12325,
-        description: 'ТМЛ- 70-12-13 Наконечник мед.луж.опрес.   (100шт./упак.)',
+        description: 'Наконечник кабельный ТМЛ-70-12-13 медный луженый под опрессовку',
         price: 38.94,
         measure: 'шт',
         spec: false,
@@ -5006,7 +5006,7 @@ const goods = [
     {
         folder: 'Наконечники медные луженые под опрессовку',
         code: 12326,
-        description: 'ТМЛ- 95-12-15 Наконечник мед.луж.опрес.   (25шт./упак.)',
+        description: 'Наконечник кабельный ТМЛ-95-12-15 медный луженый под опрессовку',
         price: 68.88,
         measure: 'шт',
         spec: false,
@@ -5015,16 +5015,16 @@ const goods = [
     {
         folder: 'Управление освещением',
         code: 12361,
-        description: 'ДДП-03 Датчик движения 1200Вт, 10-420с, 6м, 3+Лк, 120(сбоку)+360(сверху)гр IP33',
+        description: 'Датчик движения ДДП-03 1200Вт, 10-420с, 6м, 3+Лк, 120(сбоку)+360(сверху)гр IP33',
         price: 329.88,
         measure: 'шт',
         spec: false,
-        quantity: 0
+        quantity: 9
     },
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 12366,
-        description: 'ЭПРА 2х36 EB-T8-236-EA3 нар.   (50шт/упак.)',
+        description: 'Электронный пускорегулирующий аппарат 2х36',
         price: 188.04,
         measure: 'шт',
         spec: false,
@@ -5033,16 +5033,16 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 12377,
-        description: 'ЩРН-П- 8 Бокс, пластик IP65',
+        description: 'Бокс ЩРН-П-8 модулей пластик IP65',
         price: 481.98,
         measure: 'шт',
         spec: false,
-        quantity: 42
+        quantity: 27
     },
     {
         folder: 'Клеммники WAGO',
         code: 12407,
-        description: '2273-203 Клеммник 3х(0,5-2,5) для распред. кор. (100шт/уп,)',
+        description: '2273-203 WAGO Клеммник 3х(0,5-2,5) для распределительных коробок',
         price: 7.08,
         measure: 'шт',
         spec: false,
@@ -5051,7 +5051,7 @@ const goods = [
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 12444,
-        description: 'ЭПРА 2х18 EB-T8-218-EA3 нар.   (50шт./упак./30шт./упак.)',
+        description: 'Электронный пускорегулирующий аппарат 2х18',
         price: 161.34,
         measure: 'шт',
         spec: false,
@@ -5060,7 +5060,7 @@ const goods = [
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 12445,
-        description: 'ЭПРА 4х18 EB-T8-418-EA3 нар.   (50шт./упак.100шт./упак.)',
+        description: 'Электронный пускорегулирующий аппарат 4х18',
         price: 242.7,
         measure: 'шт',
         spec: false,
@@ -5069,7 +5069,7 @@ const goods = [
     {
         folder: 'Коробки установочные (подрозетники)',
         code: 12516,
-        description: 'Коробка  68х45 установочная для Г/К стен   (200шт./упак.)',
+        description: 'Коробка 68х45 установочная для Г/К стен',
         price: 7.86,
         measure: 'шт',
         spec: false,
@@ -5078,7 +5078,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 12531,
-        description: 'ТУТ  8/4 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 8/4 черная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5087,7 +5087,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 12589,
-        description: 'КМПн 1/4 Бокс пластик IP30 ИЭК',
+        description: 'Бокс пластиковый КМПн 1/4 4 модуля IP30',
         price: 26.4,
         measure: 'шт',
         spec: false,
@@ -5096,16 +5096,16 @@ const goods = [
     {
         folder: 'Управление освещением',
         code: 12703,
-        description: 'ФРЛ-03 Фотореле 5-50Лк 25А   (50шт./кор.)',
+        description: 'Фотореле ФРЛ-03 5-50Лк 25А',
         price: 249.54,
         measure: 'шт',
         spec: false,
-        quantity: 84
+        quantity: 82
     },
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 12802,
-        description: 'ТУТ  6/3 Трубка термоусаживаемая зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 6/3 зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5114,7 +5114,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 12803,
-        description: 'ТУТ  6/3 Трубка термоусаживаемая синяя',
+        description: 'Трубка термоусаживаемая ТУТ 6/3 синяя',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5123,7 +5123,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 12804,
-        description: 'ТУТ 60/30 Трубка термоусаживаемая желтая',
+        description: 'Трубка термоусаживаемая ТУТ 60/30 желтая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5132,7 +5132,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 12805,
-        description: 'ТУТ 60/30 Трубка термоусаживаемая зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 60/30 зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5141,7 +5141,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 12806,
-        description: 'ТУТ 60/30 Трубка термоусаживаемая красная',
+        description: 'Трубка термоусаживаемая ТУТ 60/30 красная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5150,7 +5150,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 12807,
-        description: 'ТУТ 60/30 Трубка термоусаживаемая синяя',
+        description: 'Трубка термоусаживаемая ТУТ 60/30 синяя',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5159,7 +5159,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 12808,
-        description: 'ТУТ 80/40 Трубка термоусаживаемая желтая',
+        description: 'Трубка термоусаживаемая ТУТ 80/40 желтая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5168,7 +5168,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 12809,
-        description: 'ТУТ 80/40 Трубка термоусаживаемая зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 80/40 зеленая',
         price: 277.92,
         measure: 'м',
         spec: false,
@@ -5177,7 +5177,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 12810,
-        description: 'ТУТ 80/40 Трубка термоусаживаемая красная',
+        description: 'Трубка термоусаживаемая ТУТ 80/40 красная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5186,7 +5186,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 12811,
-        description: 'ТУТ 80/40 Трубка термоусаживаемая синяя',
+        description: 'Трубка термоусаживаемая ТУТ 80/40 синяя',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5195,7 +5195,7 @@ const goods = [
     {
         folder: 'Контакторы',
         code: 12829,
-        description: 'КМН-22511 Контактор 25А 230В/АС3 1НЗ ТДМ',
+        description: 'Контактор КМН-22511 25А 230В/АС3 1НЗ ТДМ',
         price: 511.92,
         measure: 'шт',
         spec: false,
@@ -5204,7 +5204,7 @@ const goods = [
     {
         folder: 'Коробки распределительные (распаячные)',
         code: 12878,
-        description: 'Коробка  80х80х50 распределительная о/у IP54   (100шт./в кор.)',
+        description: 'Коробка распределительная 80х80х50 открытой установки IP54',
         price: 27.72,
         measure: 'шт',
         spec: false,
@@ -5213,7 +5213,7 @@ const goods = [
     {
         folder: 'Контакторы',
         code: 12898,
-        description: 'КМН-11210 Контактор 12А 230В/АС3 1НО ТДМ',
+        description: 'Контактор КМН-11210 12А 230В/АС3 1НО ТДМ',
         price: 303.06,
         measure: 'шт',
         spec: false,
@@ -5222,7 +5222,7 @@ const goods = [
     {
         folder: 'Контакторы',
         code: 12899,
-        description: 'КМН-11810 Контактор 18А 230В/АС3 1НО ТДМ',
+        description: 'Контактор КМН-11810 18А 230В/АС3 1НО ТДМ',
         price: 345.78,
         measure: 'шт',
         spec: false,
@@ -5231,16 +5231,16 @@ const goods = [
     {
         folder: 'Контакторы',
         code: 12900,
-        description: 'КМН-22510 Контактор 25А 230В/АС3 1НО ТДМ',
+        description: 'Контактор КМН-22510 25А 230В/АС3 1НО ТДМ',
         price: 466.68,
         measure: 'шт',
         spec: false,
-        quantity: 7
+        quantity: 5
     },
     {
         folder: 'Контакторы',
         code: 12901,
-        description: 'КМН-23210 Контактор 32А 230В/АС3 1НО ТДМ',
+        description: 'Контактор КМН-23210 32А 230В/АС3 1НО ТДМ',
         price: 532.56,
         measure: 'шт',
         spec: false,
@@ -5249,7 +5249,7 @@ const goods = [
     {
         folder: 'Контакторы',
         code: 12902,
-        description: 'КМН-34012 Контактор 40А 230В/АС3 1НО 1НЗ ТДМ',
+        description: 'Контактор КМН-34012 40А 230В/АС3 1НО 1НЗ ТДМ',
         price: 1183.44,
         measure: 'шт',
         spec: false,
@@ -5258,7 +5258,7 @@ const goods = [
     {
         folder: 'Контакторы',
         code: 12904,
-        description: 'КМН-46512 Контактор 65А 230В/АС3 1НО 1НЗ ТДМ',
+        description: 'Контактор КМН-46512 65А 230В/АС3 1НО 1НЗ ТДМ',
         price: 1253.04,
         measure: 'шт',
         spec: false,
@@ -5267,7 +5267,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 12991,
-        description: 'ПВ3  25 Белый',
+        description: 'Провод ПВ-3 25 белый',
         price: 139.62,
         measure: 'м',
         spec: false,
@@ -5276,7 +5276,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 12992,
-        description: 'ПВ3  25 Синий',
+        description: 'Провод ПВ-3 25 синий',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5285,7 +5285,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 13052,
-        description: 'Роз.1ОП с/з IP54',
+        description: 'Розетка 1-я открытой проводки с заземлением IP54',
         price: 117.48,
         measure: 'шт',
         spec: false,
@@ -5294,16 +5294,16 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 13158,
-        description: 'LED  10Вт Е27 4000К Лампа светодиодная A60',
+        description: 'Лампа светодиодная 10Вт Е27 4000К',
         price: 58.5,
         measure: 'шт',
         spec: false,
-        quantity: 657
+        quantity: 650
     },
     {
         folder: 'Управление освещением',
         code: 13207,
-        description: 'ФРЛ-02 Фотореле 5-50Лк 10А   (100шт./кор.)',
+        description: 'Фотореле ФРЛ-02 5-50Лк 10А',
         price: 178.62,
         measure: 'шт',
         spec: false,
@@ -5312,7 +5312,7 @@ const goods = [
     {
         folder: 'Наконечники алюминиевые под опрессовку',
         code: 13209,
-        description: 'ТА- 35-10-8 Наконечник алюмин. опрес.   (50шт./упак.)',
+        description: 'Наконечник кабельный ТА-35-10-8 алюминиевый под опрессовку',
         price: 10.68,
         measure: 'шт',
         spec: false,
@@ -5321,7 +5321,7 @@ const goods = [
     {
         folder: 'Наконечники алюминиевые под опрессовку',
         code: 13210,
-        description: 'ТА- 50-10-9 Наконечник алюмин. опрес.   (50шт./упак.)',
+        description: 'Наконечник кабельный ТА-50-10-9 алюминиевый под опрессовку',
         price: 13.38,
         measure: 'шт',
         spec: false,
@@ -5330,7 +5330,7 @@ const goods = [
     {
         folder: 'Наконечники алюминиевые под опрессовку',
         code: 13211,
-        description: 'ТА-120-12-14 Наконечник алюмин.опрес.   (25шт./упак.)',
+        description: 'Наконечник кабельный ТА-120-12-14 алюминиевый под опрессовку',
         price: 27.6,
         measure: 'шт',
         spec: false,
@@ -5339,7 +5339,7 @@ const goods = [
     {
         folder: 'Наконечники медные луженые под опрессовку',
         code: 13214,
-        description: 'ТМЛ-120-14-17 Наконечник мед.луж.опрес.   (25шт./упак.)',
+        description: 'Наконечник кабельный ТМЛ-120-14-17 медный луженый под опрессовку',
         price: 94.44,
         measure: 'шт',
         spec: false,
@@ -5348,16 +5348,16 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 13225,
-        description: 'LED   7Вт Е27 4000К Лампа светодиодная A60   (100шт/кор.)',
+        description: 'Лампа светодиодная 7Вт Е27 4000К',
         price: 54.84,
         measure: 'шт',
         spec: false,
-        quantity: 1892
+        quantity: 1856
     },
     {
         folder: 'Линейные люминесцентные лампы',
         code: 13261,
-        description: 'ЛД-20 (18) G13 (25 шт/упак) кратно упаковке',
+        description: 'Лампа люминесцентная ЛД-20 (18) G13',
         price: 40.74,
         measure: 'шт',
         spec: false,
@@ -5366,7 +5366,7 @@ const goods = [
     {
         folder: 'Линейные люминесцентные лампы',
         code: 13262,
-        description: 'ЛД-40 (36) G13 (30 шт/упак) кратно упаковке',
+        description: 'Лампа люминесцентная ЛД-40 (36) G13',
         price: 53.1,
         measure: 'шт',
         spec: false,
@@ -5375,7 +5375,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 13295,
-        description: 'ВА47-100 3п  C  25А 10кА Автоматический выключатель  (4шт./упак.)',
+        description: 'Автоматический выключатель модульный ВА47-100 3п C 25А 10кА',
         price: 1158.18,
         measure: 'шт',
         spec: false,
@@ -5384,7 +5384,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 13296,
-        description: 'ВА47-100 1п  C  16А 10кА Автоматический выключатель   (12шт./упак.)',
+        description: 'Автоматический выключатель модульный ВА47-100 1п C 16А 10кА',
         price: 393.3,
         measure: 'шт',
         spec: false,
@@ -5393,7 +5393,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 13297,
-        description: 'ВА47-100 1п  C  25А 10кА Автоматический выключатель   (12шт./упак.)',
+        description: 'Автоматический выключатель модульный ВА47-100 1п C 25А 10кА',
         price: 393.3,
         measure: 'шт',
         spec: false,
@@ -5402,7 +5402,7 @@ const goods = [
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 13308,
-        description: 'ЭПРА 1х18 EB-T8-118-EA3 нар.   (100шт/упак.)',
+        description: 'Электронный пускорегулирующий аппарат 1х18',
         price: 129.78,
         measure: 'шт',
         spec: false,
@@ -5411,7 +5411,7 @@ const goods = [
     {
         folder: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         code: 13309,
-        description: 'ЭПРА 1х36 EB-T8-136-EA3 нар.   (100шт/упак.)',
+        description: 'Электронный пускорегулирующий аппарат 1х36',
         price: 136.56,
         measure: 'шт',
         spec: false,
@@ -5420,7 +5420,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 13731,
-        description: 'ВА47-63 1п C 63А 4,5кА (12 шт.)',
+        description: 'Автоматический выключатель ВА47-63 1п C 63А 4,5кА ',
         price: 80.88,
         measure: 'шт',
         spec: false,
@@ -5429,7 +5429,7 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 13911,
-        description: 'ВВГнг-LS 4х 10 Кабель ГОСТ   БАРАБАН',
+        description: 'Кабель ВВГнг-LS 4х10',
         price: 244.5,
         measure: 'м',
         spec: false,
@@ -5438,7 +5438,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 13914,
-        description: 'ПВ1  6 Желто-зеленый',
+        description: 'Провод ПВ1 6 желто-зеленый',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5451,12 +5451,12 @@ const goods = [
         price: 20.52,
         measure: 'шт',
         spec: false,
-        quantity: 4
+        quantity: 54
     },
     {
         folder: 'Розетки и вилки',
         code: 14106,
-        description: 'Роз.1СП с/з со шторками  (10шт./упак.)',
+        description: 'Розетка 1-я скрытой проводки с заземлением со шторками',
         price: 66.24,
         measure: 'шт',
         spec: false,
@@ -5465,7 +5465,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 14107,
-        description: 'Роз.2СП с/з со шторками   (10шт./упак.)',
+        description: 'Розетка 2-я скрытой проводки с заземлением со шторками',
         price: 88.26,
         measure: 'шт',
         spec: false,
@@ -5474,7 +5474,7 @@ const goods = [
     {
         folder: 'Трансформаторы',
         code: 14147,
-        description: 'Т-0,66  30/5 кл. 0,5 5ВА Трансформатор тока   2018-11шт',
+        description: 'Трансформатор тока Т-0,66 30/5, класс точности 0,5, номинальная вторичная нагрузка 5 ВА',
         price: 485.7,
         measure: 'шт',
         spec: false,
@@ -5492,7 +5492,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 14382,
-        description: 'ВА47-63 3п C 10А 4,5кА (4шт.)',
+        description: 'Автоматический выключатель ВА47-63 3п C 10А 4,5кА',
         price: 200.7,
         measure: 'шт',
         spec: false,
@@ -5501,7 +5501,7 @@ const goods = [
     {
         folder: 'Зажимы винтовые ЗВИ (клеммные колодки)',
         code: 14396,
-        description: 'ЗВИ- 10 зажим винтовой 10 кв.мм 12 пар  (10шт./упак.)',
+        description: 'Зажим винтовой ЗВИ-10 10 кв.мм 12пар',
         price: 32.4,
         measure: 'шт',
         spec: false,
@@ -5510,7 +5510,7 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 14411,
-        description: 'LED 18Вт Cветильник (аналог ЛПО 2х18 узкий) IP40 600х22х75  (20шт./кор.)',
+        description: 'Светильник светодиодный 18 Вт 600 мм IP40',
         price: 224.46,
         measure: 'шт',
         spec: false,
@@ -5519,7 +5519,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 14465,
-        description: 'ТУТ  6/3 Трубка термоусаживаемая желто-зеленая',
+        description: 'Трубка термоусаживаемая ТУТ 6/3 желто-зеленая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5528,7 +5528,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 14466,
-        description: 'ТУТ 10/5 Трубка термоусаживаемая белая',
+        description: 'Трубка термоусаживаемая ТУТ 10/5 белая',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5537,7 +5537,7 @@ const goods = [
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 14467,
-        description: 'ТУТ 10/5 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 10/5 черная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5546,7 +5546,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 14569,
-        description: 'ВА47-100 1п  C  10А 10кА Автоматический выключатель',
+        description: 'Автоматический выключатель модульный ВА47-100 1п C 10А 10кА',
         price: 393.3,
         measure: 'шт',
         spec: false,
@@ -5555,7 +5555,7 @@ const goods = [
     {
         folder: 'Коробки установочные (подрозетники)',
         code: 14601,
-        description: 'Коробка  68х42 СП красная (подрозетник для бетон стен)стыковочные узлы   (300шт./упак.)',
+        description: 'Коробка 68х42 установочная скрытой проводки красная (подрозетник стыковочный для бетонных стен)',
         price: 6.66,
         measure: 'шт',
         spec: false,
@@ -5564,16 +5564,16 @@ const goods = [
     {
         folder: 'Управление освещением',
         code: 14605,
-        description: 'ФРЛ-11 Фотореле 2-100Лк 20А DIN-рейка (с датчиком IP65)',
+        description: 'Фотореле ФРЛ-11 2-100Лк 20А DIN-рейка (с датчиком IP65)',
         price: 533.04,
         measure: 'шт',
         spec: false,
-        quantity: 3
+        quantity: 2
     },
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 14608,
-        description: 'ТУТ 16/8 Трубка термоусаживаемая черная',
+        description: 'Трубка термоусаживаемая ТУТ 16/8 черная',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5582,7 +5582,7 @@ const goods = [
     {
         folder: 'Бирки кабельные',
         code: 14907,
-        description: 'У-153 Бирка кабельная квадратная',
+        description: 'Бирка кабельная У-153 квадратная',
         price: 1.32,
         measure: 'шт',
         spec: false,
@@ -5591,7 +5591,7 @@ const goods = [
     {
         folder: 'Трансформаторы',
         code: 14940,
-        description: 'Т-0,66  20/5 кл. 0,5 5ВА Трансформатор тока   2011г.',
+        description: 'Трансформатор тока Т-0,66 20/5, класс точности 0,5, номинальная вторичная нагрузка 5 ВА',
         price: 0,
         measure: 'шт',
         spec: false,
@@ -5600,16 +5600,16 @@ const goods = [
     {
         folder: 'Трансформаторы',
         code: 14942,
-        description: 'Т-0,66  50/5 кл. 0,5 5ВА Трансформатор тока   2017г-7шт,2011г.-6шт.',
+        description: 'Трансформатор тока Т-0,66 50/5, класс точности 0,5, номинальная вторичная нагрузка 5 ВА',
         price: 485.7,
         measure: 'шт',
         spec: false,
-        quantity: 27
+        quantity: 21
     },
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 15301,
-        description: 'Шина 3ф гребёнка  63А',
+        description: 'Шина 3ф гребёнка 63А',
         price: 647.46,
         measure: 'м',
         spec: false,
@@ -5618,7 +5618,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 15319,
-        description: 'Шина N-PE  8 на DIN-рейку  (20шт.уп.)',
+        description: 'Шина N-PE 8 на DIN-рейку',
         price: 43.02,
         measure: 'шт',
         spec: false,
@@ -5627,7 +5627,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 15337,
-        description: 'DIN-рейка 140 см',
+        description: 'DIN-рейка L=140см',
         price: 85.92,
         measure: 'шт',
         spec: false,
@@ -5636,7 +5636,7 @@ const goods = [
     {
         folder: 'Коробки установочные (подрозетники)',
         code: 15456,
-        description: 'Канал соединительный для установочных коробок (код 4319)  (100шт./упак.)',
+        description: 'Канал соединительный для установочных коробок ',
         price: 1.38,
         measure: 'шт',
         spec: false,
@@ -5654,7 +5654,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 15509,
-        description: 'ЗНИ-2,5мм2 Зажим наборный (JXB25А) серый  (50шт.уп.)',
+        description: 'Зажим наборный ЗНИ-2,5мм2 (JXB25А) серый',
         price: 10.92,
         measure: 'шт',
         spec: false,
@@ -5663,20 +5663,20 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 15678,
-        description: 'ЩУ-3ф/1-1-6 Щит учета электроэнергии 445х400х150 2 двери IP66',
+        description: 'Щит учета электроэнергии ЩУ-3ф/1-1-6 445х400х150 2 двери IP66',
         price: 2201.22,
         measure: 'шт',
         spec: false,
-        quantity: 7
+        quantity: 0
     },
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 15717,
-        description: 'Шина "N" нулевая на DIN-рейку в корпусе 4х7 групп ТДМ',
+        description: 'Шина нулевая N на DIN-рейку в корпусе 4х7 групп ',
         price: 450.66,
         measure: 'шт',
         spec: false,
-        quantity: 13
+        quantity: 12
     },
     {
         folder: 'Знаки электробезопасности',
@@ -5690,7 +5690,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 15827,
-        description: 'ЩУ-1ф/1-1-6 Щит учета электроэнергии 310х300х150 2 двери IP66',
+        description: 'Щит учета электроэнергии ЩУ-1ф/1-1-6 310х300х150 2 двери IP66',
         price: 1533.96,
         measure: 'шт',
         spec: false,
@@ -5699,7 +5699,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 15834,
-        description: 'Шина "N" нулевая на DIN-рейку в корпусе 4х11 групп ТДМ',
+        description: 'Шина нулевая N на DIN-рейку в корпусе 4х11 групп ',
         price: 575.28,
         measure: 'шт',
         spec: false,
@@ -5708,16 +5708,16 @@ const goods = [
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 15856,
-        description: 'ВВГнг-LS 3х  1,5 Кабель   (бухта 200м.)',
+        description: 'Кабель ВВГнг-LS 3х1,5',
         price: 0,
         measure: 'м',
         spec: false,
-        quantity: 16727
+        quantity: 17227
     },
     {
         folder: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         code: 15857,
-        description: 'ВВГнг-LS 3х  2,5 Кабель   (бухта 200м.)',
+        description: 'Кабель ВВГнг-LS 3х2,5',
         price: 0,
         measure: 'м',
         spec: false,
@@ -5726,7 +5726,7 @@ const goods = [
     {
         folder: 'Трубы для электропроводки',
         code: 15859,
-        description: 'Труба 32 ПНД гофрированная с протяжкой (25м)',
+        description: 'Труба гофрированная с протяжкой ПНД d32мм (25м)',
         price: 19.2,
         measure: 'м',
         spec: false,
@@ -5735,7 +5735,7 @@ const goods = [
     {
         folder: 'Выключатели нагрузки (рубильники) и переключатели',
         code: 15976,
-        description: 'ВР32-37А70220-00 Рубильник УХЛ3 400А',
+        description: 'Рубильник ВР32-37А70220-00 УХЛ3 400А',
         price: 2276.16,
         measure: 'шт',
         spec: false,
@@ -5744,7 +5744,7 @@ const goods = [
     {
         folder: 'Промышленные разъемы',
         code: 16136,
-        description: '123 Розетка стационарная 2Р+PE 32А 220В IP44  (10шт./упак.)',
+        description: 'Розетка стационарная 123 2Р+PE 32А 220В IP44',
         price: 237.84,
         measure: 'шт',
         spec: false,
@@ -5753,7 +5753,7 @@ const goods = [
     {
         folder: 'Патроны',
         code: 16264,
-        description: 'G23 Патрон пластиковый   (250шт./упак.)',
+        description: 'Патрон G23 пластиковый',
         price: 39.24,
         measure: 'шт',
         spec: false,
@@ -5762,7 +5762,7 @@ const goods = [
     {
         folder: 'Клеммники из PRC',
         code: 16620,
-        description: '2273-244 Клеммник 4х(0,5-2,5) для распред. кор. ТДМ (130шт/уп.)',
+        description: '2273-244 Клеммник 4х(0,5-2,5) для распределительных коробок',
         price: 5.22,
         measure: 'шт',
         spec: false,
@@ -5771,7 +5771,7 @@ const goods = [
     {
         folder: 'Клеммники из PRC',
         code: 16621,
-        description: '2273-246 Клеммник 6х(0,5-2,5) С ПАСТОЙ для распред. кор. ТДМ (90шт/уп.)',
+        description: '2273-246 Клеммник 6х(0,5-2,5) для распределительных коробок',
         price: 7.8,
         measure: 'шт',
         spec: false,
@@ -5780,7 +5780,7 @@ const goods = [
     {
         folder: 'Клеммники из PRC',
         code: 16622,
-        description: '2273-232 Клеммник 2х(0,5-2,5) С ПАСТОЙ для распред. кор. ТДМ (250шт/уп.)',
+        description: '2273-232 Клеммник 2х(0,5-2,5) для распределительных коробок',
         price: 4.2,
         measure: 'шт',
         spec: false,
@@ -5789,7 +5789,7 @@ const goods = [
     {
         folder: 'Клеммники из PRC',
         code: 16623,
-        description: '2273-233 Клеммник 3х(0,5-2,5) С ПАСТОЙ для распред. кор. ТДМ (180шт/уп.)',
+        description: '2273-233 Клеммник 3х(0,5-2,5) для распределительных коробок',
         price: 5.46,
         measure: 'шт',
         spec: false,
@@ -5798,7 +5798,7 @@ const goods = [
     {
         folder: 'Клеммники из PRC',
         code: 16624,
-        description: '2273-235 Клеммник 5х(0,5-2,5) С ПАСТОЙ для распред. кор. ТДМ (100шт/уп.)',
+        description: '2273-235 Клеммник 5х(0,5-2,5) для распределительных коробок',
         price: 7.56,
         measure: 'шт',
         spec: false,
@@ -5807,7 +5807,7 @@ const goods = [
     {
         folder: 'Клеммники из PRC',
         code: 16625,
-        description: '2273-248 Клеммник 8х(0,5-2,5) С ПАСТОЙ для распред. кор. ТДМ (70шт/уп.)',
+        description: '2273-248 Клеммник 8х(0,5-2,5) для распределительных коробок',
         price: 9.54,
         measure: 'шт',
         spec: false,
@@ -5816,16 +5816,16 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 16629,
-        description: 'LED   9Вт T8 G13 4500K l=600mm (аналог ЛБ-20) (не включать с ЭПРА и ЭмПРА) (30шт/упак.)',
+        description: 'Лампа светодиодная 9Вт T8 G13 4500K',
         price: 83.76,
         measure: 'шт',
         spec: false,
-        quantity: 3823
+        quantity: 3809
     },
     {
         folder: 'Светодиодные лампы',
         code: 16630,
-        description: 'LED  18Вт T8 G13 4500K l=1200mm лампа (аналог ЛБ-40) (не включать с ЭПРА и ЭмПРА)  (25шт/упак.)',
+        description: 'Лампа светодиодная 18Вт T8 G13 4500K',
         price: 100.2,
         measure: 'шт',
         spec: false,
@@ -5834,7 +5834,7 @@ const goods = [
     {
         folder: 'Патроны',
         code: 16701,
-        description: 'Е14 Патрон пластиковый с кольцом белый  (50шт./упак.)',
+        description: 'Патрон E14 пластиковый с кольцом белый',
         price: 12.54,
         measure: 'шт',
         spec: false,
@@ -5843,7 +5843,7 @@ const goods = [
     {
         folder: 'Патроны',
         code: 16702,
-        description: 'Е27 Патрон подвесной пластиковый белый (50шт./упак.)',
+        description: 'Патрон Е27 подвесной пластиковый белый',
         price: 0,
         measure: 'шт',
         spec: false,
@@ -5852,7 +5852,7 @@ const goods = [
     {
         folder: 'Выключатели нагрузки (рубильники) и переключатели',
         code: 16774,
-        description: 'ВР32-35А70220-00 Рубильник 250А УХЛ3',
+        description: 'Рубильник ВР32-35А70220-00 250А УХЛ3',
         price: 1729.32,
         measure: 'шт',
         spec: false,
@@ -5861,16 +5861,16 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 16875,
-        description: 'ВА47-100 3п  C  50А 10кА Автоматический выключатель  (4шт./упак.)',
+        description: 'Автоматический выключатель модульный ВА47-100 3п C 50А 10кА',
         price: 1158.18,
         measure: 'шт',
         spec: false,
-        quantity: 23
+        quantity: 19
     },
     {
         folder: 'Управление освещением',
         code: 16883,
-        description: 'ФРЛ-01 Фотореле 10Лк 6А',
+        description: 'Фотореле ФРЛ-01 10Лк 6А',
         price: 138.48,
         measure: 'шт',
         spec: false,
@@ -5879,7 +5879,7 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 16972,
-        description: 'СПП 2301 Светильник светодиодный 12Вт  (40шт./упак.)(на складе есть медуза 10вт IP65 код 20 540)',
+        description: 'Светильник светодиодный СПП 2301 12Вт IP65',
         price: 166.74,
         measure: 'шт',
         spec: false,
@@ -5888,7 +5888,7 @@ const goods = [
     {
         folder: 'Клипсы для труб ПВХ и ПНД',
         code: 16999,
-        description: 'Клипса 20 д/трубы Черная   (50шт./уп)',
+        description: 'Клипса 20 для трубы черная',
         price: 1.62,
         measure: 'шт',
         spec: false,
@@ -5897,7 +5897,7 @@ const goods = [
     {
         folder: 'Клипсы для труб ПВХ и ПНД',
         code: 17000,
-        description: 'Клипса 25 д/трубы Черная   (50шт./уп)',
+        description: 'Клипса 25 для трубы черная',
         price: 2.52,
         measure: 'шт',
         spec: false,
@@ -5906,16 +5906,16 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 17005,
-        description: 'Шина 1ф гребёнка  63А',
+        description: 'Шина 1ф гребёнка 63А',
         price: 227.94,
         measure: 'шт',
         spec: false,
-        quantity: 23
+        quantity: 22
     },
     {
         folder: 'Наконечники медные луженые под опрессовку',
         code: 17044,
-        description: 'ТМЛ-  2,5-6-2,6 Наконечник мед.луж.опрес.',
+        description: 'Наконечник кабельный ТМЛ-2,5-6-2,6 медный луженый под опрессовку',
         price: 5.46,
         measure: 'шт',
         spec: false,
@@ -5924,7 +5924,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 17048,
-        description: 'КМПн 1/2 Бокс для нар.установки с крышкой',
+        description: 'Бокс для наружной установки КМПн 1/2 с крышкой',
         price: 115.68,
         measure: 'шт',
         spec: false,
@@ -5933,7 +5933,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 17050,
-        description: 'КМПн 2/4 Бокс для нар.установки с крышкой',
+        description: 'Бокс для наружной установки КМПн 2/4 с крышкой',
         price: 144.78,
         measure: 'шт',
         spec: false,
@@ -5942,7 +5942,7 @@ const goods = [
     {
         folder: 'Провода СИП и арматура к ним',
         code: 17062,
-        description: 'ЗГОП 16- 95/2,5-35 Зажим герметичный ответвительный прокалывающий   (8шт./упак.)',
+        description: 'Зажим герметичный ответвительный прокалывающий ЗГОП 16-95/2,5-35',
         price: 115.02,
         measure: 'шт',
         spec: false,
@@ -5951,16 +5951,16 @@ const goods = [
     {
         folder: 'Патроны',
         code: 17066,
-        description: 'Е27 Патрон потолочный карболитовый прямой   (50шт./упак.)',
+        description: 'Патрон Е27 потолочный карболитовый прямой',
         price: 22.98,
         measure: 'шт',
         spec: false,
-        quantity: 173
+        quantity: 172
     },
     {
         folder: 'Шкафы пустые',
         code: 17093,
-        description: 'ЩРН-П-12 Бокс, пластик IP40 сосна',
+        description: 'Бокс ЩРН-П-12 модулей пластик IP40 сосна',
         price: 0,
         measure: 'шт',
         spec: false,
@@ -5969,7 +5969,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 17095,
-        description: 'ЩРН-П-24 Бокс, пластик IP40 сосна',
+        description: 'Бокс ЩРН-П-24 модуля пластик IP40 сосна',
         price: 1296.84,
         measure: 'шт',
         spec: false,
@@ -5987,7 +5987,7 @@ const goods = [
     {
         folder: 'Промышленные разъемы',
         code: 17171,
-        description: 'РШ-ВШ 32А (3 штырьк.) 220В о/у белый',
+        description: 'Соединительный элемент РШ-ВШ 32А 3-штырьковый 220В открытой установки белый',
         price: 118.74,
         measure: 'шт',
         spec: false,
@@ -5996,7 +5996,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 17229,
-        description: 'Вилка евро боковая с ушком черная   (35шт./упак.)',
+        description: 'Вилка евро боковая с ушком черная',
         price: 36.36,
         measure: 'шт',
         spec: false,
@@ -6005,7 +6005,7 @@ const goods = [
     {
         folder: 'Патроны',
         code: 17261,
-        description: 'Е27 Патрон карболитовый с кольцом   (50шт./упак.)',
+        description: 'Патрон E27 карболитовый с кольцом',
         price: 0,
         measure: 'шт',
         spec: false,
@@ -6014,7 +6014,7 @@ const goods = [
     {
         folder: 'Провода СИП и арматура к ним',
         code: 17271,
-        description: 'ЗАБ 16-25 М Зажим анкерный',
+        description: 'Зажим анкерный ЗАБ 16-25 М',
         price: 59.04,
         measure: 'шт',
         spec: false,
@@ -6023,7 +6023,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 17288,
-        description: 'Шина N-PE 12 на DIN-рейку  (20шт.уп.)',
+        description: 'Шина N-PE 12 на DIN-рейку',
         price: 54.36,
         measure: 'шт',
         spec: false,
@@ -6032,7 +6032,7 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 17292,
-        description: 'СПП 2101 Светильник светодиодный 8Вт  (40шт./упак.)  ',
+        description: 'Светильник светодиодный СПП 2101 8Вт IP65',
         price: 145.38,
         measure: 'шт',
         spec: false,
@@ -6041,7 +6041,7 @@ const goods = [
     {
         folder: 'Провода СИП и арматура к ним',
         code: 17307,
-        description: 'ЗАК 50-70/1500 Зажим анкерный клиновой',
+        description: 'Зажим анкерный клиновой ЗАК 50-70/1500',
         price: 272.7,
         measure: 'шт',
         spec: false,
@@ -6050,16 +6050,16 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 17329,
-        description: 'ЩУ-3ф/1-0-3 Щит учета электроэнергии 310х300х150 1 дверь IP66',
+        description: 'Щит учета электроэнергии ЩУ-3ф/1-0-3 310х300х150 1 дверь IP66',
         price: 1837.98,
         measure: 'шт',
         spec: false,
-        quantity: 1
+        quantity: 0
     },
     {
         folder: 'Розетки и вилки',
         code: 17534,
-        description: 'Колодка 3я с/з   (40шт./упак.)',
+        description: 'Колодка удлинителя 3-м с заземлением',
         price: 81.18,
         measure: 'шт',
         spec: false,
@@ -6068,7 +6068,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 17557,
-        description: 'DIN-рейка   7,5 cм',
+        description: 'DIN-рейка L=7,5см',
         price: 6.48,
         measure: 'шт',
         spec: false,
@@ -6077,7 +6077,7 @@ const goods = [
     {
         folder: 'Провода СИП и арматура к ним',
         code: 17622,
-        description: 'СУ-20 Скрепа-бугель усиленная (100шт/уп)',
+        description: 'Скрепа-бугель усиленная СУ-20 (100 шт./уп.)',
         price: 1101,
         measure: 'упак',
         spec: false,
@@ -6086,7 +6086,7 @@ const goods = [
     {
         folder: 'Наконечники алюминиевые под опрессовку',
         code: 17629,
-        description: 'ТА 70-10-12 Наконечник алюмин. опрес.',
+        description: 'Наконечник кабельный ТА 70-10-12 алюминиевый под опрессовку ',
         price: 17.76,
         measure: 'шт',
         spec: false,
@@ -6095,7 +6095,7 @@ const goods = [
     {
         folder: 'Клеммники WAGO',
         code: 17636,
-        description: '2273-202 Клеммник 2х(0,5-2,5) для распред. кор. (100шт/уп.)',
+        description: '2273-202 WAGO Клеммник 2х(0,5-2,5) для распределительных коробок',
         price: 6.6,
         measure: 'шт',
         spec: false,
@@ -6104,7 +6104,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 17798,
-        description: 'Вилка евро боковая с ушком   (35шт./упак.)',
+        description: 'Вилка евро боковая с ушком',
         price: 36.36,
         measure: 'шт',
         spec: false,
@@ -6113,7 +6113,7 @@ const goods = [
     {
         folder: 'Контакторы',
         code: 17857,
-        description: 'КМН-22510 Контактор 25А 400В/АС3 1НО ТДМ',
+        description: 'Контактор КМН-22510 25А 400В/АС3 1НО ТДМ',
         price: 518.4,
         measure: 'шт',
         spec: false,
@@ -6122,16 +6122,16 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 17864,
-        description: 'LED  12Вт Е27 3000К Лампа светодиодная А60  (100шт/кор.)',
+        description: 'Лампа светодиодная 12Вт Е27 3000К',
         price: 63.36,
         measure: 'шт',
         spec: false,
-        quantity: 320
+        quantity: 319
     },
     {
         folder: 'Клипсы для труб ПВХ и ПНД',
         code: 18110,
-        description: 'Угол 20 соединительный 90гр. ПВХ',
+        description: 'Угол 20 соединительный 90 градусов ПВХ ',
         price: 7.98,
         measure: 'шт',
         spec: false,
@@ -6140,7 +6140,7 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 18319,
-        description: 'LED  12Вт Е27 4000К Лампа светодиодная A60   (100шт./кор.)',
+        description: 'Лампа светодиодная 12Вт Е27 4000К',
         price: 63.36,
         measure: 'шт',
         spec: false,
@@ -6149,7 +6149,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 18387,
-        description: 'Колодка 4я с/з   (24шт./упак.)',
+        description: 'Колодка удлинителя 4-м с заземлением',
         price: 113.94,
         measure: 'шт',
         spec: false,
@@ -6158,7 +6158,7 @@ const goods = [
     {
         folder: 'Розетки и вилки',
         code: 18388,
-        description: 'Колодка 2я с/з   (50шт./упак.)',
+        description: 'Колодка удлинителя 2-м с заземлением',
         price: 70.56,
         measure: 'шт',
         spec: false,
@@ -6167,7 +6167,7 @@ const goods = [
     {
         folder: 'Провода СИП и арматура к ним',
         code: 18525,
-        description: 'ЗГОП 16- 95/1,5-10 Зажим герметичный ответвительный прокалывающий   (20шт./упак.)',
+        description: 'Зажим герметичный ответвительный прокалывающий ЗГОП 16-95/1,5-10',
         price: 78.18,
         measure: 'шт',
         spec: false,
@@ -6176,16 +6176,16 @@ const goods = [
     {
         folder: 'Провод ПВС',
         code: 18627,
-        description: 'ПВС 3х  1,5   (100м.) ГОСТ (для удлинителей)',
+        description: 'Провод ПВС 3х1,5',
         price: 0,
         measure: 'м',
         spec: false,
-        quantity: 740
+        quantity: 1740
     },
     {
         folder: 'Провод ПВС',
         code: 18628,
-        description: 'ПВС 3х  2,5   (100м.) ГОСТ (для удлинителей)',
+        description: 'Провод ПВС 3х2,5',
         price: 0,
         measure: 'м',
         spec: false,
@@ -6194,7 +6194,7 @@ const goods = [
     {
         folder: 'Выключатели нагрузки (рубильники) и переключатели',
         code: 18664,
-        description: 'ВН-32 2P  25A Выключатель нагрузки ТДМ   (6шт./упак.)',
+        description: 'Выключатель нагрузки ВН-32 2P 25A',
         price: 173.58,
         measure: 'шт',
         spec: false,
@@ -6203,16 +6203,16 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 18665,
-        description: 'LED   5Вт Е14 4000К Лампа светодиодная свеча   (100шт/кор.)',
+        description: 'Лампа светодиодная 5Вт Е14 свеча 4000К',
         price: 53.52,
         measure: 'шт',
         spec: false,
-        quantity: 95
+        quantity: 92
     },
     {
         folder: 'Трубка термоусаживаемая ТУТ',
         code: 18683,
-        description: 'ТУТ  4/2 Трубка термоусаживаемая синяя',
+        description: 'Трубка термоусаживаемая ТУТ 4/2 синяя',
         price: 0,
         measure: 'м',
         spec: false,
@@ -6221,7 +6221,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 18691,
-        description: 'Шина нулевая  8/1 6х9мм',
+        description: 'Шина нулевая 8/1 6х9мм',
         price: 34.26,
         measure: 'шт',
         spec: false,
@@ -6230,7 +6230,7 @@ const goods = [
     {
         folder: 'Шкафы пустые',
         code: 18743,
-        description: 'ЩРН-36з Корпус щита навесной металлический IP31',
+        description: 'Корпус щита навесной металлический ЩРН-36з IP31',
         price: 1170.06,
         measure: 'шт',
         spec: false,
@@ -6248,16 +6248,16 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 18915,
-        description: 'LED 36Вт Светильник (аналог ЛСП 2х36 широкий) IP65   (12шт./упак.)',
+        description: 'Светильник светодиодный 36 Вт 1200 мм IP65',
         price: 920.7,
         measure: 'шт',
         spec: false,
-        quantity: 5
+        quantity: 6
     },
     {
         folder: 'Светильники светодиодные',
         code: 18916,
-        description: 'LED 36Вт светильник (аналог ЛСП 2х36 узкий) IP65  (30шт./упак.)',
+        description: 'Светильник светодиодный 36 Вт 1200 мм IP65',
         price: 549.84,
         measure: 'шт',
         spec: false,
@@ -6266,7 +6266,7 @@ const goods = [
     {
         folder: 'Удлинители',
         code: 18988,
-        description: 'Удлинитель 4х30м на кат. т/защ. ПВС3х2,5 IP44',
+        description: 'Удлинитель 4х30м ПВС3х2,5 на пластиковой катушке т/защ. IP44',
         price: 2906.25,
         measure: 'шт',
         spec: false,
@@ -6275,7 +6275,7 @@ const goods = [
     {
         folder: 'Удлинители',
         code: 19252,
-        description: 'Удлинитель 4х30м на кат. т/защ. ПВС3х1,5 IP44',
+        description: 'Удлинитель 4х30м ПВС 3х1,5 на пластиковой катушке т/защ. IP44',
         price: 2199.35,
         measure: 'шт',
         spec: false,
@@ -6284,7 +6284,7 @@ const goods = [
     {
         folder: 'Удлинители',
         code: 19253,
-        description: 'Удлинитель 4х50м на кат. т/защ. ПВС3х1,5 IP44',
+        description: 'Удлинитель 4х50м ПВС3х1,5 на пластиковой катушке т/защ. IP44',
         price: 3029.06,
         measure: 'шт',
         spec: false,
@@ -6293,7 +6293,7 @@ const goods = [
     {
         folder: 'Удлинители',
         code: 19254,
-        description: 'Удлинитель 4х50м на кат. т/защ. ПВС3х2,5 IP44',
+        description: 'Удлинитель 4х50м ПВС3х2,5 на пластиковой катушке т/защ. IP44',
         price: 3866.4,
         measure: 'шт',
         spec: false,
@@ -6302,7 +6302,7 @@ const goods = [
     {
         folder: 'Расходные материалы',
         code: 19456,
-        description: 'СИЗ-2 Соед. изолир. зажим (от 2,5 до 4,5 кв. мм) синий уп. 100 шт.',
+        description: 'Соединительный изолирующий зажим СИЗ-2 (от 2,5 до 4,5 кв. мм) синий уп. 100 шт.',
         price: 96.18,
         measure: 'упак',
         spec: false,
@@ -6311,7 +6311,7 @@ const goods = [
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 19498,
-        description: 'Шина N-PE  6 на DIN-рейку   (20шт.уп.)',
+        description: 'Шина N-PE 6 на DIN-рейку',
         price: 37.44,
         measure: 'шт',
         spec: false,
@@ -6320,7 +6320,7 @@ const goods = [
     {
         folder: 'Провода СИП и арматура к ним',
         code: 19548,
-        description: 'ЗГОП 25-150/25-95 Зажим герметичный ответвительный прокалывающий',
+        description: 'Зажим герметичный ответвительный прокалывающий ЗГОП 25-150/25-95',
         price: 140.34,
         measure: 'шт',
         spec: false,
@@ -6329,16 +6329,16 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 19605,
-        description: 'LED   7Вт Е14 2700К Лампа светодиодная свеча  (100шт/кор.)',
+        description: 'Лампа светодиодная 7Вт E14 свеча 2700К',
         price: 44.34,
         measure: 'шт',
         spec: false,
-        quantity: 545
+        quantity: 548
     },
     {
         folder: 'Светодиодные лампы',
         code: 19606,
-        description: 'LED  11Вт Е27 4000К Лампа светодиодная A60  (100шт/кор.)',
+        description: 'Лампа светодиодная 11Вт E27 A60 4000К',
         price: 60.18,
         measure: 'шт',
         spec: false,
@@ -6347,7 +6347,7 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 19792,
-        description: 'ДПБ 01-2х6-001 Светильник 12Вт светодиодный Led',
+        description: 'Светильник ДПБ 12Вт светодиодный Led',
         price: 465,
         measure: 'шт',
         spec: false,
@@ -6356,7 +6356,7 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 19903,
-        description: 'LED   9Вт Е27 2700К Лампа светодиодная A60   (100шт./кор.)',
+        description: 'Лампа светодиодная 9Вт Е27 A60 2700К',
         price: 57.84,
         measure: 'шт',
         spec: false,
@@ -6365,7 +6365,7 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 19948,
-        description: 'LED   7Вт Е27 2700К Лампа светодиодная A60  (100шт/кор.)',
+        description: 'Лампа светодиодная 7Вт Е27 2700К',
         price: 54.84,
         measure: 'шт',
         spec: false,
@@ -6374,7 +6374,7 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 19950,
-        description: 'LED   8Вт Е27 2700K Лампа светодиодная G45F (шар)',
+        description: 'Лампа светодиодная 8Вт E27 G45F (шар) 2700K',
         price: 56.2,
         measure: 'шт',
         spec: false,
@@ -6383,7 +6383,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 19956,
-        description: 'ВА 4729 3P (ВА 47-60 3Р) 32А (С) 6кА',
+        description: 'Автоматический выключатель ВА 4729 3P 32А (С) 6кА',
         price: 256.62,
         measure: 'шт',
         spec: false,
@@ -6392,7 +6392,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 19957,
-        description: 'ВА 4729 1Р (ВА 47-60 1P) 32А (C) 6кА',
+        description: 'Автоматический выключатель ВА 4729 1P 32А (C) 6кА',
         price: 83.76,
         measure: 'шт',
         spec: false,
@@ -6401,7 +6401,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 20111,
-        description: 'ВА 4729 3P (ВА 47-60 3Р) 50А (С) 6кА',
+        description: 'Автоматический выключатель ВА 4729 3P 50А (С) 6кА',
         price: 348.9,
         measure: 'шт',
         spec: false,
@@ -6410,16 +6410,16 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 20156,
-        description: 'СПО 120х2 Светильник под LED лампу T8 ТДМ (!!! на складе по факту код 23849)   (10шт./упак.)',
+        description: 'Светильник СПО 120х2 под LED лампу T8 ',
         price: 0,
         measure: 'шт',
         spec: false,
-        quantity: 11
+        quantity: 21
     },
     {
         folder: 'Светильники светодиодные',
         code: 20157,
-        description: 'СПО 120х1 Светильник под LED лампу T8 ТДМ  (4шт./упак.)',
+        description: 'Светильник СПО 120х1 под LED лампу T8 ТДМ',
         price: 339.48,
         measure: 'шт',
         spec: false,
@@ -6428,25 +6428,25 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 20158,
-        description: 'СПО  60х2 Светильник под LED лампу T8 ТДМ    (4шт./упак.)',
+        description: 'Светильник СПО 60х2 под LED лампу T8 ТДМ',
         price: 0,
         measure: 'шт',
         spec: false,
-        quantity: 77
+        quantity: 7
     },
     {
         folder: 'Хомуты нейлоновые',
         code: 20231,
-        description: 'Хомут  200х2,5 нейл. черн. (100 шт.)',
+        description: 'Хомут нейлоновый черный 200х2,5 (100 шт.)',
         price: 55.98,
         measure: 'упак',
         spec: false,
-        quantity: 104
+        quantity: 99
     },
     {
         folder: 'Провода СИП и арматура к ним',
         code: 20263,
-        description: 'КАМ-1500 Кронштейн анкерный  (8шт./упак.)',
+        description: 'Кронштейн анкерный КАМ-1500',
         price: 171.84,
         measure: 'шт',
         spec: false,
@@ -6464,7 +6464,7 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 20459,
-        description: 'LED 18Вт Светильник (аналог ЛСП 2х18 узкий) IP65   (10шт.кор.)',
+        description: 'Светильник светодиодный 18 Вт 600 мм IP65',
         price: 351.96,
         measure: 'шт',
         spec: false,
@@ -6473,7 +6473,7 @@ const goods = [
     {
         folder: 'Контакторы',
         code: 20537,
-        description: 'КМН-34012 Контактор 40А 400В/АС3 1НО 1НЗ ТДМ',
+        description: 'Контактор КМН-34012 40А 400В/АС3 1НО 1НЗ ТДМ',
         price: 1201.32,
         measure: 'шт',
         spec: false,
@@ -6482,7 +6482,7 @@ const goods = [
     {
         folder: 'Гильзы медные луженые',
         code: 20638,
-        description: 'ГМЛ   4-3 Гильза медная луженая',
+        description: 'Гильза медная ГМЛ 4-3 луженая',
         price: 6.96,
         measure: 'шт',
         spec: false,
@@ -6491,7 +6491,7 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 20682,
-        description: 'LED   7Вт Е14 2700К Лампа светодиодная шар',
+        description: 'Лампа светодиодная 7Вт Е14 шар 2700К',
         price: 43.86,
         measure: 'шт',
         spec: false,
@@ -6500,7 +6500,7 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 20685,
-        description: 'LED   9Вт Е27 4500К Лампа светодиодная А60',
+        description: 'Лампа светодиодная 9Вт Е27 А60 4500К',
         price: 57.84,
         measure: 'шт',
         spec: false,
@@ -6509,7 +6509,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 20755,
-        description: 'ВА 4729 1P (ВА 47-60 1Р) 10А (С) 6кА',
+        description: 'Автоматический выключатель ВА 4729 1P 10А (С) 6кА',
         price: 87.12,
         measure: 'шт',
         spec: false,
@@ -6518,7 +6518,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 20756,
-        description: 'ВА 4729 1P (ВА 47-60 1Р) 16А (С) 6кА',
+        description: 'Автоматический выключатель ВА 4729 1P 16А (С) 6кА',
         price: 78.54,
         measure: 'шт',
         spec: false,
@@ -6527,7 +6527,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 20758,
-        description: 'ВА 4729 3P (ВА 47-60 3Р) 16А (С) 6кА',
+        description: 'Автоматический выключатель ВА 4729 3P 16А (С) 6кА',
         price: 256.62,
         measure: 'шт',
         spec: false,
@@ -6536,7 +6536,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 20759,
-        description: 'ВА 4729 3P (ВА 47-60 3Р) 40А (С) 6кА',
+        description: 'Автоматический выключатель ВА 4729 3P 40А (С) 6кА',
         price: 256.62,
         measure: 'шт',
         spec: false,
@@ -6554,16 +6554,16 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 20904,
-        description: 'LED 36Вт Светильник (аналог ЛПО 2х36 узкий) IP40  (30шт./упак.)',
+        description: 'Светильник светодиодный 36 Вт 1200 мм IP40',
         price: 331.5,
         measure: 'шт',
         spec: false,
-        quantity: 5972
+        quantity: 5956
     },
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 21182,
-        description: 'ВА 4729 1P (ВА 47-60 1Р) 25А (С) 6кА',
+        description: 'Автоматический выключатель ВА 4729 1P 25А (С) 6кА',
         price: 83.76,
         measure: 'шт',
         spec: false,
@@ -6572,7 +6572,7 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 21189,
-        description: 'СПО  60х1 Светильник под LED лампу T8 ТДМ',
+        description: 'Светильник СПО 60х1 под LED лампу T8 ТДМ',
         price: 305.04,
         measure: 'шт',
         spec: false,
@@ -6581,7 +6581,7 @@ const goods = [
     {
         folder: 'Провода СИП и арматура к ним',
         code: 21241,
-        description: 'ЛМ-50 Лента бандажная   (3шт./в кор.)',
+        description: 'Лента бандажная ЛМ-50',
         price: 1874.28,
         measure: 'упак',
         spec: false,
@@ -6590,7 +6590,7 @@ const goods = [
     {
         folder: 'Прожектора светодиодные',
         code: 21280,
-        description: 'Прожектор светодиодный 100W   (10шт/кор.)',
+        description: 'Прожектор светодиодный 100W',
         price: 975,
         measure: 'шт',
         spec: false,
@@ -6599,7 +6599,7 @@ const goods = [
     {
         folder: 'Приборы учета электроэнергии',
         code: 21363,
-        description: '230ART-03 RN Счетчик эл.энергии Меркурий 3ф 2т 5-50А',
+        description: 'Счетчик эл.энергии Меркурий 230ART-03 RN 3ф 2т 5-50А  ',
         price: 5071.38,
         measure: 'шт',
         spec: false,
@@ -6608,7 +6608,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 21414,
-        description: 'ВА 4729 2Р (ВА 47-60 2Р) 32А (С) 6кА',
+        description: 'Автоматический выключатель ВА 4729 2Р 32А 6кА',
         price: 164.76,
         measure: 'шт',
         spec: false,
@@ -6617,7 +6617,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 21415,
-        description: 'ВА 4729 1P (ВА 47-60 1Р) 40А (С) 6кА',
+        description: 'Автоматический выключатель ВА 4729 1P 40А (С) 6кА',
         price: 86.58,
         measure: 'шт',
         spec: false,
@@ -6626,7 +6626,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 21416,
-        description: 'ВА 4729 2Р (ВА 47-60 2Р) 40А (С) 6кА',
+        description: 'Автоматический выключатель ВА 4729 2P 40А (С) 6кА',
         price: 164.76,
         measure: 'шт',
         spec: false,
@@ -6635,7 +6635,7 @@ const goods = [
     {
         folder: 'Провода ПУНП, ПУгНП и ШВВП',
         code: 21431,
-        description: 'ШВВП 3х  0,75    (200м./бухта)',
+        description: 'Провод ШВВП 3х0,75',
         price: 14.28,
         measure: 'м',
         spec: false,
@@ -6644,7 +6644,7 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 21505,
-        description: 'LED  18Вт T8 G13 6500K l=1200mm лампа (аналог ЛД-40) (не включать с ЭПРА и ЭмПРА)  (25шт/упак.)',
+        description: 'Лампа светодиодная 18Вт T8 G13 6500K',
         price: 100.2,
         measure: 'шт',
         spec: false,
@@ -6653,7 +6653,7 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 21529,
-        description: 'LED   8Вт Е27 4500K Лампа светодиодная G45F (шар)',
+        description: 'Лампа светодиодная 8Вт E27 G45F (шар) 4500K',
         price: 56.2,
         measure: 'шт',
         spec: false,
@@ -6662,7 +6662,7 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 21608,
-        description: 'LED  30Вт E27 6500К Лампа светодиодная высокомощная ',
+        description: 'Лампа светодиодная высокомощная 30Вт E27 6500К',
         price: 208.02,
         measure: 'шт',
         spec: false,
@@ -6671,7 +6671,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 21909,
-        description: 'ВА 4729 3P (ВА 47-60 3Р) 25А (С) 6кА',
+        description: 'Автоматический выключатель ВА 4729 3P 25А (С) 6кА',
         price: 256.62,
         measure: 'шт',
         spec: false,
@@ -6680,16 +6680,16 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 21991,
-        description: 'LED  40Вт Лампа светодиодная 6400К Е27',
+        description: 'Светодиодная лампа 40 Вт 6400 К Е27',
         price: 325.02,
         measure: 'шт',
         spec: false,
-        quantity: 47
+        quantity: 45
     },
     {
         folder: 'Аксессуары для шкафов и щитов',
         code: 22480,
-        description: 'DIN-рейка 100см усиленная алюминиевая 1,5мм ТДМ',
+        description: 'DIN-рейка L=100см усиленная алюминиевая 1,5мм ТДМ',
         price: 152.1,
         measure: 'шт',
         spec: false,
@@ -6698,16 +6698,16 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 22599,
-        description: 'LED   9Вт T8 G13 6500K l=600mm (аналог ЛД-20) (не включать с ЭПРА и ЭмПРА)  (25шт/упак.)',
+        description: 'Лампа светодиодная 10Вт T8 G13 6500K',
         price: 83.76,
         measure: 'шт',
         spec: false,
-        quantity: 3683
+        quantity: 3689
     },
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 22625,
-        description: 'ВА 4729 3P (ВА 47-60 3Р) 63А (C) 6кА',
+        description: 'Автоматический выключатель ВА 4729 3P 63А (C) 6кА',
         price: 279,
         measure: 'шт',
         spec: false,
@@ -6716,16 +6716,16 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 22791,
-        description: 'LED  20Вт Е27 4500K A60 Лампа светодиодная',
+        description: 'Лампа светодиодная 20Вт Е27 4500K A60',
         price: 105.3,
         measure: 'шт',
         spec: false,
-        quantity: 815
+        quantity: 811
     },
     {
         folder: 'Светодиодные лампы',
         code: 22976,
-        description: 'LED   5Вт Е27 4000К Лампа светодиодная A60',
+        description: 'Лампа светодиодная 5Вт Е27 A60 4000К',
         price: 53.52,
         measure: 'шт',
         spec: false,
@@ -6734,7 +6734,7 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 22979,
-        description: 'LED  10Вт E27 3000К Лампа светодиодная A60',
+        description: 'Лампа светодиодная 10Вт E27 А60 3000К',
         price: 58.5,
         measure: 'шт',
         spec: false,
@@ -6752,16 +6752,16 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 23128,
-        description: 'LED 36Вт Светильник 595х595 6500К   (2шт.уп./4шт.упак.)',
+        description: 'Светильник светодиодный 595х595 6500К',
         price: 526.08,
         measure: 'шт',
         spec: false,
-        quantity: 198
+        quantity: 187
     },
     {
         folder: 'Хомуты нейлоновые',
         code: 23331,
-        description: 'Хомут  150х2,5 нейл. черн. (100шт.)',
+        description: 'Хомут нейлоновый черный 150х2,5 (100шт.)',
         price: 41.76,
         measure: 'упак',
         spec: false,
@@ -6770,7 +6770,7 @@ const goods = [
     {
         folder: 'Светодиодные лампы',
         code: 23562,
-        description: 'LED  15Вт Е27 4000К Лампа светодиодная A60',
+        description: 'Лампа светодиодная 15Вт Е27 4000К',
         price: 80.7,
         measure: 'шт',
         spec: false,
@@ -6779,16 +6779,16 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 23849,
-        description: 'СПО 120х2 Светильник под LED лампу T8 (поликарбонат) ТДМ',
+        description: 'Светильник СПО 120х2 под LED лампу T8 (поликарбонат) ТДМ',
         price: 378,
         measure: 'шт',
         spec: false,
-        quantity: 61
+        quantity: 51
     },
     {
         folder: 'Автоматические выключатели на DIN-рейку',
         code: 24180,
-        description: 'ВА 4729 2Р (ВА 47-60 2Р) 25А (С) 6кА',
+        description: 'Автоматический выключатель ВА 4729 2P 25А (С) 6кА',
         price: 164.76,
         measure: 'шт',
         spec: false,
@@ -6797,7 +6797,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на монтажную панель',
         code: 24265,
-        description: 'ВА87-33 3п  80А 18кА Автоматический выключатель',
+        description: 'Автоматический выключатель ВА87-33 3п 80А 18кА',
         price: 1683.48,
         measure: 'шт',
         spec: false,
@@ -6806,7 +6806,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на монтажную панель',
         code: 24483,
-        description: 'ВА87-35 3п 250А 25кА Автоматический выключатель  (8шт./упак.)',
+        description: 'Автоматический выключатель ВА87-35 3п 250А 25кА ',
         price: 2620.86,
         measure: 'шт',
         spec: false,
@@ -6815,7 +6815,7 @@ const goods = [
     {
         folder: 'Автоматические выключатели на монтажную панель',
         code: 24562,
-        description: 'ВА87-33 3п 100А 18кА Автоматический выключатель',
+        description: 'Автоматический выключатель ВА87-33 3п 100А 18кА',
         price: 1667.46,
         measure: 'шт',
         spec: false,
@@ -6824,16 +6824,16 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 24747,
-        description: 'СПО  60х2 Светильник под LED лампу T8 (поликарбонат) ТДМ',
+        description: 'Светильник СПО 60х2 под LED лампу T8 (поликарбонат) ТДМ',
         price: 334.44,
         measure: 'шт',
         spec: false,
-        quantity: 6
+        quantity: 80
     },
     {
         folder: 'Автоматические выключатели на монтажную панель',
         code: 24986,
-        description: 'ВА87-35 3п 200А 25кА Автоматический выключатель',
+        description: 'Автоматический выключатель ВА87-35 3п 200А 25кА',
         price: 2620.86,
         measure: 'шт',
         spec: false,
@@ -6842,25 +6842,25 @@ const goods = [
     {
         folder: 'Автоматические выключатели на монтажную панель',
         code: 25061,
-        description: 'ВА87-33 3п 160А 18кА Автоматический выключатель',
+        description: 'Автоматический выключатель ВА87-33 3п 160А 18кА',
         price: 1750.44,
         measure: 'шт',
         spec: false,
-        quantity: 23
+        quantity: 22
     },
     {
         folder: 'Хомуты нейлоновые',
         code: 25457,
-        description: 'Площадка 20х20 самоклеющаяся под хомут белая (100шт)',
+        description: 'Площадка 20х20 самоклеющаяся под хомут белая',
         price: 115.98,
         measure: 'упак',
         spec: false,
-        quantity: 47
+        quantity: 36
     },
     {
         folder: 'Автоматические выключатели на монтажную панель',
         code: 25650,
-        description: 'ВА87-33 3п 125А 18кА Автоматический выключатель',
+        description: 'Автоматический выключатель ВА87-33 3п 125А 18кА',
         price: 1683.48,
         measure: 'шт',
         spec: false,
@@ -6869,16 +6869,16 @@ const goods = [
     {
         folder: 'Светильники светодиодные',
         code: 25866,
-        description: 'ДКУ29-40-501 Светильник светодиодный уличный 40 Вт',
+        description: 'Светильник светодиодный уличный ДКУ29-40-501 40 Вт',
         price: 2376.9,
         measure: 'шт',
         spec: false,
-        quantity: 1
+        quantity: 0
     },
     {
         folder: 'Светильники светодиодные',
         code: 25867,
-        description: 'ДКУ29-80-501 Светильник светодиодный уличный 80 Вт',
+        description: 'Светильник светодиодный уличный ДКУ29-80-501 80 Вт',
         price: 4255.08,
         measure: 'шт',
         spec: false,
@@ -6890,7 +6890,7 @@ const goods = [
         description: 'СКЛАД',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -6899,7 +6899,7 @@ const goods = [
         description: 'Лампы накаливания',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -6908,7 +6908,7 @@ const goods = [
         description: 'Компактные люминесцентные лампы',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -6917,7 +6917,7 @@ const goods = [
         description: 'Линейные люминесцентные лампы',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -6926,7 +6926,7 @@ const goods = [
         description: 'Светодиодные лампы',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -6935,7 +6935,7 @@ const goods = [
         description: 'Лампы галогеновые',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -6944,7 +6944,7 @@ const goods = [
         description: 'Лампы газоразрядные',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -6953,7 +6953,7 @@ const goods = [
         description: 'Пускорегулирующая аппаратура для люминесцентных ламп',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -6962,7 +6962,7 @@ const goods = [
         description: 'Управление освещением',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -6971,7 +6971,7 @@ const goods = [
         description: 'Патроны',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -6980,7 +6980,7 @@ const goods = [
         description: 'Светильники люминесцентные',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -6989,7 +6989,7 @@ const goods = [
         description: 'Светильники подвесные',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -6998,7 +6998,7 @@ const goods = [
         description: 'Светильники настенно-потолочные',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7007,7 +7007,7 @@ const goods = [
         description: 'Светильники светодиодные',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7016,7 +7016,7 @@ const goods = [
         description: 'Прожектора светодиодные',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7025,7 +7025,7 @@ const goods = [
         description: 'Светодиодные фонари и аварийные указатели',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7034,7 +7034,7 @@ const goods = [
         description: 'Элементы питания и аккумуляторы',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7043,7 +7043,7 @@ const goods = [
         description: 'Коробки установочные (подрозетники)',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7052,7 +7052,7 @@ const goods = [
         description: 'Розетки и вилки',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7061,7 +7061,7 @@ const goods = [
         description: 'Удлинители',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7070,7 +7070,7 @@ const goods = [
         description: 'Выключатели',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7079,7 +7079,7 @@ const goods = [
         description: 'Электроустановочные изделия из каучука',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7088,7 +7088,7 @@ const goods = [
         description: 'Промышленные разъемы',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7097,7 +7097,7 @@ const goods = [
         description: 'Провода и кабели с алюминиевой жилой',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7106,7 +7106,7 @@ const goods = [
         description: 'Кабели ВВГнг, ВВГнг-LS и -FRLS',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7115,7 +7115,7 @@ const goods = [
         description: 'Кабель КГ',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7124,7 +7124,7 @@ const goods = [
         description: 'Кабель NYM',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7133,7 +7133,7 @@ const goods = [
         description: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7142,7 +7142,7 @@ const goods = [
         description: 'Провод ПВС',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7151,7 +7151,7 @@ const goods = [
         description: 'Провода ПУНП, ПУгНП и ШВВП',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7160,7 +7160,7 @@ const goods = [
         description: 'Провода и кабели связи',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7169,7 +7169,7 @@ const goods = [
         description: 'Трубы для электропроводки',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7178,7 +7178,7 @@ const goods = [
         description: 'Клипсы для труб ПВХ и ПНД',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7187,7 +7187,7 @@ const goods = [
         description: 'Кабельные каналы (короба)',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7196,7 +7196,7 @@ const goods = [
         description: 'Коробки распределительные (распаячные)',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7205,7 +7205,7 @@ const goods = [
         description: 'Сжимы ответвительные',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7214,7 +7214,7 @@ const goods = [
         description: 'Провода СИП и арматура к ним',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7223,7 +7223,7 @@ const goods = [
         description: 'Клеммники WAGO',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7232,7 +7232,7 @@ const goods = [
         description: 'Клеммники из PRC',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7241,7 +7241,7 @@ const goods = [
         description: 'Зажимы винтовые ЗВИ (клеммные колодки)',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7250,7 +7250,7 @@ const goods = [
         description: 'Наконечники алюминиевые под опрессовку',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7259,7 +7259,7 @@ const goods = [
         description: 'Наконечники медные луженые под опрессовку',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7268,7 +7268,7 @@ const goods = [
         description: 'Гильзы медные луженые',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7277,7 +7277,7 @@ const goods = [
         description: 'Наконечники НШвИ (штыревые)',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7286,7 +7286,7 @@ const goods = [
         description: 'Шкафы пустые',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7295,7 +7295,7 @@ const goods = [
         description: 'Аксессуары для шкафов и щитов',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7304,7 +7304,7 @@ const goods = [
         description: 'Автоматические выключатели на DIN-рейку',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7313,7 +7313,7 @@ const goods = [
         description: 'Автоматические выключатели на монтажную панель',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7322,7 +7322,7 @@ const goods = [
         description: 'Автоматические выключатели ABB на DIN-рейку',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7331,7 +7331,7 @@ const goods = [
         description: 'Автоматические выключатели дифференциального тока (дифференциальные автоматы) 2п',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7340,7 +7340,7 @@ const goods = [
         description: 'Выключатели дифференциального тока (УЗО) 2п',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7349,7 +7349,7 @@ const goods = [
         description: 'Контакторы',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7358,7 +7358,7 @@ const goods = [
         description: 'Выключатели нагрузки (рубильники) и переключатели',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7367,7 +7367,7 @@ const goods = [
         description: 'Плавкие вставки и держатели к ним',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7376,7 +7376,7 @@ const goods = [
         description: 'Трансформаторы',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7385,7 +7385,7 @@ const goods = [
         description: 'Приборы учета электроэнергии',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7394,7 +7394,7 @@ const goods = [
         description: 'Знаки электробезопасности',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7403,7 +7403,7 @@ const goods = [
         description: 'Средства защиты',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7412,7 +7412,7 @@ const goods = [
         description: 'Электроизмерительные приборы',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7421,7 +7421,7 @@ const goods = [
         description: 'Изолента',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7430,7 +7430,7 @@ const goods = [
         description: 'Трубка термоусаживаемая ТУТ',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7439,7 +7439,7 @@ const goods = [
         description: 'Бирки кабельные',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7448,7 +7448,7 @@ const goods = [
         description: 'Хомуты нейлоновые',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7457,7 +7457,7 @@ const goods = [
         description: 'Инструмент ручной',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7466,13 +7466,13 @@ const goods = [
         description: 'Расходные материалы',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
         folder: 'Наконечники НШвИ (штыревые)',
         code: 26648,
-        description: 'НШвИ 16-12 Наконечник штыр.изол. GLW (уп.100шт)',
+        description: 'Наконечник штыревой GLW-НШвИ 16-12 изолированный упаковка 100шт.',
         price: 0,
         measure: 'упак',
         spec: false,
@@ -7481,7 +7481,7 @@ const goods = [
     {
         folder: 'Провод ПВС',
         code: 26733,
-        description: 'ПВС 2х  1,5 ГОСТ',
+        description: 'Провод ПВС 2х1,5',
         price: 0,
         measure: 'м',
         spec: false,
@@ -7490,7 +7490,7 @@ const goods = [
     {
         folder: 'Провода ПУНП, ПУгНП и ШВВП',
         code: 26805,
-        description: 'ПУгНП 3х  4',
+        description: 'Провод ПУгНП 3х4',
         price: 0,
         measure: 'м',
         spec: false,
@@ -7499,7 +7499,7 @@ const goods = [
     {
         folder: 'Провода ПУНП, ПУгНП и ШВВП',
         code: 26806,
-        description: 'ПУНП 3х  4',
+        description: 'Провод ПУНП 3х4',
         price: 0,
         measure: 'м',
         spec: false,
@@ -7508,7 +7508,7 @@ const goods = [
     {
         folder: 'Наконечники НШвИ (штыревые)',
         code: 26851,
-        description: 'НШвИ 16-12 Наконечник штыр.изол. (уп.50шт) EKF PROxima',
+        description: 'Наконечник штыревой НШвИ 16-12 изолированный упаковка 50шт. EKF PROxima',
         price: 0,
         measure: 'упак',
         spec: false,
@@ -7518,7 +7518,7 @@ const goods = [
         folder: 'Светильники светодиодные',
         code: 27008,
         description: 'Светильник IP65 120х2 под LED лампу T8 G13',
-        price: 376.44,
+        price: 434.34,
         measure: 'шт',
         spec: false,
         quantity: 56
@@ -7526,7 +7526,7 @@ const goods = [
     {
         folder: 'Провода ПВ-3 (ПуГВ) и ПВ-1 (ПуВ)',
         code: 27150,
-        description: 'ПВ1 16 Красный',
+        description: 'Провод ПВ1 16 Красный',
         price: 0,
         measure: 'м',
         spec: false,
@@ -7538,7 +7538,7 @@ const goods = [
         description: 'Светотехника',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7547,7 +7547,7 @@ const goods = [
         description: 'Кабель и провод',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7556,7 +7556,7 @@ const goods = [
         description: 'Низковольтная автоматика',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7565,7 +7565,7 @@ const goods = [
         description: 'Электроустановочные изделия',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
@@ -7574,13 +7574,13 @@ const goods = [
         description: 'Электромонтажные изделия',
         price: 0,
         measure: '',
-        spec: false,
+        spec: '',
         quantity: 0
     },
     {
         folder: 'Провода и кабели с алюминиевой жилой',
         code: 27322,
-        description: 'АПВ   6 Синий',
+        description: 'Провод АПВ 6 синий',
         price: 0,
         measure: 'м',
         spec: false,
