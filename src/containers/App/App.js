@@ -80,8 +80,16 @@ class App extends Component {
 
     updateSearchString = (searchString) => {
         this.setState({searchString: searchString.toLowerCase(), route: "catalog"});
-    };
+    }
 
+    getGoods = () => {
+        fetch(SERVER + '\\goods')
+            .then(res=>res.json())
+            .then(goodsRes=> {
+                let goodsSrv = goodsRes;
+            })
+            .catch(e=>console.log(e))
+    };
     //TODO
     // replace with fetching data from server GET /orderSum
     updateOrder = (order) => {
