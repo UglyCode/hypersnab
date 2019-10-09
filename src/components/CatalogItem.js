@@ -31,8 +31,8 @@ class CatalogItem extends React.Component{
 
         return (
             <div className={`flex items-center w-100 f5 items-center justify-between ${(set%2)?'':'bg-lightest-blue'}`}>
-                <p className='w-10 ma0'><img className={'ma0'} src={img}/></p>
-                <p className='w-20 ma0'>{code}</p>
+                <p className='w-10 ma0 pointer underline-hover' onClick={this.openProductCard}><img className={'ma0'} src={img}/></p>
+                <p className='w-20 ma0 pointer underline-hover' onClick={this.openProductCard}>{code}</p>
                 <p className='w-100 ma0 pointer underline-hover' onClick={this.openProductCard}>{description}</p>
                 <p className='w-20 ma0'>{`${quantity} ${measure}.`}</p>
                 <p className='w-20 ma0'>{`${price}`}</p>

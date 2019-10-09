@@ -31,10 +31,12 @@ class ProductCard extends React.Component{
                 <div
                     className="br3 ba b--black-10 mv4 w-100 w-50-m w-50-l mw6 shadow-5 center bg-white tc
                         flex-column content-center justify-center pa2">
-                    <div
-                        className='br3 pa1 f4 bg-light-blue hover-dark-blue pointer underline-hover'
-                        onClick={this.props.clearItem}>
-                        {'Закрыть карточку'}
+                    <div className='flex justify-end'>
+                        <div
+                            className='w-10 tc br4 bg-light-blue pa1 f4 hover-dark-blue pointer underline-hover'
+                            onClick={this.props.clearItem}>
+                            {'✖'}
+                        </div>
                     </div>
                     <div style={{width: '200px'}} className='center'>
                         <img src={`${ENV.imgPath}${this.state.code}.jpg`} className="db" alt='spec img'/>
@@ -53,7 +55,7 @@ class ProductCard extends React.Component{
                             <div className='w-20 pointer' onClick={this.increaseAmount}>
                                 <img src={require('../../static/plus.png')} className='mw-100'></img>
                             </div>
-                            <input id={'amount'} className='h-25 ba w-60 tc' type='number' value={this.props.orderedAmount}
+                            <input id={'amount'} className='h-25 ba w-60 tc' type='number' value={this.props.orderedAmount || 0}
                                    onChange={this.handleAmountEnter}
                                    onFocus={this.handleFocus}/>
                             <div className='w-20 pointer' onClick={this.decreaseAmount}>

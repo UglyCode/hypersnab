@@ -97,7 +97,7 @@ class NavSticky extends React.Component{
                             <input
                                 id={'searchField'}
                                 onKeyPress={this.handleEnterPress}
-                                className="f6 f5-l w-90"
+                                className="f4 w-90"
                                 placeholder="поиск товаров" type="text" name="searchText">
                             </input>
                             <button className='w-10' onClick={this.handleSearchInput}>

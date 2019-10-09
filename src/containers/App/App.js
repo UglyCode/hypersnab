@@ -141,6 +141,14 @@ class App extends Component {
         this.setState({route});
     };
 
+    handleEscPress = (event) =>{
+        console.log('key pressed', event.key);
+        if (event.key === 'Escape') {
+            console.log(event.target);
+            this.handleSearchInput();
+        }
+    };
+
     render() {
         return (
             <div className="App vh-100 pa2 flex flex-column">
