@@ -141,7 +141,7 @@ class App extends Component {
         this.setState({route});
     };
 
-    handleEscPress = (event) =>{
+    handleButtonPress = (event) =>{
         console.log('key pressed', event.key);
         if (event.key === 'Escape') {
             console.log(event.target);
@@ -151,7 +151,7 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App vh-100 pa2 flex flex-column">
+            <div className="App vh-100 pa2 flex flex-column" onKeyPress={this.handleButtonPress}>
                 <Header
                     toggleProfile={this.toggleProfile}
                     setUserStatus={this.setUserStatus}
