@@ -143,7 +143,7 @@ class App extends Component {
 
     handleButtonPress = (event) =>{
         console.log('key pressed', event.key);
-        if (event.key === 'Escape') {
+        if (event.key === 'Esc') {
             console.log(event.target);
             this.handleSearchInput();
         }
