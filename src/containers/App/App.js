@@ -151,7 +151,7 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App vh-100 pa2 flex flex-column" onKeyPress={this.handleButtonPress}>
+            <div className="App vh-100 pa2 flex flex-column">
                 <Header
                     toggleProfile={this.toggleProfile}
                     setUserStatus={this.setUserStatus}
