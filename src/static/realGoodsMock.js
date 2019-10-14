@@ -21925,11 +21925,7 @@ const goods = [
     }
 ];
 
-const folders = [
-        {
-            "name":"СКЛАД"
-            ,"children":[
-                {
+const folders = [{
                     "name":"Кабель и провод"
                     ,"children":[
                         {
@@ -22214,9 +22210,6 @@ const folders = [
                         }
                     ]
                 }
-            ]
-        }
-    ]
-;
+          ];
 
 export {goods, folders};

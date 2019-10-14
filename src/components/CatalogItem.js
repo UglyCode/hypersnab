@@ -34,8 +34,8 @@ class CatalogItem extends React.Component{
                 <p className='w-10 ma0 pointer underline-hover' onClick={this.openProductCard}><img className={'ma0'} src={img}/></p>
                 <p className='w-20 ma0 pointer underline-hover' onClick={this.openProductCard}>{code}</p>
                 <p className='w-100 ma0 pointer underline-hover' onClick={this.openProductCard}>{description}</p>
-                <p className='w-20 ma0'>{`${quantity} ${measure}.`}</p>
-                <p className='w-20 ma0'>{`${price}`}</p>
+                <p className='w-20 ma0'>{`${quantity} ${measure}`}</p>
+                <p className='w-20 ma0'>{`${Number(price).toFixed(2)}`}</p>
                 <div className='flex justify-between items-center w-20'>
                     <div className='w-20 pointer' onClick={this.increaseAmount}>
                         <img src={require('../static/plus.png')} className='mw-100'></img>

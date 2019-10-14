@@ -8,7 +8,7 @@ const CatalogPage = ({goods, order, setSelectedItem, updateAmount}) => {
         <div className="flex-column w-100 br3 bg-white pa3 ma0">
             <CatalogHeader/>
             {goods.length && goods.map((elem, i) => {
-                if (elem.count && elem.price){
+                if (elem.quantity && elem.price){
                 return (
                     <CatalogItem
                         key={i}
