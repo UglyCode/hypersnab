@@ -56,6 +56,7 @@ class App extends Component {
         const order = this.jsonToMap(window.localStorage.getItem('order')) || this.state.order;
         this.updateOrder(order);
         this.chooseShownSpecOffers(2);
+        this.getGoods();
     }
 
     chooseShownSpecOffers(columnLength){
@@ -83,10 +84,12 @@ class App extends Component {
     }
 
     getGoods = () => {
+        console.log('getGoods');
         fetch(SERVER + '\\goods')
             .then(res=>res.json())
             .then(goodsRes=> {
                 let goodsSrv = goodsRes;
+                console.log(goodsSrv);
             })
             .catch(e=>console.log(e))
     };
