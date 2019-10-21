@@ -18,6 +18,13 @@ class Catalog extends React.Component {
     }
 
     componentDidMount() {
+        goods.sort((a,b) => {
+            if (a.sort > b.sort) {
+                return 1;
+            } else {
+                return -1;
+            }
+        });
         this.setState({goods: goods});
     }
 

@@ -15,7 +15,7 @@ const Logo = (props) => {
             </div>
             <div className='w-20 f5 ma0 flex-column justify-center content-center bg-lightest-blue pa2'>
                 <p className='ma0'>{'Мы отгружаем продукцию ИСКЛЮЧИТЕЛЬНО '}</p>
-                <p className='ma0 b'>{'c юридическим лицам и индивидуальным предпринимателям!'}</p>
+                <p className='ma0 b'>{'юридическим лицам и индивидуальным предпринимателям!'}</p>
             </div>
         </div>
     )

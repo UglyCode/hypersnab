@@ -20,8 +20,8 @@ const createFolderElement = (folderObj, toggleChildren, folderSelect, folder) =>
           //  + (folderHasChildren ? '' : ' dn');
 
     return(
-        <ul className='pl3' onClick={folderFunction}>
-            <li className={folderClassList}>{folderObj.name}</li>
+        <ul className='pl3'>
+            <li className={folderClassList} onClick={folderFunction}>{folderObj.name}</li>
             {
                 folderObj.children.map(elem => createFolderElement(elem, toggleChildren, folderSelect, folder))
             }
