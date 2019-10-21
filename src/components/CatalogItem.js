@@ -32,10 +32,10 @@ class CatalogItem extends React.Component{
         return (
             <div className={`flex items-center w-100 f5 items-center justify-between ${(set%2)?'':'bg-lightest-blue'}`}>
                 <p className='w-10 ma0 pointer underline-hover' onClick={this.openProductCard}><img className={'ma0'} src={img}/></p>
-                <p className='w-20 ma0 pointer underline-hover tc' onClick={this.openProductCard}>{code}</p>
-                <p className='w-100 ma0 pointer underline-hover tl'  onClick={this.openProductCard}>{description}</p>
-                <p className='w-20 ma0 tr'>{`${quantity} ${measure}`}</p>
-                <p className='w-20 ma0 tc'>{`${Number(price).toFixed(2)}`}</p>
+                <p className='w-20 ma0 pa2 pointer underline-hover tr' onClick={this.openProductCard}>{code}</p>
+                <p className='w-100 ma0 pa2 pointer underline-hover tl'  onClick={this.openProductCard}>{description}</p>
+                <p className='w-20 ma0 pa2 tr'>{`${quantity} ${measure}`}</p>
+                <p className='w-20 ma0 pa2 tr'>{`${Number(price).toFixed(2)}`}</p>
                 <div className='flex justify-between items-center w-20'>
                     <div className='w-20 pointer' onClick={this.increaseAmount}>
                         <img src={require('../static/plus.png')} className='mw-100'></img>
