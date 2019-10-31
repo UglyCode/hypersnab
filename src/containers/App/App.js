@@ -7,7 +7,7 @@ import Header from '../../components/Header';
 import Main from '../../components/Main';
 import Footer from '../../components/Footer';
 import ProductCard from '../ProductCard/ProductCard';
-import {goods} from '../../static/realGoodsMock';
+import {goodsMock} from '../../static/realGoodsMock';
 import ENV from '../../settings/env';
 
 const SERVER = ENV.server || 'http://localhost:3001';
@@ -22,7 +22,9 @@ const initialState = {
     orderSum: 0,
     selectedItem: undefined,
     shownSpecOffers: [],
-    searchString: ''
+    searchString: '',
+    goods:[],
+    folders:[]
 };
 
 class App extends Component {
@@ -53,13 +55,10 @@ class App extends Component {
     componentDidMount() {
         const token = window.localStorage.getItem('token');
         this.setInnFromToken(token);
-        const order = this.jsonToMap(window.localStorage.getItem('order')) || this.state.order;
-        this.updateOrder(order);
-        this.chooseShownSpecOffers(2);
         this.getGoods();
     }
 
-    chooseShownSpecOffers(columnLength){
+    chooseShownSpecOffers(goods, columnLength){
 
        let spec = goods.reduce((accum, elem, index) =>{
                 if (elem.spec) {
@@ -79,29 +78,34 @@ class App extends Component {
         console.log(shownSpecOffers);
     }
 
-    updateSearchString = (searchString) => {
-        this.setState({searchString: searchString.toLowerCase(), route: "catalog"});
-    }
-
-    getGoods = () => {
-        console.log('getGoods');
-        fetch(SERVER + '\\goods')
-            .then(res=>res.json())
-            .then(goodsRes=> {
-                let goodsSrv = goodsRes;
-                console.log(goodsSrv);
-            })
-            .catch(e=>console.log(e))
-    };
-    //TODO
-    // replace with fetching data from server GET /orderSum
-    updateOrder = (order) => {
+    updateOrder = (goods, order) => {
         const orderSum = goods.reduce((accumulator, currentValue) =>{
             let orderedAmount = order.get(currentValue.code) || 0;
             return accumulator + orderedAmount * currentValue.price;
         },0);
         this.setState({order:order, orderSum:orderSum.toFixed(2)});
     };
+
+    updateSearchString = (searchString) => {
+        this.setState({searchString: searchString.toLowerCase(), route: "catalog"});
+    };
+
+    getGoods  = () => {
+        console.log('getGoods');
+        fetch(SERVER + '\\goods')
+            .then(res=>res.json())
+            .then(goodsRes=> {
+                this.setState({goods:goodsRes});
+                return goodsRes;
+            })
+            .then(goods=>{
+                const order = this.jsonToMap(window.localStorage.getItem('order')) || this.state.order;
+                this.updateOrder(goods,order);
+                this.chooseShownSpecOffers(goods,2);
+            })
+            .catch(e=>console.log(e));
+    };
+
 
     setInnFromToken = (token) => {
         if (token){
