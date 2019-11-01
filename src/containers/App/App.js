@@ -178,6 +178,7 @@ class App extends Component {
                     setSelectedItem = {this.setSelectedItem}
                     shownSpecOffers = {this.state.shownSpecOffers}
                     searchString = {this.state.searchString}
+                    goods: {this.state.goods}
                 />
                 <Footer/>
                 {this.state.isProfileOpen &&

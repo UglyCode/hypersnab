@@ -2,7 +2,7 @@ import React from 'react';
 import CatalogStructure from '../../components/CatalogStructure';
 import CatalogPage from '../../components/CatalogPage';
 import Scroll from '../../components/Scroll';
-import {goods, folders} from '../../static/realGoodsMock';
+import {folders} from '../../static/realGoodsMock';
 
 class Catalog extends React.Component {
 
@@ -12,20 +12,19 @@ class Catalog extends React.Component {
             folder: '',
             filter: '',
             page: 1,
-            goods: [],
+            goods: props.goods,
             folders: folders,
         }
     }
 
     componentDidMount() {
-        goods.sort((a,b) => {
+        this.state.goods.sort((a,b) => {
             if (a.sort > b.sort) {
                 return 1;
             } else {
                 return -1;
             }
         });
-        this.setState({goods: goods});
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
