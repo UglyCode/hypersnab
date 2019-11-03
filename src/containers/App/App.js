@@ -79,7 +79,7 @@ class App extends Component {
     }
 
     updateOrder = (goods, order) => {
-        const orderSum = goods.reduce((accumulator, currentValue) =>{
+        const orderSum = this.state.goods.reduce((accumulator, currentValue) =>{
             let orderedAmount = order.get(currentValue.code) || 0;
             return accumulator + orderedAmount * currentValue.price;
         },0);
@@ -100,6 +100,7 @@ class App extends Component {
             })
             .then(goods=>{
                 const order = this.jsonToMap(window.localStorage.getItem('order')) || this.state.order;
+                console.log('order good', order);
                 this.updateOrder(goods,order);
                 this.chooseShownSpecOffers(goods,2);
             })
@@ -123,12 +124,13 @@ class App extends Component {
     updateAmountOfOrderedGood = (goodId, newAmount) => {
         newAmount = Number(newAmount);
         let order = this.state.order;
+        console.log('order state ', order);
         if (newAmount > 0) {
             order.set(goodId, newAmount);
         } else {
             order.delete(goodId);
         }
-        this.updateOrder(order);
+        this.updateOrder(this.state.goods, order);
         window.localStorage.setItem('order', this.mapToJson(order));
     };
 
@@ -178,7 +180,7 @@ class App extends Component {
                     setSelectedItem = {this.setSelectedItem}
                     shownSpecOffers = {this.state.shownSpecOffers}
                     searchString = {this.state.searchString}
-                    goods: {this.state.goods}
+                    goods = {this.state.goods}
                 />
                 <Footer/>
                 {this.state.isProfileOpen &&
