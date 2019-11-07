@@ -1,7 +1,7 @@
 
 const ENV = {
-     server: 'http://localhost:3001', //'https://thawing-tundra-53917.herokuapp.com', //
-     imgPath: 'http://localhost:3001/static/img/' //'https://thawing-tundra-53917.herokuapp.com/static/img/'
+     server: 'https://thawing-tundra-53917.herokuapp.com', //'http://localhost:3001', //
+     imgPath: 'https://thawing-tundra-53917.herokuapp.com/static/img/' //'http://localhost:3001/static/img/'
 };
 
 export default ENV;
