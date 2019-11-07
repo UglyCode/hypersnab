@@ -1,6 +1,6 @@
 import React from 'react';
 import CatalogPage from '../../components/CatalogPage';
-import {goods} from '../../static/realGoodsMock';
+//import {goods} from '../../static/realGoodsMock';
 
 class Basket extends React.Component{
 
@@ -17,7 +17,7 @@ class Basket extends React.Component{
 
     updateOrderedGoods = () => {
         const goodsToUpDate = this.getDifferentKeys(this.props.order, this.state.orderedGoods);
-        this.setState({orderedGoods: goods.filter(elem => this.props.order.has(elem.code))})
+        this.setState({orderedGoods: this.props.goods.filter(elem => this.props.order.has(elem.code))})
     };
 
     getDifferentKeys = (mapOne, mapTwo) => {
