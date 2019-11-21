@@ -1,6 +1,7 @@
 import React from 'react';
 import './productCard.css';
 import ENV from "../../settings/env";
+import PropertiesTable from  "../../components/PropertiesTable";
 
 class ProductCard extends React.Component{
 
@@ -62,6 +63,11 @@ class ProductCard extends React.Component{
                                 <img src={require('../../static/minus.png')} className='mw-100'></img>
                             </div>
                         </div>
+                    </div>
+                    <div className='w-50 center'>
+                        <PropertiesTable
+                            properties = {[1,2]}
+                        />
                     </div>
                 </div>
             </div>
