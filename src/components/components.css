@@ -1,1 +1,5 @@
+/*
+additional css for components styling
+*/
+
 .striped--lightest-blue:nth-child(odd) { background-color: #cdecff; }
