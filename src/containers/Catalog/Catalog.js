@@ -1,8 +1,12 @@
 import React from 'react';
 import CatalogStructure from '../../components/CatalogStructure';
 import CatalogPage from '../../components/CatalogPage';
+import AttributeFilters from '../../components/AttributeFilters';
 import Scroll from '../../components/Scroll';
 import {folders} from '../../static/realGoodsMock';
+import ENV from "../../settings/env";
+
+const SERVER = ENV.server || 'http://localhost:3001';
 
 class Catalog extends React.Component {
 
@@ -13,11 +17,12 @@ class Catalog extends React.Component {
             filter: '',
             page: 1,
             goods: props.goods,
-            folders: folders,
+            folders: []
         }
     }
 
     componentDidMount() {
+        this.getFolders();
         this.state.goods.sort((a,b) => {
             if (a.sort > b.sort) {
                 return 1;
@@ -26,6 +31,16 @@ class Catalog extends React.Component {
             }
         });
     }
+
+    getFolders = () =>{
+        fetch(SERVER + '\\folders')
+            .then(res=>res.json())
+            .then(foldersRes=> {
+                this.setState({folders:foldersRes});
+                return foldersRes;
+            })
+            .catch(e=>console.log(e));
+    };
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         //update product list with new filter implemented
@@ -110,6 +125,7 @@ class Catalog extends React.Component {
                 </div>
 
                 <div className='w-100 ma2'>
+                    {(this.state.folder) && <AttributeFilters/>}
                         <CatalogPage
                             goods={goods}
                             order={this.props.order}

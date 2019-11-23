@@ -91,7 +91,6 @@ class App extends Component {
     };
 
     getGoods  = () => {
-        console.log('getGoods');
         fetch(SERVER + '\\goods')
             .then(res=>res.json())
             .then(goodsRes=> {
@@ -106,7 +105,6 @@ class App extends Component {
             })
             .catch(e=>console.log(e));
     };
-
 
     setInnFromToken = (token) => {
         if (token){
@@ -181,6 +179,7 @@ class App extends Component {
                     shownSpecOffers = {this.state.shownSpecOffers}
                     searchString = {this.state.searchString}
                     goods = {this.state.goods}
+                    folders = {this.state.folders}
                 />
                 <Footer/>
                 {this.state.isProfileOpen &&
