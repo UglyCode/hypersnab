@@ -2,12 +2,14 @@ import React from 'react';
 import './productCard.css';
 import ENV from "../../settings/env";
 import PropertiesTable from  "../../components/PropertiesTable";
+const SERVER = ENV.server || 'http://localhost:3001';
 
 class ProductCard extends React.Component{
 
     constructor(props){
         super(props);
         this.state = props.item;
+        this.state.attributes = [];
     };
 
     increaseAmount = (event) => {
@@ -24,6 +26,19 @@ class ProductCard extends React.Component{
 
     handleFocus = (event) => event.target.select();
 
+    componentDidMount() {
+        this.getAttributes();
+    }
+
+    getAttributes = () =>{
+        fetch(`${SERVER}\\attributes\\${this.state.code}`)
+            .then(res=>res.json())
+            .then(attributesRes=> {
+                this.setState({attributes:attributesRes});
+                return attributesRes;
+            })
+            .catch(e=>console.log(e));
+    };
 
     render(){
 

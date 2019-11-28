@@ -38,7 +38,7 @@ const  AttributeFilters = (props) => {
                                 <label htmlFor="diehard" className="lh-copy">Die Hard</label>
                         </div>
                     </fieldset>
-                    <a className='f6 pointer br1 ba bw1 ph3 pv2 mb2 dib black hover-light-blue'>
+                    <a className='f6 pointer br1 ba bw1 ph3 pv2 mb2 dib black hover-blue'>
                         {'Apply'}
                     </a>
                 </form>
