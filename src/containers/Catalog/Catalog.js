@@ -2,8 +2,6 @@ import React from 'react';
 import CatalogStructure from '../../components/CatalogStructure';
 import CatalogPage from '../../components/CatalogPage';
 import AttributeFilters from '../../components/AttributeFilters';
-import Scroll from '../../components/Scroll';
-import {folders} from '../../static/realGoodsMock';
 import ENV from "../../settings/env";
 
 const SERVER = ENV.server || 'http://localhost:3001';
@@ -14,10 +12,13 @@ class Catalog extends React.Component {
         super(props);
         this.state = {
             folder: '',
-            filter: '',
+            selectedAttributes:[], // [{attribute: int, values:[string,...]},{}]
             page: 1,
             goods: props.goods,
-            folders: []
+            searchString: props.searchString,
+            filteredGoods: [],
+            folders: [],
+            goodsUpdateNeeded: true
         }
     }
 
@@ -30,6 +31,7 @@ class Catalog extends React.Component {
                 return -1;
             }
         });
+        this.updateFilteredGoods();
     }
 
     getFolders = () =>{
@@ -45,8 +47,31 @@ class Catalog extends React.Component {
     componentDidUpdate(prevProps, prevState, snapshot) {
         //update product list with new filter implemented
         //add cache to this kind of request
+
+        if (this.state.goodsUpdateNeeded){
+            this.updateFilteredGoods();
+        };
         console.log('state: ', prevState, this.state);
     }
+
+    updateFilteredGoods(){
+        let filteredGoodsPromise;
+        if (this.state.folder) {
+            filteredGoodsPromise =  //Promise.resolve(this.getFolderFiltererdGoods(this.state.folder));
+                fetch(`${SERVER}/goods/${this.state.folder}` +
+                `?attributes_filter=${JSON.stringify(this.state.selectedAttributes)}`)
+                    .then(goodsRes=>goodsRes.json());
+        } else if (this.props.searchString){
+            filteredGoodsPromise = Promise.resolve(this.getSearchResult());
+        } else {
+            filteredGoodsPromise = Promise.resolve(this.getSpecOffers());
+        };
+
+        filteredGoodsPromise.then(filteredGoods => {
+            this.setState({goodsUpdateNeeded:false, filteredGoods: filteredGoods});
+        })
+            .catch(console.log('cant update goods'));
+    };
 
     toggleChildrenDisplay = (event) =>{
         const children = event.target.parentElement.children; //siblings
@@ -56,8 +81,9 @@ class Catalog extends React.Component {
     };
 
     folderSelect = (event) => {
-        const selectedFolder = event.target.innerText;
-        this.setState({folder: (this.state.folder !== selectedFolder) ? selectedFolder : ''});
+        const selectedFolder = event.target.id;
+        this.setState({folder: (this.state.folder !== selectedFolder) ? selectedFolder : '',
+            goodsUpdateNeeded: true});
         event.stopPropagation();
         window.scrollTo(0,0);
     };
@@ -104,14 +130,14 @@ class Catalog extends React.Component {
 
     render() {
 
-        let goods = [];
-        if (this.state.folder) {
-            goods =  this.getFolderFiltererdGoods();
-        } else if (this.props.searchString){
-            goods = this.getSearchResult()
-        } else {
-            goods = this.getSpecOffers();
-        };
+         let goods = this.state.filteredGoods;
+        // if (this.state.folder) {
+        //     goods =  this.getFolderFiltererdGoods();
+        // } else if (this.props.searchString){
+        //     goods = this.getSearchResult()
+        // } else {
+        //     goods = this.getSpecOffers();
+        // };
 
         return(
             <div className = 'f3 flex w-100'>
