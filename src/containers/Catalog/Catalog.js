@@ -151,7 +151,10 @@ class Catalog extends React.Component {
                 </div>
 
                 <div className='w-100 ma2'>
-                    {(this.state.folder) && <AttributeFilters/>}
+                    {(this.state.folder) &&
+                        <AttributeFilters
+                        folder={this.state.folder}
+                        selectedAttributes={this.state.selectedAttributes}/>}
                         <CatalogPage
                             goods={goods}
                             order={this.props.order}
