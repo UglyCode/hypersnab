@@ -88,6 +88,10 @@ class Catalog extends React.Component {
         window.scrollTo(0,0);
     };
 
+    setSelectedAttributes = (attributesArray) => {
+        this.setState({selectedAttributes:attributesArray})
+    };
+
     //TODO
     // replace with GET /spec request to server with cache and add at componentDidMount()
     getSpecOffers = () => {
@@ -154,7 +158,8 @@ class Catalog extends React.Component {
                     {(this.state.folder) &&
                         <AttributeFilters
                         folder={this.state.folder}
-                        selectedAttributes={this.state.selectedAttributes}/>}
+                        selectedAttributes={this.state.selectedAttributes}
+                        setSelectedAttributes={this.setSelectedAttributes}/>}
                         <CatalogPage
                             goods={goods}
                             order={this.props.order}

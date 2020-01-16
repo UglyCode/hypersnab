@@ -10,12 +10,27 @@ class  AttributeFilters extends React.Component {
             attributeClassList: 'ma0 pointer underline-hover hover-blue w-30',
             filters: [],
             filterValues: new Map(),
+            selectedValues: new Map(),
             filterShown: undefined
         }
     }
 
     componentDidMount() {
         this.getFiltersForFolder(this.props.folder);
+        this.updateSelectedValues(this.props.selectedAttributes);
+    }
+
+    // componentDidUpdate(prevProps, prevState, snapshot) {
+    //     this.setState({filterShown: undefined});
+    //     this.updateSelectedValues(this.props.selectedAttributes);
+    // }
+
+    updateSelectedValues(attributesArray){
+        let attributesMap = new Map();
+        attributesArray.forEach((elem) => {
+           attributesMap.set(elem.attribute, elem.values);
+        });
+        this.setState({selectedValues: attributesMap});
     }
 
     getFiltersForFolder(folderCode){
@@ -36,6 +51,8 @@ class  AttributeFilters extends React.Component {
         let filterValues = new Map();
         filters.push({filter_code: 111, filter_name: 'super!'});
         filterValues.set('111', ['1A','2A','4A','8A','16A','32A']);
+        filters.push({filter_code: 222, filter_name: 'poppers!'});
+        filterValues.set('222', ['1Wt','2Wt','4Wt','8Wt','16Wt','32Wt']);
         this.setState({filters:filters, filterValues: filterValues});
     }
 
@@ -55,7 +72,22 @@ class  AttributeFilters extends React.Component {
     }
 
     applyFilter(event){
-        document.getElementById("dropdown").classList.toggle("dn");
+
+        const checked = document.querySelectorAll("input:checked");
+        let attributesArray = [];
+        checked.forEach(checkbox=>{
+            attributesArray.push(checkbox.value);
+        });
+
+        let attributesMap = this.state.selectedValues;
+        attributesMap.set(event.target.id, attributesArray);
+
+        let selectedAttributes = [];
+        attributesMap.forEach((value, key) =>{
+            selectedAttributes.push({attribute: key , values:value})
+        });
+        this.props.setSelectedAttributes(selectedAttributes);
+
     }
 
     toggleDropdown(){
@@ -70,21 +102,26 @@ class  AttributeFilters extends React.Component {
         return(
             <ul id='dropdown'
                 className="absolute pa0"
-                style={{top: `${this.state.filterShown.offsetTop+5}px`, left: `${this.state.filterShown.offsetLeft}px`, listStyleType: "none", backgroundColor: 'rgba(255,255,255,0.9)'}}>
+                style={{top: `${this.state.filterShown.offsetTop+5}px`,
+                    left: `${(2*this.state.filterShown.offsetLeft+this.state.filterShown.offsetWidth/2)/2}px`,
+                    listStyleType: "none", backgroundColor: 'rgba(255,255,255,0.9)'}}>
                 <form className="pa4">
-                    <fieldset id="favorite_movies" className="bn">
-                        <legend className="fw7 mb2">{new Date().toLocaleString()}</legend>
+                    <fieldset id="filters" className="bn">
+                        <legend className="fw7 mb2">{`Фильтр ${this.state.filterShown.innerText}`}</legend>
                         {currentValues.map((elem,i) => {
                             return(
                                 <div className="flex items-center mb2">
                                     <input className="mr2" type="checkbox"
-                                           id={`filter_${filterId}_${i}`} value={`${filterId}_${i}`}/>
+                                           defaultChecked={this.state.selectedValues.get(filterId) &&
+                                            this.state.selectedValues.get(filterId).includes(elem)}
+                                           id={`filter_${filterId}_${i}`} value={`${elem}`}/>
                                     <label htmlFor="spacejam" className="lh-copy">{elem}</label>
                                 </div>
                             )
                         })}
                     </fieldset>
-                    <a className='f6 pointer br1 ba bw1 ph3 pv2 mb2 dib black hover-blue' onClick={this.applyFilter}>
+                    <a id={filterId} className='f6 pointer br1 ba bw1 ph3 pv2 mb2 dib black hover-blue'
+                       onClick={this.applyFilter.bind(this)}>
                         {'Apply'}
                     </a>
                 </form>
