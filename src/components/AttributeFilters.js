@@ -10,14 +10,12 @@ class  AttributeFilters extends React.Component {
             attributeClassList: 'ma0 pointer underline-hover hover-blue w-30',
             filters: [],
             filterValues: new Map(),
-            selectedValues: new Map(),
             filterShown: undefined
         }
     }
 
     componentDidMount() {
         this.getFiltersForFolder(this.props.folder);
-        this.updateSelectedValues(this.props.selectedAttributes);
     }
 
     // componentDidUpdate(prevProps, prevState, snapshot) {
@@ -57,21 +55,25 @@ class  AttributeFilters extends React.Component {
     }
 
     createFilterElement(filterDescription){
+
+        const selectedValues = this.getSelectedValues(filterDescription.filter_code);
+        let filterApplied = (selectedValues && selectedValues.length);
+
         return(
-            <div className={this.state.attributeClassList}
+            <div className={'ma1 pointer underline-hover hover-blue w-30 ' + ((filterApplied) ? 'b' : '')}
                  id={filterDescription.filter_code}
-                 onClick={this.filterOnClick.bind(this)}
+                 onClick={this.filterOnClick}
             >
-                {filterDescription.filter_name}
+                {filterDescription.filter_name.toUpperCase()}
             </div>
         )
     }
 
-    filterOnClick(event){
+    filterOnClick = (event) => {
         this.setState({filterShown: event.target});
-    }
+    };
 
-    applyFilter(event){
+    applyFilter = (event) => {
 
         const checked = document.querySelectorAll("input:checked");
         let attributesArray = [];
@@ -79,16 +81,29 @@ class  AttributeFilters extends React.Component {
             attributesArray.push(checkbox.value);
         });
 
-        let attributesMap = this.state.selectedValues;
-        attributesMap.set(event.target.id, attributesArray);
+        const selectedAttributes = this.props.selectedAttributes;
+        let selectedValuesIndex = this.getSelectedValues(event.target.id, true);
+        if (selectedValuesIndex === undefined){
+            selectedAttributes.push({attribute: event.target.id, values: attributesArray});
+        } else {
+            selectedAttributes[selectedValuesIndex].values = attributesArray;
+        }
 
-        let selectedAttributes = [];
-        attributesMap.forEach((value, key) =>{
-            selectedAttributes.push({attribute: key , values:value})
-        });
         this.props.setSelectedAttributes(selectedAttributes);
 
-    }
+    };
+
+    getSelectedValues = (filterId, returnIndex=false) => {
+
+        filterId = filterId.toString();
+        const selectedAttributes = this.props.selectedAttributes;
+        for(let i= 0 ; i <= selectedAttributes.length-1; i++){
+            if (selectedAttributes[i].attribute === filterId){
+                return (returnIndex) ? i: selectedAttributes[i].values;
+            }
+        }
+        return undefined;
+    };
 
     toggleDropdown(){
 
@@ -97,32 +112,33 @@ class  AttributeFilters extends React.Component {
         if (!currentValues) return;
 
         const filterMenu = document.getElementById("dropdown");
-        if (filterMenu) filterMenu.classList.toggle("dn");
+        if (filterMenu) filterMenu.classList.toggle("dn"); //parentNode.removeChild(filterMenu)
+
+        let selectedValues = this.getSelectedValues(filterId) || [];
 
         return(
-            <ul id='dropdown'
+            <ul id='dropdown' key={'dropdown_'+filterId}
                 className="absolute pa0"
                 style={{top: `${this.state.filterShown.offsetTop+5}px`,
                     left: `${(2*this.state.filterShown.offsetLeft+this.state.filterShown.offsetWidth/2)/2}px`,
                     listStyleType: "none", backgroundColor: 'rgba(255,255,255,0.9)'}}>
-                <form className="pa4">
-                    <fieldset id="filters" className="bn">
+                <form className="pa4" key={'form_'+filterId}>
+                    <fieldset id="filters" className="bn" key={'filters_'+filterId}>
                         <legend className="fw7 mb2">{`Фильтр ${this.state.filterShown.innerText}`}</legend>
                         {currentValues.map((elem,i) => {
                             return(
                                 <div className="flex items-center mb2">
                                     <input className="mr2" type="checkbox"
-                                           defaultChecked={this.state.selectedValues.get(filterId) &&
-                                            this.state.selectedValues.get(filterId).includes(elem)}
+                                           defaultChecked={selectedValues.includes(elem)} key={`${filterId}_${i}`}
                                            id={`filter_${filterId}_${i}`} value={`${elem}`}/>
-                                    <label htmlFor="spacejam" className="lh-copy">{elem}</label>
+                                    <label htmlFor={`filter_${filterId}_${i}`} className="lh-copy tc">{elem}</label>
                                 </div>
                             )
                         })}
                     </fieldset>
                     <a id={filterId} className='f6 pointer br1 ba bw1 ph3 pv2 mb2 dib black hover-blue'
-                       onClick={this.applyFilter.bind(this)}>
-                        {'Apply'}
+                       onClick={this.applyFilter}>
+                        {'Применить'}
                     </a>
                 </form>
             </ul>
@@ -138,57 +154,5 @@ class  AttributeFilters extends React.Component {
         )
     };
 };
-
-// this.state.isDroppedDown &&
-// <ul id='dropdown'
-//     className="absolute pa0"
-//     style={{top: el.offsetTop, listStyleType: "none", backgroundColor:'rgba(255,255,255,0.8)'}}>
-//     <li className='ma3 pointer underline-hover'
-//         onClick={this.logOut}>
-//         Log out </li>
-//     <li className='ma3 pointer underline-hover'
-//         onClick={this.openProfile}>
-//         Profile
-//     </li>
-//     <li className='ma3 pointer underline-hover'> Orders </li>
-// </ul>
-
-{/*<div className={this.state.attributeClassList}>*/}
-{/*    {'Ampers'}*/}
-{/*</div>*/}
-{/*<div className={this.state.attributeClassList}>*/}
-{/*    {'Watts'}*/}
-{/*</div>*/}
-{/*<div className={this.state.attributeClassList}>*/}
-{/*    {'Volts'}*/}
-{/*</div>*/}
-{/*<ul id='dropdown'*/}
-{/*    className="absolute pa0"*/}
-{/*    style={{top: '225px', listStyleType: "none", backgroundColor: 'rgba(255,255,255,0.9)'}}>*/}
-{/*    <form className="pa4">*/}
-{/*        <fieldset id="favorite_movies" className="bn">*/}
-{/*            <legend className="fw7 mb2">Watt filter</legend>*/}
-{/*            <div className="flex items-center mb2">*/}
-{/*                <input className="mr2" type="checkbox" id="spacejam" value="spacejam"/>*/}
-{/*                <label htmlFor="spacejam" className="lh-copy">Space Jam</label>*/}
-{/*            </div>*/}
-{/*            <div className="flex items-center mb2">*/}
-{/*                <input className="mr2" type="checkbox" id="airbud" value="airbud"/>*/}
-{/*                <label htmlFor="airbud" className="lh-copy">Air Bud</label>*/}
-{/*            </div>*/}
-{/*            <div className="flex items-center mb2">*/}
-{/*                <input className="mr2" type="checkbox" id="hocuspocus" value="hocuspocus"/>*/}
-{/*                <label htmlFor="hocuspocus" className="lh-copy">Hocus Pocus</label>*/}
-{/*            </div>*/}
-{/*            <div className="flex items-center mb2">*/}
-{/*                <input className="mr2" type="checkbox" id="diehard" value="diehard"/>*/}
-{/*                <label htmlFor="diehard" className="lh-copy">Die Hard</label>*/}
-{/*            </div>*/}
-{/*        </fieldset>*/}
-{/*        <a className='f6 pointer br1 ba bw1 ph3 pv2 mb2 dib black hover-blue'>*/}
-{/*            {'Apply'}*/}
-{/*        </a>*/}
-{/*    </form>*/}
-{/*</ul>*/}
 
 export default AttributeFilters;
