@@ -83,13 +83,13 @@ class Catalog extends React.Component {
     folderSelect = (event) => {
         const selectedFolder = event.target.id;
         this.setState({folder: (this.state.folder !== selectedFolder) ? selectedFolder : '',
-            goodsUpdateNeeded: true});
+            goodsUpdateNeeded: true, selectedAttributes:[]});
         event.stopPropagation();
         window.scrollTo(0,0);
     };
 
     setSelectedAttributes = (attributesArray) => {
-        this.setState({selectedAttributes:attributesArray})
+        this.setState({selectedAttributes:attributesArray, goodsUpdateNeeded:true})
     };
 
     //TODO

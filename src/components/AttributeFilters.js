@@ -10,7 +10,8 @@ class  AttributeFilters extends React.Component {
             attributeClassList: 'ma0 pointer underline-hover hover-blue w-30',
             filters: [],
             filterValues: new Map(),
-            filterShown: undefined
+            filterShown: false,
+            filterElement: undefined
         }
     }
 
@@ -18,10 +19,11 @@ class  AttributeFilters extends React.Component {
         this.getFiltersForFolder(this.props.folder);
     }
 
-    // componentDidUpdate(prevProps, prevState, snapshot) {
-    //     this.setState({filterShown: undefined});
-    //     this.updateSelectedValues(this.props.selectedAttributes);
-    // }
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (prevProps.folder !== this.props.folder){
+            this.getFiltersForFolder(this.props.folder);
+        }
+    }
 
     updateSelectedValues(attributesArray){
         let attributesMap = new Map();
@@ -32,26 +34,26 @@ class  AttributeFilters extends React.Component {
     }
 
     getFiltersForFolder(folderCode){
-        // fetch(SERVER + `\\filters\\${folderCode}`)
-        //     .then(res=>res.json())
-        //     .then(filtersRes=> {
-        //         let filters = [];
-        //         let filterValues = new Map();
-        //         filtersRes.forEach(elem=>{
-        //             filters.push({filter_code: filtersRes.filter_code, filter_name: filtersRes.filter_name});
-        //             filterValues.set(elem.filter_code, elem.values);
-        //         });
-        //         this.setState({filters:filters, filterValues: filterValues});
-        //     })
-        //     .catch(e=>console.log(e));
+        fetch(SERVER + `\\filters\\${folderCode}`)
+            .then(res=>res.json())
+            .then(filtersRes=> {
+                let filters = [];
+                let filterValues = new Map();
+                filtersRes.forEach(elem=>{
+                    filters.push({filter_code: elem.filter_code, filter_name: elem.filter_name});
+                    filterValues.set(elem.filter_code, elem.filter_values);
+                });
+                this.setState({filters:filters, filterValues: filterValues});
+            })
+            .catch(e=>console.log(e));
 
-        let filters = [];
-        let filterValues = new Map();
-        filters.push({filter_code: 111, filter_name: 'super!'});
-        filterValues.set('111', ['1A','2A','4A','8A','16A','32A']);
-        filters.push({filter_code: 222, filter_name: 'poppers!'});
-        filterValues.set('222', ['1Wt','2Wt','4Wt','8Wt','16Wt','32Wt']);
-        this.setState({filters:filters, filterValues: filterValues});
+        // let filters = [];
+        // let filterValues = new Map();
+        // filters.push({filter_code: 111, filter_name: 'super!'});
+        // filterValues.set('111', ['1A','2A','4A','8A','16A','32A']);
+        // filters.push({filter_code: 222, filter_name: 'poppers!'});
+        // filterValues.set('222', ['1Wt','2Wt','4Wt','8Wt','16Wt','32Wt']);
+        // this.setState({filters:filters, filterValues: filterValues});
     }
 
     createFilterElement(filterDescription){
@@ -70,10 +72,12 @@ class  AttributeFilters extends React.Component {
     }
 
     filterOnClick = (event) => {
-        this.setState({filterShown: event.target});
+        this.setState({filterShown: !this.state.filterShown, filterElement: event.target});
     };
 
     applyFilter = (event) => {
+
+        this.setState({filterShown: false});
 
         const checked = document.querySelectorAll("input:checked");
         let attributesArray = [];
@@ -95,6 +99,7 @@ class  AttributeFilters extends React.Component {
 
     getSelectedValues = (filterId, returnIndex=false) => {
 
+        if (!filterId) return undefined;
         filterId = filterId.toString();
         const selectedAttributes = this.props.selectedAttributes;
         for(let i= 0 ; i <= selectedAttributes.length-1; i++){
@@ -105,9 +110,9 @@ class  AttributeFilters extends React.Component {
         return undefined;
     };
 
-    toggleDropdown(){
+    createFilterDropdown(){
 
-        const filterId = this.state.filterShown.id;
+        const filterId = Number(this.state.filterElement.id);
         const currentValues = this.state.filterValues.get(filterId);
         if (!currentValues) return;
 
@@ -119,12 +124,12 @@ class  AttributeFilters extends React.Component {
         return(
             <ul id='dropdown' key={'dropdown_'+filterId}
                 className="absolute pa0"
-                style={{top: `${this.state.filterShown.offsetTop+5}px`,
-                    left: `${(2*this.state.filterShown.offsetLeft+this.state.filterShown.offsetWidth/2)/2}px`,
+                style={{top: `${this.state.filterElement.offsetTop+5}px`,
+                    left: `${(2*this.state.filterElement.offsetLeft+this.state.filterElement.offsetWidth/2)/2}px`,
                     listStyleType: "none", backgroundColor: 'rgba(255,255,255,0.9)'}}>
                 <form className="pa4" key={'form_'+filterId}>
                     <fieldset id="filters" className="bn" key={'filters_'+filterId}>
-                        <legend className="fw7 mb2">{`Фильтр ${this.state.filterShown.innerText}`}</legend>
+                        <legend className="fw7 mb2">{`Фильтр ${this.state.filterElement.innerText}`}</legend>
                         {currentValues.map((elem,i) => {
                             return(
                                 <div className="flex items-center mb2">
@@ -149,7 +154,7 @@ class  AttributeFilters extends React.Component {
         return(
             <div className='bg-lightest-blue ma1 pa2 flex items-center justify-around f5'>
                 {this.state.filters.map(elem=>this.createFilterElement(elem))}
-                {this.state.filterShown && this.toggleDropdown()}
+                {this.state.filterShown && this.createFilterDropdown()}
             </div>
         )
     };

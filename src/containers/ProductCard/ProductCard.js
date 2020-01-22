@@ -81,7 +81,7 @@ class ProductCard extends React.Component{
                     </div>
                     <div className='w-50 center'>
                         <PropertiesTable
-                            properties = {[['I max', '2 A'], ['U min','110 V'],['Watts', '80']]}
+                            properties = {this.state.attributes}
                         />
                     </div>
                 </div>

@@ -15,8 +15,8 @@ const PropertiesTable = ({properties}) => {
                 {properties.reduce((accum, elem) => {
                    accum.push(
                        <tr className="striped--lightest-blue">
-                           <td className="pv2 ph3">{elem[0]}</td>
-                           <td className="pv2 ph3">{elem[1]}</td>
+                           <td className="pv2 ph3">{elem.attr}</td>
+                           <td className="pv2 ph3">{elem.value}</td>
                        </tr>);
                     return accum;
                 },[])}
