@@ -129,10 +129,10 @@ class  AttributeFilters extends React.Component {
                     listStyleType: "none", backgroundColor: 'rgba(255,255,255,0.9)'}}>
                 <form className="pa4" key={'form_'+filterId}>
                     <fieldset id="filters" className="bn" key={'filters_'+filterId}>
-                        <legend className="fw7 mb2">{`Фильтр ${this.state.filterElement.innerText}`}</legend>
+                        <legend className="fw7 mb2">{`Значения`}</legend>
                         {currentValues.map((elem,i) => {
                             return(
-                                <div className="flex items-center mb2">
+                                <div className="flex items-center mb2 f5">
                                     <input className="mr2" type="checkbox"
                                            defaultChecked={selectedValues.includes(elem)} key={`${filterId}_${i}`}
                                            id={`filter_${filterId}_${i}`} value={`${elem}`}/>
