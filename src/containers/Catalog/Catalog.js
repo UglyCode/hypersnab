@@ -15,7 +15,6 @@ class Catalog extends React.Component {
             selectedAttributes:[], // [{attribute: int, values:[string,...]},{}]
             page: 1,
             goods: props.goods,
-            searchString: props.searchString,
             filteredGoods: [],
             folders: [],
             goodsUpdateNeeded: true
@@ -48,7 +47,7 @@ class Catalog extends React.Component {
         //update product list with new filter implemented
         //add cache to this kind of request
 
-        if (this.state.goodsUpdateNeeded){
+        if (this.state.goodsUpdateNeeded || prevProps.searchString !== this.props.searchString){
             this.updateFilteredGoods();
         };
         console.log('state: ', prevState, this.state);
@@ -56,16 +55,17 @@ class Catalog extends React.Component {
 
     updateFilteredGoods(){
         let filteredGoodsPromise;
-        if (this.state.folder) {
+        if (this.props.searchString) {
+            filteredGoodsPromise = Promise.resolve(this.getSearchResult());
+        } else if (this.state.folder) {
             filteredGoodsPromise =  //Promise.resolve(this.getFolderFiltererdGoods(this.state.folder));
                 fetch(`${SERVER}/goods/${this.state.folder}` +
                 `?attributes_filter=${JSON.stringify(this.state.selectedAttributes)}`)
                     .then(goodsRes=>goodsRes.json());
-        } else if (this.props.searchString){
-            filteredGoodsPromise = Promise.resolve(this.getSearchResult());
         } else {
             filteredGoodsPromise = Promise.resolve(this.getSpecOffers());
         };
+
 
         filteredGoodsPromise.then(filteredGoods => {
             this.setState({goodsUpdateNeeded:false, filteredGoods: filteredGoods});
@@ -84,6 +84,7 @@ class Catalog extends React.Component {
         const selectedFolder = event.target.id;
         this.setState({folder: (this.state.folder !== selectedFolder) ? selectedFolder : '',
             goodsUpdateNeeded: true, selectedAttributes:[]});
+        this.props.updateSearchString('');
         event.stopPropagation();
         window.scrollTo(0,0);
     };

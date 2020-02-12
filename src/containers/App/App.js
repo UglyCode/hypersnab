@@ -169,6 +169,7 @@ class App extends Component {
                     orderSum = {this.state.orderSum}
                     goodsAmount = {this.state.order.size}
                     updateSearchString = {this.updateSearchString}
+                    searchString = {this.state.searchString}
                 />
                 <Main
                     route={this.state.route}
@@ -178,6 +179,7 @@ class App extends Component {
                     setSelectedItem = {this.setSelectedItem}
                     shownSpecOffers = {this.state.shownSpecOffers}
                     searchString = {this.state.searchString}
+                    updateSearchString = {this.updateSearchString}
                     goods = {this.state.goods}
                     folders = {this.state.folders}
                 />

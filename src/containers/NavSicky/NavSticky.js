@@ -10,7 +10,8 @@ class NavSticky extends React.Component{
         this.state = {
             top: 0,
             height: 0,
-            scroll: 0
+            scroll: 0,
+            searchField: undefined
         }
     }
 
@@ -20,8 +21,12 @@ class NavSticky extends React.Component{
 
     componentDidMount() {
         const el = document.querySelector('#navSticky');
-        this.setState({top: el.offsetTop, height: el.offsetHeight});
+        this.setState({top: el.offsetTop, height: el.offsetHeight, searchField:document.querySelector('#searchField')});
         window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        this.state.searchField.value = this.props.searchString;
     }
 
     pageLinkOnClick = (event) => {
@@ -55,7 +60,7 @@ class NavSticky extends React.Component{
     clearSearchString = (event) => {
         const searchField = document.querySelector('#searchField');
         searchField.placeholder = 'поиск товара';
-        this.clearSearchField(searchField);
+        // this.clearSearchField(searchField);
         this.props.updateSearchString('');
     };
 
@@ -98,7 +103,8 @@ class NavSticky extends React.Component{
                                 id={'searchField'}
                                 onKeyPress={this.handleEnterPress}
                                 className="f4 w-90"
-                                placeholder="поиск товаров" type="text" name="searchText">
+                                placeholder="поиск товаров"
+                                type="text" name="searchText">
                             </input>
                             <button className='w-10' onClick={this.handleSearchInput}>
                                 <img src={require('../../static/search.png')} className='mw-100'></img>

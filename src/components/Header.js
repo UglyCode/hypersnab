@@ -8,7 +8,7 @@ import BasketCard from './BasketCard';
 //TODO
 // Implement transparent nav shadow
 
-const Header = ({toggleProfile, setUserStatus, inn, userStatus, route,
+const Header = ({toggleProfile, setUserStatus, inn, userStatus, route, searchString,
                     onRouteChange, orderSum, goodsAmount, updateSearchString}) => {
     return(
         <div className = 'flex flex-column content-stretch'>
@@ -24,6 +24,7 @@ const Header = ({toggleProfile, setUserStatus, inn, userStatus, route,
                 orderSum={orderSum}
                 goodsAmount={goodsAmount}
                 updateSearchString={updateSearchString}
+                searchString = {searchString}
             />
             {/*<Login/>*/}
         </div>

@@ -4,7 +4,8 @@ import RightCol from './RightCol';
 import CurrPage from './CurrPage';
 import Catalog from '../containers/Catalog/Catalog';
 
-const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecOffers, searchString, goods}) => {
+const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecOffers,
+                  searchString, updateSearchString, goods}) => {
 
         if (route === 'catalog'){
             return (
@@ -13,6 +14,7 @@ const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecO
                     order={order}
                     setSelectedItem = {setSelectedItem}
                     searchString={searchString}
+                    updateSearchString={updateSearchString}
                     goods={goods}
                 />)
         } else {
