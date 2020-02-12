@@ -4,7 +4,8 @@ import AboutPage from './AboutPage';
 import Basket from '../containers/Basket/Basket';
 import Catalog from "../containers/Catalog/Catalog";
 
-const CurrPage = ({route, updateAmount, order, orderSum, setSelectedItem, goods}) => {
+const CurrPage = ({route, updateAmount, order, orderSum, setSelectedItem, goods,
+                      orderAutoUpdated, basketWarningShown}) => {
     console.log(route);
     return(
         <div className="br3 ma2 bw-2 shadow-5-l tc bg-white pa1">
@@ -20,6 +21,8 @@ const CurrPage = ({route, updateAmount, order, orderSum, setSelectedItem, goods}
                         return <Basket updateAmount={updateAmount}
                                        order={order}
                                        orderSum={orderSum}
+                                       orderAutoUpdated={orderAutoUpdated}
+                                       basketWarningShown={basketWarningShown}
                                        setSelectedItem = {setSelectedItem}
                                        goods={goods}
                         />;

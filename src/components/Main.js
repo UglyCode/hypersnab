@@ -5,7 +5,7 @@ import CurrPage from './CurrPage';
 import Catalog from '../containers/Catalog/Catalog';
 
 const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecOffers,
-                  searchString, updateSearchString, goods}) => {
+                  searchString, updateSearchString, goods, orderAutoUpdated, basketWarningShown}) => {
 
         if (route === 'catalog'){
             return (
@@ -29,6 +29,8 @@ const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecO
                             route={route}
                             updateAmount={updateAmount}
                             order={order}
+                            orderAutoUpdated={orderAutoUpdated}
+                            basketWarningShown={basketWarningShown}
                             orderSum = {orderSum}
                             setSelectedItem = {setSelectedItem}
                             goods={goods}

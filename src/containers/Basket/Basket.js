@@ -7,12 +7,15 @@ class Basket extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            orderedGoods: []
+            orderedGoods: [],
+            showWarning: false
         };
     }
 
     componentDidMount() {
         this.updateOrderedGoods();
+        this.setState({showWarning: this.props.orderAutoUpdated});
+        this.props.basketWarningShown();
     }
 
     updateOrderedGoods = () => {
@@ -34,6 +37,10 @@ class Basket extends React.Component{
 
         return (
             <div className='flex-column'>
+                {this.state.showWarning &&
+                <div className='br1 ba bw1 ph3'>
+                    ЗАКАЗ БЫЛ АВТОМАТИЧЕСКИ ОТРЕДАКТИРОВАН! ПРОВЕРЬТЕ СОСТАВ!
+                </div>}
                 <CatalogPage goods={this.state.orderedGoods}
                              order={this.props.order}
                              updateAmount={this.props.updateAmount}

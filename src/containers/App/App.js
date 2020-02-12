@@ -20,6 +20,7 @@ const initialState = {
     userDataCache: {},
     order: new Map(),
     orderSum: 0,
+    orderAutoUpdated: false,
     selectedItem: undefined,
     shownSpecOffers: [],
     searchString: '',
@@ -79,11 +80,24 @@ class App extends Component {
     }
 
     updateOrder = (goods, order) => {
+        let orderUpdated = false;
         const orderSum = this.state.goods.reduce((accumulator, currentValue) =>{
-            let orderedAmount = order.get(currentValue.code) || 0;
+            let ordered = order.get(currentValue.code);
+            if (ordered && ordered > currentValue.amount){
+                orderUpdated = true;
+                ordered = currentValue.amount;
+                if (!ordered){
+                    order.delete(currentValue.code);
+                } else {
+                    order.set(currentValue.code, ordered);
+                }
+            }
+            let orderedAmount = ordered || 0;
             return accumulator + orderedAmount * currentValue.price;
         },0);
-        this.setState({order:order, orderSum:orderSum.toFixed(2)});
+        if (orderUpdated) window.localStorage.setItem('order', this.mapToJson(order));
+        this.setState({order:order, orderSum:orderSum.toFixed(2),
+            orderAutoUpdated: this.state.orderAutoUpdated || orderUpdated});
     };
 
     updateSearchString = (searchString) => {
@@ -148,12 +162,8 @@ class App extends Component {
         this.setState({route});
     };
 
-    handleButtonPress = (event) =>{
-        console.log('key pressed', event.key);
-        if (event.key === 'Esc') {
-            console.log(event.target);
-            this.handleSearchInput();
-        }
+    basketWarningShown = () => {
+        this.setState({orderAutoUpdated: false})
     };
 
     render() {
@@ -176,6 +186,8 @@ class App extends Component {
                     updateAmount = {this.updateAmountOfOrderedGood}
                     order = {this.state.order}
                     orderSum = {this.state.orderSum}
+                    orderAutoUpdated = {this.state.orderAutoUpdated}
+                    basketWarningShown = {this.basketWarningShown}
                     setSelectedItem = {this.setSelectedItem}
                     shownSpecOffers = {this.state.shownSpecOffers}
                     searchString = {this.state.searchString}
