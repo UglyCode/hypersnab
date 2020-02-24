@@ -33,6 +33,10 @@ class Basket extends React.Component{
        }, []);
     };
 
+    confirmOrder = (event) => {
+        if (this.props.userStatus !== 'loggedIn') return ;
+    };
+
     render() {
 
         return (
@@ -49,10 +53,14 @@ class Basket extends React.Component{
                 <div className='flex flex-row-reverse ma0'>
                     <p className='f4'>{`ИТОГО: ${this.props.orderSum} руб.`}</p>
                 </div>
-                <div className="ph3 mt4 b">
+                <div className="ph3 mt4 b" id={'confirmOrder'}>
                     <a className="f6 link br1 ba bw1 ph3 pv2 mb2 dib black hover-blue underline-hover" href="#0">
                         ОФОРМИТЬ ЗАКАЗ
                     </a>
+                    {this.props.userStatus === 'loggedIn' ||
+                        <p className='red tc ba b--dark-red f7'>
+                            *Для оформления заказа необходимо войти или зарегистрироваться!
+                        </p>}
                 </div>
             </div>
 

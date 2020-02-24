@@ -194,6 +194,7 @@ class App extends Component {
                     updateSearchString = {this.updateSearchString}
                     goods = {this.state.goods}
                     folders = {this.state.folders}
+                    userStatus = {this.state.userStatus}
                 />
                 <Footer/>
                 {this.state.isProfileOpen &&
