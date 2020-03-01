@@ -191,6 +191,7 @@ class App extends Component {
                     setSelectedItem = {this.setSelectedItem}
                     shownSpecOffers = {this.state.shownSpecOffers}
                     searchString = {this.state.searchString}
+                    inn={this.state.userInn}
                     updateSearchString = {this.updateSearchString}
                     goods = {this.state.goods}
                     folders = {this.state.folders}

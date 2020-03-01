@@ -4,7 +4,7 @@ import RightCol from './RightCol';
 import CurrPage from './CurrPage';
 import Catalog from '../containers/Catalog/Catalog';
 
-const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecOffers, userStatus,
+const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecOffers, userStatus, inn,
                   searchString, updateSearchString, goods, orderAutoUpdated, basketWarningShown}) => {
 
         if (route === 'catalog'){
@@ -30,6 +30,7 @@ const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecO
                             updateAmount={updateAmount}
                             order={order}
                             userStatus={userStatus}
+                            inn={inn}
                             orderAutoUpdated={orderAutoUpdated}
                             basketWarningShown={basketWarningShown}
                             orderSum = {orderSum}

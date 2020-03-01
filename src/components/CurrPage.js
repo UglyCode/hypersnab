@@ -6,7 +6,7 @@ import Catalog from "../containers/Catalog/Catalog";
 import OrderList from "../containers/OrderList/OrderList";
 
 const CurrPage = ({route, updateAmount, order, orderSum, setSelectedItem, goods,
-                      userStatus,orderAutoUpdated, basketWarningShown}) => {
+                      inn, userStatus,orderAutoUpdated, basketWarningShown}) => {
     console.log(route);
     return(
         <div className="br3 ma2 bw-2 shadow-5-l tc bg-white pa1">
@@ -19,7 +19,7 @@ const CurrPage = ({route, updateAmount, order, orderSum, setSelectedItem, goods,
                         return <ContactPage/>;
                         break;
                     case 'orderList':
-                        return <OrderList/>;
+                        return <OrderList inn={inn}/>;
                         break;
                     case 'basket':
                         return <Basket updateAmount={updateAmount}
