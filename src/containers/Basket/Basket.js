@@ -19,7 +19,7 @@ class Basket extends React.Component{
     }
 
     updateOrderedGoods = () => {
-        const goodsToUpDate = this.getDifferentKeys(this.props.order, this.state.orderedGoods);
+        //const goodsToUpDate = this.getDifferentKeys(this.props.order, this.state.orderedGoods);
         this.setState({orderedGoods: this.props.goods.filter(elem => this.props.order.has(elem.code))})
     };
 
@@ -28,8 +28,8 @@ class Basket extends React.Component{
            console.log(accum);
            if (mapTwo.indexOf(currKey)<0) {
                accum.push(currKey);
-           }
            return accum;
+       }
        }, []);
     };
 

@@ -3,6 +3,7 @@ import ContactPage from './ContactPage';
 import AboutPage from './AboutPage';
 import Basket from '../containers/Basket/Basket';
 import Catalog from "../containers/Catalog/Catalog";
+import OrderList from "../containers/OrderList/OrderList";
 
 const CurrPage = ({route, updateAmount, order, orderSum, setSelectedItem, goods,
                       userStatus,orderAutoUpdated, basketWarningShown}) => {
@@ -16,6 +17,9 @@ const CurrPage = ({route, updateAmount, order, orderSum, setSelectedItem, goods,
                         break;
                     case 'contacts':
                         return <ContactPage/>;
+                        break;
+                    case 'orderList':
+                        return <OrderList/>;
                         break;
                     case 'basket':
                         return <Basket updateAmount={updateAmount}

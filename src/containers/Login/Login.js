@@ -144,6 +144,10 @@ class Login extends React.Component{
         }
     };
 
+    ordersOnClick = (event) => {
+        this.props.onRouteChange('orderList');
+    };
+
     render() {
         const el = document.querySelector('#innSign');
         const {inn, userStatus} = this.props;
@@ -205,12 +209,15 @@ class Login extends React.Component{
                         style={{top: el.offsetTop, listStyleType: "none", backgroundColor:'rgba(255,255,255,0.8)'}}>
                         <li className='ma3 pointer underline-hover'
                         onClick={this.logOut}>
-                            Log out </li>
+                            Выйти </li>
                         <li className='ma3 pointer underline-hover'
                         onClick={this.openProfile}>
-                            Profile
+                            Профиль
                         </li>
-                        <li className='ma3 pointer underline-hover'> Orders </li>
+                        <li className='ma3 pointer underline-hover'
+                        onClick={this.ordersOnClick}>
+                            Заказы
+                        </li>
                     </ul>
                 }
 
