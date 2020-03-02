@@ -45,7 +45,7 @@ class OrderList extends React.Component{
 
         return response.reduce((accum, elem) => {
             if (orderId !== elem.orderid){
-                accum.push({id: elem.orderid, sum: 0, date: new Date(elem.updated).toLocaleDateString(),
+                accum.push({id: elem.orderid, sum: 0, date: new Date(elem.updated).toLocaleDateString(), status: elem.status,
                     description:'Товаров в заказе: %товаров%',
                     orderedGoods: []});
                 orderId = elem.orderid;
@@ -91,6 +91,7 @@ class OrderList extends React.Component{
                                 key={elem.id}
                                 sum={elem.sum}
                                 date={elem.date}
+                                status={elem.status}
                                 description={elem.description}
                                 orderedGoods={elem.orderedGoods}
                                 selectOrder={selectedOrder}
