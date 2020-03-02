@@ -6,7 +6,7 @@ import Catalog from "../containers/Catalog/Catalog";
 import OrderList from "../containers/OrderList/OrderList";
 
 const CurrPage = ({route, updateAmount, order, orderSum, setSelectedItem, goods,
-                      inn, userStatus,orderAutoUpdated, basketWarningShown}) => {
+                      inn, userStatus, orderAutoUpdated, basketWarningShown}) => {
     console.log(route);
     return(
         <div className="br3 ma2 bw-2 shadow-5-l tc bg-white pa1">
@@ -30,6 +30,7 @@ const CurrPage = ({route, updateAmount, order, orderSum, setSelectedItem, goods,
                                        basketWarningShown={basketWarningShown}
                                        setSelectedItem = {setSelectedItem}
                                        goods={goods}
+                                       inn={inn}
                         />;
                     default:
                         return null;

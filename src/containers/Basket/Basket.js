@@ -1,5 +1,6 @@
 import React from 'react';
 import CatalogPage from '../../components/CatalogPage';
+import ENV from "../../settings/env";
 //import {goods} from '../../static/realGoodsMock';
 
 class Basket extends React.Component{
@@ -33,8 +34,35 @@ class Basket extends React.Component{
        }, []);
     };
 
+    createOrderObject = () => {
+        return {
+            inn: this.props.inn,
+            comment: document.getElementById('comment').value,
+            orderedGoods: this.state.orderedGoods.map((elem) => {
+                return {good: elem.code, price: elem.price, ammount: this.props.order.get(elem.code)}
+            })
+        }
+    };
+
     confirmOrder = (event) => {
         if (this.props.userStatus !== 'loggedIn') return ;
+        const orderObject = this.createOrderObject();
+        fetch(`${ENV.server}/orders`, {
+            method: 'POST',
+            headers : {
+                'Content-type': 'application/json',
+                'Authorization': window.localStorage.getItem('token')
+            },
+            body: JSON.stringify(orderObject)
+        }).then(resp => {
+            if (resp.status === 200 || resp.status === 304){
+                window.localStorage.removeItem('order');
+                window.location.reload();
+                alert('Заказ успешно размещен и доступен к просмотру в списке заказов.');
+            } else {
+                alert('Не удалось разместить заказ. Попробуйте позднее!')
+            }
+        }).catch( err => console.log);
     };
 
     render() {
@@ -53,7 +81,19 @@ class Basket extends React.Component{
                 <div className='flex flex-row-reverse ma0'>
                     <p className='f4'>{`ИТОГО: ${this.props.orderSum} руб.`}</p>
                 </div>
-                <div className="ph3 mt4 b" id={'confirmOrder'}>
+                <div className='w-100 flex-column justify-start pa3 f5'>
+                    <div className='flex items-center justify-around ma2'>
+                        <label>
+                            <input type='checkbox' name='delivery' id='delivery' className='mr2'/>
+                            Заказать доставку
+                        </label>
+                        <label>
+                            Адрес доставки и комментарий к заказу:
+                        </label>
+                    </div>
+                    <textarea className='w-90' name="comment" id='comment'/>
+                </div>
+                <div className="ph3 mt4 b" onClick={this.confirmOrder}>
                     <a className="f6 link br1 ba bw1 ph3 pv2 mb2 dib black hover-blue underline-hover" href="#0">
                         ОФОРМИТЬ ЗАКАЗ
                     </a>
