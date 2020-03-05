@@ -4,6 +4,7 @@ import AboutPage from './AboutPage';
 import Basket from '../containers/Basket/Basket';
 import Catalog from "../containers/Catalog/Catalog";
 import OrderList from "../containers/OrderList/OrderList";
+import Bill from "../containers/Bills/Bill";
 
 const CurrPage = ({route, updateAmount, order, orderSum, setSelectedItem, goods,
                       inn, userStatus, orderAutoUpdated, basketWarningShown}) => {
@@ -12,6 +13,9 @@ const CurrPage = ({route, updateAmount, order, orderSum, setSelectedItem, goods,
         <div className="br3 ma2 bw-2 shadow-5-l tc bg-white pa1">
             {(() => {
                 switch(route) {
+                    case 'bill':
+                        return <Bill/>
+                        break;
                     case 'about':
                         return <AboutPage/>;
                         break;
