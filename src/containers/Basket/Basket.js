@@ -9,7 +9,8 @@ class Basket extends React.Component{
         super(props);
         this.state = {
             orderedGoods: [],
-            showWarning: false
+            showWarning: false,
+            DeliveryAddressDisabled: true
         };
     }
 
@@ -38,6 +39,8 @@ class Basket extends React.Component{
         return {
             inn: this.props.inn,
             comment: document.getElementById('comment').value,
+            delivery: document.getElementById('delivery').checked,
+            deliveryAddress: document.getElementById('deliveryAddress').value,
             orderedGoods: this.state.orderedGoods.map((elem) => {
                 return {good: elem.code, price: elem.price, ammount: this.props.order.get(elem.code)}
             })
@@ -65,6 +68,10 @@ class Basket extends React.Component{
         }).catch( err => console.log);
     };
 
+    deliveryOnChange = ()=>{
+        this.setState({DeliveryAddressDisabled: !document.getElementById('delivery').checked})
+    };
+
     render() {
 
         return (
@@ -81,20 +88,25 @@ class Basket extends React.Component{
                 <div className='flex flex-row-reverse ma0'>
                     <p className='f4'>{`ИТОГО: ${this.props.orderSum} руб.`}</p>
                 </div>
-                <div className='w-100 flex-column justify-start pa3 f5'>
-                    <div className='flex items-center justify-around ma2'>
-                        <label>
-                            <input type='checkbox' name='delivery' id='delivery' className='mr2'/>
-                            Заказать доставку
-                        </label>
-                        <label>
-                            Адрес доставки и комментарий к заказу:
-                        </label>
+                <div className='w-100 flex-column justify-start pa3 f5 bg-lightest-blue'>
+                    <div className="flex items-center mb2 w-100">
+                        <div className='flex w-20 items-start'>
+                            <label htmlFor="delivery" className="lh-copy ma2 pointer">Доставить заказ</label>
+                            <input type='checkbox' name='delivery' id='delivery' className='mt3 pointer'
+                                   onChange={this.deliveryOnChange}/>
+                        </div>
+                        <textarea className='ma2 w-80' name="deliveryAddress" id='deliveryAddress'
+                                  placeholder='Введите адрес доставки' disabled={this.state.DeliveryAddressDisabled}/>
                     </div>
-                    <textarea className='w-90' name="comment" id='comment'/>
+                    <div className="flex items-center mb2 w-100">
+                        <div className="flex items-start mb2 w-20">
+                            <label htmlFor="comment" className="lh-copy ma2"> Комментарий: </label>
+                        </div>
+                        <textarea className='ma2 w-80' name="comment" id='comment' placeholder='Комментарий к заказу'/>
+                    </div>
                 </div>
                 <div className="ph3 mt4 b" onClick={this.confirmOrder}>
-                    <a className="f6 link br1 ba bw1 ph3 pv2 mb2 dib black hover-blue underline-hover" href="#0">
+                    <a className="f6 link br1 ba bw1 ph3 pv2 mb2 dib black hover-blue underline-hover">
                         ОФОРМИТЬ ЗАКАЗ
                     </a>
                     {this.props.userStatus === 'loggedIn' ||
