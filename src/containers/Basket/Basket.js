@@ -40,7 +40,7 @@ class Basket extends React.Component{
             inn: this.props.inn,
             comment: document.getElementById('comment').value,
             delivery: document.getElementById('delivery').checked,
-            deliveryAddress: document.getElementById('deliveryAddress').value,
+            delivery_address: document.getElementById('deliveryAddress').value,
             orderedGoods: this.state.orderedGoods.map((elem) => {
                 return {good: elem.code, price: elem.price, ammount: this.props.order.get(elem.code)}
             })
