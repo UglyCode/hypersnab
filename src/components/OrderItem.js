@@ -3,7 +3,7 @@ import React from 'react';
 const OrderItem = ({id, key, sum, date, description, orderedGoods, selectOrder, orderSelected, status, showBill}) => {
 
     const showBillForOrder = () => {
-        showBill(orderedGoods);
+        showBill(date, id, orderedGoods);
     };
 
         return (

@@ -20,7 +20,6 @@ class OrderList extends React.Component{
 
     componentDidMount() {
         this.updateOrderList();
-        this.getUserDataByInn(this.props.inn);
     }
 
     updateOrderList = () => {
@@ -71,25 +70,15 @@ class OrderList extends React.Component{
         this.setState({activeOrders: activeOrders});
     };
 
-    showBill = (orderData) => {
-        this.setState({isBillShown: true, orderData:orderData})
-    };
-
-    getUserDataByInn = (inn) => {
-        fetch(`${ENV.server}/profile/${inn}`,{
-            method : 'GET',
-            headers : {
-                'Authorization': window.localStorage.getItem('token')
-                }
-            })
-            .then(uData => {
-                this.setState({userData:`${uData.name}, ИНН ${uData.inn}, КПП ${uData.kpp}, ${uData.address}`})
-            })
-            .catch(e=>console.log(e))
-    };
-
-    closeBillPage = () => {
-        this.setState({isBillShown: false});
+    showBill = (date, id , orderData) => {
+        const billData = {
+            date: date,
+            id: id,
+            orderedGoods: orderData
+        };
+        const billDataStr = JSON.stringify(billData);
+        localStorage.setItem("billData", billDataStr);
+        window.open('http://localhost:3000/', "_blank");
     };
 
     render() {
@@ -101,7 +90,7 @@ class OrderList extends React.Component{
                 {
                     this.state.orders.map((elem => {
                         return(
-                            <div className='flex justify-between'>
+                            <div className='flex-column justify-between'>
                                 <OrderItem
                                     id={elem.id}
                                     key={elem.id}
@@ -114,14 +103,6 @@ class OrderList extends React.Component{
                                     orderSelected={activeOrders.has(elem.id)}
                                     showBill={this.showBill}
                                 />
-                                {
-                                    this.state.isBillShown ||
-                                    <Bill
-                                        orderedGoods={this.state.billData}
-                                        usuerData={this.state.userData}
-                                        closeBillPage={this.closeBillPage}
-                                    />
-                                }
                             </div>);
                     }))
                 }

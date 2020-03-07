@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import Bill from "../Bills/Bill";
 import Modal from '../Modal/Modal';
 import Profile from '../Profile/Profile';
 import Header from '../../components/Header';
@@ -17,7 +17,7 @@ const initialState = {
     isProfileOpen: false,
     userInn: '',
     userStatus: 'loggedOut',
-    userDataCache: {},
+    userData: '',
     order: new Map(),
     orderSum: 0,
     orderAutoUpdated: false,
@@ -33,6 +33,12 @@ class App extends Component {
     constructor(props){
         super(props);
         this.state = initialState;
+
+        if (localStorage.billData) {
+            this.state.invoiceShown = true;
+            this.state.billData = JSON.parse(localStorage.billData);
+            localStorage.removeItem("billData");
+        }
     }
 
     toggleProfile = (inn) =>{
@@ -76,7 +82,6 @@ class App extends Component {
             shownSpecOffers.push(spec[(seed+i)%spec.length])
         }
         this.setState({shownSpecOffers});
-        console.log(shownSpecOffers);
     }
 
     updateOrder = (goods, order) => {
@@ -113,7 +118,6 @@ class App extends Component {
             })
             .then(goods=>{
                 const order = this.jsonToMap(window.localStorage.getItem('order')) || this.state.order;
-                console.log('order good', order);
                 this.updateOrder(goods,order);
                 this.chooseShownSpecOffers(goods,2);
             })
@@ -124,6 +128,9 @@ class App extends Component {
         if (token){
             const payload = this.parseJwtPayload(token);
             if (payload) this.setState({userInn: payload.inn, userStatus: 'loggedIn'});
+            if (this.state.invoiceShown){
+                this.getUserDataByInn(payload.inn);
+            }
         }
     };
 
@@ -131,6 +138,20 @@ class App extends Component {
         const base64Url = token.split('.')[1];
         const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
         return JSON.parse(window.atob(base64));
+    };
+
+    getUserDataByInn = (inn) => {
+        fetch(`${ENV.server}/profile/${inn}`,{
+            method : 'GET',
+            headers : {
+                'Authorization': window.localStorage.getItem('token')
+            }
+        })
+            .then(responseData=> responseData.json())
+            .then(uData => {
+                this.setState({userData:`${uData.name}, ИНН ${uData.inn}, КПП ${uData.kpp}, ${uData.address}`})
+            })
+            .catch(e=>console.log(e))
     };
 
     updateAmountOfOrderedGood = (goodId, newAmount) => {
@@ -167,6 +188,13 @@ class App extends Component {
     };
 
     render() {
+        if (this.state.invoiceShown) return (
+            <Bill orderedGoods={this.state.billData.orderedGoods}
+                  userData={this.state.userData}
+                  date={this.state.billData.date}
+                  id={this.state.billData.id}
+            />
+            );
         return (
             <div className="App vh-100 pa2 flex flex-column">
                 <Header
