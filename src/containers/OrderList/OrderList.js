@@ -78,7 +78,7 @@ class OrderList extends React.Component{
         };
         const billDataStr = JSON.stringify(billData);
         localStorage.setItem("billData", billDataStr);
-        window.open('http://localhost:3000/', "_blank");
+        window.open('https://hypersnab-demo.herokuapp.com/', "_blank");
     };
 
     render() {
