@@ -50,7 +50,8 @@ class OrderList extends React.Component{
                 description: elem.description,
                 amount: elem.amount,
                 price: elem.price,
-                sum: elem.sum
+                sum: elem.sum,
+                measure: elem.measure
             });
 
             curElement.sum += Number(elem.sum);
@@ -78,7 +79,7 @@ class OrderList extends React.Component{
         };
         const billDataStr = JSON.stringify(billData);
         localStorage.setItem("billData", billDataStr);
-        window.open('https://hypersnab-demo.herokuapp.com/', "_blank");
+        window.open(window.location.href, "_blank");
     };
 
     render() {

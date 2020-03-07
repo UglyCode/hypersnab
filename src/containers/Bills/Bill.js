@@ -5,7 +5,7 @@ const Bill = ({id, date, orderedGoods, userData}) => {
 
     const totalSum = orderedGoods.reduce((accum, elem) => {
         return accum += Number(elem.sum);
-    }, 0);
+    }, 0).toFixed(2);
 
     const number_to_string =(_number) => {
         let _arr_numbers = new Array();
@@ -235,7 +235,7 @@ const Bill = ({id, date, orderedGoods, userData}) => {
                             {/*<th className='tc'style={{width:"20mm"}}>{elem.good}</th>*/}
                             <th className='tl normal'>{elem.description}</th>
                             <th className='tr normal' style={{width:"20mm"}}>{elem.amount}</th>
-                            <th className='tl normal'style={{width:"17mm"}}>шт</th>
+                            <th className='tl normal'style={{width:"17mm"}}>{elem.measure}</th>
                             <th className='tr normal' style={{width:"27mm"}}>{elem.price}</th>
                             <th className='tr normal' style={{width:"27mm"}}>{elem.sum}</th>
                         </tr>);
