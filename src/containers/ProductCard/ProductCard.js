@@ -64,7 +64,7 @@ class ProductCard extends React.Component{
                             <dt className="clip">{'Цена'}</dt>
                             <dd className="ml0">{`Цена: ${this.state.price} руб.`}</dd>
                             <dt className="clip">{'Остаток'}</dt>
-                            <dd className="ml0">{`Остаток: ${this.state.quantity} ${this.state.measure}.`}</dd>
+                            <dd className="ml0">{`Остаток: ${this.state.quantity} ${this.state.measure}`}</dd>
                         </dl>
                     <div className='w-40 center'>
                         <div className='flex justify-between items-center w-100 f3'>

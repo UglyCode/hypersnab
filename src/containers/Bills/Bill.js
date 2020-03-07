@@ -1,7 +1,7 @@
 import React from 'react';
 import './Bill.css';
 
-const Bill = (props) => {
+const Bill = ({orderedGoods, userData, closeBillPage}) => {
 
     return (
         <div className='bill tl'>
