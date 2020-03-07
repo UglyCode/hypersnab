@@ -50,7 +50,7 @@ class OrderList extends React.Component{
                 description: elem.description,
                 amount: elem.amount,
                 price: elem.price,
-                sum: elem.sum,
+                sum: Number(elem.sum).toFixed(2),
                 measure: elem.measure
             });
 
