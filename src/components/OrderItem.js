@@ -12,7 +12,7 @@ const OrderItem = ({id, key, sum, date, description, orderedGoods, selectOrder, 
                     <div id={id} className='flex items-start w-100 f5 underline-hover justify-between ma2 pointer'
                          onClick={selectOrder}>
                         <p className='w-10 ma0 pa2 tl'>{id}</p>
-                        <p className='w-10 ma0 pa2 tl'>{date}</p>
+                        <p className='w-20 ma0 pa2 tl'>{date}</p>
                         <p className='w-20 ma0 pa2 tl'>{status}</p>
                         <p className='w-40 ma0 pa2 tl'>{description.replace('%товаров%', orderedGoods.length)}</p>
                         <p className='w-20 ma0 pa2 tl'>{`${Number(sum).toFixed(2)}`}</p>
@@ -33,11 +33,14 @@ const OrderItem = ({id, key, sum, date, description, orderedGoods, selectOrder, 
                         )}
                     </div>
                 </div>
-                <div className='mb'>
-                    <img src={require('../static/cart.png')} alt='Открыть счет'
-                         className='mw-100 pointer link dim pt1'
-                         style={{width: "40px", height: "40px"}}
-                         onClick={showBillForOrder}/>
+                <div className='mb bl w-20'>
+                    {/*<img src={require('../static/cart.png')} alt='Открыть счет'*/}
+                    {/*     className='mw-100 pointer link dim pt1'*/}
+                    {/*     style={{width: "40px", height: "40px"}}*/}
+                    {/*     onClick={showBillForOrder}/>*/}
+                    <p onClick={showBillForOrder} className='f5 pointer hover-dark-blue underline-hover'>
+                        Скачать счет
+                    </p>
                 </div>
             </div>
 
