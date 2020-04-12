@@ -87,7 +87,10 @@ class OrderList extends React.Component{
         const activeOrders = this.state.activeOrders;
         return (
             <div className='flex-column'>
-                {this.state.orders.length || (<h1 className='tc w-100 f5'> НЕ УДАЛОСЬ НАЙТИ СТАРЫЕ ЗАКАЗЫ </h1>)}
+                {<div className='flex justify-around items-center w-100 f4'>
+                    <p> {`Всего заказов: ${this.state.orders.length}`} </p>
+                    <p className="pointer hover-dark-blue underline-hover" onClick={this.updateOrderList}>Обновить</p>
+                </div>}
                 {
                     this.state.orders.map((elem => {
                         return(

@@ -86,22 +86,19 @@ class App extends Component {
 
     updateOrder = (goods, order) => {
         let orderUpdated = false;
+        let newOrder = new Map;
         const orderSum = this.state.goods.reduce((accumulator, currentValue) =>{
             let ordered = order.get(currentValue.code);
-            if (ordered && ordered > currentValue.amount){
-                orderUpdated = true;
-                ordered = currentValue.amount;
-                if (!ordered){
-                    order.delete(currentValue.code);
-                } else {
-                    order.set(currentValue.code, ordered);
-                }
+            if (ordered){
+                orderUpdated = orderUpdated || (ordered > currentValue.quantity);
+                newOrder.set(currentValue.code, Math.min(ordered, currentValue.quantity));
             }
             let orderedAmount = ordered || 0;
             return accumulator + orderedAmount * currentValue.price;
         },0);
-        if (orderUpdated) window.localStorage.setItem('order', this.mapToJson(order));
-        this.setState({order:order, orderSum:orderSum.toFixed(2),
+        if (order.size !== newOrder.size) orderUpdated = true;
+        window.localStorage.setItem('order', this.mapToJson(newOrder));
+        this.setState({order:newOrder, orderSum:orderSum.toFixed(2),
             orderAutoUpdated: this.state.orderAutoUpdated || orderUpdated});
     };
 
@@ -164,7 +161,7 @@ class App extends Component {
             order.delete(goodId);
         }
         this.updateOrder(this.state.goods, order);
-        window.localStorage.setItem('order', this.mapToJson(order));
+        //window.localStorage.setItem('order', this.mapToJson(order));
     };
 
     mapToJson(map) {

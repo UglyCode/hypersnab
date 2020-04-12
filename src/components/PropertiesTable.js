@@ -24,7 +24,7 @@ const PropertiesTable = ({properties}) => {
             </table>
         )
     } else {
-        return <p>NOP!</p>;
+        return <p></p>;
     }
 
 };

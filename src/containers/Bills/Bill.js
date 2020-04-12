@@ -9,8 +9,12 @@ class Bill extends React.Component {
     }
 
     componentDidMount() {
+        // let html2pdf = ()=> 0;
         const element = document.getElementById('bill_to_print');
-        //html2pdf(element);
+        // const script = document.createElement("script");
+        // script.src = require('../../static/html2pdf.bundle.min');
+        // script.async = true;
+        // document.head.appendChild(script);
         const worker = html2pdf().from(element).save(`Счет №${this.props.id} от ${this.props.date}.pdf`);
     }
 
@@ -138,7 +142,7 @@ class Bill extends React.Component {
                                     <tbody>
                                     <tr>
                                         <td style={{verticalAlign:"top"}}>
-                                            <div>АО "РАЙФФАЙЗЕНБАНК" Г. МОСКВА</div>
+                                            <div>ПАО СБЕРБАНК Г. МОСКВА</div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -153,8 +157,8 @@ class Bill extends React.Component {
                                 <div>БИK</div>
                             </td>
                             <td rowSpan="2" style={{verticalAlign: "top", width: "60mm"}}>
-                                <div style={{height: "7mm", lineHeight: "7mm", verticalAlign: "middle"}}>44525700</div>
-                                <div>30101810200000000700</div>
+                                <div style={{height: "7mm", lineHeight: "7mm", verticalAlign: "middle"}}>044525225</div>
+                                <div>30101810400000000225</div>
                             </td>
                         </tr>
                         <tr>
@@ -164,16 +168,16 @@ class Bill extends React.Component {
                         </tr>
                         <tr>
                             <td style={{minHeight:"6mm", height:"auto", width: "50mm"}}>
-                                <div>ИНН 7728322944</div>
+                                <div>ИНН 7710939479</div>
                             </td>
                             <td style={{minHeight:"6mm", height:"auto", width: "50mm"}}>
-                                <div>КПП 772801001</div>
+                                <div>КПП 771001001</div>
                             </td>
                             <td rowSpan="2" style={{minHeight:"19mm", height:"auto", verticalAlign: "top", width: "25mm"}}>
                                 <div>Сч. №</div>
                             </td>
                             <td rowSpan="2"style={{minHeight:"19mm", height:"auto", verticalAlign: "top", width: "25mm"}}>
-                                <div>40702810700000013833</div>
+                                <div>40702810638000125833</div>
                             </td>
                         </tr>
                         <tr>
@@ -182,7 +186,7 @@ class Bill extends React.Component {
                                     <tbody>
                                     <tr>
                                         <td style={{verticalAlign:"top"}}>
-                                            <div>Общество с ограниченной ответственностью "Электромаркет"</div>
+                                            <div>ООО "ТК "ГИПЕРСНАБ"</div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -213,7 +217,9 @@ class Bill extends React.Component {
                             </td>
                             <td>
                                 <div style={{fontWeight:"bold", paddingLeft:"2px"}}>
-                                    Общество с ограниченной ответственностью "Электромаркет", ИНН 7728322944, КПП 772801001, 117279, Москва г, Миклухо-Маклая ул, дом № 34, оф.26, тел.: +7 (495) 585-51-82
+                                    Общество с ограниченной ответственностью "Торговая компания "ГИПЕРСНАБ", ИНН 7710939479,
+                                    КПП 771001001, 123056, г. Москва, Электрический пер., д. 12, подвал, пом.II, комн.6, тел.: (495)
+                                    669-40-40
                                 </div>
                             </td>
                         </tr>
@@ -281,10 +287,10 @@ class Bill extends React.Component {
                     <div style={{backgroundColor:"#000000", width:"100%", fontSize:"1px", height:"2px"}}>&nbsp;</div>
                     <br/>
 
-                    <div>Руководитель ______________________ (Беляева О. Н.)</div>
+                    <div>Руководитель ______________________ (Расковский B. B.)</div>
                     <br/>
 
-                    <div>Главный бухгалтер ______________________ (Беляева О. Н.)</div>
+                    <div>Главный бухгалтер ______________________ (Расковский B. B.)</div>
                     <br/>
 
                     <div style={{width: "85mm", textAlign:"center"}}>М.П.</div>

@@ -29,6 +29,9 @@ class ProductCard extends React.Component{
     componentDidMount() {
         this.getAttributes();
     }
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        this._input.focus();
+    }
 
     getAttributes = () =>{
         fetch(`${SERVER}\\attributes\\${this.state.code}`)
@@ -71,7 +74,9 @@ class ProductCard extends React.Component{
                             <div className='w-20 pointer' onClick={this.increaseAmount}>
                                 <img src={require('../../static/plus.png')} className='mw-100'></img>
                             </div>
-                            <input id={'amount'} className='h-25 ba w-60 tc' type='number' value={this.props.orderedAmount || 0}
+                            <input id={'amount'} className='h-25 ba w-60 tc' type='number'
+                                   pattern="[0-9]*" inputmode="numeric" ref={c => (this._input = c)}
+                                   value={this.props.orderedAmount || 0}
                                    onChange={this.handleAmountEnter}
                                    onFocus={this.handleFocus}/>
                             <div className='w-20 pointer' onClick={this.decreaseAmount}>
