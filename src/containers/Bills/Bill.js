@@ -225,7 +225,29 @@ class Bill extends React.Component {
                         </tr>
                         <tr>
                             <td style={{width: "30mm"}}>
+                                <div style={{paddingLeft:"2px"}}>Грузоотправитель:</div>
+                            </td>
+                            <td>
+                                <div style={{fontWeight:"bold", paddingLeft:"2px"}}>
+                                    Общество с ограниченной ответственностью "Торговая компания "ГИПЕРСНАБ", ИНН 7710939479,
+                                    КПП 771001001, 123056, г. Москва, Электрический пер., д. 12, подвал, пом.II, комн.6, тел.: (495)
+                                    669-40-40
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={{width: "30mm"}}>
                                 <div style={{paddingLeft: "2px"}}>Покупатель:</div>
+                            </td>
+                            <td>
+                                <div style={{fontWeight: "bold", paddingLeft:"2px", paddingTop:"5px"}}>
+                                    {userData}
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={{width: "30mm"}}>
+                                <div style={{paddingLeft: "2px"}}>Грузополучатель:</div>
                             </td>
                             <td>
                                 <div style={{fontWeight: "bold", paddingLeft:"2px", paddingTop:"5px"}}>
