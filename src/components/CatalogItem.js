@@ -26,12 +26,12 @@ class CatalogItem extends React.Component{
 
     render(){
         const {description, code, set, quantity, price, amount, measure} = this.props;
-        const img = `${ENV.imgPath}${code}.jpg`;
+        const img = `${ENV.imgThumbPath}${code}.jpg`;
 
 
         return (
-            <div className={`flex items-center w-100 f5 items-center justify-between ${(set%2)?'':'bg-lightest-blue'}`}>
-                <p className='w-10 ma0 pointer underline-hover' onClick={this.openProductCard}><img className={'ma0'} src={img}/></p>
+            <div className={`flex bt items-center w-100 f5 items-center justify-between ${(set%2)?'':'bg-lightest-blue'}`}>
+                <p className='w-10 ma0 pointer bg-white' onClick={this.openProductCard}><img className={'ma0'} src={img}/></p>
                 <p className='w-20 ma0 pa2 pointer underline-hover tr' onClick={this.openProductCard}>{code}</p>
                 <p className='w-100 ma0 pa2 pointer underline-hover tl'  onClick={this.openProductCard}>{description}</p>
                 <p className='w-20 ma0 pa2 tr'>{`${quantity} ${measure}`}</p>
