@@ -78,7 +78,7 @@ class App extends Component {
         const seed = Math.floor(Math.random()*spec.length);
 
         let shownSpecOffers = [];
-        for (let i=0; i<2*columnLength; i++){
+        for (let i=0; Math.min(i<2*columnLength, spec.length); i++){
             shownSpecOffers.push(spec[(seed+i)%spec.length])
         }
         this.setState({shownSpecOffers});
