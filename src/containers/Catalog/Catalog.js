@@ -23,13 +23,13 @@ class Catalog extends React.Component {
 
     componentDidMount() {
         this.getFolders();
-        this.state.goods.sort((a,b) => {
-            if (a.sort > b.sort) {
-                return 1;
-            } else {
-                return -1;
-            }
-        });
+        // this.state.goods.sort((a,b) => {
+        //     if (a.sort > b.sort) {
+        //         return 1;
+        //     } else {
+        //         return -1;
+        //     }
+        // });
         this.updateFilteredGoods();
     }
 

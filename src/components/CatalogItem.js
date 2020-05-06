@@ -31,6 +31,11 @@ class CatalogItem extends React.Component{
     render(){
         const {description, code, set, quantity, price, amount, measure} = this.props;
         const img = `${ENV.imgThumbPath}${code}.jpg`;
+        const alert = window.sessionStorage.getItem(code);
+        if (alert) {
+            window.sessionStorage.removeItem(code);
+            console.log(code, alert);
+        }
 
 
         return (
@@ -44,7 +49,7 @@ class CatalogItem extends React.Component{
                     <div className='w-20 pointer' onClick={this.increaseAmount}>
                         <img src={require('../static/plus.png')} className='mw-100'></img>
                     </div>
-                    <input id={'amount'} className='h-25 ba w-60 tc' type='number' value={amount}
+                    <input id={'amount'} className={'h-25 ba w-60 tc' + ((alert) ? ' bg-light-pink' : '')} type='number' value={amount}
                            onChange={this.handleAmountEnter}
                            onFocus={this.handleFocus}/>
                     <div className='w-20 pointer' onClick={this.decreaseAmount}>

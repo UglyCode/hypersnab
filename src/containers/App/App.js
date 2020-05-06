@@ -63,6 +63,9 @@ class App extends Component {
         const token = window.localStorage.getItem('token');
         this.setInnFromToken(token);
         this.getGoods();
+
+        // const route = window.sessionStorage.getItem('route');
+        // if (route) this.setState({'route': route});
     }
 
     chooseShownSpecOffers(goods, columnLength){
@@ -90,8 +93,10 @@ class App extends Component {
         const orderSum = this.state.goods.reduce((accumulator, currentValue) =>{
             let ordered = order.get(currentValue.code);
             if (ordered){
-                orderUpdated = orderUpdated || (ordered > currentValue.quantity);
+                let amountReduce = ordered > currentValue.quantity;
+                orderUpdated = orderUpdated || amountReduce;
                 newOrder.set(currentValue.code, Math.min(ordered, currentValue.quantity));
+                if (amountReduce) window.sessionStorage.setItem(currentValue.code, 'Превышение доступного остатка');
             }
             let orderedAmount = ordered || 0;
             return accumulator + orderedAmount * currentValue.price;
@@ -117,6 +122,8 @@ class App extends Component {
                 const order = this.jsonToMap(window.localStorage.getItem('order')) || this.state.order;
                 this.updateOrder(goods,order);
                 this.chooseShownSpecOffers(goods,2);
+                const route = window.sessionStorage.getItem('route');
+                if (route) this.setState({'route': route});
             })
             .catch(e=>console.log(e));
     };
@@ -178,6 +185,7 @@ class App extends Component {
 
     onRouteChange = (route) => {
         this.setState({route});
+        window.sessionStorage.setItem("route", route);
     };
 
     basketWarningShown = () => {
