@@ -76,10 +76,6 @@ class Basket extends React.Component{
 
         return (
             <div className='flex-column'>
-                {this.state.showWarning &&
-                <div className='br1 ba bw1 ph3'>
-                    ЗАКАЗ БЫЛ АВТОМАТИЧЕСКИ ОТРЕДАКТИРОВАН! ПРОВЕРЬТЕ СОСТАВ!
-                </div>}
                 <CatalogPage goods={this.state.orderedGoods}
                              order={this.props.order}
                              updateAmount={this.props.updateAmount}
@@ -89,6 +85,10 @@ class Basket extends React.Component{
                 <div className='flex flex-row-reverse ma0 bg-white pr3'>
                     <p className='f4'>{`ИТОГО: ${this.props.orderSum} руб.`}</p>
                 </div>
+                {this.state.showWarning &&
+                <div className='br1 ba bw1 ph3 red bg-white'>
+                    ЗАКАЗ БЫЛ АВТОМАТИЧЕСКИ ОТРЕДАКТИРОВАН! ПРОВЕРЬТЕ СОСТАВ!
+                </div>}
                 <div className='w-100 flex-column justify-start pa3 f5 bg-lightest-blue'>
                     <div className="flex items-center mb2 w-100">
                         <div className='flex w-20 items-start pa2 justify-start'>
