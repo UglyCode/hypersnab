@@ -24,6 +24,10 @@ class CatalogItem extends React.Component{
         this.props.setSelectedItem(this.props.item);
     };
 
+    handleCancelItem = (event) => {
+      this.props.updateAmount(this.props.code,0);
+    };
+
     render(){
         const {description, code, set, quantity, price, amount, measure} = this.props;
         const img = `${ENV.imgThumbPath}${code}.jpg`;
@@ -32,7 +36,7 @@ class CatalogItem extends React.Component{
         return (
             <div className={`flex bt items-center w-100 f5 items-center justify-between ${(set%2)?'':'bg-lightest-blue'}`}>
                 <p className='w-10 ma0 pointer bg-white' onClick={this.openProductCard}><img className={'ma0'} src={img}/></p>
-                <p className='w-20 ma0 pa2 pointer underline-hover tr' onClick={this.openProductCard}>{code}</p>
+                <p className='w-20 ma0 pa2 pointer underline-hover tc' onClick={this.openProductCard}>{code}</p>
                 <p className='w-100 ma0 pa2 pointer underline-hover tl'  onClick={this.openProductCard}>{description}</p>
                 <p className='w-20 ma0 pa2 tr'>{`${quantity} ${measure}`}</p>
                 <p className='w-20 ma0 pa2 tr'>{`${Number(price).toFixed(2)}`}</p>
@@ -48,6 +52,10 @@ class CatalogItem extends React.Component{
                     </div>
                 </div>
                 <p className='w-20 ma0'>{`${(amount*price).toFixed(2)}`}</p>
+                {this.props.showCancelButton &&
+                <div className='w-10 pointer' onClick={this.handleCancelItem}>
+                    ✖
+                </div>}
             </div>
         );
     }

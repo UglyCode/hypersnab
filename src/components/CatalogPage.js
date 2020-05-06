@@ -3,11 +3,11 @@ import CatalogItem from './CatalogItem';
 import CatalogHeader from './CatalogHeader';
 import ENV from "../settings/env";
 
-const CatalogPage = ({goods, order, setSelectedItem, updateAmount}) => {
+const CatalogPage = ({goods, order, setSelectedItem, updateAmount,showCancelButton}) => {
     let set = 0;
     return(
         <div className="flex-column w-100 br3 bg-white pa3 ma0">
-            <CatalogHeader/>
+            <CatalogHeader showCancelButton={showCancelButton}/>
             {goods.length && goods.map((elem, i) => {
                 if (elem.quantity && elem.price){
                     set += 1;
@@ -25,6 +25,7 @@ const CatalogPage = ({goods, order, setSelectedItem, updateAmount}) => {
                             updateAmount={updateAmount}
                             item = {elem}
                             setSelectedItem = {setSelectedItem}
+                            showCancelButton = {showCancelButton}
                         />
                     )};
             })}

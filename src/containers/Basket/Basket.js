@@ -84,29 +84,32 @@ class Basket extends React.Component{
                              order={this.props.order}
                              updateAmount={this.props.updateAmount}
                              setSelectedItem={this.props.setSelectedItem}
+                             showCancelButton={true}
                 />
-                <div className='flex flex-row-reverse ma0'>
+                <div className='flex flex-row-reverse ma0 bg-white pr3'>
                     <p className='f4'>{`ИТОГО: ${this.props.orderSum} руб.`}</p>
                 </div>
                 <div className='w-100 flex-column justify-start pa3 f5 bg-lightest-blue'>
                     <div className="flex items-center mb2 w-100">
-                        <div className='flex w-20 items-start'>
-                            <label htmlFor="delivery" className="lh-copy ma2 pointer">Доставить заказ</label>
-                            <input type='checkbox' name='delivery' id='delivery' className='mt3 pointer'
+                        <div className='flex w-20 items-start pa2 justify-start'>
+                            <input type='checkbox' name='delivery' id='delivery' className='pointer mt2'
                                    onChange={this.deliveryOnChange}/>
+                            <label htmlFor="delivery" className="lh-copy pointer ml1">Доставить</label>
+                            <input type='date' name='deliveryDate' id='deliveryDate' className='ml3'
+                                   disabled={this.state.DeliveryAddressDisabled}/>
                         </div>
                         <textarea className='ma2 w-80' name="deliveryAddress" id='deliveryAddress'
                                   placeholder='Введите адрес доставки' disabled={this.state.DeliveryAddressDisabled}/>
                     </div>
                     <div className="flex items-center mb2 w-100">
                         <div className="flex items-start mb2 w-20">
-                            <label htmlFor="comment" className="lh-copy ma2"> Комментарий: </label>
+                            <label htmlFor="comment" className="lh-copy ma2"> Комментарий к заказу: </label>
                         </div>
-                        <textarea className='ma2 w-80' name="comment" id='comment' placeholder='Комментарий к заказу'/>
+                        <textarea className='ma2 w-80' name="comment" id='comment' placeholder='Оставьте комментарий'/>
                     </div>
                 </div>
-                <div className="ph3 mt4 b" onClick={this.confirmOrder}>
-                    <a className="f6 link br1 ba bw1 ph3 pv2 mb2 dib black hover-blue underline-hover">
+                <div className="ph3 pt4 b bg-white" onClick={this.confirmOrder}>
+                    <a className="f6 link br1 ba bw1 ph3 pv2 mb2 dib black hover-blue underline-hover pointer">
                         ОФОРМИТЬ ЗАКАЗ
                     </a>
                     {this.props.userStatus === 'loggedIn' ||

@@ -3,6 +3,7 @@ import LeftCol from './LeftCol';
 import RightCol from './RightCol';
 import CurrPage from './CurrPage';
 import Catalog from '../containers/Catalog/Catalog';
+import Basket from '../containers/Basket/Basket';
 
 const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecOffers, userStatus, inn,
                   searchString, updateSearchString, goods, orderAutoUpdated, basketWarningShown}) => {
@@ -17,6 +18,17 @@ const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecO
                     updateSearchString={updateSearchString}
                     goods={goods}
                 />)
+        } else if (route === 'basket'){
+            return <Basket updateAmount={updateAmount}
+                           order={order}
+                           orderSum={orderSum}
+                           userStatus={userStatus}
+                           orderAutoUpdated={orderAutoUpdated}
+                           basketWarningShown={basketWarningShown}
+                           setSelectedItem = {setSelectedItem}
+                           goods={goods}
+                           inn={inn}
+            />;
         } else {
             return(
             <div className='f3 flex items-stretch w-100'>
