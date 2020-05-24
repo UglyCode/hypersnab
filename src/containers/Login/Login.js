@@ -90,11 +90,6 @@ class Login extends React.Component{
 
     submitPassword = (event) => {
 
-        console.log(JSON.stringify({
-            inn: this.props.inn,
-            password: document.querySelector('#password').value
-        }));
-
         fetch(`${ENV.server}/signIn`, {
             method: 'POST',
             headers: {
@@ -110,6 +105,8 @@ class Login extends React.Component{
                 if (data.inn && data.success === 'true') {
                     this.saveAuthToken(data.token);
                     this.props.setUserStatus('loggedIn', data.inn);
+                } else {
+                    this.setState({advice:'неверный пароль'})
                 }
             })
     };
@@ -160,12 +157,11 @@ class Login extends React.Component{
                         case 'loggedIn':
                             return (
                                 <div className='f5 flex justify-between ma2 content-center b'>
-                                    <p id='innSign' className='center'
-                                       onClick={this.toggleMenu}>
+                                    <p id='innSign' className='center'>
                                         {`ИНН: ${inn}`}
                                     </p>
-                                    <div className='w-20 pointer' onClick={this.toggleMenu}>
-                                        <img src={require('../../static/building.png')} className='mw-100 pointer link dim'></img>
+                                    <div className='w-20 pointer pa1' onClick={this.toggleMenu}>
+                                        <img src={require('../../static/burger.png')} className='mw-100 pointer link dim pt1'></img>
                                     </div>
                                 </div>
                             );
@@ -177,10 +173,12 @@ class Login extends React.Component{
                                                 className="tc ma0 w-80" key="pwd" onKeyPress={this.handleEnterPress}
                                                 placeholder="пароль" type="password" id="password">
                                             </input>
-                                            <p className="ma0">{'введите пароль и нажмите =>'}</p>
+                                            <p className="ma0">{this.state.advice}</p>
                                         </div>
-                                        <div className='w-20 pointer' onClick={this.submitPassword}>
-                                            <img src={require('../../static/building.png')} className='mw-100 link dim'></img>
+                                        <div className='w-20 pointer flex-column justify-between content-start' >
+                                            {/*<img src={require('../../static/building.png')} className='mw-100 link dim'></img>*/}
+                                            <p className='underline hover-dark-blue mt0 mb2 f5' onClick={this.submitPassword}>Ок</p>
+                                            <p className='underline hover-dark-blue ma0 f6' onClick={this.logOut}>Отмена</p>
                                         </div>
                                     </div>
                             );
@@ -195,8 +193,9 @@ class Login extends React.Component{
                                             </input>
                                             <p className="ma1">{this.state.advice}</p>
                                         </div>
-                                        <div className='w-20 ma0 pa0 br3 pointer flex-column content-start' onClick={this.submitInn}>
-                                            <img src={require('../../static/building.png')} className='mw-100 link dim'></img>
+                                        <div className='w-20 ma0 pa0 br3 pointer flex-column content-start justify-start' onClick={this.submitInn}>
+                                            {/*<img src={require('../../static/building.png')} className='mw-100 link dim'></img>*/}
+                                            <p className='underline hover-dark-blue ma1'>Войти</p>
                                         </div>
                                     </div>
                             );

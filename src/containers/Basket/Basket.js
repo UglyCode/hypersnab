@@ -41,6 +41,7 @@ class Basket extends React.Component{
             comment: document.getElementById('comment').value,
             delivery: document.getElementById('delivery').checked,
             delivery_address: document.getElementById('deliveryAddress').value,
+            delivery_date: document.getElementById('deliveryDate').value,
             orderedGoods: this.state.orderedGoods.map((elem) => {
                 return {good: elem.code, price: elem.price, ammount: this.props.order.get(elem.code)}
             })

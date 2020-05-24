@@ -79,6 +79,29 @@ class Profile extends React.Component {
         this.props.toggleProfile();
     };
 
+    submitPassword = (event) => {
+
+        fetch(`${ENV.server}/signIn`, {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify({
+                inn: this.props.inn,
+                password: document.querySelector('#password').value
+            })
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.inn && data.success === 'true') {
+                    this.saveAuthToken(data.token);
+                    this.props.setUserStatus('loggedIn', data.inn);
+                } else {
+                    this.setState({advice:'неверный пароль'})
+                }
+            })
+    };
+
     render() {
         const {user} = this.state;
         return (
