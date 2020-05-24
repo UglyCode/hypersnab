@@ -68,38 +68,37 @@ class Profile extends React.Component {
                 'Content-type': 'application/json',
             },
             body: JSON.stringify(userObj)
-        }).then(resp => {
-            if (resp.status === 200 || resp.status === 304){
-                this.props.setUserStatus('passwordRequired', userObj.inn);
-            }
-        }).catch( err => console.log);
+        })
+        //     .then(resp => {
+        //     if (resp.status === 200 || resp.status === 304){
+        //         this.props.setUserStatus('passwordRequired', userObj.inn);
+        //     }
+        // })
+        .then(
+
+            fetch(`${ENV.server}/signIn`, {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify({
+                    inn: userObj.inn,
+                    password: userObj.password
+                })
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.inn && data.success === 'true') {
+                        window.localStorage.setItem('token', data.token);
+                        this.props.setUserStatus('loggedIn', data.inn);
+                    }
+                })
+
+        ).catch( err => console.log);
     };
 
     closeProfile = (event) => {
         this.props.toggleProfile();
-    };
-
-    submitPassword = (event) => {
-
-        fetch(`${ENV.server}/signIn`, {
-            method: 'POST',
-            headers: {
-                'Content-type': 'application/json'
-            },
-            body: JSON.stringify({
-                inn: this.props.inn,
-                password: document.querySelector('#password').value
-            })
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.inn && data.success === 'true') {
-                    this.saveAuthToken(data.token);
-                    this.props.setUserStatus('loggedIn', data.inn);
-                } else {
-                    this.setState({advice:'неверный пароль'})
-                }
-            })
     };
 
     render() {
