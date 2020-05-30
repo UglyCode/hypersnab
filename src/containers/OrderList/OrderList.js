@@ -26,13 +26,13 @@ class OrderList extends React.Component{
 
         fetch(SERVER + `\\orders?client=${this.props.inn}`)
             .then(res => res.json())
-            .then(ordersRes => this.parseOrdersResposne(ordersRes))
+            .then(ordersRes => this.parseOrdersResponse(ordersRes))
             .then(orders => this.setState({orders: orders}))
             .catch(e=>console.log(e));
 
      };
 
-    parseOrdersResposne = (response) => {
+    parseOrdersResponse = (response) => {
 
         let orderId;
 
@@ -106,6 +106,7 @@ class OrderList extends React.Component{
                                     selectOrder={selectedOrder}
                                     orderSelected={activeOrders.has(elem.id)}
                                     showBill={this.showBill}
+                                    updateOrderList = {this.updateOrderList}
                                 />
                             </div>);
                     }))

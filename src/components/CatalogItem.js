@@ -7,15 +7,21 @@ class CatalogItem extends React.Component{
     }
 
     increaseAmount = (event) => {
-        this.props.updateAmount(this.props.code, ++event.currentTarget.nextSibling.value);
+        this.props.updateAmount(this.props.code,
+            Number(event.currentTarget.nextSibling.value) + this.props.item.rate, this.props.item.rate);
     };
 
     decreaseAmount = (event) => {
-        this.props.updateAmount(this.props.code, --event.currentTarget.previousSibling.value);
+        this.props.updateAmount(this.props.code,
+            Number(event.currentTarget.previousSibling.value) - this.props.item.rate, this.props.item.rate);
     };
 
     handleAmountEnter = (event) => {
         this.props.updateAmount(this.props.code, event.target.value);
+    };
+
+    handleFocusOut = (event) => {
+        this.props.updateAmount(this.props.code, event.target.value, this.props.item.rate);
     };
 
     handleFocus = (event) => event.target.select();
@@ -29,13 +35,15 @@ class CatalogItem extends React.Component{
     };
 
     render(){
-        const {description, code, set, quantity, price, amount, measure} = this.props;
+        const {code, set, quantity, price, amount, measure} = this.props;
         const img = `${ENV.imgThumbPath}${code}.jpg`;
         const alert = window.sessionStorage.getItem(code);
         if (alert) {
             window.sessionStorage.removeItem(code);
             console.log(code, alert);
         }
+        const rate = this.props.item.rate;
+        const description = this.props.description + ((rate > 1) ? ` (по ${rate} ${measure})` : '');
 
 
         return (
@@ -49,9 +57,10 @@ class CatalogItem extends React.Component{
                     <div className='w-20 pointer' onClick={this.increaseAmount}>
                         <img src={require('../static/plus.png')} className='mw-100'></img>
                     </div>
-                    <input id={'amount'} className={'h-25 ba w-60 tc' + ((alert) ? ' bg-light-pink' : '')} type='number' value={amount}
+                    <input id={'amount'} className={'h-25 ba w-60 tc' + ((alert) ? ' bg-light-pink' : '')} type='number' value={Number(amount)}
                            onChange={this.handleAmountEnter}
-                           onFocus={this.handleFocus}/>
+                           onFocus={this.handleFocus}
+                           onBlur={this.handleFocusOut}/>
                     <div className='w-20 pointer' onClick={this.decreaseAmount}>
                         <img src={require('../static/minus.png')} className='mw-100'></img>
                     </div>

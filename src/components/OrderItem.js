@@ -1,9 +1,35 @@
 import React from 'react';
+import ENV from "../settings/env";
 
-const OrderItem = ({id, key, sum, date, description, orderedGoods, selectOrder, orderSelected, status, showBill}) => {
+const OrderItem = ({id, key, sum, date, description, orderedGoods, selectOrder,
+                       orderSelected, status, showBill, updateOrderList}) => {
 
     const showBillForOrder = () => {
         showBill(date, id, orderedGoods);
+    };
+
+    const cancelOrder = () =>{
+        // eslint-disable-next-line no-restricted-globals
+      let answer = confirm("Вы уверены, что хотите отменить зака?");
+      if (answer){
+              fetch(`${ENV.server}/orders/${id}`, {
+                  method: 'POST',
+                  headers : {
+                      'Content-type': 'application/json',
+                      'Authorization': window.localStorage.getItem('token')
+                  },
+                  body: '{"status":"Отменяется"}'
+              }).then(resp => {
+                  if (resp.status === 200 || resp.status === 304){
+                      window.localStorage.removeItem('order');
+                      window.location.reload();
+                      alert('Отправлена заявка на отмену заказа.');
+                      this.props.updateOrderList();
+                  } else {
+                      alert('Не удалось отменить заказ. Попробуйте позднее!');
+                  }
+              }).catch( err => console.log);
+      };
     };
 
         return (
@@ -33,7 +59,7 @@ const OrderItem = ({id, key, sum, date, description, orderedGoods, selectOrder, 
                         )}
                     </div>
                 </div>
-                <div className='mb bl w-20'>
+                <div className='mb bl w-20 flex-column'>
                     {/*<img src={require('../static/cart.png')} alt='Открыть счет'*/}
                     {/*     className='mw-100 pointer link dim pt1'*/}
                     {/*     style={{width: "40px", height: "40px"}}*/}
@@ -41,6 +67,10 @@ const OrderItem = ({id, key, sum, date, description, orderedGoods, selectOrder, 
                     <p onClick={showBillForOrder} className='f5 pointer hover-dark-blue underline-hover'>
                         Скачать счет
                     </p>
+                    <p onClick={cancelOrder} className='f5 pointer hover-dark-blue underline-hover'>
+                        Отменить заказ
+                    </p>
+
                 </div>
             </div>
 

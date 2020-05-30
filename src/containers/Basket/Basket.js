@@ -18,6 +18,19 @@ class Basket extends React.Component{
         this.updateOrderedGoods();
         this.setState({showWarning: this.props.orderAutoUpdated});
         this.props.basketWarningShown();
+        const currDate = new Date();
+        document.getElementById('deliveryDate').value = this.getFormatedDateString(currDate);
+    }
+
+    getFormatedDateString(date){
+        const year = date.getFullYear();
+        let month = date.getMonth() +1;
+        const day = date.getDate();
+        return `${year}-${this.numToNNString(month)}-${this.numToNNString(day)}`;
+    }
+
+    numToNNString(number){
+        return (number<10) ? '0'+number : number;
     }
 
     updateOrderedGoods = () => {
@@ -36,12 +49,21 @@ class Basket extends React.Component{
     };
 
     createOrderObject = () => {
+        const delivery = document.getElementById('delivery').checked;
+        const delivery_date = document.getElementById('deliveryDate').value;
+        const delivery_address = document.getElementById('deliveryAddress').value;
+
+        if (delivery && (!delivery_address || !delivery_date)) {
+            alert("Укажите адрес и дату доставки!");
+            return ;
+        }
+
         return {
             inn: this.props.inn,
             comment: document.getElementById('comment').value,
-            delivery: document.getElementById('delivery').checked,
-            delivery_address: document.getElementById('deliveryAddress').value,
-            delivery_date: document.getElementById('deliveryDate').value,
+            delivery: delivery,
+            delivery_address: (delivery) ? delivery_address : '',
+            delivery_date: (delivery) ?  delivery_date : '1970-01-01',
             orderedGoods: this.state.orderedGoods.map((elem) => {
                 return {good: elem.code, price: elem.price, ammount: this.props.order.get(elem.code)}
             })
@@ -64,7 +86,7 @@ class Basket extends React.Component{
                 window.location.reload();
                 alert('Заказ успешно размещен и доступен к просмотру в списке заказов.');
             } else {
-                alert('Не удалось разместить заказ. Попробуйте позднее!')
+                alert('Не удалось разместить заказ. Попробуйте позднее!');
             }
         }).catch( err => console.log);
     };

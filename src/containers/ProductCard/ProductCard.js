@@ -13,15 +13,21 @@ class ProductCard extends React.Component{
     };
 
     increaseAmount = (event) => {
-        this.props.updateAmount(this.state.code, ++event.currentTarget.nextSibling.value);
+        this.props.updateAmount(this.state.code,
+            Number(event.currentTarget.nextSibling.value) + this.props.item.rate, this.state.rate);
     };
 
     decreaseAmount = (event) => {
-        this.props.updateAmount(this.state.code, --event.currentTarget.previousSibling.value);
+        this.props.updateAmount(this.state.code,
+            Number(event.currentTarget.previousSibling.value) - this.props.item.rate, this.state.rate);
     };
 
     handleAmountEnter = (event) => {
         this.props.updateAmount(this.state.code, event.target.value);
+    };
+
+    handleFocusOut = (event) =>{
+        this.props.updateAmount(this.state.code, event.target.value, this.state.rate);
     };
 
     handleFocus = (event) => event.target.select();
@@ -70,6 +76,7 @@ class ProductCard extends React.Component{
                             <dd className="ml0">{`Остаток: ${this.state.quantity} ${this.state.measure}`}</dd>
                         </dl>
                     <div className='w-40 center'>
+                        {this.state.rate < 2 || <p className='ma0'>{`По ${this.state.rate} ${this.state.measure}`}</p>}
                         <div className='flex justify-between items-center w-100 f3'>
                             <div className='w-20 pointer' onClick={this.increaseAmount}>
                                 <img src={require('../../static/plus.png')} className='mw-100'></img>
@@ -78,7 +85,8 @@ class ProductCard extends React.Component{
                                    pattern="[0-9]*" inputmode="numeric" ref={c => (this._input = c)}
                                    value={this.props.orderedAmount || 0}
                                    onChange={this.handleAmountEnter}
-                                   onFocus={this.handleFocus}/>
+                                   onFocus={this.handleFocus}
+                                   onBlur={this.handleFocusOut}/>
                             <div className='w-20 pointer' onClick={this.decreaseAmount}>
                                 <img src={require('../../static/minus.png')} className='mw-100'></img>
                             </div>

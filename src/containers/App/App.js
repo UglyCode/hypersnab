@@ -158,10 +158,9 @@ class App extends Component {
             .catch(e=>console.log(e))
     };
 
-    updateAmountOfOrderedGood = (goodId, newAmount) => {
-        newAmount = Number(newAmount);
+    updateAmountOfOrderedGood = (goodId, newAmount, rate=1) => {
+        newAmount = Math.ceil(Number(newAmount)/rate)*rate;
         let order = this.state.order;
-        console.log('order state ', order);
         if (newAmount > 0) {
             order.set(goodId, newAmount);
         } else {
