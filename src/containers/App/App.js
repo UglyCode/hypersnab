@@ -112,7 +112,11 @@ class App extends Component {
     };
 
     getGoods  = () => {
-        fetch(SERVER + '\\goods')
+        fetch(`${ENV.server}/goods`,{
+            method : 'GET',
+            headers : {
+                'Authorization': window.localStorage.getItem('token')
+            }})
             .then(res=>res.json())
             .then(goodsRes=> {
                 this.setState({goods:goodsRes});
