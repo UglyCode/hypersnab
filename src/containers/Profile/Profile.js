@@ -74,26 +74,26 @@ class Profile extends React.Component {
         //         this.props.setUserStatus('passwordRequired', userObj.inn);
         //     }
         // })
-        .then(
-
-            fetch(`${ENV.server}/signIn`, {
-                method: 'POST',
-                headers: {
-                    'Content-type': 'application/json'
-                },
-                body: JSON.stringify({
-                    inn: userObj.inn,
-                    password: userObj.password
+        .then( resp => {
+            if (resp.status === 200 || resp.status === 304){
+                fetch(`${ENV.server}/signIn`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        inn: userObj.inn,
+                        password: userObj.password
+                    })
                 })
-            })
-                .then(res => res.json())
-                .then(data => {
-                    if (data.inn && data.success === 'true') {
-                        window.localStorage.setItem('token', data.token);
-                        this.props.setUserStatus('loggedIn', data.inn);
-                    }
-                })
-
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.inn && data.success === 'true') {
+                            window.localStorage.setItem('token', data.token);
+                            this.props.setUserStatus('loggedIn', data.inn);
+                        }
+                    })
+        }}
         ).catch( err => console.log);
     };
 
