@@ -60,7 +60,11 @@ class Catalog extends React.Component {
         } else if (this.state.folder) {
             filteredGoodsPromise =  //Promise.resolve(this.getFolderFiltererdGoods(this.state.folder));
                 fetch(`${SERVER}/goods/${this.state.folder}` +
-                `?attributes_filter=${JSON.stringify(this.state.selectedAttributes)}`)
+                    `?attributes_filter=${JSON.stringify(this.state.selectedAttributes)}`,{
+                    method : 'GET',
+                    headers : {
+                        'Authorization': window.localStorage.getItem('token')
+                    }})
                     .then(goodsRes=>goodsRes.json());
         } else {
             filteredGoodsPromise = Promise.resolve(this.getSpecOffers());
