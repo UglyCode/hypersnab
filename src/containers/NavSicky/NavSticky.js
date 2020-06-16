@@ -1,6 +1,7 @@
 import React from 'react';
 import BasketCard from '../../components/BasketCard';
 import Login from '../Login/Login';
+import ENV from '../../settings/env';
 
 class NavSticky extends React.Component{
 
@@ -64,6 +65,10 @@ class NavSticky extends React.Component{
         this.props.updateSearchString('');
     };
 
+    handlepPriceGet = (event) => {
+
+    };
+
     render() {
 
         const isStick = this.state.scroll > this.state.top;
@@ -97,6 +102,12 @@ class NavSticky extends React.Component{
                                className={pageLinkClass + ((route==='contacts') ? ' ba' : '')}
                                onClick={this.pageLinkOnClick}
                             >Как добраться</a>
+                            <a name='price'
+                               className={pageLinkClass}
+                               // onClick={this.handlepPriceGet}
+                               href={'https://res.cloudinary.com/ddjw7nmgb/raw/upload/goods/price.xls'}
+                               download={'ActualPrice.xls'}
+                            >↓Прайс</a>
                         </div>
                         <div className="dib ph4-l flex justify-around">
                             <input
