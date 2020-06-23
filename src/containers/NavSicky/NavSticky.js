@@ -105,7 +105,7 @@ class NavSticky extends React.Component{
                             <a name='price'
                                className={pageLinkClass}
                                // onClick={this.handlepPriceGet}
-                               href={'https://res.cloudinary.com/ddjw7nmgb/raw/upload/goods/price.xls'}
+                               href={`https://res.cloudinary.com/ddjw7nmgb/raw/upload/goods/price.xls?${new Date().getTime()}`}
                                download={'ActualPrice.xls'}
                             >↓Прайс</a>
                         </div>
