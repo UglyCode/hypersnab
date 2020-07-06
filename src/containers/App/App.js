@@ -68,6 +68,12 @@ class App extends Component {
         // if (route) this.setState({'route': route});
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (prevState.userStatus !== this.state.userStatus){
+            this.getGoods();
+        };
+    }
+
     chooseShownSpecOffers(goods, columnLength){
 
        let spec = goods.reduce((accum, elem, index) =>{

@@ -17,6 +17,7 @@ class Profile extends React.Component {
             .then(userData => {
                 this.setState({user: userData})
             })
+            .then(newData => document.getElementById('name').focus())
             .catch(console.log)
     }
 
@@ -101,12 +102,18 @@ class Profile extends React.Component {
         this.props.toggleProfile();
     };
 
+    handleEnterPress = (event) =>{
+        if (event.key === 'Enter') {
+            this.onProfileSubmit();
+        }
+    };
+
     render() {
         const {user} = this.state;
         return (
-            <div className='profile-modal'>
+            <div className='profile-modal' >
                 <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-50-l mw6 shadow-5 center bg-white">
-                    <main className="pa4 black-80">
+                    <main className="pa4 black-80" onKeyPress={this.handleEnterPress}>
                         <h1>{user.name}</h1>
                         <hr />
                         <div className="mt3">

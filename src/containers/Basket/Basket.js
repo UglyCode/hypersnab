@@ -82,13 +82,17 @@ class Basket extends React.Component{
             body: JSON.stringify(orderObject)
         }).then(resp => {
             if (resp.status === 200 || resp.status === 304){
-                window.localStorage.removeItem('order');
-                window.location.reload();
+                this.removeOrder();
                 alert('Заказ успешно размещен и доступен к просмотру в списке заказов.');
             } else {
                 alert('Не удалось разместить заказ. Попробуйте позднее!');
             }
         }).catch( err => console.log);
+    };
+
+    removeOrder = () => {
+        window.localStorage.removeItem('order');
+        window.location.reload();
     };
 
     deliveryOnChange = ()=>{
@@ -104,6 +108,7 @@ class Basket extends React.Component{
                              updateAmount={this.props.updateAmount}
                              setSelectedItem={this.props.setSelectedItem}
                              showCancelButton={true}
+                             removeOrder = {this.removeOrder}
                 />
                 <div className='flex flex-row-reverse ma0 bg-white pr3'>
                     <p className='f4'>{`ИТОГО: ${this.props.orderSum} руб.`}</p>

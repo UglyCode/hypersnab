@@ -49,7 +49,6 @@ class NavSticky extends React.Component{
 
     handleEnterPress = (event) =>{
         if (event.key === 'Enter') {
-            console.log(event.target);
             this.handleSearchInput();
         }
     };
