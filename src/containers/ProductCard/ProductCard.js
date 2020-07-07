@@ -10,6 +10,7 @@ class ProductCard extends React.Component{
         super(props);
         this.state = props.item;
         this.state.attributes = [];
+        this.state.initialAmount = this.props.orderedAmount;
     };
 
     increaseAmount = (event) => {
@@ -49,17 +50,44 @@ class ProductCard extends React.Component{
             .catch(e=>console.log(e));
     };
 
+    restoreAmount = ()=>{
+        this.props.updateAmount(this.state.code,
+            Number(this.state.initialAmount), this.state.rate);
+            this.props.clearItem();
+    };
+
+    handleKeyPress = (event) =>{
+
+        console.log(event.key);
+
+        switch (event.key) {
+            case 'Enter':
+                this.props.clearItem();
+                break;
+            case 'Escape':
+                this.restoreAmount();
+                break;
+        };
+    };
+
     render(){
 
         return (
             <div className='profile-modal'>
-                <div
+                <div onKeyPress={this.handleKeyPress}
                     className="br3 ba b--black-10 mv4 w-100 w-50-m w-50-l mw6 shadow-5 center bg-white tc
                         flex-column content-center justify-center pa2">
-                    <div className='flex justify-end'>
+                    <div className='flex justify-between'>
                         <div
+                            id={'apply'}
                             className='w-10 tc br4 bg-light-blue pa1 f4 hover-dark-blue pointer underline-hover'
                             onClick={this.props.clearItem}>
+                            {'Ok'}
+                        </div>
+                        <div
+                            id={'cancel'}
+                            className='w-10 tc br4 bg-light-blue pa1 f4 hover-dark-blue pointer underline-hover'
+                            onClick={this.restoreAmount}>
                             {'✖'}
                         </div>
                     </div>
