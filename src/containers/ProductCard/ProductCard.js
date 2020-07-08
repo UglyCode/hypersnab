@@ -58,8 +58,6 @@ class ProductCard extends React.Component{
 
     handleKeyPress = (event) =>{
 
-        console.log(event.key);
-
         switch (event.key) {
             case 'Enter':
                 this.props.clearItem();
@@ -74,7 +72,7 @@ class ProductCard extends React.Component{
 
         return (
             <div className='profile-modal'>
-                <div onKeyPress={this.handleKeyPress}
+                <div onKeyDown={this.handleKeyPress}
                     className="br3 ba b--black-10 mv4 w-100 w-50-m w-50-l mw6 shadow-5 center bg-white tc
                         flex-column content-center justify-center pa2">
                     <div className='flex justify-between'>
