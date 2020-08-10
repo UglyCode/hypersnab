@@ -63,7 +63,7 @@ class App extends Component {
         const token = window.localStorage.getItem('token');
         this.setInnFromToken(token);
         this.getGoods();
-
+        console.log(ENV.server, ENV.nodeEnv);
         // const route = window.sessionStorage.getItem('route');
         // if (route) this.setState({'route': route});
     }
