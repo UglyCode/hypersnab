@@ -13,10 +13,10 @@ const CatalogHeader = (props) => {
             <p className='w-10 ma0'>{'Фото'}</p>
             <p className='w-20 ma0 tc'>{'Код'}</p>
             <p className='w-100 ma0'>{'Наименование'}</p>
-            <p className='w-20 ma0 tr'>{`Остаток`}</p>
-            <p className='w-20 ma0 tr'>{`Цена(руб.)`}</p>
             <p className='w-20 ma0'>{`Заказано`}</p>
+            <p className='w-20 ma0 tr'>{`Цена(руб.)`}</p>
             <p className='w-20 ma0'>{`Сумма(руб.)`}</p>
+            <p className='w-20 ma0 tr'>{`Остаток`}</p>
             {props.showCancelButton && <p className='w-10 ma0 red pointer hover-dark-blue underline-hover b'
                                           onClick={handleOrderRemove}>{'X'}</p>}
         </div>

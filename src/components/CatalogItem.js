@@ -51,8 +51,6 @@ class CatalogItem extends React.Component{
                 <p className='w-10 ma0 pointer bg-white' onClick={this.openProductCard}><img className={'ma0'} src={img}/></p>
                 <p className='w-20 ma0 pa2 pointer underline-hover tc' onClick={this.openProductCard}>{code}</p>
                 <p className='w-100 ma0 pa2 pointer underline-hover tl'  onClick={this.openProductCard}>{description}</p>
-                <p className='w-20 ma0 pa2 tr'>{`${quantity} ${measure}`}</p>
-                <p className='w-20 ma0 pa2 tr'>{`${Number(price).toFixed(2)}`}</p>
                 <div className='flex justify-between items-center w-20'>
                     <div className='w-20 pointer' onClick={this.increaseAmount}>
                         <img src={require('../static/plus.png')} className='mw-100'></img>
@@ -65,7 +63,9 @@ class CatalogItem extends React.Component{
                         <img src={require('../static/minus.png')} className='mw-100'></img>
                     </div>
                 </div>
+                <p className='w-20 ma0 pa2 tr'>{`${Number(price).toFixed(2)}`}</p>
                 <p className='w-20 ma0'>{`${(amount*price).toFixed(2)}`}</p>
+                <p className='w-20 ma0 pa2 tr'>{`${quantity} ${measure}`}</p>
                 {this.props.showCancelButton &&
                 <div className='w-10 pointer' onClick={this.handleCancelItem}>
                     ✖

@@ -75,16 +75,11 @@ class ProductCard extends React.Component{
                 <div onKeyDown={this.handleKeyPress}
                     className="br3 ba b--black-10 mv4 w-100 w-50-m w-50-l mw6 shadow-5 center bg-white tc
                         flex-column content-center justify-center pa2">
-                    <div className='flex justify-between'>
-                        <div
-                            id={'apply'}
-                            className='w-10 tc br4 bg-light-blue pa1 f4 hover-dark-blue pointer underline-hover'
-                            onClick={this.props.clearItem}>
-                            {'Ok'}
-                        </div>
+                    <div className='flex justify-end white hover-black'>
+                        <div className='tc pa1'>{'[Esc]'}</div>
                         <div
                             id={'cancel'}
-                            className='w-10 tc br4 bg-light-blue pa1 f4 hover-dark-blue pointer underline-hover'
+                            className='black w-10 tc br4 bg-light-blue pa1 f4 hover-dark-blue pointer underline-hover'
                             onClick={this.restoreAmount}>
                             {'✖'}
                         </div>
@@ -122,6 +117,15 @@ class ProductCard extends React.Component{
                         <PropertiesTable
                             properties = {this.state.attributes}
                         />
+                    </div>
+                    <div className='flex justify-end white hover-black'>
+                        <div className='tc pa1'>{'[Enter]'}</div>
+                        <div
+                            id={'apply'}
+                            className='black w-10 tc br4 bg-light-blue pa1 f4 hover-dark-blue pointer underline-hover'
+                            onClick={this.props.clearItem}>
+                            {'OK'}
+                        </div>
                     </div>
                 </div>
             </div>

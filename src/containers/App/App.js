@@ -78,17 +78,17 @@ class App extends Component {
 
        let spec = goods.reduce((accum, elem, index) =>{
                 if (elem.spec) {
-                    accum.push(elem);
-                    return accum;
-                }
-                else return accum;
-            }, []);
+            accum.push(elem);
+            return accum;
+        }
+        else return accum;
+    }, []);
 
-        const seed = Math.floor(Math.random()*spec.length);
+        //const seed = Math.floor(Math.random()*spec.length);
 
         let shownSpecOffers = [];
         for (let i=0; Math.min(i<2*columnLength, spec.length); i++){
-            shownSpecOffers.push(spec[(seed+i)%spec.length])
+            shownSpecOffers.push(spec[Math.floor(Math.random()*spec.length)]);
         }
         this.setState({shownSpecOffers});
     }
