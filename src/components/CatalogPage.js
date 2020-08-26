@@ -9,7 +9,7 @@ const CatalogPage = ({goods, order, setSelectedItem, updateAmount, showCancelBut
         <div className="flex-column w-100 br3 bg-white pa3 ma0">
             <CatalogHeader showCancelButton={showCancelButton} removeOrder={removeOrder}/>
             {goods.length && goods.map((elem, i) => {
-                if (elem.quantity && elem.price){
+                if (true || nelem.quantity && elem.price){
                     set += 1;
                     return (
                         <CatalogItem
