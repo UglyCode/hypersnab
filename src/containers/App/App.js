@@ -78,17 +78,24 @@ class App extends Component {
 
        let spec = goods.reduce((accum, elem, index) =>{
                 if (elem.spec) {
-            accum.push(elem);
+                    if (accum.has(elem.folder)){
+                       accum.get(elem.folder).push(elem);
+                    } else {
+                        accum.set(elem.folder, [elem]);
+                    }
+            //accum.push(elem);
             return accum;
         }
         else return accum;
-    }, []);
+    }, new Map());
 
-        //const seed = Math.floor(Math.random()*spec.length);
+        const keys = [...spec.keys()];
+        const seed = Math.floor(Math.random()*keys.length);
 
         let shownSpecOffers = [];
-        for (let i=0; Math.min(i<2*columnLength, spec.length); i++){
-            shownSpecOffers.push(spec[Math.floor(Math.random()*spec.length)]);
+        for (let i=0; Math.min(i<2*columnLength, keys.length-1); i++){
+            let specGroup = spec.get(keys[(seed+i)%keys.length]);
+            shownSpecOffers.push(specGroup[Math.floor(Math.random()*specGroup.length)]);
         }
         this.setState({shownSpecOffers});
     }
