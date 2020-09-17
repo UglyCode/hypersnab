@@ -28,10 +28,11 @@ class Login extends React.Component{
     };
 
     handleInnInput = (event) => {
-        this.processInn(event.target.value);
+        this.processInn(event.target);
     };
 
-    processInn = (inn) =>{
+    processInn = (target) =>{
+        const inn = target.value;
         if (this.checkINN(inn)){
             this.setState({advice: 'идет обработка ИНН...'});
             fetch(`${ENV.server}/info/${inn}`)
@@ -41,7 +42,9 @@ class Login extends React.Component{
                         this.setState({advice: 'введите пароль'});
                         this.props.setUserStatus('passwordRequired', innInfo.inn);
                     } else {
-                        this.props.toggleProfile(inn)
+                        this.props.toggleProfile(inn);
+                        target.value = '';
+                        this.setState({advice: 'введите ИНН'});
                     }
                 })
         } else {

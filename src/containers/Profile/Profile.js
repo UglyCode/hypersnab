@@ -7,7 +7,8 @@ class Profile extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            user: {}
+            user: {},
+            showPassAlert: false
         }
     }
 
@@ -42,7 +43,12 @@ class Profile extends React.Component {
         if (this.props.loggedIn){
             this.updateUser(this.state.user)
         } else {
-            this.createUser(this.state.user)
+            if (this.state.user.password){
+                this.createUser(this.state.user)
+            } else {
+                this.setState({showPassAlert: true});
+                return;
+            }
         }
         this.closeProfile();
     };
@@ -99,6 +105,9 @@ class Profile extends React.Component {
     };
 
     closeProfile = (event) => {
+        if (event && !this.props.loggedIn){
+            alert('Вы отменили создвание профиля');
+        }
         this.props.toggleProfile();
     };
 
@@ -194,19 +203,19 @@ class Profile extends React.Component {
                                 value={user.phone}
                             ></input>
 
-                            {this.props.loggedIn ||
+                            {/*{this.props.loggedIn ||*/}
                                 <div className="pv2">
-                                    <label htmlFor="password">Пароль:</label>
+                                    <label htmlFor="password">Пароль*:</label>
                                     <input
                                         onChange={this.onFormChange}
-                                        className="pa2 b--black-10 w-100"
+                                        className={`pa2 b--black-10 w-100 ${(this.props.loggedIn) ? '' : 'bg-washed-red'}`}
                                         type="password"
                                         name="password"
                                         id="password"
-                                        placeholder={'new password'}
+                                        placeholder={'введите пароль'}
                                     ></input>
                                 </div>
-                            }
+                            {/*}*/}
 
 
                         </div>
