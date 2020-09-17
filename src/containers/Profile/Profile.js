@@ -106,7 +106,7 @@ class Profile extends React.Component {
 
     closeProfile = (event) => {
         if (event && !this.props.loggedIn){
-            alert('Вы отменили создвание профиля');
+            alert('Вы отменили создание профиля');
         }
         this.props.toggleProfile();
     };
