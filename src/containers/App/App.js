@@ -245,6 +245,7 @@ class App extends Component {
                     goods = {this.state.goods}
                     folders = {this.state.folders}
                     userStatus = {this.state.userStatus}
+                    onRouteChange = {this.onRouteChange}
                 />
                 <Footer/>
                 {this.state.isProfileOpen &&

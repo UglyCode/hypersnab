@@ -6,7 +6,7 @@ import Catalog from '../containers/Catalog/Catalog';
 import Basket from '../containers/Basket/Basket';
 
 const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecOffers, userStatus, inn,
-                  searchString, updateSearchString, goods, orderAutoUpdated, basketWarningShown}) => {
+                  searchString, updateSearchString, goods, orderAutoUpdated, basketWarningShown, onRouteChange}) => {
 
         if (route === 'catalog'){
             return (
@@ -28,6 +28,7 @@ const Main = ({route, setSelectedItem, updateAmount, order, orderSum, shownSpecO
                            setSelectedItem = {setSelectedItem}
                            goods={goods}
                            inn={inn}
+                           onRouteChange = {onRouteChange}
             />;
         } else {
             return(

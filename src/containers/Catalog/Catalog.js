@@ -105,7 +105,8 @@ class Catalog extends React.Component {
 
     getSearchResult = () => {
         return this.state.goods.filter((elem) => {
-            return (elem.description.toLowerCase().indexOf(this.props.searchString) >= 0);
+            return (elem.description.toLowerCase().indexOf(this.props.searchString) >= 0
+                || elem.code.toLowerCase().indexOf(this.props.searchString) >= 0);
         });
     };
 

@@ -92,6 +92,7 @@ class Basket extends React.Component{
 
     removeOrder = () => {
         window.localStorage.removeItem('order');
+        this.props.onRouteChange('orderList');
         window.location.reload();
     };
 
