@@ -10,7 +10,7 @@ const OrderItem = ({id, key, sum, date, description, orderedGoods, selectOrder,
 
     const cancelOrder = () =>{
         // eslint-disable-next-line no-restricted-globals
-      let answer = confirm("Вы уверены, что хотите отменить зака?");
+      let answer = confirm("Вы уверены, что хотите отменить заказ?");
       if (answer){
               fetch(`${ENV.server}/orders/${id}`, {
                   method: 'POST',
