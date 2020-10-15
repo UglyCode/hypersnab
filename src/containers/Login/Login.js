@@ -55,12 +55,12 @@ class Login extends React.Component{
     };
 
     checkINN = (INN) => {
-            // проверка на число
-            if (INN.match(/\D/)) {
+            // проверка на наличие ИНН и длинну 10 и 12 цифр
+            if (!INN || INN.length !== 12 && INN.length !== 10) {
                 return false;
             }
-            // проверка на 10 и 12 цифр
-            if (INN.length !== 12 && INN.length !== 10) {
+            // проверка на число
+            if (INN.match(/\D/)) {
                 return false;
             }
             // проверка по контрольным цифрам
@@ -87,7 +87,7 @@ class Login extends React.Component{
     };
 
     submitInn = (event) => {
-        const inn = document.querySelector('#inn').value;
+        const inn = document.querySelector('#inn');
         this.processInn(inn);
     };
 

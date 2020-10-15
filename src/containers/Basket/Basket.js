@@ -82,7 +82,7 @@ class Basket extends React.Component{
             body: JSON.stringify(orderObject)
         }).then(resp => {
             if (resp.status === 200 || resp.status === 304){
-                this.removeOrder();
+                this.removeOrder(true);
                 alert('Заказ успешно размещен и доступен к просмотру в списке заказов.');
             } else {
                 alert('Не удалось разместить заказ. Попробуйте позднее!');
@@ -90,9 +90,9 @@ class Basket extends React.Component{
         }).catch( err => console.log);
     };
 
-    removeOrder = () => {
+    removeOrder = (showHistory=false) => {
         window.localStorage.removeItem('order');
-        this.props.onRouteChange('orderList');
+        if(showHistory) this.props.onRouteChange('orderList');
         window.location.reload();
     };
 
